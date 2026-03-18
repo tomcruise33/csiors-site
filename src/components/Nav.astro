@@ -1,11 +1,15 @@
 ---
+import { t } from '../i18n/translations';
+interface Props { lang?: 'en' | 'sk'; }
+const { lang = 'en' } = Astro.props;
+const prefix = lang === 'sk' ? '/sk' : '';
 ---
 <nav class="nav-bar">
-  <a href="/">Latest Briefs</a>
-  <a href="/feed">Intelligence Feed</a>
-  <a href="/about">About</a>
-  <a href="/contact">Contact</a>
-  <a href="https://ee-eu.kobotoolbox.org/x/VYfRrAuW" target="_blank" rel="noopener">Field Survey</a>
-  <a href="/watchtower" class="wt-link">Watchtower</a>
-  <a href="/sk" class="lang-switch">SK</a>
+  <a href={`${prefix}/`}>{t(lang, 'nav.briefs')}</a>
+  <a href={`${prefix}/feed`}>{t(lang, 'nav.feed')}</a>
+  <a href={`${prefix}/about`}>{t(lang, 'nav.about')}</a>
+  <a href={`${prefix}/contact`}>{t(lang, 'nav.contact')}</a>
+  <a href="https://ee-eu.kobotoolbox.org/x/VYfRrAuW" target="_blank" rel="noopener">{t(lang, 'nav.survey')}</a>
+  <a href={`${prefix}/watchtower`} class="wt-link">{t(lang, 'nav.watchtower')}</a>
+  <a href={t(lang, 'nav.langUrl')} class="lang-switch">{t(lang, 'nav.lang')}</a>
 </nav>

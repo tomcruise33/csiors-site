@@ -1,0 +1,140 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { t } from '../../i18n/translations';
+const lang = 'sk';
+---
+<BaseLayout lang={lang} title="O nás — CSIORS" description="Spoznajte Česko-slovenský inštitút orientálnych štúdií — naša misia, metodológia, terénna sieť a tím.">
+<div class="container">
+
+  <section class="page-hero">
+    <div class="page-hero-tag">{t(lang, 'aboutPage.tag')}</div>
+    <h1 class="page-hero-title">{t(lang, 'aboutPage.title')}</h1>
+    <p class="page-hero-lede">{t(lang, 'aboutPage.lede')}</p>
+  </section>
+
+  <!-- Mission -->
+  <section class="page-section">
+    <div class="about-rule"></div>
+    <h2 class="section-heading">{t(lang, 'aboutPage.mission')}</h2>
+    <div class="prose">
+      <p>{t(lang, 'aboutPage.missionP1')}</p>
+      <p>{t(lang, 'aboutPage.missionP2')}</p>
+    </div>
+  </section>
+
+  <!-- Methodology -->
+  <section class="page-section">
+    <div class="about-rule"></div>
+    <h2 class="section-heading">{t(lang, 'aboutPage.methodology')}</h2>
+    <div class="methodology-grid">
+      <div class="method-card">
+        <div class="method-number">01</div>
+        <h3 class="method-title">{t(lang, 'aboutPage.method1Title')}</h3>
+        <p class="method-text">{t(lang, 'aboutPage.method1Text')}</p>
+      </div>
+      <div class="method-card">
+        <div class="method-number">02</div>
+        <h3 class="method-title">{t(lang, 'aboutPage.method2Title')}</h3>
+        <p class="method-text">{t(lang, 'aboutPage.method2Text')}</p>
+      </div>
+      <div class="method-card">
+        <div class="method-number">03</div>
+        <h3 class="method-title">{t(lang, 'aboutPage.method3Title')}</h3>
+        <p class="method-text">{t(lang, 'aboutPage.method3Text')}</p>
+      </div>
+      <div class="method-card">
+        <div class="method-number">04</div>
+        <h3 class="method-title">{t(lang, 'aboutPage.method4Title')}</h3>
+        <p class="method-text">{t(lang, 'aboutPage.method4Text')}</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Field Network -->
+  <section class="page-section">
+    <div class="about-rule"></div>
+    <h2 class="section-heading">{t(lang, 'aboutPage.fieldNetwork')}</h2>
+    <div class="prose">
+      <p>{t(lang, 'aboutPage.fieldNetworkText')}</p>
+    </div>
+    <div class="stats-strip">
+      <div class="stat-item">
+        <div class="stat-value">37</div>
+        <div class="stat-label">Monitorovaných krajín</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value">50+</div>
+        <div class="stat-label">Miest s respondentmi</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value">7</div>
+        <div class="stat-label">Aktívnych EWS zón</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value">2–3×</div>
+        <div class="stat-label">Správ týždenne</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section class="page-section">
+    <div class="about-rule"></div>
+    <h2 class="section-heading">{t(lang, 'aboutPage.team')}</h2>
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="team-role">Zakladateľ a CEO</div>
+        <h3 class="team-name">Tom Krizan</h3>
+        <p class="team-bio">Vedie operácie CSIORS, expanziu terénnej siete a vývoj dátami riadených systémov včasného varovania pre humanitárne kontexty.</p>
+      </div>
+      <div class="team-card">
+        <div class="team-role">Prispievajúci expert</div>
+        <h3 class="team-name">Jan Zahorik</h3>
+        <p class="team-bio">Regionálny špecialista na Etiópiu a Africký roh. Mesačne poskytuje expertné analýzy obohatené o terénne dáta CSIORS. Prvý prispievateľ do našej rastúcej expertnej siete.</p>
+      </div>
+      <div class="team-card team-card-open">
+        <div class="team-role">Rozširujeme sa</div>
+        <h3 class="team-name">Vaša expertíza</h3>
+        <p class="team-bio">Aktívne budujeme sieť regionálnych expertov na MENA a Africký roh. Ak sa váš výskum prelína s našimi oblasťami záujmu, <a href="/sk/contact">kontaktujte nás</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content Strategy -->
+  <section class="page-section">
+    <div class="about-rule"></div>
+    <h2 class="section-heading">{t(lang, 'aboutPage.whatWePublish')}</h2>
+    <div class="content-tiers">
+      <div class="tier-item">
+        <div class="tier-freq">2–3× / týždeň</div>
+        <h3 class="tier-title">Spravodajské správy</h3>
+        <p class="tier-desc">AI-syntetizované, ľudsky overené krátke spravodajstvo o cenách potravín, vysídlení a bezpečnostných podmienkach. Zostavené z terénnych dát a otvorených zdrojov.</p>
+        <span class="tier-access">Otvorený prístup</span>
+      </div>
+      <div class="tier-item">
+        <div class="tier-freq">Mesačne</div>
+        <h3 class="tier-title">Expertná analýza</h3>
+        <p class="tier-desc">Hĺbkové analýzy od regionálnych špecialistov, automaticky obohatené o najnovšie anonymné prieskumné odpovede pre empirické podloženie.</p>
+        <span class="tier-access">Otvorený prístup</span>
+      </div>
+      <div class="tier-item tier-gated">
+        <div class="tier-freq">Naživo</div>
+        <h3 class="tier-title">Watchtower Dashboard</h3>
+        <p class="tier-desc">EWS monitoring v reálnom čase naprieč 37 krajinami. Vizualizácie dát, trendové grafy a prahové upozornenia pre operačné rozhodovanie.</p>
+        <span class="tier-access tier-access-gated">Chránený — zadarmo počas evaluácie</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="page-section page-cta-section">
+    <h2 class="cta-heading">{t(lang, 'aboutPage.ctaHeading')}</h2>
+    <p class="cta-text">{t(lang, 'aboutPage.ctaText')}</p>
+    <div class="cta-actions">
+      <a href="/sk/contact" class="cta-button">{t(lang, 'aboutPage.getInTouch')}</a>
+      <a href="https://ee-eu.kobotoolbox.org/x/VYfRrAuW" target="_blank" rel="noopener" class="cta-link">Odoslať terénnu správu &rarr;</a>
+    </div>
+  </section>
+
+</div>
+</BaseLayout>

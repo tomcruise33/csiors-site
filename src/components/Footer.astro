@@ -1,4 +1,8 @@
 ---
+import { t } from '../i18n/translations';
+interface Props { lang?: 'en' | 'sk'; }
+const { lang = 'en' } = Astro.props;
+const prefix = lang === 'sk' ? '/sk' : '';
 ---
 <div class="container">
   <footer>
@@ -7,12 +11,12 @@
       <span class="footer-name">CSIORS</span>
     </div>
     <div class="footer-links">
-      <a href="/about">About</a>
-      <a href="/feed">Intelligence Feed</a>
-      <a href="/watchtower">Watchtower</a>
-      <a href="https://ee-eu.kobotoolbox.org/x/VYfRrAuW" target="_blank" rel="noopener">Field Survey</a>
-      <a href="/contact">Contact</a>
+      <a href={`${prefix}/about`}>{t(lang, 'nav.about')}</a>
+      <a href={`${prefix}/feed`}>{t(lang, 'nav.feed')}</a>
+      <a href={`${prefix}/watchtower`}>{t(lang, 'nav.watchtower')}</a>
+      <a href="https://ee-eu.kobotoolbox.org/x/VYfRrAuW" target="_blank" rel="noopener">{t(lang, 'nav.survey')}</a>
+      <a href={`${prefix}/contact`}>{t(lang, 'nav.contact')}</a>
     </div>
-    <div class="footer-copy">&copy; 2026 CSIORS &middot; Czech Slovak Institute of Oriental Studies</div>
+    <div class="footer-copy">{t(lang, 'footer.copy')}</div>
   </footer>
 </div>

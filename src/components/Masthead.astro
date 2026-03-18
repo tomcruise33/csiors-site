@@ -1,5 +1,10 @@
 ---
-const today = new Date().toLocaleDateString('en-US', {
+import { t } from '../i18n/translations';
+interface Props { lang?: 'en' | 'sk'; }
+const { lang = 'en' } = Astro.props;
+
+const locale = lang === 'sk' ? 'sk-SK' : 'en-US';
+const today = new Date().toLocaleDateString(locale, {
   weekday: 'long',
   year: 'numeric',
   month: 'long',
@@ -11,8 +16,8 @@ const today = new Date().toLocaleDateString('en-US', {
     <img src="/images/logo-icon.png" alt="" class="masthead-logo" width="60" height="60" />
     <div>
       <div class="masthead-name">CSIORS</div>
-      <div class="masthead-sub">Czech Slovak Institute of Oriental Studies</div>
+      <div class="masthead-sub">{t(lang, 'masthead.sub')}</div>
     </div>
   </div>
-  <div class="masthead-date"><span class="live-dot"></span> {today} &nbsp;&middot;&nbsp; 37 countries monitored &nbsp;&middot;&nbsp; Last field data: 2h ago</div>
+  <div class="masthead-date"><span class="live-dot"></span> {today} &nbsp;&middot;&nbsp; {t(lang, 'masthead.monitored')} &nbsp;&middot;&nbsp; {t(lang, 'masthead.lastData')}</div>
 </header>

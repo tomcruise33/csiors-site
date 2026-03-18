@@ -1,15 +1,16 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { t } from '../../i18n/translations';
 import { getCollection } from 'astro:content';
+
+const lang = 'sk';
 
 const briefs = await getCollection('briefs');
 const expert = await getCollection('expert');
 
-// Sort by date descending
 const allBriefs = briefs.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 const allExpert = expert.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 
-// Combine and sort all content
 const allContent = [
   ...allBriefs.map(b => ({ type: 'brief' as const, entry: b })),
   ...allExpert.map(e => ({ type: 'expert' as const, entry: e })),
@@ -19,27 +20,26 @@ const featured = allContent[0];
 const rest = allContent.slice(1);
 
 function formatDate(date: Date) {
-  return date.toLocaleDateString('en-US', { day: 'numeric', month: 'long', year: 'numeric' });
+  return date.toLocaleDateString('sk-SK', { day: 'numeric', month: 'long', year: 'numeric' });
 }
 ---
-<BaseLayout lang="en" title="Intelligence Feed — CSIORS" description="Browse CSIORS intelligence briefs and expert analyses on migration, food security, and regional stability.">
+<BaseLayout lang={lang} title="Spravodajský kanál — CSIORS" description="Prehľadajte spravodajské správy a expertné analýzy CSIORS o migrácii, potravinovej bezpečnosti a regionálnej stabilite.">
 <div class="container">
 
   <section class="page-hero">
-    <div class="page-hero-tag">Intelligence Feed</div>
-    <h1 class="page-hero-title">Briefs & Analysis</h1>
-    <p class="page-hero-lede">Field-data-driven intelligence on migration, food security, and regional stability. Briefs published 2–3 times per week; expert analysis monthly.</p>
+    <div class="page-hero-tag">{t(lang, 'feed.tag')}</div>
+    <h1 class="page-hero-title">{t(lang, 'feed.title')}</h1>
+    <p class="page-hero-lede">{t(lang, 'feed.lede')}</p>
   </section>
 
-  <!-- Feed items -->
   <section class="feed-stream">
 
     {featured && (
       <article class="feed-item feed-featured">
         {featured.type === 'brief' ? (
-          <div class="feed-type">Field Alert</div>
+          <div class="feed-type">{t(lang, 'home.fieldAlert')}</div>
         ) : (
-          <div class="feed-type feed-type-expert">Expert Analysis</div>
+          <div class="feed-type feed-type-expert">{t(lang, 'home.expertAnalysis')}</div>
         )}
         <div class="brief-meta">
           <span class="brief-region">{featured.entry.data.region}</span>
@@ -52,17 +52,17 @@ function formatDate(date: Date) {
           <div class="feed-data-strip">
             <span class="feed-data-item"><span class="feed-data-label">EWS</span> <span class="feed-data-val" style={`color: var(--${featured.entry.data.alert === 'alert' ? 'red-alert' : featured.entry.data.alert === 'watch' ? 'amber' : 'green'})`}>{featured.entry.data.ews}/100</span></span>
             {featured.entry.data.food_price && (
-              <span class="feed-data-item"><span class="feed-data-label">Food</span> <span class="feed-data-val">{featured.entry.data.food_price}</span></span>
+              <span class="feed-data-item"><span class="feed-data-label">Potr.</span> <span class="feed-data-val">{featured.entry.data.food_price}</span></span>
             )}
-            <span class="feed-data-item"><span class="feed-data-label">Responses</span> <span class="feed-data-val">{featured.entry.data.responses}</span></span>
+            <span class="feed-data-item"><span class="feed-data-label">Odpovedí</span> <span class="feed-data-val">{featured.entry.data.responses}</span></span>
           </div>
         )}
         {featured.type === 'brief' && featured.entry.data.sources && (
-          <div class="feed-source">CSIORS Intelligence Brief · {featured.entry.data.sources}</div>
+          <div class="feed-source">CSIORS spravodajská správa · {featured.entry.data.sources}</div>
         )}
         {featured.type === 'expert' && (
           <div class="feed-expert-meta">
-            <strong>{featured.entry.data.author}</strong> · Enriched with {featured.entry.data.responses} field responses
+            <strong>{featured.entry.data.author}</strong> · Obohatené o {featured.entry.data.responses} terénnych odpovedí
           </div>
         )}
       </article>
@@ -70,7 +70,7 @@ function formatDate(date: Date) {
 
     {rest.map(item => (
       <article class={`feed-item ${item.type === 'expert' ? 'feed-expert-item' : ''}`}>
-        {item.type === 'expert' && <div class="feed-type feed-type-expert">Expert Analysis</div>}
+        {item.type === 'expert' && <div class="feed-type feed-type-expert">{t(lang, 'home.expertAnalysis')}</div>}
         <div class="brief-meta">
           <span class="brief-region">{item.entry.data.region}</span>
           <span class="brief-dot"></span>
@@ -80,7 +80,7 @@ function formatDate(date: Date) {
         <p class="feed-summary-sm">{item.entry.data.summary}</p>
         {item.type === 'expert' && (
           <div class="feed-expert-meta">
-            <strong>{item.entry.data.author}</strong> · Enriched with {item.entry.data.responses} field responses
+            <strong>{item.entry.data.author}</strong> · Obohatené o {item.entry.data.responses} terénnych odpovedí
           </div>
         )}
       </article>
@@ -89,7 +89,7 @@ function formatDate(date: Date) {
   </section>
 
   <div class="feed-more">
-    <p class="feed-end-note">Showing {allContent.length} published items. New briefs arrive 2–3 times per week.</p>
+    <p class="feed-end-note">Zobrazených {allContent.length} publikovaných položiek. Nové správy prichádzajú 2–3× týždenne.</p>
   </div>
 
 </div>

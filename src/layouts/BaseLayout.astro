@@ -8,15 +8,17 @@ import Footer from '../components/Footer.astro';
 interface Props {
   title?: string;
   description?: string;
+  lang?: 'en' | 'sk';
 }
 
 const {
   title = 'CSIORS — Czech Slovak Institute of Oriental Studies',
   description = 'Data-driven intelligence on migration, food security, and regional stability across the Middle East, North Africa, and the Horn of Africa.',
+  lang = 'en',
 } = Astro.props;
 ---
 <!DOCTYPE html>
-<html lang="en">
+<html lang={lang}>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,9 +28,9 @@ const {
 </head>
 <body>
   <Ticker />
-  <Masthead />
-  <Nav />
+  <Masthead lang={lang} />
+  <Nav lang={lang} />
   <slot />
-  <Footer />
+  <Footer lang={lang} />
 </body>
 </html>

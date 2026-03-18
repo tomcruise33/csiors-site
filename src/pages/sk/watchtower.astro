@@ -1,13 +1,15 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { t } from '../../i18n/translations';
+const lang = 'sk';
 ---
-<BaseLayout lang="en" title="Watchtower — CSIORS" description="Request access to the CSIORS Watchtower dashboard — real-time early warning monitoring across 37 countries.">
+<BaseLayout lang={lang} title="Watchtower — CSIORS" description="Požiadajte o prístup k dashboardu CSIORS Watchtower — monitorovanie včasného varovania v reálnom čase naprieč 37 krajinami.">
 <div class="container">
 
   <section class="wt-hero">
-    <div class="wt-hero-badge">Live Monitoring</div>
-    <h1 class="wt-hero-title">Watchtower</h1>
-    <p class="wt-hero-sub">Real-time Early Warning System dashboard across 37 countries. Data-driven alerts on food security, displacement, and regional stability.</p>
+    <div class="wt-hero-badge">{t(lang, 'wt.badge')}</div>
+    <h1 class="wt-hero-title">{t(lang, 'wt.title')}</h1>
+    <p class="wt-hero-sub">{t(lang, 'wt.sub')}</p>
   </section>
 
   <!-- What you get -->
@@ -21,8 +23,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             <defs><linearGradient id="g1" x1="0" y1="0" x2="28" y2="28"><stop stop-color="#0693E3"/><stop offset="1" stop-color="#9B51E0"/></linearGradient></defs>
           </svg>
         </div>
-        <h3 class="wt-feature-title">Live EWS Scores</h3>
-        <p class="wt-feature-text">Country-level Early Warning Scores updated with every new field response. Monitor trends, set threshold alerts, and track score history over time.</p>
+        <h3 class="wt-feature-title">Živé EWS skóre</h3>
+        <p class="wt-feature-text">Skóre včasného varovania na úrovni krajín aktualizované s každou novou terénnou odpoveďou. Sledujte trendy, nastavte prahové upozornenia a sledujte históriu skóre.</p>
       </div>
       <div class="wt-feature">
         <div class="wt-feature-icon">
@@ -34,8 +36,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             <defs><linearGradient id="g2" x1="0" y1="0" x2="28" y2="28"><stop stop-color="#0693E3"/><stop offset="1" stop-color="#9B51E0"/></linearGradient></defs>
           </svg>
         </div>
-        <h3 class="wt-feature-title">Food Price Tracking</h3>
-        <p class="wt-feature-text">Weekly food price indices per monitored country, drawn from field survey data and cross-referenced with WFP market monitoring.</p>
+        <h3 class="wt-feature-title">Sledovanie cien potravín</h3>
+        <p class="wt-feature-text">Týždenné indexy cien potravín pre každú monitorovanú krajinu, zostavené z terénnych prieskumných dát a krížovo overené s trhovým monitoringom WFP.</p>
       </div>
       <div class="wt-feature">
         <div class="wt-feature-icon">
@@ -46,8 +48,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             <defs><linearGradient id="g3" x1="0" y1="0" x2="28" y2="28"><stop stop-color="#0693E3"/><stop offset="1" stop-color="#9B51E0"/></linearGradient></defs>
           </svg>
         </div>
-        <h3 class="wt-feature-title">Threshold Alerts</h3>
-        <p class="wt-feature-text">Automated notifications when a country's EWS score crosses critical thresholds. Early warning before situations deteriorate.</p>
+        <h3 class="wt-feature-title">Prahové upozornenia</h3>
+        <p class="wt-feature-text">Automatické notifikácie keď EWS skóre krajiny prekročí kritické prahy. Včasné varovanie pred zhoršením situácie.</p>
       </div>
       <div class="wt-feature">
         <div class="wt-feature-icon">
@@ -60,8 +62,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             <defs><linearGradient id="g4" x1="0" y1="0" x2="28" y2="28"><stop stop-color="#0693E3"/><stop offset="1" stop-color="#9B51E0"/></linearGradient></defs>
           </svg>
         </div>
-        <h3 class="wt-feature-title">Response Mapping</h3>
-        <p class="wt-feature-text">Visualize anonymous field response density by country and city. Understand coverage gaps and data reliability at a glance.</p>
+        <h3 class="wt-feature-title">Mapovanie odpovedí</h3>
+        <p class="wt-feature-text">Vizualizujte hustotu anonymných terénnych odpovedí podľa krajiny a mesta. Pochopte medzery v pokrytí a spoľahlivosť dát na prvý pohľad.</p>
       </div>
     </div>
   </section>
@@ -70,33 +72,34 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   <section class="page-section wt-access-section">
     <div class="wt-access-card">
       <div class="wt-access-header">
-        <h2 class="wt-access-title">Request Access</h2>
-        <div class="wt-access-badge">Free during evaluation period</div>
+        <h2 class="wt-access-title">{t(lang, 'wt.requestAccess')}</h2>
+        <div class="wt-access-badge">{t(lang, 'wt.freeEval')}</div>
       </div>
-      <p class="wt-access-desc">Watchtower is currently in evaluation. Access is free for NGOs, government agencies, academic institutions, and humanitarian organizations. We review requests manually — typically within 48 hours.</p>
+      <p class="wt-access-desc">Watchtower je momentálne v evaluácii. Prístup je zadarmo pre MVO, vládne agentúry, akademické inštitúcie a humanitárne organizácie. Žiadosti posudzujeme manuálne — zvyčajne do 48 hodín.</p>
 
       <form class="wt-access-form" action="https://formspree.io/f/xaqpaddb" method="POST">
-        <input type="hidden" name="_next" value="https://csiors-site.vercel.app/thank-you">
-        <input type="hidden" name="_subject" value="Watchtower Access Request">
+        <input type="hidden" name="_next" value="https://csiors-site.vercel.app/sk/thank-you">
+        <input type="hidden" name="_subject" value="Žiadosť o prístup k Watchtower">
+        <input type="hidden" name="_language" value="sk">
         <div class="form-row">
           <div class="form-group">
-            <label class="form-label" for="wt-name">Full Name</label>
-            <input class="form-input" type="text" id="wt-name" name="name" required placeholder="Your name">
+            <label class="form-label" for="wt-name">{t(lang, 'wt.fullName')}</label>
+            <input class="form-input" type="text" id="wt-name" name="name" required placeholder="Vaše meno">
           </div>
           <div class="form-group">
-            <label class="form-label" for="wt-email">Work Email</label>
-            <input class="form-input" type="email" id="wt-email" name="email" required placeholder="you@organization.org">
+            <label class="form-label" for="wt-email">{t(lang, 'wt.workEmail')}</label>
+            <input class="form-input" type="email" id="wt-email" name="email" required placeholder="vy@organizacia.org">
           </div>
         </div>
         <div class="form-group">
-          <label class="form-label" for="wt-org">Organization</label>
-          <input class="form-input" type="text" id="wt-org" name="organization" required placeholder="Your institution or organization">
+          <label class="form-label" for="wt-org">{t(lang, 'wt.organization')}</label>
+          <input class="form-input" type="text" id="wt-org" name="organization" required placeholder="Vaša inštitúcia alebo organizácia">
         </div>
         <div class="form-group">
-          <label class="form-label" for="wt-role">Role / Use Case <span class="form-optional">(optional)</span></label>
-          <textarea class="form-input form-textarea" id="wt-role" name="use_case" rows="3" placeholder="Briefly describe how you intend to use Watchtower data"></textarea>
+          <label class="form-label" for="wt-role">{t(lang, 'wt.useCase')} <span class="form-optional">(nepovinné)</span></label>
+          <textarea class="form-input form-textarea" id="wt-role" name="use_case" rows="3" placeholder="Stručne opíšte ako plánujete využívať dáta Watchtower"></textarea>
         </div>
-        <button type="submit" class="form-submit wt-submit">Request Access</button>
+        <button type="submit" class="form-submit wt-submit">{t(lang, 'wt.requestAccess')}</button>
       </form>
     </div>
   </section>
@@ -106,13 +109,13 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <div class="wt-status-strip">
       <div class="wt-status-item">
         <span class="wt-status-dot" style="background: var(--green);"></span>
-        <span class="wt-status-text">Dashboard operational</span>
+        <span class="wt-status-text">Dashboard v prevádzke</span>
       </div>
       <div class="wt-status-item">
-        <span class="wt-status-text">Last data ingestion: <strong>2h ago</strong></span>
+        <span class="wt-status-text">Posledný príjem dát: <strong>pred 2h</strong></span>
       </div>
       <div class="wt-status-item">
-        <span class="wt-status-text">37 countries · 7 active EWS zones</span>
+        <span class="wt-status-text">37 krajín · 7 aktívnych EWS zón</span>
       </div>
     </div>
   </section>
