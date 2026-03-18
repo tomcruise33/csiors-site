@@ -7,8 +7,12 @@ const today = new Date().toLocaleDateString('en-US', {
 });
 ---
 <header class="masthead">
-  <a href="/" class="masthead-logo-link">
-    <img src="/images/logo-full.png" alt="CSIORS — Czech Slovak Institute of Oriental Studies" class="masthead-logo-full" width="420" height="189" />
-  </a>
+  <div class="masthead-brand">
+    <img src="/images/logo-icon.png" alt="" class="masthead-logo" width="60" height="60" />
+    <div>
+      <div class="masthead-name">CSIORS</div>
+      <div class="masthead-sub">Czech Slovak Institute of Oriental Studies</div>
+    </div>
+  </div>
   <div class="masthead-date"><span class="live-dot"></span> {today} &nbsp;&middot;&nbsp; 37 countries monitored &nbsp;&middot;&nbsp; Last field data: 2h ago</div>
 </header>
