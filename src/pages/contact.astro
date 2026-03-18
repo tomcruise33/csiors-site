@@ -1,0 +1,75 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout title="Contact — CSIORS" description="Get in touch with the Czech Slovak Institute of Oriental Studies.">
+<div class="container">
+
+  <section class="page-hero">
+    <div class="page-hero-tag">Contact</div>
+    <h1 class="page-hero-title">Get in Touch</h1>
+    <p class="page-hero-lede">For research inquiries, partnership proposals, expert contributions, or Watchtower access — reach out below.</p>
+  </section>
+
+  <section class="page-section">
+    <div class="contact-layout">
+      <!-- Form -->
+      <div class="contact-form-wrap">
+        <form class="contact-form" action="https://formspree.io/f/placeholder" method="POST">
+          <div class="form-group">
+            <label class="form-label" for="name">Name</label>
+            <input class="form-input" type="text" id="name" name="name" required placeholder="Your full name">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="email">Email</label>
+            <input class="form-input" type="email" id="email" name="email" required placeholder="you@organization.org">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="org">Organization <span class="form-optional">(optional)</span></label>
+            <input class="form-input" type="text" id="org" name="organization" placeholder="Your institution or organization">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="subject">Subject</label>
+            <select class="form-input form-select" id="subject" name="subject" required>
+              <option value="" disabled selected>Select a topic</option>
+              <option value="research">Research inquiry</option>
+              <option value="partnership">Partnership / collaboration</option>
+              <option value="expert">Expert contribution</option>
+              <option value="watchtower">Watchtower access</option>
+              <option value="media">Media / press</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="message">Message</label>
+            <textarea class="form-input form-textarea" id="message" name="message" required rows="5" placeholder="How can we help?"></textarea>
+          </div>
+          <button type="submit" class="form-submit">Send Message</button>
+          <p class="form-note">We typically respond within 48 hours.</p>
+        </form>
+      </div>
+
+      <!-- Info sidebar -->
+      <div class="contact-info">
+        <div class="contact-info-block">
+          <div class="contact-info-label">Direct Email</div>
+          <a href="mailto:tomaskrizan1@gmail.com" class="contact-info-value">tomaskrizan1@gmail.com</a>
+        </div>
+        <div class="contact-info-block">
+          <div class="contact-info-label">Field Reports</div>
+          <a href="https://ee-eu.kobotoolbox.org/x/VYfRrAuW" target="_blank" rel="noopener" class="contact-info-value">Submit via KoboToolbox &rarr;</a>
+          <p class="contact-info-note">Anonymous survey for respondents in monitored countries.</p>
+        </div>
+        <div class="contact-info-block">
+          <div class="contact-info-label">For Experts</div>
+          <p class="contact-info-note">We are building a network of regional specialists across MENA and the Horn of Africa. If your research aligns with our focus areas — migration, food security, regional stability — select "Expert contribution" in the form.</p>
+        </div>
+        <div class="contact-info-block">
+          <div class="contact-info-label">For Organizations</div>
+          <p class="contact-info-note">NGOs, government bodies, and academic institutions can request Watchtower dashboard access or discuss tailored intelligence partnerships.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+</BaseLayout>

@@ -1,0 +1,120 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout title="Watchtower — CSIORS" description="Request access to the CSIORS Watchtower dashboard — real-time early warning monitoring across 37 countries.">
+<div class="container">
+
+  <section class="wt-hero">
+    <div class="wt-hero-badge">Live Monitoring</div>
+    <h1 class="wt-hero-title">Watchtower</h1>
+    <p class="wt-hero-sub">Real-time Early Warning System dashboard across 37 countries. Data-driven alerts on food security, displacement, and regional stability.</p>
+  </section>
+
+  <!-- What you get -->
+  <section class="page-section">
+    <div class="wt-features">
+      <div class="wt-feature">
+        <div class="wt-feature-icon">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+            <circle cx="14" cy="14" r="12" stroke="url(#g1)" stroke-width="1.5"/>
+            <circle cx="14" cy="14" r="4" fill="url(#g1)"/>
+            <defs><linearGradient id="g1" x1="0" y1="0" x2="28" y2="28"><stop stop-color="#0693E3"/><stop offset="1" stop-color="#9B51E0"/></linearGradient></defs>
+          </svg>
+        </div>
+        <h3 class="wt-feature-title">Live EWS Scores</h3>
+        <p class="wt-feature-text">Country-level Early Warning Scores updated with every new field response. Monitor trends, set threshold alerts, and track score history over time.</p>
+      </div>
+      <div class="wt-feature">
+        <div class="wt-feature-icon">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+            <rect x="3" y="8" width="4" height="17" rx="1" fill="url(#g2)" opacity="0.4"/>
+            <rect x="9" y="5" width="4" height="20" rx="1" fill="url(#g2)" opacity="0.6"/>
+            <rect x="15" y="11" width="4" height="14" rx="1" fill="url(#g2)" opacity="0.8"/>
+            <rect x="21" y="3" width="4" height="22" rx="1" fill="url(#g2)"/>
+            <defs><linearGradient id="g2" x1="0" y1="0" x2="28" y2="28"><stop stop-color="#0693E3"/><stop offset="1" stop-color="#9B51E0"/></linearGradient></defs>
+          </svg>
+        </div>
+        <h3 class="wt-feature-title">Food Price Tracking</h3>
+        <p class="wt-feature-text">Weekly food price indices per monitored country, drawn from field survey data and cross-referenced with WFP market monitoring.</p>
+      </div>
+      <div class="wt-feature">
+        <div class="wt-feature-icon">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+            <path d="M14 3L26 25H2L14 3Z" stroke="url(#g3)" stroke-width="1.5" fill="none"/>
+            <line x1="14" y1="11" x2="14" y2="18" stroke="url(#g3)" stroke-width="1.5" stroke-linecap="round"/>
+            <circle cx="14" cy="21" r="1" fill="url(#g3)"/>
+            <defs><linearGradient id="g3" x1="0" y1="0" x2="28" y2="28"><stop stop-color="#0693E3"/><stop offset="1" stop-color="#9B51E0"/></linearGradient></defs>
+          </svg>
+        </div>
+        <h3 class="wt-feature-title">Threshold Alerts</h3>
+        <p class="wt-feature-text">Automated notifications when a country's EWS score crosses critical thresholds. Early warning before situations deteriorate.</p>
+      </div>
+      <div class="wt-feature">
+        <div class="wt-feature-icon">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+            <circle cx="8" cy="14" r="3" stroke="url(#g4)" stroke-width="1.5"/>
+            <circle cx="20" cy="8" r="3" stroke="url(#g4)" stroke-width="1.5"/>
+            <circle cx="20" cy="20" r="3" stroke="url(#g4)" stroke-width="1.5"/>
+            <line x1="11" y1="13" x2="17" y2="9" stroke="url(#g4)" stroke-width="1"/>
+            <line x1="11" y1="15" x2="17" y2="19" stroke="url(#g4)" stroke-width="1"/>
+            <defs><linearGradient id="g4" x1="0" y1="0" x2="28" y2="28"><stop stop-color="#0693E3"/><stop offset="1" stop-color="#9B51E0"/></linearGradient></defs>
+          </svg>
+        </div>
+        <h3 class="wt-feature-title">Response Mapping</h3>
+        <p class="wt-feature-text">Visualize anonymous field response density by country and city. Understand coverage gaps and data reliability at a glance.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Access form -->
+  <section class="page-section wt-access-section">
+    <div class="wt-access-card">
+      <div class="wt-access-header">
+        <h2 class="wt-access-title">Request Access</h2>
+        <div class="wt-access-badge">Free during evaluation period</div>
+      </div>
+      <p class="wt-access-desc">Watchtower is currently in evaluation. Access is free for NGOs, government agencies, academic institutions, and humanitarian organizations. We review requests manually — typically within 48 hours.</p>
+
+      <form class="wt-access-form" action="https://formspree.io/f/placeholder" method="POST">
+        <input type="hidden" name="_subject" value="Watchtower Access Request">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="wt-name">Full Name</label>
+            <input class="form-input" type="text" id="wt-name" name="name" required placeholder="Your name">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="wt-email">Work Email</label>
+            <input class="form-input" type="email" id="wt-email" name="email" required placeholder="you@organization.org">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="wt-org">Organization</label>
+          <input class="form-input" type="text" id="wt-org" name="organization" required placeholder="Your institution or organization">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="wt-role">Role / Use Case <span class="form-optional">(optional)</span></label>
+          <textarea class="form-input form-textarea" id="wt-role" name="use_case" rows="3" placeholder="Briefly describe how you intend to use Watchtower data"></textarea>
+        </div>
+        <button type="submit" class="form-submit wt-submit">Request Access</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Current status -->
+  <section class="page-section">
+    <div class="wt-status-strip">
+      <div class="wt-status-item">
+        <span class="wt-status-dot" style="background: var(--green);"></span>
+        <span class="wt-status-text">Dashboard operational</span>
+      </div>
+      <div class="wt-status-item">
+        <span class="wt-status-text">Last data ingestion: <strong>2h ago</strong></span>
+      </div>
+      <div class="wt-status-item">
+        <span class="wt-status-text">37 countries · 7 active EWS zones</span>
+      </div>
+    </div>
+  </section>
+
+</div>
+</BaseLayout>

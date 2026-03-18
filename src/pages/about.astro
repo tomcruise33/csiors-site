@@ -1,0 +1,138 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout title="About — CSIORS" description="Learn about the Czech Slovak Institute of Oriental Studies — our mission, methodology, field network, and team.">
+<div class="container">
+
+  <section class="page-hero">
+    <div class="page-hero-tag">About</div>
+    <h1 class="page-hero-title">The Czech Slovak Institute of Oriental Studies</h1>
+    <p class="page-hero-lede">A data-driven research unit focused on migration, food security, and regional stability across the Middle East, North Africa, and the Horn of Africa.</p>
+  </section>
+
+  <!-- Mission -->
+  <section class="page-section">
+    <div class="about-rule"></div>
+    <h2 class="section-heading">Mission</h2>
+    <div class="prose">
+      <p>CSIORS exists to bridge the gap between ground-level reality and policy-level decision-making. We combine anonymous field surveys from conflict and crisis zones with expert academic analysis to produce intelligence that is timely, verifiable, and operationally useful.</p>
+      <p>We believe early warning systems only work when they are fed by real voices. Our respondent network — spanning 37 countries and over 50 cities — provides that ground truth. Every data point comes from a person living the situation, not an algorithm guessing from satellite images.</p>
+    </div>
+  </section>
+
+  <!-- Methodology -->
+  <section class="page-section">
+    <div class="about-rule"></div>
+    <h2 class="section-heading">Methodology</h2>
+    <div class="methodology-grid">
+      <div class="method-card">
+        <div class="method-number">01</div>
+        <h3 class="method-title">Field Data Collection</h3>
+        <p class="method-text">Anonymous surveys deployed through <a href="https://ee-eu.kobotoolbox.org/x/VYfRrAuW" target="_blank" rel="noopener">KoboToolbox</a>, covering displacement, food prices, community safety, healthcare access, and subjective well-being. Respondents self-select; no identifiable data is collected.</p>
+      </div>
+      <div class="method-card">
+        <div class="method-number">02</div>
+        <h3 class="method-title">Early Warning Scoring</h3>
+        <p class="method-text">Field responses feed our Early Warning System (EWS), a composite score (0–100) per country. Thresholds: <span style="color: var(--green);">0–25 Stable</span>, <span style="color: var(--amber);">26–50 Watch</span>, <span style="color: var(--red-alert);">51+ Alert</span>. Updated with every new submission.</p>
+      </div>
+      <div class="method-card">
+        <div class="method-number">03</div>
+        <h3 class="method-title">Intelligence Synthesis</h3>
+        <p class="method-text">AI-assisted drafting combines field data with open-source intelligence (OSINT), WFP price monitoring, and UNHCR displacement data. Every brief is reviewed by a human analyst before publication.</p>
+      </div>
+      <div class="method-card">
+        <div class="method-number">04</div>
+        <h3 class="method-title">Expert Enrichment</h3>
+        <p class="method-text">Monthly deep-dive analyses by regional experts — starting with Jan Zahorik on Ethiopia and the Horn of Africa — are auto-enriched with the latest field data, adding empirical weight to academic insight.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Field Network -->
+  <section class="page-section">
+    <div class="about-rule"></div>
+    <h2 class="section-heading">Field Network</h2>
+    <div class="prose">
+      <p>Our anonymous respondent network is the backbone of CSIORS intelligence. We currently collect data from 37 countries across the MENA region and the Horn of Africa, with the highest response density in Ethiopia, Morocco, Syria, Turkey, and Lebanon.</p>
+    </div>
+    <div class="stats-strip">
+      <div class="stat-item">
+        <div class="stat-value">37</div>
+        <div class="stat-label">Countries monitored</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value">50+</div>
+        <div class="stat-label">Cities with respondents</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value">7</div>
+        <div class="stat-label">Active EWS zones</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value">2–3×</div>
+        <div class="stat-label">Briefs per week</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section class="page-section">
+    <div class="about-rule"></div>
+    <h2 class="section-heading">Team</h2>
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="team-role">Founder & CEO</div>
+        <h3 class="team-name">Tom Krizan</h3>
+        <p class="team-bio">Leads CSIORS operations, field network expansion, and the development of data-driven early warning systems for humanitarian contexts.</p>
+      </div>
+      <div class="team-card">
+        <div class="team-role">Contributing Expert</div>
+        <h3 class="team-name">Jan Zahorik</h3>
+        <p class="team-bio">Regional specialist in Ethiopia and the Horn of Africa. Provides monthly expert analyses enriched with CSIORS field data. First contributor to our expanding expert network.</p>
+      </div>
+      <div class="team-card team-card-open">
+        <div class="team-role">Expanding</div>
+        <h3 class="team-name">Your Expertise</h3>
+        <p class="team-bio">We are actively building our network of regional experts across MENA and the Horn of Africa. If your research intersects with our focus areas, <a href="/contact">get in touch</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content Strategy -->
+  <section class="page-section">
+    <div class="about-rule"></div>
+    <h2 class="section-heading">What We Publish</h2>
+    <div class="content-tiers">
+      <div class="tier-item">
+        <div class="tier-freq">2–3× / week</div>
+        <h3 class="tier-title">Intelligence Briefs</h3>
+        <p class="tier-desc">AI-synthesized, human-reviewed short-form intelligence on food prices, displacement, and safety conditions. Drawn from field data and open sources.</p>
+        <span class="tier-access">Open access</span>
+      </div>
+      <div class="tier-item">
+        <div class="tier-freq">Monthly</div>
+        <h3 class="tier-title">Expert Analysis</h3>
+        <p class="tier-desc">Long-form deep dives by regional specialists, auto-enriched with the latest anonymous survey responses for empirical grounding.</p>
+        <span class="tier-access">Open access</span>
+      </div>
+      <div class="tier-item tier-gated">
+        <div class="tier-freq">Live</div>
+        <h3 class="tier-title">Watchtower Dashboard</h3>
+        <p class="tier-desc">Real-time EWS monitoring across all 37 countries. Data visualizations, trend charts, and threshold alerts for operational decision-making.</p>
+        <span class="tier-access tier-access-gated">Gated — free during evaluation</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="page-section page-cta-section">
+    <h2 class="cta-heading">Work with ground-level data?</h2>
+    <p class="cta-text">Whether you're a researcher, policy analyst, or humanitarian operator — we'd like to hear from you.</p>
+    <div class="cta-actions">
+      <a href="/contact" class="cta-button">Get in touch</a>
+      <a href="https://ee-eu.kobotoolbox.org/x/VYfRrAuW" target="_blank" rel="noopener" class="cta-link">Submit a field report &rarr;</a>
+    </div>
+  </section>
+
+</div>
+</BaseLayout>

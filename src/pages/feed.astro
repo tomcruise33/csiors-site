@@ -1,0 +1,142 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout title="Intelligence Feed — CSIORS" description="Browse CSIORS intelligence briefs and expert analyses on migration, food security, and regional stability.">
+<div class="container">
+
+  <section class="page-hero">
+    <div class="page-hero-tag">Intelligence Feed</div>
+    <h1 class="page-hero-title">Briefs & Analysis</h1>
+    <p class="page-hero-lede">Field-data-driven intelligence on migration, food security, and regional stability. Briefs published 2–3 times per week; expert analysis monthly.</p>
+  </section>
+
+  <!-- Filters -->
+  <section class="feed-filters">
+    <div class="filter-group">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="brief">Briefs</button>
+      <button class="filter-btn" data-filter="expert">Expert Analysis</button>
+    </div>
+    <div class="filter-group">
+      <select class="filter-select" id="region-filter">
+        <option value="all">All regions</option>
+        <option value="syria">Syria</option>
+        <option value="yemen">Yemen</option>
+        <option value="sudan">Sudan</option>
+        <option value="ethiopia">Ethiopia</option>
+        <option value="turkey">Turkey</option>
+        <option value="lebanon">Lebanon</option>
+        <option value="morocco">Morocco</option>
+      </select>
+    </div>
+  </section>
+
+  <!-- Feed items -->
+  <section class="feed-stream">
+
+    <!-- Lead / Featured -->
+    <article class="feed-item feed-featured">
+      <div class="feed-type">Field Alert</div>
+      <div class="brief-meta">
+        <span class="brief-region">Syria</span>
+        <span class="brief-dot"></span>
+        <span class="brief-date">17 March 2026</span>
+      </div>
+      <h2 class="feed-headline"><a href="#">Bread prices surge 14% across Aleppo as supply corridors narrow — field respondents report worst conditions in six months</a></h2>
+      <p class="feed-summary">A synthesis of 17 anonymous field reports from four Syrian cities shows accelerating food insecurity. Respondents in Aleppo and Idlib describe deteriorating access to basic goods, with 41% reporting displacement in the past 30 days.</p>
+      <div class="feed-data-strip">
+        <span class="feed-data-item"><span class="feed-data-label">EWS</span> <span class="feed-data-val" style="color: var(--red-alert);">39/100</span></span>
+        <span class="feed-data-item"><span class="feed-data-label">Bread</span> <span class="feed-data-val" style="color: var(--red-alert);">+14%</span></span>
+        <span class="feed-data-item"><span class="feed-data-label">Responses</span> <span class="feed-data-val">17</span></span>
+      </div>
+      <div class="feed-source">CSIORS Intelligence Brief · Field data, WFP price monitoring, open-source signals</div>
+    </article>
+
+    <article class="feed-item">
+      <div class="brief-meta">
+        <span class="brief-region">Ethiopia</span>
+        <span class="brief-dot"></span>
+        <span class="brief-date">16 March 2026</span>
+      </div>
+      <h2 class="feed-headline-sm"><a href="#">Displacement patterns shift southward — Tigray stabilizing while Oromia tensions rise</a></h2>
+      <p class="feed-summary-sm">EWS at 42/100. Nine field respondents describe a reversal: northern calm, southern displacement. Food prices up 7% in Addis Ababa over two weeks.</p>
+    </article>
+
+    <article class="feed-item">
+      <div class="brief-meta">
+        <span class="brief-region">Morocco</span>
+        <span class="brief-dot"></span>
+        <span class="brief-date">15 March 2026</span>
+      </div>
+      <h2 class="feed-headline-sm"><a href="#">Transit migration through Nador corridor shows seasonal uptick as Mediterranean crossings resume</a></h2>
+      <p class="feed-summary-sm">Twenty-three new field reports. Food prices flat (-2%). Community safety stable. Increased sub-Saharan transit movement, consistent with 2024–25 seasonal patterns.</p>
+    </article>
+
+    <article class="feed-item">
+      <div class="brief-meta">
+        <span class="brief-region">Sudan</span>
+        <span class="brief-dot"></span>
+        <span class="brief-date">14 March 2026</span>
+      </div>
+      <h2 class="feed-headline-sm"><a href="#">Humanitarian corridor reopened but access remains severely limited — EWS breaches critical threshold</a></h2>
+      <p class="feed-summary-sm">EWS at 67/100 — highest in our network. Only 4 responses this week. Bread prices +31%. Acute shortages in Darfur. Sample size too low for reliable inference.</p>
+    </article>
+
+    <article class="feed-item">
+      <div class="brief-meta">
+        <span class="brief-region">Turkey</span>
+        <span class="brief-dot"></span>
+        <span class="brief-date">13 March 2026</span>
+      </div>
+      <h2 class="feed-headline-sm"><a href="#">Food price volatility hits three-month high as lira depreciation squeezes import-dependent communities</a></h2>
+      <p class="feed-summary-sm">Twelve responses from Istanbul, Ankara, Gaziantep. Cooking oil and dairy most affected. EWS at 35/100. Refugee communities report increased financial strain.</p>
+    </article>
+
+    <article class="feed-item">
+      <div class="brief-meta">
+        <span class="brief-region">Lebanon</span>
+        <span class="brief-dot"></span>
+        <span class="brief-date">11 March 2026</span>
+      </div>
+      <h2 class="feed-headline-sm"><a href="#">Currency black market spread widens — declining purchasing power reported in Beirut and Tripoli</a></h2>
+      <p class="feed-summary-sm">Official-parallel exchange gap growing for third consecutive month. Eight field reports describe difficulty accessing affordable food. Host-refugee tensions noted in Tripoli.</p>
+    </article>
+
+    <!-- Expert Analysis -->
+    <article class="feed-item feed-expert-item">
+      <div class="feed-type feed-type-expert">Expert Analysis</div>
+      <div class="brief-meta">
+        <span class="brief-region">Ethiopia</span>
+        <span class="brief-dot"></span>
+        <span class="brief-date">March 2026</span>
+      </div>
+      <h2 class="feed-headline-sm"><a href="#">Ethiopia's Shifting Conflict Dynamics: How Southern Oromia Became the New Displacement Epicenter</a></h2>
+      <p class="feed-summary-sm">A comprehensive analysis of evolving displacement patterns in Ethiopia, examining the relationship between the Tigray ceasefire and emerging tensions in southern Oromia.</p>
+      <div class="feed-expert-meta">
+        <strong>Jan Zahorik</strong> · Enriched with 34 field responses
+      </div>
+    </article>
+
+    <article class="feed-item feed-expert-item">
+      <div class="feed-type feed-type-expert">Expert Analysis</div>
+      <div class="brief-meta">
+        <span class="brief-region">Sudan</span>
+        <span class="brief-dot"></span>
+        <span class="brief-date">February 2026</span>
+      </div>
+      <h2 class="feed-headline-sm"><a href="#">The Khartoum Exodus: Mapping Sudan's Urban Displacement Through Anonymous Ground Data</a></h2>
+      <p class="feed-summary-sm">Using CSIORS field survey data to reconstruct displacement flows from Khartoum, revealing patterns invisible to traditional monitoring frameworks.</p>
+      <div class="feed-expert-meta">
+        <strong>Jan Zahorik</strong> · Enriched with 19 field responses
+      </div>
+    </article>
+
+  </section>
+
+  <!-- Load more -->
+  <div class="feed-more">
+    <p class="feed-end-note">Showing 8 of 8 published items. New briefs arrive 2–3 times per week.</p>
+  </div>
+
+</div>
+</BaseLayout>
