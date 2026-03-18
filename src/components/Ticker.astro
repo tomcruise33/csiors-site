@@ -1,0 +1,27 @@
+---
+const items = [
+  { text: 'Syria: Bread prices +14% in Aleppo — CSIORS field data', live: true },
+  { text: 'Ethiopia: EWS rising to 42/100 — Watch status', live: false },
+  { text: 'Morocco: 23 new field responses this week', live: false },
+  { text: 'UNHCR: 2.1M new displacements in Horn of Africa Q1 2026', live: true },
+  { text: 'Turkey: Food price volatility at 3-month high', live: false },
+  { text: 'Sudan: Humanitarian corridor reopened — EWS 67/100', live: false },
+  { text: 'Lebanon: Black market currency spread widening', live: false },
+  { text: 'Yemen: Critical threshold — EWS 71/100', live: true },
+];
+---
+<div class="ticker">
+  <div class="ticker-track">
+    {items.map(item => (
+      <span class="ticker-item">
+        <span class={`ticker-pip${item.live ? ' live' : ''}`}></span> {item.text}
+      </span>
+    ))}
+    {/* Duplicate for seamless loop */}
+    {items.map(item => (
+      <span class="ticker-item">
+        <span class={`ticker-pip${item.live ? ' live' : ''}`}></span> {item.text}
+      </span>
+    ))}
+  </div>
+</div>

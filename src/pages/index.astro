@@ -1,0 +1,259 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout>
+<div class="container">
+
+  <!-- ===== LEAD STORY ===== -->
+  <section class="lead-section">
+    <div class="lead-layout">
+      <div>
+        <div class="lead-tag">Field Alert — Syria</div>
+        <h1 class="lead-headline"><a href="#">Bread prices surge 14% across Aleppo as supply corridors narrow — field respondents report worst conditions in six months</a></h1>
+        <p class="lead-lede">A synthesis of 17 anonymous field reports from four Syrian cities shows accelerating food insecurity. Respondents in Aleppo and Idlib describe deteriorating access to basic goods, with 41% reporting displacement in the past 30 days. The pattern mirrors early-stage supply chain collapse seen in Darfur earlier this year.</p>
+        <p class="lead-byline"><strong>CSIORS Intelligence Brief</strong> &middot; 17 March 2026 &middot; Field data, WFP price monitoring, open-source signals</p>
+      </div>
+      <div class="lead-data-box">
+        <div class="data-box-inner">
+          <div class="data-box-title">Syria — Key Indicators</div>
+          <div class="data-row">
+            <span class="data-label">Bread price (Aleppo, 30d)</span>
+            <span class="data-value up">+14%</span>
+          </div>
+          <div class="data-row">
+            <span class="data-label">Early Warning Score</span>
+            <span class="data-value up">39 / 100</span>
+          </div>
+          <div class="data-row">
+            <span class="data-label">Field responses (7d)</span>
+            <span class="data-value">17</span>
+          </div>
+          <div class="data-row">
+            <span class="data-label">Recent displacement</span>
+            <span class="data-value up">41%</span>
+          </div>
+          <div class="data-row">
+            <span class="data-label">Safety perception</span>
+            <span class="data-value warn">Deteriorating</span>
+          </div>
+          <div class="data-row">
+            <span class="data-label">Healthcare access</span>
+            <span class="data-value up">Limited</span>
+          </div>
+          <div class="data-source">CSIORS field survey &middot; n=17 &middot; 17 Mar 2026</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== OPERATIONAL MAP ===== -->
+  <section class="map-section">
+    <div class="map-header">
+      <span class="map-label">Operational Map</span>
+      <div class="map-legend">
+        <span class="map-legend-item"><span class="map-legend-dot" style="background: #ef4444;"></span> Alert</span>
+        <span class="map-legend-item"><span class="map-legend-dot" style="background: #f59e0b;"></span> Watch</span>
+        <span class="map-legend-item"><span class="map-legend-dot" style="background: #22c55e;"></span> Stable</span>
+      </div>
+    </div>
+    <div class="map-container">
+      <svg viewBox="0 0 900 520" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="mapGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="0.5"/>
+          </pattern>
+          <filter id="glow">
+            <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+            <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+        </defs>
+        <rect width="900" height="520" fill="url(#mapGrid)"/>
+        <g fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="0.8">
+          <path d="M 200,60 L 280,50 350,55 380,70 420,65 460,60 500,70 520,55 540,70 520,90 490,100 460,95 430,105 400,100 380,110 350,100 320,95 290,85 250,80 220,75 Z"/>
+          <path d="M 500,70 L 540,70 580,65 640,70 700,75 720,90 710,110 680,115 640,110 600,115 560,110 530,100 520,90 510,85 Z" fill="rgba(255,255,255,0.06)"/>
+          <path d="M 140,160 L 200,150 240,165 250,200 230,240 190,250 150,240 130,210 125,180 Z" fill="rgba(255,255,255,0.06)"/>
+          <path d="M 240,165 L 300,150 370,155 400,170 410,210 390,250 350,260 300,255 260,240 250,200 Z"/>
+          <path d="M 400,170 L 460,160 520,165 540,190 530,250 500,290 450,280 410,260 410,210 Z"/>
+          <path d="M 540,165 L 580,155 610,170 620,220 600,280 570,300 540,280 530,250 540,190 Z"/>
+          <path d="M 640,110 L 680,105 700,115 710,140 690,160 660,165 640,155 630,130 Z" fill="rgba(255,255,255,0.06)"/>
+          <path d="M 700,115 L 740,110 770,130 780,170 760,200 730,210 700,190 690,160 710,140 Z"/>
+          <path d="M 640,155 L 650,150 658,165 650,180 640,175 Z" fill="rgba(255,255,255,0.06)"/>
+          <path d="M 660,200 L 730,210 780,250 800,320 770,380 720,400 670,370 640,320 630,270 640,230 Z"/>
+          <path d="M 670,370 L 720,400 740,420 720,440 680,445 640,430 630,400 640,380 Z" fill="rgba(255,255,255,0.06)"/>
+          <path d="M 540,280 L 600,280 640,320 640,380 610,420 560,430 520,400 510,350 520,310 Z" fill="rgba(255,255,255,0.06)"/>
+          <path d="M 560,430 L 610,420 650,440 680,460 660,490 620,500 570,490 540,470 550,445 Z" fill="rgba(255,255,255,0.06)"/>
+          <path d="M 660,440 L 700,420 740,440 750,470 730,500 700,510 680,490 660,470 Z"/>
+        </g>
+        <g stroke="rgba(255,255,255,0.04)" stroke-width="0.5" fill="none" stroke-dasharray="4,4">
+          <line x1="665" y1="135" x2="648" y2="165"/>
+          <line x1="665" y1="135" x2="640" y2="95"/>
+          <line x1="560" y1="360" x2="590" y2="455"/>
+          <line x1="690" y1="415" x2="560" y2="360"/>
+        </g>
+        <!-- Yemen -->
+        <g class="map-point"><circle cx="690" cy="415" r="16" class="map-pulse" fill="#ef4444" opacity="0.15"/><circle cx="690" cy="415" r="8" class="map-pulse" fill="#ef4444" opacity="0.1" style="animation-delay:0.5s"/><circle cx="690" cy="415" r="4" fill="#ef4444" filter="url(#glow)"/><g class="map-tooltip"><rect x="705" y="400" width="120" height="42" rx="3" fill="rgba(10,12,20,0.92)" stroke="rgba(239,68,68,0.4)" stroke-width="0.8"/><text x="715" y="415" fill="#ef4444" font-size="10" font-family="'IBM Plex Mono',monospace" font-weight="600">Yemen</text><text x="715" y="432" fill="rgba(255,255,255,0.6)" font-size="9" font-family="'IBM Plex Mono',monospace">EWS 71 · 2 resp</text></g></g>
+        <!-- Sudan -->
+        <g class="map-point"><circle cx="560" cy="360" r="16" class="map-pulse" fill="#ef4444" opacity="0.15"/><circle cx="560" cy="360" r="8" class="map-pulse" fill="#ef4444" opacity="0.1" style="animation-delay:0.5s"/><circle cx="560" cy="360" r="4" fill="#ef4444" filter="url(#glow)"/><g class="map-tooltip"><rect x="575" y="345" width="120" height="42" rx="3" fill="rgba(10,12,20,0.92)" stroke="rgba(239,68,68,0.4)" stroke-width="0.8"/><text x="585" y="360" fill="#ef4444" font-size="10" font-family="'IBM Plex Mono',monospace" font-weight="600">Sudan</text><text x="585" y="377" fill="rgba(255,255,255,0.6)" font-size="9" font-family="'IBM Plex Mono',monospace">EWS 67 · 4 resp</text></g></g>
+        <!-- Lebanon -->
+        <g class="map-point"><circle cx="648" cy="165" r="14" class="map-pulse" fill="#f59e0b" opacity="0.12"/><circle cx="648" cy="165" r="7" class="map-pulse" fill="#f59e0b" opacity="0.08" style="animation-delay:0.5s"/><circle cx="648" cy="165" r="3.5" fill="#f59e0b" filter="url(#glow)"/><g class="map-tooltip"><rect x="660" y="150" width="125" height="42" rx="3" fill="rgba(10,12,20,0.92)" stroke="rgba(245,158,11,0.4)" stroke-width="0.8"/><text x="670" y="165" fill="#f59e0b" font-size="10" font-family="'IBM Plex Mono',monospace" font-weight="600">Lebanon</text><text x="670" y="182" fill="rgba(255,255,255,0.6)" font-size="9" font-family="'IBM Plex Mono',monospace">EWS 44 · 8 resp</text></g></g>
+        <!-- Ethiopia -->
+        <g class="map-point"><circle cx="610" cy="465" r="14" class="map-pulse" fill="#f59e0b" opacity="0.12"/><circle cx="610" cy="465" r="7" class="map-pulse" fill="#f59e0b" opacity="0.08" style="animation-delay:0.5s"/><circle cx="610" cy="465" r="3.5" fill="#f59e0b" filter="url(#glow)"/><g class="map-tooltip"><rect x="625" y="450" width="130" height="42" rx="3" fill="rgba(10,12,20,0.92)" stroke="rgba(245,158,11,0.4)" stroke-width="0.8"/><text x="635" y="465" fill="#f59e0b" font-size="10" font-family="'IBM Plex Mono',monospace" font-weight="600">Ethiopia</text><text x="635" y="482" fill="rgba(255,255,255,0.6)" font-size="9" font-family="'IBM Plex Mono',monospace">EWS 42 · 34 resp</text></g></g>
+        <!-- Syria -->
+        <g class="map-point"><circle cx="665" cy="135" r="16" class="map-pulse" fill="#ef4444" opacity="0.15"/><circle cx="665" cy="135" r="8" class="map-pulse" fill="#ef4444" opacity="0.1" style="animation-delay:0.5s"/><circle cx="665" cy="135" r="4" fill="#ef4444" filter="url(#glow)"/><g class="map-tooltip"><rect x="680" y="120" width="120" height="42" rx="3" fill="rgba(10,12,20,0.92)" stroke="rgba(239,68,68,0.4)" stroke-width="0.8"/><text x="690" y="135" fill="#ef4444" font-size="10" font-family="'IBM Plex Mono',monospace" font-weight="600">Syria</text><text x="690" y="152" fill="rgba(255,255,255,0.6)" font-size="9" font-family="'IBM Plex Mono',monospace">EWS 39 · 17 resp</text></g></g>
+        <!-- Turkey -->
+        <g class="map-point"><circle cx="620" cy="85" r="14" class="map-pulse" fill="#f59e0b" opacity="0.12"/><circle cx="620" cy="85" r="7" class="map-pulse" fill="#f59e0b" opacity="0.08" style="animation-delay:0.5s"/><circle cx="620" cy="85" r="3.5" fill="#f59e0b" filter="url(#glow)"/><g class="map-tooltip"><rect x="635" y="70" width="125" height="42" rx="3" fill="rgba(10,12,20,0.92)" stroke="rgba(245,158,11,0.4)" stroke-width="0.8"/><text x="645" y="85" fill="#f59e0b" font-size="10" font-family="'IBM Plex Mono',monospace" font-weight="600">Turkey</text><text x="645" y="102" fill="rgba(255,255,255,0.6)" font-size="9" font-family="'IBM Plex Mono',monospace">EWS 35 · 12 resp</text></g></g>
+        <!-- Morocco -->
+        <g class="map-point"><circle cx="185" cy="200" r="14" class="map-pulse" fill="#22c55e" opacity="0.12"/><circle cx="185" cy="200" r="7" class="map-pulse" fill="#22c55e" opacity="0.08" style="animation-delay:0.5s"/><circle cx="185" cy="200" r="3.5" fill="#22c55e" filter="url(#glow)"/><g class="map-tooltip"><rect x="200" y="185" width="130" height="42" rx="3" fill="rgba(10,12,20,0.92)" stroke="rgba(34,197,94,0.4)" stroke-width="0.8"/><text x="210" y="200" fill="#22c55e" font-size="10" font-family="'IBM Plex Mono',monospace" font-weight="600">Morocco</text><text x="210" y="217" fill="rgba(255,255,255,0.6)" font-size="9" font-family="'IBM Plex Mono',monospace">EWS 18 · 23 resp</text></g></g>
+        <rect x="0" y="0" width="900" height="520" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+        <text x="20" y="505" fill="rgba(255,255,255,0.2)" font-size="9" font-family="'IBM Plex Mono',monospace">37 countries monitored · 7 shown with active EWS</text>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ===== MAIN + SIDEBAR ===== -->
+  <div class="content-layout">
+    <main>
+      <div class="stream-label">Recent Briefs</div>
+
+      <article class="brief-item">
+        <div class="brief-meta">
+          <span class="brief-region">Ethiopia</span>
+          <span class="brief-dot"></span>
+          <span class="brief-date">16 March 2026</span>
+        </div>
+        <h2 class="brief-headline"><a href="#">Displacement patterns shift southward — Tigray stabilizing while Oromia tensions rise</a></h2>
+        <p class="brief-summary">EWS at <span class="brief-data" style="color: var(--amber);">42/100</span>. Nine field respondents describe a reversal: northern calm, southern displacement. Food prices up <span class="brief-data" style="color: var(--red-alert);">7%</span> in Addis Ababa over two weeks.</p>
+      </article>
+
+      <article class="brief-item">
+        <div class="brief-meta">
+          <span class="brief-region">Morocco</span>
+          <span class="brief-dot"></span>
+          <span class="brief-date">15 March 2026</span>
+        </div>
+        <h2 class="brief-headline"><a href="#">Transit migration through Nador corridor shows seasonal uptick as Mediterranean crossings resume</a></h2>
+        <p class="brief-summary">Twenty-three new field reports. Food prices flat (<span class="brief-data" style="color: var(--green);">-2%</span>). Community safety stable. Increased sub-Saharan transit movement, consistent with 2024–25 seasonal patterns.</p>
+      </article>
+
+      <article class="brief-item">
+        <div class="brief-meta">
+          <span class="brief-region">Sudan</span>
+          <span class="brief-dot"></span>
+          <span class="brief-date">14 March 2026</span>
+        </div>
+        <h2 class="brief-headline"><a href="#">Humanitarian corridor reopened but access remains severely limited — EWS breaches critical threshold</a></h2>
+        <p class="brief-summary">EWS at <span class="brief-data" style="color: var(--red-alert);">67/100</span> — highest in our network. Only 4 responses this week. Bread prices <span class="brief-data" style="color: var(--red-alert);">+31%</span>. Acute shortages in Darfur. Sample size too low for reliable inference.</p>
+      </article>
+
+      <article class="brief-item">
+        <div class="brief-meta">
+          <span class="brief-region">Turkey</span>
+          <span class="brief-dot"></span>
+          <span class="brief-date">13 March 2026</span>
+        </div>
+        <h2 class="brief-headline"><a href="#">Food price volatility hits three-month high as lira depreciation squeezes import-dependent communities</a></h2>
+        <p class="brief-summary">Twelve responses from Istanbul, Ankara, Gaziantep. Cooking oil and dairy most affected. EWS at <span class="brief-data" style="color: var(--amber);">35/100</span>. Refugee communities report increased financial strain.</p>
+      </article>
+
+      <article class="brief-item">
+        <div class="brief-meta">
+          <span class="brief-region">Lebanon</span>
+          <span class="brief-dot"></span>
+          <span class="brief-date">11 March 2026</span>
+        </div>
+        <h2 class="brief-headline"><a href="#">Currency black market spread widens — declining purchasing power reported in Beirut and Tripoli</a></h2>
+        <p class="brief-summary">Official-parallel exchange gap growing for third consecutive month. Eight field reports describe difficulty accessing affordable food. Host-refugee tensions noted in Tripoli.</p>
+      </article>
+    </main>
+
+    <aside class="sidebar">
+      <!-- Watchtower -->
+      <div class="sidebar-block">
+        <div class="sidebar-title">Watchtower</div>
+        <div class="wt-widget">
+          <div class="wt-header">
+            <span class="wt-live"></span>
+            <span class="wt-label">Live monitoring — 37 countries</span>
+          </div>
+          <div class="wt-grid">
+            <div class="wt-cell">
+              <div class="wt-cell-val" style="color: var(--red-alert);">3</div>
+              <div class="wt-cell-lbl">Alert</div>
+            </div>
+            <div class="wt-cell">
+              <div class="wt-cell-val" style="color: var(--amber);">5</div>
+              <div class="wt-cell-lbl">Watch</div>
+            </div>
+            <div class="wt-cell">
+              <div class="wt-cell-val" style="color: var(--green);">6</div>
+              <div class="wt-cell-lbl">Stable</div>
+            </div>
+          </div>
+          <a href="/watchtower" class="wt-cta">Request Dashboard Access</a>
+          <div class="wt-note">Free during evaluation</div>
+        </div>
+      </div>
+
+      <!-- Expert Analysis -->
+      <div class="sidebar-block">
+        <div class="sidebar-title">Expert Analysis</div>
+        <div class="expert-item">
+          <div class="expert-by"><strong>Jan Zahorik</strong> &middot; March 2026</div>
+          <div class="expert-h"><a href="#">Ethiopia's Shifting Conflict Dynamics: How Southern Oromia Became the New Displacement Epicenter</a></div>
+          <div class="expert-enriched">Enriched with 34 field responses</div>
+        </div>
+        <div class="expert-item">
+          <div class="expert-by"><strong>Jan Zahorik</strong> &middot; February 2026</div>
+          <div class="expert-h"><a href="#">The Khartoum Exodus: Mapping Sudan's Urban Displacement Through Anonymous Ground Data</a></div>
+          <div class="expert-enriched">Enriched with 19 field responses</div>
+        </div>
+      </div>
+
+      <!-- Country Monitor -->
+      <div class="sidebar-block">
+        <div class="sidebar-title">Country Monitor</div>
+        <table class="c-table">
+          <thead>
+            <tr><th>Country</th><th>EWS</th><th>Food</th><th>n</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><span class="sdot alert"></span><a class="c-link" href="#">Yemen</a></td><td style="color: var(--red-alert);">71</td><td style="color: var(--red-alert);">+22%</td><td>2</td></tr>
+            <tr><td><span class="sdot alert"></span><a class="c-link" href="#">Sudan</a></td><td style="color: var(--red-alert);">67</td><td style="color: var(--red-alert);">+31%</td><td>4</td></tr>
+            <tr><td><span class="sdot watch"></span><a class="c-link" href="#">Ethiopia</a></td><td style="color: var(--amber);">42</td><td style="color: var(--red-alert);">+7%</td><td>34</td></tr>
+            <tr><td><span class="sdot alert"></span><a class="c-link" href="#">Syria</a></td><td style="color: var(--red-alert);">39</td><td style="color: var(--red-alert);">+14%</td><td>17</td></tr>
+            <tr><td><span class="sdot watch"></span><a class="c-link" href="#">Turkey</a></td><td style="color: var(--amber);">35</td><td style="color: var(--amber);">+9%</td><td>12</td></tr>
+            <tr><td><span class="sdot watch"></span><a class="c-link" href="#">Lebanon</a></td><td style="color: var(--amber);">44</td><td style="color: var(--amber);">+11%</td><td>8</td></tr>
+            <tr><td><span class="sdot stable"></span><a class="c-link" href="#">Morocco</a></td><td style="color: var(--green);">18</td><td style="color: var(--green);">-2%</td><td>23</td></tr>
+          </tbody>
+        </table>
+        <a href="#" class="all-countries">All 37 countries &rarr;</a>
+      </div>
+
+      <!-- Contribute -->
+      <div class="sidebar-block">
+        <div class="sidebar-title">Contribute</div>
+        <p class="contribute-text">Based in one of our monitored countries? Submit an anonymous field report to strengthen our data.</p>
+        <a href="https://ee-eu.kobotoolbox.org/x/VYfRrAuW" target="_blank" rel="noopener" class="contribute-link">Submit field report &rarr;</a>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<!-- ===== INFO STRIP ===== -->
+<div class="info-strip">
+  <div class="container">
+    <p>Intelligence briefs published <span class="accent">2–3 times per week</span>, compiled from anonymous field data across 37 countries.</p>
+    <p>Expert analysis by <span class="accent">Jan Zahorik</span> published monthly, auto-enriched with live survey data.</p>
+  </div>
+</div>
+
+<!-- ===== ABOUT ===== -->
+<div class="container">
+  <section class="about-section">
+    <div class="about-rule"></div>
+    <h2 class="about-heading">About CSIORS</h2>
+    <p class="about-text">The Czech Slovak Institute of Oriental Studies is a data-driven research unit focused on migration, food security, and regional stability across the Middle East, North Africa, and the Horn of Africa.</p>
+    <p class="about-text">We operate an anonymous field survey network — active in 37 countries, 50+ cities — collecting ground-level data on displacement, food prices, community safety, and access to services. This data feeds our Early Warning System and enriches the expert analysis published here.</p>
+  </section>
+</div>
+</BaseLayout>

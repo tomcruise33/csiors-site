@@ -1,0 +1,34 @@
+---
+import '../styles/global.css';
+import Ticker from '../components/Ticker.astro';
+import Masthead from '../components/Masthead.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = 'CSIORS — Czech Slovak Institute of Oriental Studies',
+  description = 'Data-driven intelligence on migration, food security, and regional stability across the Middle East, North Africa, and the Horn of Africa.',
+} = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content={description}>
+  <title>{title}</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+</head>
+<body>
+  <Ticker />
+  <Masthead />
+  <Nav />
+  <slot />
+  <Footer />
+</body>
+</html>
