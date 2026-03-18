@@ -14,7 +14,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <div class="contact-layout">
       <!-- Form -->
       <div class="contact-form-wrap">
-        <form class="contact-form" action="https://formspree.io/f/placeholder" method="POST">
+        <form class="contact-form" action="https://formspree.io/f/CONTACT_FORM_ID" method="POST">
+          <input type="hidden" name="_next" value="https://csiors-site.vercel.app/thank-you">
+          <input type="hidden" name="_subject" value="CSIORS Contact Form">
           <div class="form-group">
             <label class="form-label" for="name">Name</label>
             <input class="form-input" type="text" id="name" name="name" required placeholder="Your full name">

@@ -1,0 +1,39 @@
+backend:
+  name: github
+  repo: tomcruise33/csiors-site
+  branch: main
+
+media_folder: public/images/uploads
+public_folder: /images/uploads
+
+collections:
+  - name: briefs
+    label: "Intelligence Briefs"
+    folder: "src/content/briefs"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Region", name: "region", widget: "select", options: ["Syria", "Yemen", "Sudan", "Ethiopia", "Turkey", "Lebanon", "Morocco", "Iraq", "Somalia", "Libya", "Egypt", "Jordan", "Tunisia", "Algeria", "Other"] }
+      - { label: "Alert Level", name: "alert", widget: "select", options: ["alert", "watch", "stable"], default: "watch" }
+      - { label: "EWS Score", name: "ews", widget: "number", value_type: "int", min: 0, max: 100 }
+      - { label: "Food Price Change", name: "food_price", widget: "string", required: false, hint: "e.g. +14% or -2%" }
+      - { label: "Field Responses", name: "responses", widget: "number", value_type: "int", min: 0 }
+      - { label: "Summary", name: "summary", widget: "text" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Sources", name: "sources", widget: "string", required: false, hint: "e.g. Field data, WFP price monitoring, open-source signals" }
+
+  - name: expert
+    label: "Expert Analysis"
+    folder: "src/content/expert"
+    create: true
+    slug: "{{year}}-{{month}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Author", name: "author", widget: "string", default: "Jan Zahorik" }
+      - { label: "Region", name: "region", widget: "select", options: ["Syria", "Yemen", "Sudan", "Ethiopia", "Turkey", "Lebanon", "Morocco", "Iraq", "Somalia", "Libya", "Egypt", "Horn of Africa", "MENA", "Other"] }
+      - { label: "Field Responses Used", name: "responses", widget: "number", value_type: "int", min: 0 }
+      - { label: "Summary", name: "summary", widget: "text" }
+      - { label: "Body", name: "body", widget: "markdown" }

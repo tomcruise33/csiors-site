@@ -75,7 +75,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </div>
       <p class="wt-access-desc">Watchtower is currently in evaluation. Access is free for NGOs, government agencies, academic institutions, and humanitarian organizations. We review requests manually — typically within 48 hours.</p>
 
-      <form class="wt-access-form" action="https://formspree.io/f/placeholder" method="POST">
+      <form class="wt-access-form" action="https://formspree.io/f/WATCHTOWER_FORM_ID" method="POST">
+        <input type="hidden" name="_next" value="https://csiors-site.vercel.app/thank-you">
         <input type="hidden" name="_subject" value="Watchtower Access Request">
         <div class="form-row">
           <div class="form-group">

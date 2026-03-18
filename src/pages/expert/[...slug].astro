@@ -1,0 +1,60 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const expert = await getCollection('expert');
+  return expert.map(entry => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+
+const dateStr = entry.data.date.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+---
+<BaseLayout title={`${entry.data.title} — CSIORS`} description={entry.data.summary}>
+<div class="container">
+
+  <article class="article-page">
+    <div class="article-meta-top">
+      <a href="/feed" class="article-back">&larr; Intelligence Feed</a>
+    </div>
+
+    <div class="article-layout">
+      <div class="article-main">
+        <div class="feed-type feed-type-expert" style="margin-bottom: 0.5rem;">Expert Analysis</div>
+        <h1 class="article-title">{entry.data.title}</h1>
+        <p class="article-byline">
+          <strong>{entry.data.author}</strong> &middot; {dateStr} &middot; Enriched with {entry.data.responses} field responses
+        </p>
+        <div class="article-body">
+          <Content />
+        </div>
+      </div>
+
+      <aside class="article-sidebar">
+        <div class="sidebar-block">
+          <div class="sidebar-title">About the Author</div>
+          <div class="expert-by"><strong>{entry.data.author}</strong></div>
+          <p class="contribute-text" style="margin-top: 0.5rem;">Contributing expert for CSIORS. Regional specialist in {entry.data.region}.</p>
+        </div>
+
+        <div class="sidebar-block">
+          <div class="sidebar-title">Field Data</div>
+          <p class="contribute-text">This analysis was enriched with <strong>{entry.data.responses}</strong> anonymous field responses from the CSIORS survey network.</p>
+        </div>
+
+        <div class="sidebar-block">
+          <div class="sidebar-title">Contribute</div>
+          <p class="contribute-text">Based in {entry.data.region}? Your field report strengthens this type of analysis.</p>
+          <a href="https://ee-eu.kobotoolbox.org/x/VYfRrAuW" target="_blank" rel="noopener" class="contribute-link">Submit field report &rarr;</a>
+        </div>
+      </aside>
+    </div>
+  </article>
+
+</div>
+</BaseLayout>

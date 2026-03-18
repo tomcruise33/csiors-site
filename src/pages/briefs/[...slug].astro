@@ -1,0 +1,72 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const briefs = await getCollection('briefs');
+  return briefs.map(entry => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+
+const alertColor = entry.data.alert === 'alert' ? 'var(--red-alert)' : entry.data.alert === 'watch' ? 'var(--amber)' : 'var(--green)';
+const dateStr = entry.data.date.toLocaleDateString('en-US', { day: 'numeric', month: 'long', year: 'numeric' });
+---
+<BaseLayout title={`${entry.data.title} — CSIORS`} description={entry.data.summary}>
+<div class="container">
+
+  <article class="article-page">
+    <div class="article-meta-top">
+      <a href="/feed" class="article-back">&larr; Intelligence Feed</a>
+    </div>
+
+    <div class="article-layout">
+      <div class="article-main">
+        <div class="lead-tag">Field Alert — {entry.data.region}</div>
+        <h1 class="article-title">{entry.data.title}</h1>
+        <p class="article-byline">
+          <strong>CSIORS Intelligence Brief</strong> &middot; {dateStr}
+          {entry.data.sources && <span> &middot; {entry.data.sources}</span>}
+        </p>
+        <div class="article-body">
+          <Content />
+        </div>
+      </div>
+
+      <aside class="article-sidebar">
+        <div class="lead-data-box">
+          <div class="data-box-inner">
+            <div class="data-box-title">{entry.data.region} — Key Indicators</div>
+            <div class="data-row">
+              <span class="data-label">Early Warning Score</span>
+              <span class="data-value" style={`color: ${alertColor}`}>{entry.data.ews} / 100</span>
+            </div>
+            {entry.data.food_price && (
+              <div class="data-row">
+                <span class="data-label">Food price change</span>
+                <span class="data-value up">{entry.data.food_price}</span>
+              </div>
+            )}
+            <div class="data-row">
+              <span class="data-label">Field responses</span>
+              <span class="data-value">{entry.data.responses}</span>
+            </div>
+            <div class="data-source">CSIORS field survey &middot; {dateStr}</div>
+          </div>
+        </div>
+
+        <div class="sidebar-block" style="margin-top: 2rem;">
+          <div class="sidebar-title">Contribute</div>
+          <p class="contribute-text">Based in {entry.data.region} or another monitored country? Submit an anonymous field report.</p>
+          <a href="https://ee-eu.kobotoolbox.org/x/VYfRrAuW" target="_blank" rel="noopener" class="contribute-link">Submit field report &rarr;</a>
+        </div>
+      </aside>
+    </div>
+  </article>
+
+</div>
+</BaseLayout>

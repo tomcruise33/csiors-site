@@ -1385,6 +1385,78 @@ footer {
   animation: pulse 2s ease-in-out infinite;
 }
 
+/* ===== ARTICLE PAGES ===== */
+.article-page {
+  padding: 2rem 0;
+}
+.article-meta-top {
+  margin-bottom: 1.5rem;
+}
+.article-back {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.68rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.article-back:hover { color: var(--gradient-blue); }
+.article-layout {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 2.5rem;
+  align-items: start;
+}
+.article-title {
+  font-family: 'IBM Plex Serif', serif;
+  font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 0.8rem;
+}
+.article-byline {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+.article-byline strong {
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+.article-body {
+  font-family: 'IBM Plex Serif', serif;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: var(--text-body);
+}
+.article-body h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 2rem 0 0.8rem;
+}
+.article-body h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 1.5rem 0 0.6rem;
+}
+.article-body p {
+  margin-bottom: 1rem;
+}
+.article-body a {
+  color: var(--gradient-blue);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+.article-body a:hover { border-bottom-color: var(--gradient-blue); }
+.article-sidebar .lead-data-box {
+  position: sticky;
+  top: 4rem;
+}
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
   .lead-layout { grid-template-columns: 1fr; }
@@ -1402,4 +1474,5 @@ footer {
   .wt-status-strip { flex-direction: column; gap: 0.6rem; }
   .feed-filters { flex-direction: column; gap: 0.8rem; align-items: flex-start; }
   .cta-actions { flex-direction: column; gap: 1rem; }
+  .article-layout { grid-template-columns: 1fr; }
 }
