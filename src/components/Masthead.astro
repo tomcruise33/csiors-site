@@ -1,6 +1,4 @@
 ---
-import Logo from './Logo.astro';
-
 const today = new Date().toLocaleDateString('en-US', {
   weekday: 'long',
   year: 'numeric',
@@ -10,7 +8,7 @@ const today = new Date().toLocaleDateString('en-US', {
 ---
 <header class="masthead">
   <div class="masthead-brand">
-    <Logo size={42} class="masthead-logo" />
+    <img src="/images/logo-icon.png" alt="CSIORS logo" class="masthead-logo" width="42" height="42" />
     <div class="masthead-name">CSIORS</div>
   </div>
   <div class="masthead-sub">Czech Slovak Institute of Oriental Studies — Data-Driven Research Unit</div>
