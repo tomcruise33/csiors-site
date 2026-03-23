@@ -1,10 +1,13 @@
 ---
-title: "Ethiopia's Shifting Conflict Dynamics: How Southern Oromia Became the New Displacement Epicenter"
+title: "Ethiopia's Shifting Conflict Dynamics 2 : How Southern Oromia Became the
+  New Displacement Epicenter"
 date: 2026-03-01T09:00:00.000Z
 author: Jan Zahorik
 region: Ethiopia
 responses: 34
-summary: "A comprehensive analysis of evolving displacement patterns in Ethiopia, examining the relationship between the Tigray ceasefire and emerging tensions in southern Oromia."
+summary: A comprehensive analysis of evolving displacement patterns in Ethiopia,
+  examining the relationship between the Tigray ceasefire and emerging tensions
+  in southern Oromia.
 ---
 
 The conflict landscape in Ethiopia has undergone a significant transformation over the past six months. While the Tigray ceasefire continues to hold — and northern displacement indicators show marked improvement — a new crisis is emerging in southern Oromia that demands urgent attention from the humanitarian community.
