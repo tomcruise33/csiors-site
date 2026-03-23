@@ -5,6 +5,18 @@ author: "Jan Záhořík and Weldeabrha Niguse Gebreslassie"
 region: "Ethiopia"
 responses: 0
 summary: "Ethiopia’s new conflict lines run through theology, not just ethnicity. Pentecostal rise, Orthodox resistance, and Muslim anxiety reshape state power."
+category: "Policy Analysis"
+subtitle: "Ethiopia’s new conflict lines run through theology, not just ethnicity. Pentecostal rise, Orthodox resistance, and Muslim anxiety reshape state power."
+image: "https://globaluserfiles.com/media/186178_cbd293f1053defd3a8f2f92a233f46f84ebe5aaf.png/v1/s/screenshot-2025-12-01-at-10.51.14.png"
+tags:
+  - "csiors"
+  - "abiyahmed-"
+  - "hornofafrica-"
+  - "tigray-"
+  - "ethiopia-"
+  - "orthodox-"
+  - "pentecostal-"
+  - "religionandpolitics-"
 ---
 
 For decades, analysts of Ethiopia’s political conflicts have focused on ethnicity and federation. The Tigray war, the Oromo insurgency, Somali regional dynamics, or Afar–Amhara competition take up most of the scholarly oxygen. Yet that lens overlooks an increasingly central driver of elite behavior and mass mobilization in contemporary Ethiopia: religion. In particular, the rise of Pentecostal Christianity to the centre of power through Prime Minister Abiy Ahmed and the Prosperity Party (PP) has created a new axis of conflict that cuts across ethnic lines, sometimes reinforcing and sometimes undercutting them.

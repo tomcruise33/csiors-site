@@ -2,9 +2,21 @@
 title: "Kurds and Arabs: The Crisis of Identity and Influence"
 date: 2023-10-10
 author: "Issam Khoury"
-region: "MENA"
+region: "Syria"
 responses: 0
 summary: "\"Exploring the intricate dynamics between Kurds and Arabs, this piece delves into historical identity clashes and the shifting power play in the Middle East.\""
+category: "Policy Analysis"
+subtitle: "\"Exploring the intricate dynamics between Kurds and Arabs, this piece delves into historical identity clashes and the shifting power play in the Middle East.\""
+image: "https://globaluserfiles.com/media/186178_e683a98934ce93d5e6b2da3b1a19f69d4168a7c0.jpeg/v1/s/wp_20171117_11_52_03_pro.jpeg"
+tags:
+  - "middle-east-"
+  - "kurds"
+  - "arabs-"
+  - "identity-crisis-"
+  - "power-dynamics-"
+  - "syrian-jazeera-"
+  - "historical-conflicts-"
+  - "tribal-politics-"
 ---
 
 In July 2023, we introduced the "Parallel Zones Project" published by The Czech-Slovak Institute of Oriental Studies. [[1]](#_ftn1) The initial phase, dubbed "The Border Control Strategy," was instrumental in formulating opinions and drawing critical conclusions, setting a solid foundation for the project's second and third stages.
@@ -52,7 +64,11 @@ The "Parallel Zones Project" showcases a nuanced comprehension of Syria's divers
  
 
 Respecting the cultural nuances of these Arab tribes is paramount. It's incumbent upon the Americans not to hasten changes to their age-old practices but to adopt a gradual approach. In line with this, we propose:
-- Convene dialogues between American, British, and Arab tribal leaders to discern their aspirations.- Establish a Syrian political committee aimed at reconciling Arab-Kurd differences. "A list of prospective members is available upon request."- Initiate a formalized Arab tribal council, representing a consolidated leadership for all Arab tribes.- Lay the groundwork for an Arab military entity, functioning under international coalition supervision. Its principal mission should be overseeing the Iraqi-Syrian borders. Collaboration should be fostered with General Mazloum Abdi. "Potential candidates for leadership roles can be suggested."
+
+- Convene dialogues between American, British, and Arab tribal leaders to discern their aspirations.
+- Establish a Syrian political committee aimed at reconciling Arab-Kurd differences. "A list of prospective members is available upon request."
+- Initiate a formalized Arab tribal council, representing a consolidated leadership for all Arab tribes.
+- Lay the groundwork for an Arab military entity, functioning under international coalition supervision. Its principal mission should be overseeing the Iraqi-Syrian borders. Collaboration should be fostered with General Mazloum Abdi. "Potential candidates for leadership roles can be suggested."
 
  
 

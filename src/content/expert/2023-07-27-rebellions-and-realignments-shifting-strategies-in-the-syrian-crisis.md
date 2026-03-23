@@ -5,6 +5,18 @@ author: "Issam Khoury"
 region: "Syria"
 responses: 0
 summary: "Dissecting the Astana Talks fallout amid dual rebellions and the potential reshaping of Syrian crisis negotiations."
+category: "Policy Analysis"
+subtitle: "Dissecting the Astana Talks fallout amid dual rebellions and the potential reshaping of Syrian crisis negotiations."
+image: "https://globaluserfiles.com/media/186178_44ff7d22c3c1e1256529d75f0f64a36cfd2996c0.jpeg/v1/s/aboodi-vesakaran-tktshcdtvec-unsplash.jpeg"
+tags:
+  - "astana-talks-"
+  - "syrian-crisis-"
+  - "political-rebellion-"
+  - "wagner-company-"
+  - "kazakhstan-foreign-ministry-"
+  - "russian-influence-"
+  - "diplomatic-shifts-"
+  - "middle-east-politics-"
 ---
 
 “The Astana track is fundamentally a Russian initiative, and the Kazakh government has opted to disassociate from the Russian side.”

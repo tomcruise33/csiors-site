@@ -2,9 +2,21 @@
 title: "Maritime piracy and Iran's arms in the Red Sea"
 date: 2023-12-22
 author: "Issam Khoury"
-region: "MENA"
+region: "Yemen"
 responses: 0
 summary: "\"Insightful analysis of maritime piracy, highlighting Houthi actions and international law challenges.\""
+category: "Policy Analysis"
+subtitle: "\"Insightful analysis of maritime piracy, highlighting Houthi actions and international law challenges.\""
+image: "https://globaluserfiles.com/media/pxb_6011477_dc04bd7ef7c32ee5f008298283c5cc2f.jpg/v1/s/pxb_6011477_dc04bd7ef7c32ee5f008298283c5cc2f.jpg"
+tags:
+  - "maritimepiracy-"
+  - "globalsecurity-"
+  - "houthitactics-"
+  - "internationallaw-"
+  - "redsea-"
+  - "politicalimpacts-"
+  - "globalgovernance-"
+  - "maritimechallenges-"
 ---
 
 "Labbayk ya Gaza... Labbayk ya Gaza." The impact of this phrase was high in the corridors of the hijacked ship "Galaxy Leader" in the Red Sea on November 19, 2023, by the Houthi group. This listed terrorist group released a video[1] showing several soldiers descending from a helicopter carrying the Yemeni flag onto the deck of the ship, and capturing the ship's crew.
@@ -42,7 +54,9 @@ Social media activists and many media networks like Al Jazeera and TRT[3] have b
          The Galaxy Leadership is designed for transporting cars and vehicles. During its passage in the Red Sea, it did not engage in any military activities or provide any military assistance to the Israeli army, indicating that its activities were civilian. However, it was still abducted, which is a violation of international law and contradicts UN Security Council Resolution 2383 of 2017[6], which states:
 
  
-- **He praises the Yemeni government for its efforts in combating piracy and armed robbery and urges it to continue these efforts.**- **He calls on all countries to provide full support to the Yemeni government in its efforts to combat piracy and armed robbery.**
+
+- **He praises the Yemeni government for its efforts in combating piracy and armed robbery and urges it to continue these efforts.**
+- **He calls on all countries to provide full support to the Yemeni government in its efforts to combat piracy and armed robbery.**
 
  
 

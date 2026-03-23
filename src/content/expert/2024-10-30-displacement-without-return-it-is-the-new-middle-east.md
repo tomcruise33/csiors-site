@@ -5,6 +5,18 @@ author: "Issam Khoury"
 region: "Syria"
 responses: 0
 summary: "\"Amid rising tensions, displaced Lebanese Shiites navigate uncertain futures across Syria and Iraq, reshaping the Middle East's socio-political landscape.\""
+category: "Policy Analysis"
+subtitle: "\"Amid rising tensions, displaced Lebanese Shiites navigate uncertain futures across Syria and Iraq, reshaping the Middle East's socio-political landscape.\""
+image: "https://globaluserfiles.com/media/186178_21a00befe7896669c038e3ab75c27afe2d1ff7cf.webp/v1/s/dall%C2%B7e-2024-10-30-11.01.36---a-minimalistic-realistic-pencil-sketch-capturing-the-essence-of-displacement-in-the-middle-east.-the-image-shows-a-barren-landscape-under-a-somber-sk.webp"
+tags:
+  - "middleeastpolitics-"
+  - "regionaltensions-"
+  - "hezbollah-"
+  - "syrianconflict-"
+  - "middleeastcrisis-"
+  - "displacement-"
+  - "lebaneseshiites-"
+  - "iraqishiites-"
 ---
 
 Every day, caravans of Lebanese Shiites cross the Syrian border, believing that their journey is simple and reminiscent of what occurred in July 2006. Their best option is the relatively safer Syria compared to Lebanon, along with their ability to pay rent for a longer duration in Syria than in central and northern Lebanon. However, the economic reality in Syria, particularly in Damascus, is disappointing, as rents have surged by nearly 70% since the initial wave of displacement, with the price for two rooms in central Damascus reaching about 4.5 million Syrian pounds, equivalent to approximately $300. In contrast, the same apartment in rural Damascus, Latakia, or Tartus costs around 1.5 million Syrian pounds, or about $100. This situation has made Damascus and its outskirts accessible only to wealthy or middle-income Lebanese, while poorer Shiites have been dispersed into schools converted by the Syrian government into makeshift shelters.

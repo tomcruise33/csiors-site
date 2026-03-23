@@ -2,9 +2,21 @@
 title: "Orient Weekly Watch: CSIORS Edition - Friday, November 10th, 2023"
 date: 2023-11-10
 author: "csiors"
-region: "Nigeria"
+region: "Libya"
 responses: 0
 summary: "Let us navigate the Middle East's nuances: UNICEF aid in Lybia; Republic anniversary in Turkey; Flight agreement between Nigeria and Algeria."
+category: "Policy Analysis"
+subtitle: "Let us navigate the Middle East's nuances: UNICEF aid in Lybia; Republic anniversary in Turkey; Flight agreement between Nigeria and Algeria."
+image: "https://globaluserfiles.com/media/186178_72d3b9fc9eec919c4fd229f6d0fc15222c1c19c7.jpeg/v1/s/foto-weekly-watch-(1).jpeg"
+tags:
+  - "turkey"
+  - "algeria"
+  - "tunisia"
+  - "republic-anniversary-turkey"
+  - "republic"
+  - "turkey-republic"
+  - "unicef"
+  - "unicef-aids"
 ---
 
 Let us guide you through the Middle East with curated links: insightful analyses and forecasts from top sources on regional complexities.

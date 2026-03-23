@@ -5,6 +5,18 @@ author: "Fuat Emir Şefkatli"
 region: "Sudan"
 responses: 0
 summary: "\"Sudan's civil war risks complicating peace with shifting power among militias and tribal politics, potentially leading to ethnic cleansing.\""
+category: "Policy Analysis"
+subtitle: "\"Sudan's civil war risks complicating peace with shifting power among militias and tribal politics, potentially leading to ethnic cleansing.\""
+image: "https://globaluserfiles.com/media/pxb_2529125_37f8a5e35ee1c8672c3c66d9346dfb3d.jpg/v1/s/pxb_2529125_37f8a5e35ee1c8672c3c66d9346dfb3d.jpg"
+tags:
+  - "humanitariancrisis-"
+  - "sudan"
+  - "sudanconflict-"
+  - "civilwar-"
+  - "khartoum-"
+  - "darfur-"
+  - "ethnictensions-"
+  - "militiadynamics-"
 ---
 
 In April 2023, the Sudanese military landscape was profoundly disrupted by the outbreak of hostilities between the Sudanese Armed Forces and the Rapid Support Forces (RSF), commanded by Mohamed Hamdan Dagalo, widely known as 'Hemedti'. These conflicts have persistently captured international attention due to their severe violence and resulting humanitarian distress. According to data from the Armed Conflict Location & Event Data Project (ACLED), from the onset of the civil war to the end of April 2024, the confrontations have resulted in more than 15,550 casualties. Most of these confrontations, numbering over 3,660 incidents, transpired in and around Khartoum. Notably, the intensity of conflicts extended beyond Khartoum during April and May to regions such as Darfur, South Kordofan, and Al Jazirah, manifesting new conflict dynamics. It was noted that several local militias, which had previously declared neutrality, entered the fray, exploiting the opportunities afforded by the existing bipolar military contention.

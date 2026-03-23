@@ -5,6 +5,18 @@ author: "csiors"
 region: "Syria"
 responses: 0
 summary: "Let us navigate the Middle East nuances: moroccan 12 years old prodigies; adolescent migration in Syria; Saudi Arabia for environment conservation."
+category: "Policy Analysis"
+subtitle: "Let us navigate the Middle East nuances: moroccan 12 years old prodigies; adolescent migration in Syria; Saudi Arabia for environment conservation."
+image: "https://globaluserfiles.com/media/186178_a8476a629cb745005da145210d84b9079b621a20.jpeg/v1/s/foto-weekly-watch-(3).jpeg"
+tags:
+  - "rayan-ait-taher"
+  - "cybersecurity-competition"
+  - "moroccan-prodigy"
+  - "cisa-presidents-cup"
+  - "syrian-migration"
+  - "youth-recruitment"
+  - "education-challenges"
+  - "germany-action"
 ---
 
 Let us guide you through the Middle East with curated links: insightful analyses and forecasts from top sources on regional complexities.

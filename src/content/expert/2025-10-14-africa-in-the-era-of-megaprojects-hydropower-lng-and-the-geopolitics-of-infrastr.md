@@ -5,6 +5,18 @@ author: "Jan Záhořík"
 region: "MENA"
 responses: 0
 summary: "Africa’s megaprojects are reshaping sovereignty and power — from dams to LNG — redefining the continent’s role in global geopolitics."
+category: "Policy Analysis"
+subtitle: "Africa’s megaprojects are reshaping sovereignty and power — from dams to LNG — redefining the continent’s role in global geopolitics."
+image: "https://globaluserfiles.com/media/186178_b9464df821a15a875b72e76c4a890f189ee7eaaf.png/v1/s/screenshot-2025-10-14-at-11.38.13.png"
+tags:
+  - "csiors-"
+  - "geopolitics-"
+  - "africa-"
+  - "globalpolitics-"
+  - "infrastructure-"
+  - "hydropower-"
+  - "lng-"
+  - "development-"
 ---
 
 Africa today is entering what might be called a megaproject moment. Across the continent, massive infrastructure investments—hydropower dams, liquefied natural gas (LNG) complexes, fertilizer factories, and solar parks—are transforming national economies and reconfiguring regional power dynamics. Projects like Ethiopia’s Grand Ethiopian Renaissance Dam (GERD), Mozambique’s Cabo Delgado LNG megaproject (delayed due to security concerns), and Nigeria’s and Ethiopia’s new fertilizer plants are not simply national triumphs. They are emblematic of a broader struggle for sovereignty, integration, and influence at a time when Africa is increasingly central to the global economic and geopolitical landscape. Only the fact that Africa has 54 seats in the African Union makes it an attractive partner to global or external powers. 

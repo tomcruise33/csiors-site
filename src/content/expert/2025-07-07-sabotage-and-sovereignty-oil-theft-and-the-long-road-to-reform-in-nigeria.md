@@ -5,6 +5,15 @@ author: "Jan Záhořík and Adesuwa Erediauwa"
 region: "Nigeria"
 responses: 0
 summary: "How does oil theft erode Nigeria’s sovereignty? Sabotage, corruption, and hope in the Dangote Refinery’s era—find the answers within."
+category: "Policy Analysis"
+subtitle: "How does oil theft erode Nigeria’s sovereignty? Sabotage, corruption, and hope in the Dangote Refinery’s era—find the answers within."
+image: "https://globaluserfiles.com/media/pxb_2251247_e29886debda115e00a8679e804e33564.jpg/v1/s/pxb_2251247_e29886debda115e00a8679e804e33564.jpg"
+tags:
+  - "nigeria-"
+  - "oil-"
+  - "energysecurity-"
+  - "governance-"
+  - "sustainability"
 ---
 
 For decades, the paradox of oil wealth has haunted Nigeria. Africa’s largest oil producer has long suffered from the very resource that should have guaranteed its prosperity. Instead of spurring inclusive development, oil in Nigeria has been the engine of sabotage, corruption, and conflict—especially in the oil-rich Niger Delta. For decades, pipeline sabotage and crude theft have plundered the nation’s wealth, undermining Nigeria’s sovereignty over its resources. Criminal networks have siphoned vast quantities of oil in the Niger Delta. This economic sabotage drains billions in revenue. By 2023, Nigeria was reportedly losing around 200,000 barrels of crude per day to theft. The recent opening of the Dangote Refinery—though marred by political obstruction and boycott—signals both the potential and the persistent obstacles that define Nigeria’s energy sector. 

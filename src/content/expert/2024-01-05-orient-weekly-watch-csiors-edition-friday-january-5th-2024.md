@@ -2,9 +2,21 @@
 title: "Orient Weekly Watch: CSIORS Edition - Friday, January 5th, 2024"
 date: 2024-01-05
 author: "csiors"
-region: "Syria"
+region: "Libya"
 responses: 0
 summary: "Let us navigate the Middle East nuances: Morocco's economy; oil prices in Lybia; smuggling drug in Syria."
+category: "Policy Analysis"
+subtitle: "Let us navigate the Middle East nuances: Morocco's economy; oil prices in Lybia; smuggling drug in Syria."
+image: "https://globaluserfiles.com/media/186178_546e1e83ff69b8575cb3b6746372f880c8ea76a8.jpeg/v1/s/foto-weekly-watch-(14).jpeg"
+tags:
+  - "morocco"
+  - "lybia"
+  - "syria"
+  - "morocco-economy"
+  - "q1-2024"
+  - "agricultural-challenges"
+  - "global-uncertainties"
+  - "oil-prices-stabilized"
 ---
 
 Let us guide you through the Middle East with curated links: insightful analyses and forecasts from top sources on regional complexities.

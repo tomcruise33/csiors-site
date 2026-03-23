@@ -5,6 +5,18 @@ author: "Jan Záhořík"
 region: "MENA"
 responses: 0
 summary: "The Czech Republic's new Africa strategy aims to revive neglected ties through economic investment and partnerships but  focusing too much on Russian influence."
+category: "Policy Analysis"
+subtitle: "The Czech Republic's new Africa strategy aims to revive neglected ties through economic investment and partnerships but  focusing too much on Russian influence."
+image: "https://globaluserfiles.com/media/186178_4def96f6dea196c3ceb5d01cde703eeb4d227719.jpeg/v1/s/20230319_101928.jpeg"
+tags:
+  - "diplomacy-"
+  - "economicgrowth-"
+  - "africa-"
+  - "czech-"
+  - "relations-"
+  - "investment-"
+  - "czechafrica-"
+  - "foreignpolicy-"
 ---
 
 The end of the Cold War and the fall of the Soviet Union marked a significant turning point for many Central and Eastern European countries not only in the sense that they stopped being Soviet satellite states and the new process of democratization was initiated. In terms of foreign policies, orientation towards the European Union (of which the majority of former Eastern Bloc states later on became members) and trans-Atlantic links. The Czech Republic, born on 1st January 1993 after Czechoslovakia was dissolved in an unprecedented “peaceful divorce”, was no different. This also meant that relations with Africa, which we discussed in Part 1 essay, lost the prominence and Africa as such was literally abandoned by practically all consecutive post-Communist Czech governments. 

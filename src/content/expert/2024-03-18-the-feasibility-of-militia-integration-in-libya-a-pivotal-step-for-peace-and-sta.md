@@ -5,6 +5,18 @@ author: "Fuat Emir Şefkatli"
 region: "Libya"
 responses: 0
 summary: "\"Examines Libya's DDR process, highlighting the challenges and opportunities arising from militia proliferation and fragmented governance.\""
+category: "Policy Analysis"
+subtitle: "\"Examines Libya's DDR process, highlighting the challenges and opportunities arising from militia proliferation and fragmented governance.\""
+image: "https://globaluserfiles.com/media/186178_470a6db8b986028fc0886ec4e5e73a9bf7140732.jpeg/v1/s/whatsapp-image-2024-03-17-at-18.11.24.jpeg"
+tags:
+  - "stability-"
+  - "conflictresolution-"
+  - "governance-"
+  - "libya-"
+  - "militias-"
+  - "peace-"
+  - "-libyaddr-"
+  - "disarmament-"
 ---
 
 Libya, emerging from the shadows of conflict, stands at a critical juncture where the successful implementation of disarmament, demobilization, and reintegration (DDR) programs is not merely a policy option but a necessity for lasting peace and state-building. The Libyan Dossier, characterized by the proliferation of militias and fragmented governance, presents unique challenges and opportunities for DDR processes, making it a pivotal case study in the field. 

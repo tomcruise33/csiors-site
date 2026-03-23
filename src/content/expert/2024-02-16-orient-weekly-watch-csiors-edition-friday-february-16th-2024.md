@@ -2,9 +2,21 @@
 title: "Orient Weekly Watch: CSIORS Edition - Friday, February 16th, 2024"
 date: 2024-02-16
 author: "csiors"
-region: "MENA"
+region: "Algeria"
 responses: 0
 summary: "Let us navigate the Middle East nuances: Islamic revolution's anniversary; Fintech Services in Saudi Arabia; spanish minister's trip to Algier cancelled."
+category: "Policy Analysis"
+subtitle: "Let us navigate the Middle East nuances: Islamic revolution's anniversary; Fintech Services in Saudi Arabia; spanish minister's trip to Algier cancelled."
+image: "https://globaluserfiles.com/media/186178_3849e64c671e0abc5cd0ec039e33dde71cced41d.jpeg/v1/s/foto-weekly-watch-(37).jpeg"
+tags:
+  - "tehran-unveiled"
+  - "iranian-contrasts"
+  - "exploring-history"
+  - "resilient-spirit"
+  - "snb-malaa-partnership"
+  - "saudi-fintech-innovation"
+  - "vision2030-financial-inclusion"
+  - "future-of-finance-ksa"
 ---
 
 Let us guide you through the Middle East with curated links: insightful analyses and forecasts from top sources on regional complexities.

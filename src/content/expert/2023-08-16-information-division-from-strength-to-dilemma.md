@@ -5,6 +5,18 @@ author: "Issam Khoury"
 region: "Lebanon"
 responses: 0
 summary: "\"Lebanon's Information Division faces a pivotal shift, challenged by administrative affiliations and sectarian dynamics.\""
+category: "Policy Analysis"
+subtitle: "\"Lebanon's Information Division faces a pivotal shift, challenged by administrative affiliations and sectarian dynamics.\""
+image: "https://globaluserfiles.com/media/186178_a91d290789d5a75b9226d734398016184c4ca035.jpeg/v1/s/sunshine-days-1221137.jpeg"
+tags:
+  - "lebanon-"
+  - "information-division-"
+  - "staff-unit-"
+  - "ministry-of-internal-security-"
+  - "ministry-of-defense-"
+  - "sectarian-dynamics-"
+  - "national-unity-"
+  - "administrative-overhaul-"
 ---
 
 “The core issue in Lebanon isn't rooted in the Information Division but in the Staff Unit. While this unit is administratively tied to the Ministry of Internal Security and Municipalities, its primary function aligns with the Ministry of Defense.”
@@ -46,17 +58,28 @@ Navigating through the Lebanese security and military structure can be intricate
  
 
 **The Ministry of National Defense:** Directed by Minister Maurice Selim [[1]](#_ftn1), he primarily relies on the Lebanese Army Foundation [[2]](#_ftn2) for security intel. This foundation encompasses:
-- **Army Command,** currently under General Joseph Aoun.- **Chief of Staff:** Now headed by Major General Amin Al-Aram, this position traditionally goes to someone from the Orthodox sect. The Chief of Staff assumes the duties and powers of the Army Commander in his absence.
+
+- **Army Command,** currently under General Joseph Aoun.
+- **Chief of Staff:** Now headed by Major General Amin Al-Aram, this position traditionally goes to someone from the Orthodox sect. The Chief of Staff assumes the duties and powers of the Army Commander in his absence.
 
  
 
 The role of the Minister of National Defense is predominantly administrative. Their main responsibilities include:
-- Coordinating with defense ministries from other nations.- Representing the Ministry of Defense at international forums and embassies.- Issuing official statements to the media.
+
+- Coordinating with defense ministries from other nations.
+- Representing the Ministry of Defense at international forums and embassies.
+- Issuing official statements to the media.
 
  
 
 Furthermore, the Minister of National Defense can, after consultation with the Army Commander, appoint the head of the Military Chamber by decree. The functions of this Chamber encompass:
-- Ensuring the legality of administrative operations within the Ministry of National Defense.- Delayed oversight over accounting for materials and works.- The Department of Public Relations and Information.- The Department of Military Attaches for Lebanon Abroad.- The Department of Legal Affairs and Military Justice.- The Department of Veteran's Service.
+
+- Ensuring the legality of administrative operations within the Ministry of National Defense.
+- Delayed oversight over accounting for materials and works.
+- The Department of Public Relations and Information.
+- The Department of Military Attaches for Lebanon Abroad.
+- The Department of Legal Affairs and Military Justice.
+- The Department of Veteran's Service.
 
  
 
@@ -107,6 +130,7 @@ Major General Elias Al-Baysari [[3]](#_ftn3) leads this institution, having take
 Under the leadership of Major General Imad Othman, the Internal Security Forces comprise several units:
 
  
+
 - **Staff Unit:** Spearheaded by Brigadier General Naim Shammas, this division is responsible for formulating studies and offering consultations to the Director General.
 
  
@@ -120,7 +144,16 @@ Under the leadership of Major General Imad Othman, the Internal Security Forces 
             
 
  
-- **General Inspectorate of Internal Security Forces:** This entity has been overseeing various departments since 2017, including:Gendarmerie (Police) under Brigadier General Joseph El-Helou.- Central Administration led by Brigadier General Saeed Foua.- Institute of Internal Security Forces, typically headed by a Sunni figure.- Judicial Unit with Brigadier General Joseph Kallas at the helm.- Beirut Police under Brigadier General Muhammad Al-Ayoubi.- Embassies Security Service led by Brigadier General Walid Jawhar.- Social Services Unit under Brigadier General Faris Hanna.- Automotive Security Forces headed by Brigadier General Fouad El Khoury.
+
+- **General Inspectorate of Internal Security Forces:** This entity has been overseeing various departments since 2017, including:
+Gendarmerie (Police) under Brigadier General Joseph El-Helou.
+- Central Administration led by Brigadier General Saeed Foua.
+- Institute of Internal Security Forces, typically headed by a Sunni figure.
+- Judicial Unit with Brigadier General Joseph Kallas at the helm.
+- Beirut Police under Brigadier General Muhammad Al-Ayoubi.
+- Embassies Security Service led by Brigadier General Walid Jawhar.
+- Social Services Unit under Brigadier General Faris Hanna.
+- Automotive Security Forces headed by Brigadier General Fouad El Khoury.
 
  
 
@@ -129,7 +162,13 @@ Under the leadership of Major General Imad Othman, the Internal Security Forces 
  
 
 Overseen by Major General Tony Saliba, the primary objectives of this body are:
-- Gathering domestic security intel via networks spanning Lebanese territory and processing external data.- Monitoring foreign activities that might jeopardize state security and overseeing local interactions with foreign entities.- Thwarting espionage and hostile endeavors in all manifestations.- Conducting preliminary investigations into events that jeopardize the state's security.- Collaborating with other security agencies such as the General Directorate of Public Security, the Internal Security Forces, and the Army Intelligence Directorate.- Furnishing the Supreme Council of Defense with routine reports on security and political circumstances.
+
+- Gathering domestic security intel via networks spanning Lebanese territory and processing external data.
+- Monitoring foreign activities that might jeopardize state security and overseeing local interactions with foreign entities.
+- Thwarting espionage and hostile endeavors in all manifestations.
+- Conducting preliminary investigations into events that jeopardize the state's security.
+- Collaborating with other security agencies such as the General Directorate of Public Security, the Internal Security Forces, and the Army Intelligence Directorate.
+- Furnishing the Supreme Council of Defense with routine reports on security and political circumstances.
 
  
 
@@ -138,7 +177,10 @@ Overseen by Major General Tony Saliba, the primary objectives of this body are:
  
 
 The General Customs Directorate operates in three primary sections:
-- Director of Beirut- Chtaura Region Presidency- Tripoli Presidency
+
+- Director of Beirut
+- Chtaura Region Presidency
+- Tripoli Presidency
 
  
 
@@ -173,12 +215,19 @@ Othman's promotion to Director General of the Internal Security Forces on March 
  
 
 By June 2023, under Brigadier General Khaled Hammoud's directives, the Division underwent substantial administrative shifts:
-- **Retirement** of 25 officers.- **Brigadier General Bilal Al-Hajjar's** appointment as First Assistant to the Commander of the Institute of Internal Security Forces.- **Brigadier General Ali Sakineh's** appointment as First Assistant to the Commander of the Gendarmerie.- **Dissociation** of the Information Division from the Chief of Staff.- **Integration** of the Information Division with the Office of the Director General of Internal Security.
+
+- **Retirement** of 25 officers.
+- **Brigadier General Bilal Al-Hajjar's** appointment as First Assistant to the Commander of the Institute of Internal Security Forces.
+- **Brigadier General Ali Sakineh's** appointment as First Assistant to the Commander of the Gendarmerie.
+- **Dissociation** of the Information Division from the Chief of Staff.
+- **Integration** of the Information Division with the Office of the Director General of Internal Security.
 
  
 
 However, with these changes, Brigadier General Hammoud's tenure is in jeopardy, primarily due to his association with the retiring Chief of Staff Naim al-Shammas. Major General Othman's aspirations to elevate his deputy, Brigadier General Jihad Abu Murad, to Chief of Staff face two primary challenges:
-- **Rank:** Militarily, Abu Murad ranks below Brigadier General Hammoud.- **Sectarian Quotas:** The Chief of Staff's position traditionally belongs to the Orthodox community, a criterion Abu Murad doesn't meet.
+
+- **Rank:** Militarily, Abu Murad ranks below Brigadier General Hammoud.
+- **Sectarian Quotas:** The Chief of Staff's position traditionally belongs to the Orthodox community, a criterion Abu Murad doesn't meet.
 
 In this intricate tapestry, Major General Othman seems keen on consolidating his influence in Lebanese security, favoring Shiites over Christians while preserving Sunni prominence. Defense Minister Bassam Mawlawi, however, resists these moves, reluctant to ignite sectarian tensions during his tenure.
 

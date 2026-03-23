@@ -5,6 +5,15 @@ author: "Issam Khoury"
 region: "Syria"
 responses: 0
 summary: "\"Opposition gains control in Aleppo as corruption in regime areas exposed, while battles in Hama could decide the future of Syria's regime.\""
+category: "Policy Analysis"
+subtitle: "\"Opposition gains control in Aleppo as corruption in regime areas exposed, while battles in Hama could decide the future of Syria's regime.\""
+image: "https://globaluserfiles.com/media/pxb_1044637_718ecc52ea5f644eb066b79046f909ff.jpg/v1/s/pxb_1044637_718ecc52ea5f644eb066b79046f909ff.jpg"
+tags:
+  - "syrianopposition-"
+  - "middleeastpolitics-"
+  - "aleppoconflict-"
+  - "hamabattles-"
+  - "iranianinfluence"
 ---
 
 On November 29, 2024, the opponents who stormed the headquarters of the Iranian Revolutionary Guard and the governor of Aleppo's palace discovered numerous goods not intended for sale, provided by the United Nations World Food Program (WFP) in those offices. Notably, these foods were meant for poor civilians, yet the widespread corruption within the Syrian regime's institutions seized the majority of the aid and redirected it to the army and its loyal Shiite militias.
@@ -46,7 +55,9 @@ The dilemma is that the Syrian regime in Damascus is unable to distance itself f
  
 
  
+
 # ***The Russian Dilemma***
+
  
 
 The Russians were taken aback by the weakness of the Syrian regime, especially since general security reports had indicated that the opposition was preparing to storm the city of Aleppo. It was widely believed that the battles that erupted on November 27, 2024, aimed to pressure Damascus into accepting a settlement with Turkey under Russian sponsorship. Many anticipated that these battles would last several months before reaching Aleppo, but Aleppo and its surrounding areas, along with the entire Idlib province, fell in just two days, and by the third day, opposition forces were on the outskirts of Hama. Consequently, Putin felt that General Sergei Kiselyov's assessments regarding Russian military operations in Syria were illogical, leading him to dismiss Kiselyov from his position. It is likely that General Alexander Chekho will be appointed to manage the battles in Damascus, provided that Russia receives financial compensation for its military efforts. Abbas Araqchi spoke with Sergey Lavrov on November 30, 2024, promising a substantial financial sum if Russia supported the Shiite militias that would be dispatched to assist the Syrian army from the air.

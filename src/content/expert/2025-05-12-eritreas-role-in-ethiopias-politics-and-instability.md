@@ -5,6 +5,18 @@ author: "Jan Záhořík"
 region: "Ethiopia"
 responses: 0
 summary: "Eritrea plays a dual role in Ethiopia—reinforcing central power while deepening fragmentation. A critical look at its paradoxical influence."
+category: "Policy Analysis"
+subtitle: "Eritrea plays a dual role in Ethiopia—reinforcing central power while deepening fragmentation. A critical look at its paradoxical influence."
+image: "https://globaluserfiles.com/media/pxb_2526349_1ecbd0a308796bbee55dbb5599c58303.jpg/v1/s/pxb_2526349_1ecbd0a308796bbee55dbb5599c58303.jpg"
+tags:
+  - "eritrea-"
+  - "ethiopia-"
+  - "hornofafrica-"
+  - "tigrayconflict-"
+  - "geopolitics-"
+  - "africanpolitics-"
+  - "csiors-"
+  - "politicalinstability-"
 ---
 
 **Introduction**

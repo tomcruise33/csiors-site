@@ -5,6 +5,18 @@ author: "csiors"
 region: "MENA"
 responses: 0
 summary: "Let us navigate the Middle East's nuances with this week's highlights: Elections in Lybia; AI Innovations in Kazakhstan; Afghan refugees in UK."
+category: "Policy Analysis"
+subtitle: "Let us navigate the Middle East's nuances with this week's highlights: Elections in Lybia; AI Innovations in Kazakhstan; Afghan refugees in UK."
+image: "https://globaluserfiles.com/media/186178_efde35f12edff5eda0463c7c353a374973fb4b2a.png/v1/s/csiors-copertine-weekly-watch-(3).png"
+tags:
+  - "eurasia"
+  - "lybia"
+  - "lybia-elections"
+  - "lybia-policy"
+  - "kazakhstan"
+  - "kazakhstan-technology"
+  - "kazakhstan-ai-innovation"
+  - "ai-innovation"
 ---
 
 Let us guide you through the Middle East with curated links: insightful analyses and forecasts from top sources on regional complexities.

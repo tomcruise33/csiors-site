@@ -5,6 +5,18 @@ author: "csiors"
 region: "Syria"
 responses: 0
 summary: "Let us navigate the Middle East's nuances: first Russian language classes in Tunisia; sentences reduced in Syria; Egypt exports renewable energies to Europe."
+category: "Policy Analysis"
+subtitle: "Let us navigate the Middle East's nuances: first Russian language classes in Tunisia; sentences reduced in Syria; Egypt exports renewable energies to Europe."
+image: "https://globaluserfiles.com/media/186178_de87cd763f934df43f31039f32a0bde305cc6bce.png/v1/s/foto-weekly-watch-(21).png"
+tags:
+  - "education-system-"
+  - "egypt"
+  - "syria"
+  - "tunisia"
+  - "tunisia-russian-classes"
+  - "education"
+  - "tunisia-education"
+  - "sirya-amnesty"
 ---
 
 Let us guide you through the Middle East with curated links: insightful analyses and forecasts from top sources on regional complexities.

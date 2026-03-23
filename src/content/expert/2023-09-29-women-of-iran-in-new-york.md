@@ -5,6 +5,18 @@ author: "Issam Khoury"
 region: "MENA"
 responses: 0
 summary: "\"Iranian women champion dignity, freedom, and equality, shining a light on their crucial role in challenging regressive norms and seeking reform.\""
+category: "Policy Analysis"
+subtitle: "\"Iranian women champion dignity, freedom, and equality, shining a light on their crucial role in challenging regressive norms and seeking reform.\""
+image: "https://globaluserfiles.com/media/186178_89e1a4ebb30744f0f73473eaa2b539bdb4b0e9cc.png/v1/s/screenshot-2023-09-29-at-12.08.53.png"
+tags:
+  - "iranianwomen-"
+  - "dignity-"
+  - "freedom-"
+  - "equality-"
+  - "reform-"
+  - "empowerment-"
+  - "womensrights-"
+  - "voiceforchange-"
 ---
 
 The echoes of Iranian women's voices still resonate in the minds of millions. This historically oppressed group in the Middle East managed to break the barrier of fear in the face of one of the strongest religious authoritarian powers in the world when they shouted: "Enough, we want our dignity... we want our freedom... we are not slaves to the patriarchal system... we are not slaves to the retrogressive religion."
@@ -56,14 +68,32 @@ More than 150 personalities and leaders were present at this festival, including
 Some of the notable films that received a positive response from the audience were:
 
  
-- Unity[14]. Directed by Azadeh Nikzadeh.- Women of Iran[15]. Directed by Lisa Daftari.- Samira’s Camera[16]. Directed by Paula Kweskin.- Girl Sitting Here[17]. Directed by Azadeh Nikzadeh.- Iranians Protesting. Directed by Mehran Sanel.- My Faith[18], My Choice. Directed by, Loureen Ayyoub. 
+
+- Unity[14]. Directed by Azadeh Nikzadeh.
+- Women of Iran[15]. Directed by Lisa Daftari.
+- Samira’s Camera[16]. Directed by Paula Kweskin.
+- Girl Sitting Here[17]. Directed by Azadeh Nikzadeh.
+- Iranians Protesting. Directed by Mehran Sanel.
+- My Faith[18], My Choice. Directed by, Loureen Ayyoub. 
 
  
 
 After the film screening, there were discussion sessions with several speakers, Among them are the following personalities:
 
  
-- Maral Karaee[19],Responsible for the Animation Scene Set Up department at Brown Bag Films, a Canadian company.- Loureen Ayyoub[20] , Spectrum News (Multimedia Journalist)- Erica Kasraie[21], is the Creative Director and Persian Media Fellowship Coordinator for Empower Women Media.- Marjan Greenblatt Keypour[22], Founder and Director, Alliance for Rights of All Minorities- Farhmand Kalayeh, is the CEO and East Coast lead of the Iranaissance.- Azadeh Nikzadeh[23], Burnt Generation Studios (Creative Producer & Director)- Lisa daftari[24], Editor-in-Chief of The Foreign Desk- Lemor Balter, Assistant Director/Dean of Faculty the Dalton School- Sage Taber[25], a graduate student at New York University.- Alexandra Gordon[26], President of Matter Unlimited[27].- Astrid Hajjar, Human Rights Activist/Directed International relations and Partnerships of EWM/Latin America and the Middle East.- Shirin Taber[28]: Empower Women Media (Executive Director)
+
+- Maral Karaee[19],Responsible for the Animation Scene Set Up department at Brown Bag Films, a Canadian company.
+- Loureen Ayyoub[20] , Spectrum News (Multimedia Journalist)
+- Erica Kasraie[21], is the Creative Director and Persian Media Fellowship Coordinator for Empower Women Media.
+- Marjan Greenblatt Keypour[22], Founder and Director, Alliance for Rights of All Minorities
+- Farhmand Kalayeh, is the CEO and East Coast lead of the Iranaissance.
+- Azadeh Nikzadeh[23], Burnt Generation Studios (Creative Producer & Director)
+- Lisa daftari[24], Editor-in-Chief of The Foreign Desk
+- Lemor Balter, Assistant Director/Dean of Faculty the Dalton School
+- Sage Taber[25], a graduate student at New York University.
+- Alexandra Gordon[26], President of Matter Unlimited[27].
+- Astrid Hajjar, Human Rights Activist/Directed International relations and Partnerships of EWM/Latin America and the Middle East.
+- Shirin Taber[28]: Empower Women Media (Executive Director)
 
  
 

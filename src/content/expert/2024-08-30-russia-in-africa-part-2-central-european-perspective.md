@@ -5,6 +5,18 @@ author: "Jan Záhořík"
 region: "MENA"
 responses: 0
 summary: "\"Central Europe, including the Czech Republic, must reconsider ties with Africa, favoring sincere, mutually beneficial relations over an anti-Russian stance.\""
+category: "Policy Analysis"
+subtitle: "\"Central Europe, including the Czech Republic, must reconsider ties with Africa, favoring sincere, mutually beneficial relations over an anti-Russian stance.\""
+image: "https://globaluserfiles.com/media/186178_47617da8b8bc8410afb5d44fc6ca8079aaf081f0.webp/v1/s/kalashnikov-afrika.webp"
+tags:
+  - "diplomacy-"
+  - "geopolitics-"
+  - "africarelations-"
+  - "centraleurope-"
+  - "multipolarity-"
+  - "czechrepublic-"
+  - "internationalpartnerships-"
+  - "russiainafrica"
 ---
 
 After 2000, Russia slowly began to renew its former ties with the Global ties, interrupted by 1990s withdrawal from Africa and internal economic and political problems inside Russia. Things began to move more visibly not only after South Africa became a member of BRICS since 2010 but especially after 2014 when Russia began to occupy the Crimea and relations between the West and Russia continued to worsen. Historical relations and generally the good name of the former Second world (former socialist camp) in Africa as well as pragmatism of many African leaders paved the way towards more fruitful relations. 

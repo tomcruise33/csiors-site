@@ -5,6 +5,18 @@ author: "Jan Záhořík"
 region: "Ethiopia"
 responses: 0
 summary: "\"Exploring Ethiopia's challenges in 2024: inflation, security issues, kidnappings, currency shortage, rising prices, and rural-urban migration.\""
+category: "Policy Analysis"
+subtitle: "\"Exploring Ethiopia's challenges in 2024: inflation, security issues, kidnappings, currency shortage, rising prices, and rural-urban migration.\""
+image: "https://globaluserfiles.com/media/186178_1eb437a284bcf3e5c252b35ea4dec27bb79a41c4.jpeg/v1/s/20211109_143149.jpeg"
+tags:
+  - "ethiopia2024-"
+  - "economiccrisis-"
+  - "securitychallenges-"
+  - "inflationimpact-"
+  - "bricsmembership-"
+  - "currencyshortage-"
+  - "urbanmigration-"
+  - "foodpricerise-"
 ---
 
 **On 1st of January 2024, Ethiopia has become a member of the BRICS community which can be seen by many as another shift from the dominance of the USA in the global politics towards a multipolar world.** Together with Ethiopia, Egypt, Saudi Arabia, Iran and the United Arab Emirates joined the club making the South-South cooperation stronger and more visible.[[1]](#_ftn1)

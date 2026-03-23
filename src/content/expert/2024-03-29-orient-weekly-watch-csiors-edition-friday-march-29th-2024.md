@@ -5,6 +5,18 @@ author: "csiors"
 region: "Egypt"
 responses: 0
 summary: "Let us navigate the Middle East nuances: security trends in Africa; Egypt invests for bread subsidies; UN Women's right Forum in Saudi Arabia."
+category: "Policy Analysis"
+subtitle: "Let us navigate the Middle East nuances: security trends in Africa; Egypt invests for bread subsidies; UN Women's right Forum in Saudi Arabia."
+image: "https://globaluserfiles.com/media/186178_b86debeaffcdfcd19f34e6934292c026fd28bbd6.png/v1/s/foto-weekly-watch-(2).png"
+tags:
+  - "odni-report"
+  - "terrorism-in-africa"
+  - "palestinian-israeli-tensions"
+  - "security-dynamics-africa"
+  - "egypt-budget-subsidies"
+  - "social-programs-financing"
+  - "economic-support-partnerships"
+  - "saudi-arabia-un-women"
 ---
 
 Let us guide you through the Middle East with curated links: insightful analyses and forecasts from top sources on regional complexities.

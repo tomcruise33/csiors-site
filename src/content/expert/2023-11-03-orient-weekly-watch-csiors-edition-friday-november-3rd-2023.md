@@ -2,9 +2,21 @@
 title: "Orient Weekly Watch: CSIORS Edition - Friday, November 3rd, 2023"
 date: 2023-11-03
 author: "csiors"
-region: "MENA"
+region: "Morocco"
 responses: 0
 summary: "Let us navigate the Middle East's nuances: African migration agreement; Casablanca's protest against Visa's delay; Saudi Arabia in a dispute over Climate fund"
+category: "Policy Analysis"
+subtitle: "Let us navigate the Middle East's nuances: African migration agreement; Casablanca's protest against Visa's delay; Saudi Arabia in a dispute over Climate fund"
+image: "https://globaluserfiles.com/media/186178_fb7e3d36c7efc5a2f676e284d441cf613189609a.png/v1/s/foto-weekly-watch-(11).png"
+tags:
+  - "morocco"
+  - "middle-east"
+  - "tunisian-migration"
+  - "europe"
+  - "saudi-development"
+  - "economic-diversification"
+  - "north-africa"
+  - "global-partnerships"
 ---
 
 Let us guide you through the Middle East with curated links: insightful analyses and forecasts from top sources on regional complexities.

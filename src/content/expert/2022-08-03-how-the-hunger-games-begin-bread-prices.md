@@ -5,6 +5,9 @@ author: "Tomas Krizan"
 region: "Lebanon"
 responses: 0
 summary: "On the last Sunday of July, part of the silo collapsed in Beirut, Lebanon, the remains of the explosion in 2020."
+category: "Policy Analysis"
+subtitle: "On the last Sunday of July, part of the silo collapsed in Beirut, Lebanon, the remains of the explosion in 2020."
+image: "https://globaluserfiles.com/media/186178_f021a863260e988ebd75db2ee67d23f333190ff9.webp/v1/s/nsplsh_9b3ea657e3b94ab8a673f7557ca062c0_mv2.webp"
 ---
 
 On the last Sunday of July, part of the silo collapsed in Beirut, Lebanon, the remains of the explosion in 2020. The damaged structure of the silo became a symbol of the explosion of 2,750 tons of ammonium nitrate, which killed more than 200 people. However, the country's largest silos with a capacity of 100,000 tons have saved the lives of many residents of the streets of West Beirut. The cause of the collapse of part of the fifty-year-old forces was a fire that had lasted for more than a month, which was caused by the fermentation of the still-present grain.

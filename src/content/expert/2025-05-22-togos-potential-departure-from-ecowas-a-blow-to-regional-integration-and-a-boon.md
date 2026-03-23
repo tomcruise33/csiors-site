@@ -5,6 +5,18 @@ author: "Jan Záhořík"
 region: "Sahel"
 responses: 0
 summary: "Togo’s potential exit from ECOWAS could fracture West African unity, weaken security cooperation, and open the door to greater Russian influence in the Sahel."
+category: "Policy Analysis"
+subtitle: "Togo’s potential exit from ECOWAS could fracture West African unity, weaken security cooperation, and open the door to greater Russian influence in the Sahel."
+image: "https://globaluserfiles.com/media/pxb_2697033_8df688af918ca708ee25af9cfa7b2507.jpg/v1/s/pxb_2697033_8df688af918ca708ee25af9cfa7b2507.jpg"
+tags:
+  - "ecowas-"
+  - "westafrica-"
+  - "togo-"
+  - "regionalintegration-"
+  - "geopolitics-"
+  - "sahel-"
+  - "security-"
+  - "russianinfluence-"
 ---
 
 The Economic Community of West African States (ECOWAS), once a cornerstone of regional cooperation and political stability in West Africa, is undergoing a period of unprecedented strain. The recent exit of three key Sahelian countries—Mali, Burkina Faso, and Niger—has deeply weakened the bloc, both institutionally and symbolically. It coincides with a geopolitical shift in which France is losing its foothold in parts of West Africa, while Russia is gaining position. Now, the possible departure of Togo threatens to deepen the organization’s crisis, signaling a broader unraveling of regional unity and potentially opening the door for greater Russian influence across the region. All these aspects will be discussed in the essay. 

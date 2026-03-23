@@ -5,6 +5,18 @@ author: "Issam Khoury"
 region: "MENA"
 responses: 0
 summary: "\"US escalates strikes on Shiite militias, expanding conflict zones. Analyzing the impact on Middle East stability and US-Iran tensions.\""
+category: "Policy Analysis"
+subtitle: "\"US escalates strikes on Shiite militias, expanding conflict zones. Analyzing the impact on Middle East stability and US-Iran tensions.\""
+image: "https://globaluserfiles.com/media/186178_bb985f648eb9e75cde31e923a958578ee415647b.jpeg/v1/s/parzone.jpeg"
+tags:
+  - "middleeast-"
+  - "stability-"
+  - "parallelzonesplan-"
+  - "geopolitics-"
+  - "usmilitary-"
+  - "irantensions-"
+  - "militias-"
+  - "conflict-"
 ---
 
 **Researcher Charles Lister**[[1]](applewebdata://73E58925-3405-466F-B717-869A88D44EC2#_ftn1)** published an article on January 24, 2024, titled “America Is Planning to Withdraw From Syria—and Create a Disaster,”**[[2]](applewebdata://73E58925-3405-466F-B717-869A88D44EC2#_ftn2) in which he stated that the White House is not interested in continuing the missions of American forces in Syria, based on information from four sources within the Defense and State Departments.

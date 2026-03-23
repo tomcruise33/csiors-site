@@ -5,7 +5,7 @@ author: "csiors"
 region: "Syria"
 responses: 0
 summary: "\"Insights from Istanbul Gelisim Uni's Middle East Symposium: Yemen's conflict, ISIS challenges, Syria-PKK ties, and Arab states' evolving relations with Syria.\""
-category: "Policy Analysis"
+category: "Seminars"
 subtitle: "\"Insights from Istanbul Gelisim Uni's Middle East Symposium: Yemen's conflict, ISIS challenges, Syria-PKK ties, and Arab states' evolving relations with Syria.\""
 image: "https://globaluserfiles.com/media/186178_5c4dea3452bb24c30207b4c6026903b333b897d0.jpeg/v1/s/1939-img_2448.jpeg"
 tags:

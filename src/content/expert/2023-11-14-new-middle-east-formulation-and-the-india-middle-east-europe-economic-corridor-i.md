@@ -5,6 +5,18 @@ author: "Issam Khoury"
 region: "MENA"
 responses: 0
 summary: "\"IMEC project reshapes Middle East: A strategic pivot from Silk Road with global impact.\""
+category: "Policy Analysis"
+subtitle: "\"IMEC project reshapes Middle East: A strategic pivot from Silk Road with global impact.\""
+image: "https://globaluserfiles.com/media/186178_7d0924962255075e52fa5d7dc09a1a4b060449e6.jpeg/v1/s/picture-1.jpeg"
+tags:
+  - "imec-"
+  - "g20summit-"
+  - "economiccorridor-"
+  - "middleeastpeace-"
+  - "geopolitics-"
+  - "globaltrade-"
+  - "indiaeurope-"
+  - "strategicdevelopment-"
 ---
 
 During the G20 Summit in New Delhi, India, specifically on September 9, 2023, the President of the United States, Joe Biden, Joe Biden, the Prime Minister of India, Narendra Modi, the Crown Prince of Abu Dhabi, Mohammed bin Zayed Al Nahyan, the King of Jordan, Abdullah II, and the Prime Minister of Israel, Naftali Bennett, signed the economic corridor project that connects India to Europe.

@@ -5,6 +5,9 @@ author: "Filip Benes"
 region: "Libya"
 responses: 0
 summary: "Although in recent years we have often heard reports of the success of General Haftar in his campaign for the political unification of Libya, there is still no"
+category: "Policy Analysis"
+subtitle: "Although in recent years we have often heard reports of the success of General Haftar in his campaign for the political unification of Libya, there is still no"
+image: "https://globaluserfiles.com/media/186178_30086c41bac2c489c37a77a52d7298ff3ec44c22.webp/v1/s/nsplsh_52f810cc4973491aa1f8222b83cb2e06_mv2.webp"
 ---
 
 *
@@ -52,7 +55,9 @@ In May, the United States and Great Britain announced the withdrawal of their di
 The regular vote for the new prime minister was held on June 9, when Ahmad Ma'jtíq was elected by the GNC. At-Tani unexpectedly refused to relinquish his post, and GNC chairman 'Izz ad-Dín al-'Awwámí declared the results in favor of Ma'jtíq null and void. The contentious situation resulted in the presence of two prime ministers. The Supreme Court later challenged the results of the vote and deposed Ma'jtíq. At-Tani held office until elections in June 2014. On May 16, Libyan National Army General Khalifa Haftar announced the formation of the Alliance of Libyan Dignity. Part of the formation of the alliance was the launch of Operation Dignity, which aimed to neutralize Islamist militarist groups in the country. At the same time, however, it was also an attempt to discredit the government in Tripoli, which was labeled as incapable of doing anything about growing extremism.
 
  
+
 ## **The 2014 Elections***
+
  
 
 On June 25, parliamentary elections were held, for the second time in a row, in which 42% of registered voters participated. The clear winner of the election was the coalition against the Muslim Brotherhood and Islamists. At the same time, there was to be a new transformation of the GNC into the House of Representatives (HoR). The President of the United States Barack Obama also congratulated the winners of the elections: "I congratulate the Libyan people on the results of the elections of the new House of Representatives, it is a milestone of their courageous efforts in the transition to full democracy after four decades of dictatorship". Paradoxically, a situation arose where the defeated parties in the GNC refused to give up their rights and recognize the new House of Representatives. Their argument against the winners was the relatively low turnout, as only 630,000 voters cast their ballots. In their support, a handful of re-elected Islamist party representatives declared the GNC the only legitimate assembly and refused to recognize the newly formed HoR.

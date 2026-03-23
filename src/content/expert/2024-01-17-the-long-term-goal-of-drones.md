@@ -5,6 +5,18 @@ author: "Issam Khoury"
 region: "MENA"
 responses: 0
 summary: "\"Iran's advanced drone program, possibly aided by Russia, poses rising threats to regional stability and EU interests, elevating security concerns.\""
+category: "Policy Analysis"
+subtitle: "\"Iran's advanced drone program, possibly aided by Russia, poses rising threats to regional stability and EU interests, elevating security concerns.\""
+image: "https://globaluserfiles.com/media/pxb_1034467_4a1feb13bc9936edc4088892b37dd6c6.jpg/v1/s/pxb_1034467_4a1feb13bc9936edc4088892b37dd6c6.jpg"
+tags:
+  - "irandrones-"
+  - "shahed"
+  - "middleeastsecurity-"
+  - "droneproliferation-"
+  - "regionalinstability-"
+  - "usforeignpolicy-"
+  - "iranrussiaalliance-"
+  - "asymmetricwarfare-"
 ---
 
 **The Iranian political strategy has been characterized by calmness and gradual expansion of its regional influence. **Instead of using its media to showcase its technological and military superiority over Arab governments, Iranian media focused on issues that appeal to the average Muslim audience, with the Palestinian issue at the forefront. In fact, Iranian-funded media has become more supportive of the Palestinian cause than most Arab and even Palestinian media outlets.
@@ -34,7 +46,11 @@ Realistically, groups like Hamas, Islamic Jihad, Hezbollah, and the Houthi rebel
 **Iran may not be inclined to train Iraqi engineers for several reasons, including:**
 
  
-- **The absence of centralized leadership for the Popular Mobilization Forces (PMF) is evident.**- **There is clear competition among the PMF militias to gain loyalty from Tehran. Therefore, Tehran does not want one Iraqi militia to be stronger than the others, so as not to lose the loyalty of the weaker militias.**- **The geographical proximity to Tehran.**- **The presence of clear American influence in Iraq and the possibility of recruiting Washington's agents within those militias.**
+
+- **The absence of centralized leadership for the Popular Mobilization Forces (PMF) is evident.**
+- **There is clear competition among the PMF militias to gain loyalty from Tehran. Therefore, Tehran does not want one Iraqi militia to be stronger than the others, so as not to lose the loyalty of the weaker militias.**
+- **The geographical proximity to Tehran.**
+- **The presence of clear American influence in Iraq and the possibility of recruiting Washington's agents within those militias.**
 
  
 

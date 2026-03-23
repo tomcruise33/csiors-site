@@ -5,6 +5,18 @@ author: "csiors"
 region: "Libya"
 responses: 0
 summary: "Let us navigate the Middle East nuances: Libya halts gas exports to Italy; Marrakech's sparks climate innovation; Saudi Arabia promote arts and culture."
+category: "Policy Analysis"
+subtitle: "Let us navigate the Middle East nuances: Libya halts gas exports to Italy; Marrakech's sparks climate innovation; Saudi Arabia promote arts and culture."
+image: "https://globaluserfiles.com/media/186178_f5b910a92af236647d35a8813d2a3f11bea106ee.jpeg/v1/s/foto-weekly-watch-(8).jpeg"
+tags:
+  - "libya-gas-exports"
+  - "greenstream-pipeline"
+  - "infrastructure-resilience"
+  - "mellitah-gas-complex"
+  - "climate-entrepreneurship"
+  - "cce-hub-marrakech"
+  - "environmental-impact"
+  - "mena-innovation"
 ---
 
 Let us guide you through the Middle East with curated links: insightful analyses and forecasts from top sources on regional complexities.

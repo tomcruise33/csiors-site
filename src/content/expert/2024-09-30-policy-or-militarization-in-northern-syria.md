@@ -5,6 +5,18 @@ author: "Issam Khoury"
 region: "Syria"
 responses: 0
 summary: "The Syrian opposition faces internal conflict and fragmentation, with military factions operating independently and Turkey playing a key facilitating role."
+category: "Policy Analysis"
+subtitle: "The Syrian opposition faces internal conflict and fragmentation, with military factions operating independently and Turkey playing a key facilitating role."
+image: "https://globaluserfiles.com/media/186178_7d99da7dd5cf24bc7abaacf2452084d409e9d10b.png/v1/s/picture-1.png"
+tags:
+  - "syrianopposition-"
+  - "syrianconflict-"
+  - "nationalarmy-"
+  - "militaryfactions-"
+  - "turkeysyria-"
+  - "shamfront-"
+  - "liberationmovement-"
+  - "northernsyria"
 ---
 
 The Syrian political opposition has long suffered from the lack of a military entity committed to its decisions. Despite the existence of a Ministry of Defense in the interim Syrian government formed by the National Coalition of Syrian Revolution and Opposition Forces, some armed factions operate independently with their own decisions and without referring to the directives of the Ministry of Defense. The Minister of Defense or the Prime Minister of the interim Syrian government cannot rein in that military activity; hence, it was necessary to enhance meetings between Syrian political and military leaders to bridge the gaps among them.

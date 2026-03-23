@@ -2,9 +2,21 @@
 title: "The Noise of Assassinations and Nasrallah's Messages"
 date: 2024-03-12
 author: "Issam Khoury"
-region: "MENA"
+region: "Lebanon"
 responses: 0
 summary: "\"Analysis: Hezbollah's moves hint at deeper regional strategies, shaping a future fraught with uncertainty and potential conflict.\""
+category: "Policy Analysis"
+subtitle: "\"Analysis: Hezbollah's moves hint at deeper regional strategies, shaping a future fraught with uncertainty and potential conflict.\""
+image: "https://globaluserfiles.com/media/186178_13ee837e8956dab87c6651ee484f62f0ded5b644.jpeg/v1/s/pexels-jo-kassis-4632796.jpeg"
+tags:
+  - "middleeast-"
+  - "lebanon-"
+  - "geopolitics-"
+  - "hezbollah-"
+  - "security-"
+  - "tensions-"
+  - "peace-"
+  - "strategy-"
 ---
 
 As an observer of military developments in the Middle East, one is daily surprised by news of assassinations of fighters or prominent leaders in the so-called Axis of Resistance and Defiance countries, including Syria, Iraq, Lebanon, Iran, Palestine, and Yemen.
@@ -34,7 +46,10 @@ In light of all these events, the Secretary-General of Hezbollah delivered a war
  
 
 ***Hezbollah's behavior carries three main messages:***
-- **The first, concerning the Lebanese issue**: is to instill fear in the settlers in northern Israel in order to pressure Netanyahu's government to achieve a negotiation that ensures the return of occupied lands to Lebanon, thus portraying Nasrallah as a national hero in Lebanon.- **The second, for the international community:** by demonstrating that Hezbollah has a missile arsenal more important than Hamas, and that all Israeli attacks on the party's weapon depots and the Revolutionary Guard in Syria are a small part of the stored missiles ready to target Israel if Tel Aviv decides to threaten Beirut. This fact is understood by both Israeli and American intelligence, leading the United States to attempt to calm the northern front during the battles in Gaza.- **The third, directed at the Islamic world:** its main goal is to inform the Sunni-majority Arab world that those defending Arab causes are the Shia supported by Iran. Therefore, it is in the interest of Muslim people not to oppose Iranian orientations, even if opposed by their governments.
+
+- **The first, concerning the Lebanese issue**: is to instill fear in the settlers in northern Israel in order to pressure Netanyahu's government to achieve a negotiation that ensures the return of occupied lands to Lebanon, thus portraying Nasrallah as a national hero in Lebanon.
+- **The second, for the international community:** by demonstrating that Hezbollah has a missile arsenal more important than Hamas, and that all Israeli attacks on the party's weapon depots and the Revolutionary Guard in Syria are a small part of the stored missiles ready to target Israel if Tel Aviv decides to threaten Beirut. This fact is understood by both Israeli and American intelligence, leading the United States to attempt to calm the northern front during the battles in Gaza.
+- **The third, directed at the Islamic world:** its main goal is to inform the Sunni-majority Arab world that those defending Arab causes are the Shia supported by Iran. Therefore, it is in the interest of Muslim people not to oppose Iranian orientations, even if opposed by their governments.
 
  
 

@@ -5,6 +5,18 @@ author: "Issam Khoury"
 region: "MENA"
 responses: 0
 summary: "Russia recruits Middle Eastern mercenaries for Ukraine, exploiting them with poor pay, isolated training in Siberia, and strict control measures."
+category: "Policy Analysis"
+subtitle: "Russia recruits Middle Eastern mercenaries for Ukraine, exploiting them with poor pay, isolated training in Siberia, and strict control measures."
+image: "https://globaluserfiles.com/media/186178_9b7e1aa83e5ff10c1cf3834e66be1b07cbc8ee26.webp/v1/s/mercenariessiberia.webp"
+tags:
+  - "middleeast-"
+  - "geopolitics-"
+  - "russia-"
+  - "ukraineconflict-"
+  - "mercenaries-"
+  - "siberia-"
+  - "warstrategy-"
+  - "militaryexploitation-"
 ---
 
 Syrians, Egyptians, Iraqis, and individuals from Central Asia are the backbone of the mercenary fighters brought by Russia to assist in its battles against Ukraine. Many of them have been placed at the forefront of the Ukrainian-Russian front lines, where the Czech-Slovak Institute of Oriental Studies obtained exclusive information indicating the death of several Syrian and Egyptian fighters at the Soledar front in 2023, a devastated city adjacent to Bakhmut Raion, Donetsk Oblast, Ukraine.

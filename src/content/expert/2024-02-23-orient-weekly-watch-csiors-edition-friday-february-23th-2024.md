@@ -2,9 +2,21 @@
 title: "Orient Weekly Watch: CSIORS Edition - Friday, February 23th, 2024"
 date: 2024-02-23
 author: "csiors"
-region: "Libya"
+region: "Ethiopia"
 responses: 0
 summary: "Let us navigate the Middle East nuances: Russia and China in Tripoli; Egypt bought Mediterranean territory; rebuilt schools in Tigrain"
+category: "Policy Analysis"
+subtitle: "Let us navigate the Middle East nuances: Russia and China in Tripoli; Egypt bought Mediterranean territory; rebuilt schools in Tigrain"
+image: "https://globaluserfiles.com/media/186178_2a21e1b60195924d4019bbfcf1a2a8031b6a3e8d.jpeg/v1/s/foto-weekly-watch-(2).jpeg"
+tags:
+  - "china-presence-libya"
+  - "russian-embassy-tripoli"
+  - "cyrenaica-chinese-consortium"
+  - "libya-renewable-infrastructure"
+  - "egypt-uae-35bn-deal"
+  - "ras-el-hekma-development"
+  - "economic-crisis-solution"
+  - "imf-bailout-egypt"
 ---
 
 Let us guide you through the Middle East with curated links: insightful analyses and forecasts from top sources on regional complexities.

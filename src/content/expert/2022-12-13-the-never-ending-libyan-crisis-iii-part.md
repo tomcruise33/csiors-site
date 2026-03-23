@@ -5,6 +5,9 @@ author: "Filip Benes"
 region: "Libya"
 responses: 0
 summary: "In the spring of 2018, there were reports of the possible death of Khalifa Haftar, which were later refuted by his closest associates."
+category: "Policy Analysis"
+subtitle: "In the spring of 2018, there were reports of the possible death of Khalifa Haftar, which were later refuted by his closest associates."
+image: "https://globaluserfiles.com/media/186178_e5ab6493b227b9e0a9ed655f62f0eee748177c28.webp/v1/s/66053a_ccb0521f26e147698de7abf1bf99827b_mv2.webp"
 ---
 
 **Events 2018**

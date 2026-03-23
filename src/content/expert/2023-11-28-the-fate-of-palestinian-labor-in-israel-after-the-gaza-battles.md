@@ -2,9 +2,21 @@
 title: "The fate of Palestinian labor in Israel after the Gaza battles"
 date: 2023-11-28
 author: "Issam Khoury"
-region: "MENA"
+region: "Israel/Palestine"
 responses: 0
 summary: "\"Insight into Palestinian labor in Israel post-Gaza battles, examining economic and political impacts.\""
+category: "Policy Analysis"
+subtitle: "\"Insight into Palestinian labor in Israel post-Gaza battles, examining economic and political impacts.\""
+image: "https://globaluserfiles.com/media/pxb_1921518_c3e4d76c5e21b8df39841faf1db0daaa.jpg/v1/s/pxb_1921518_c3e4d76c5e21b8df39841faf1db0daaa.jpg"
+tags:
+  - "palestinianlabor-"
+  - "israelgazaimpact-"
+  - "economicdivide-"
+  - "laborchallenges-"
+  - "middleeastconflict-"
+  - "gazaaftermath-"
+  - "politicaleconomics-"
+  - "workforcedynamics-"
 ---
 
 Technological advancements and foreign investments, estimated at $22.8 billion, have propelled the Israeli economy to rank tenth globally in 2022. Economic growth reached 4.8%. These numbers are significantly higher when compared to the Palestinian economy, where the Palestinian GDP reached $13.6 billion in 2021[[1]](applewebdata://74E17E39-2371-4B0E-A642-E8E2F6CB965D#_ftn1), equivalent to 2.6% of Israel's total GDP of $ 521.69 billion[[2]](applewebdata://74E17E39-2371-4B0E-A642-E8E2F6CB965D#_ftn2) .
@@ -44,7 +56,9 @@ The massive destruction that targeted the infrastructure of Gaza after the event
 This damage will not only affect the Gaza Strip but will also extend to a section of Palestinian workers residing in the West Bank areas because the Israeli state will be forced to increase its security control over Palestinian workers in its territories, and this will mean:
 
  
-- **Subjecting work permits to higher scrutiny, which requires more time to issue them.**- **Increasing the duration of security inspections at border crossings, which means more time loss for road workers.**
+
+- **Subjecting work permits to higher scrutiny, which requires more time to issue them.**
+- **Increasing the duration of security inspections at border crossings, which means more time loss for road workers.**
 
  
 

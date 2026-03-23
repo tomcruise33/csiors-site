@@ -2,9 +2,21 @@
 title: "Orient Weekly Watch: CSIORS Edition - Friday, January 12th, 2024"
 date: 2024-01-12
 author: "csiors"
-region: "Egypt"
+region: "Turkey"
 responses: 0
 summary: "Let us navigate the Middle East nuances: assistance for Egypt's economy; mineral resources in Saudi Arabia; the agreement to remove mines in the Black Sea."
+category: "Policy Analysis"
+subtitle: "Let us navigate the Middle East nuances: assistance for Egypt's economy; mineral resources in Saudi Arabia; the agreement to remove mines in the Black Sea."
+image: "https://globaluserfiles.com/media/186178_674010f52240927c5488b2344a78b662a7a9ed67.jpeg/v1/s/foto-weekly-watch-(17).jpeg"
+tags:
+  - "turkey"
+  - "egypt"
+  - "saudi-arabia"
+  - "nato"
+  - "egypt-economy"
+  - "president-al-sisi"
+  - "mineral-resources"
+  - "al-khorayef"
 ---
 
 Let us guide you through the Middle East with curated links: insightful analyses and forecasts from top sources on regional complexities.

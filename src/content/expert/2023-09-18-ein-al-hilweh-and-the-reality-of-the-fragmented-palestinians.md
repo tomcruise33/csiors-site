@@ -5,6 +5,18 @@ author: "Issam Khoury"
 region: "Lebanon"
 responses: 0
 summary: "\"Palestinian factions show discord in Lebanon's camps, reflecting varied loyalties and external influences, creating tensions and potential instability.\""
+category: "Policy Analysis"
+subtitle: "\"Palestinian factions show discord in Lebanon's camps, reflecting varied loyalties and external influences, creating tensions and potential instability.\""
+image: "https://globaluserfiles.com/media/186178_9d7b515e86f138b3cc21eb89aeb4a353ea1f1fa1.jpeg/v1/s/fence-3585348_1280.jpeg"
+tags:
+  - "hezbollah"
+  - "palestinianfactions"
+  - "lebanoncamps"
+  - "fatah"
+  - "hamas"
+  - "islamicgroups"
+  - "internalconflict"
+  - "externalinfluence"
 ---
 
 The Palestinian divisions between Fatah and Hamas within the Palestinian territories reflect the reality experienced by Palestinians in all Palestinian diaspora countries. In late June/July 2023, armed clashes erupted in the Ein al-Hilweh camp in Lebanon, resulting in the death of 13 Palestinians and the injury of dozens. This incident brought back to the minds of the Lebanese the issue of loose weapons and confirmed the existence of a Sunni armed force that could play a military role in the event of a Sunni-Shia conflict in Lebanon. These events coincided with several embassies urging their citizens to leave Lebanon.
@@ -14,7 +26,19 @@ The Palestinian divisions between Fatah and Hamas within the Palestinian territo
 The reality of Palestinians in Lebanon According to the statistics of UNRWA in 2017, there are 174,422 Palestinians living in Lebanon. They are distributed in the following camps[[1]](applewebdata://0F94409D-43AC-48B3-ABEE-FD801B5BBAB6#_ftn1):
 
  
-- Beddawi Camp- Burj Barajneh Camp- Burj Shemali Camp- Dbayeh Camp- Ein El Hilweh Camp- El Buss Camp- Mar Elias Camp- Mieh Mieh Camp- Nahr el-Bared Camp- Rashidieh Camp- Shatila Camp- Wavel Camp
+
+- Beddawi Camp
+- Burj Barajneh Camp
+- Burj Shemali Camp
+- Dbayeh Camp
+- Ein El Hilweh Camp
+- El Buss Camp
+- Mar Elias Camp
+- Mieh Mieh Camp
+- Nahr el-Bared Camp
+- Rashidieh Camp
+- Shatila Camp
+- Wavel Camp
 
  
 
@@ -31,13 +55,18 @@ In reality, Lebanon is not a signatory to the 1951 Refugee Convention or the 196
  
 
  
+
 # **Ain al-Hilweh camp**
+
  
 
 Ain al-Hilweh camp is considered the largest Palestinian refugee camp, with an area of approximately 2 square kilometers and a population exceeding sixty thousand individuals. The camp is divided into several neighborhoods, varying in their political and military loyalties. 
 
  
-- The neighborhoods of "As-Sikka," "At-Tawari," "Al-Manshiyya," "As-Safsaf," "Hittin," and "Arab Zubeid" are predominantly supportive of Islamic groups. -  - On the other hand, Fatah movement controls the neighborhoods of "Bustan al-Quds," "Al-Burjaksat," "Taytaba," "Jabal al-Halib," and "At-Tayyara."
+
+- The neighborhoods of "As-Sikka," "At-Tawari," "Al-Manshiyya," "As-Safsaf," "Hittin," and "Arab Zubeid" are predominantly supportive of Islamic groups. 
+-  
+- On the other hand, Fatah movement controls the neighborhoods of "Bustan al-Quds," "Al-Burjaksat," "Taytaba," "Jabal al-Halib," and "At-Tayyara."
 
  
 
@@ -56,27 +85,40 @@ From here, we realize that Fatah is not unified in identity and goal, and the re
 Administratively, a security force was formed in which several factions participated to coordinate the relationship between the Lebanese army and the Palestinians, and it was called "the Joint Palestinian Security Force". However, this force is unable to extend its influence over all Islamic Palestinian factions, especially the extremist ones, which leads to repeated conflicts within the camp. This caused the Lebanese army to establish military checkpoints at the entrances of this camp, and the most prominent of these checkpoints are:
 
  
-- Hajsba checkpoint- Hajar Al-Tahatani checkpoint- Hajar Al-Fouqani checkpoint- Hajar Al-Baraksat checkpoint- Hajar Taytaba checkpoint- Hajar Al-Naba'a checkpoint- Hajar Jarrab Al-Sim checkpoint
+
+- Hajsba checkpoint
+- Hajar Al-Tahatani checkpoint
+- Hajar Al-Fouqani checkpoint
+- Hajar Al-Baraksat checkpoint
+- Hajar Taytaba checkpoint
+- Hajar Al-Naba'a checkpoint
+- Hajar Jarrab Al-Sim checkpoint
 
  
 
 The Islamic group inside Ain al-Hilweh camp is divided into several political currents, and all these currents have military and political wings. The most prominent Islamic forces are:
 
  
+
 ## **Hamas Movement **
+
  
 
 It is the Palestinian branch of the Muslim Brotherhood movement. This movement views all Islamic organizations, including Shia ones, as products of its ideological thinking. This movement is characterized by having two factions:
 
  
-- Political: Actively led by Khaled Mashal, who is based in Qatar.- Military: Led by the leader Salah al-Arouri[[4]](applewebdata://0F94409D-43AC-48B3-ABEE-FD801B5BBAB6#_ftn4), who resides in the southern suburbs of Lebanon and is known for his strong ties with the Lebanese Hezbollah organization.
+
+- Political: Actively led by Khaled Mashal, who is based in Qatar.
+- Military: Led by the leader Salah al-Arouri[[4]](applewebdata://0F94409D-43AC-48B3-ABEE-FD801B5BBAB6#_ftn4), who resides in the southern suburbs of Lebanon and is known for his strong ties with the Lebanese Hezbollah organization.
 
  
 
 This movement presents itself as an Islamic alternative to the Fatah movement and justifies its armament for the purpose of defending Palestinians against Israel. Additionally, this movement seeks to expand its popular base in Lebanese refugee camps and in the West Bank, to become the most influential Palestinian force. This would enhance its negotiating position with Israel to obtain a long-term ceasefire, ensuring absolute control over the Gaza Strip, followed by the West Bank areas.
 
  
+
 ## **Ansar Group**[**[5]**](applewebdata://0F94409D-43AC-48B3-ABEE-FD801B5BBAB6#_ftn5)
+
 It is a Salafi movement, not concerned with the Islamic nation project adopted by the Muslim Brotherhood. It focuses on the unity of Palestinians within a legitimate Islamic project inside Palestine. Therefore, this organization avoided engaging in battles with Islamic factions within the Ain al-Hilweh camp. 
 
  
@@ -88,7 +130,9 @@ It is led by leader Ibrahim al-Sa'di[[6]](applewebdata://0F94409D-43AC-48B3-ABEE
 Ibrahim al-Sa'di was arrested in Syrian prisons for five years on charges of organizing operations to assist Al-Qaeda. He was released in 2012 and has since settled in the Ain al-Hilweh camp. He benefited from his father's popularity within Salafi circles and became one of the prominent Palestinian Salafi leaders.
 
  
+
 ## **Islamic Jihad Movement **
+
  
 
 This movement began its call as an armed group, believing in the necessity of launching armed attacks against Israel to protect Palestinians. It soon transformed into a social and advocacy movement aimed at bridging the divisions among different factions of the Palestinian society in Lebanese refugee camps. One of the prominent leaders of this organization is "Jamal Khattab[[7]](applewebdata://0F94409D-43AC-48B3-ABEE-FD801B5BBAB6#_ftn7)" who is a preacher and the imam of Al-Nur Mosque in Ain al-Hilweh camp.
@@ -98,7 +142,9 @@ This movement began its call as an armed group, believing in the necessity of la
 Khattab, along with other activists of his movement, seeks to unite the Palestinian ranks and keep Palestinian extremists away from the media spotlight, thus contributing to improving the image of Palestinian Muslims in the eyes of the Lebanese public, who oppose their presence.
 
  
+
 ## **Islamic Jihad Movement**[**[8]**](applewebdata://0F94409D-43AC-48B3-ABEE-FD801B5BBAB6#_ftn8)**:**
+
  
 
 This movement began its activities within a completely similar approach to the Muslim Brotherhood, but the Iranian side was able to exploit this movement to become an advanced weapon for Tehran within Israel and in the Palestinian refugee camps. To the extent that the field leaders of this movement in the Ein al-Hilweh camp do not have the authority to lead the movement within the camp, but they are committed to the instructions of the leader Ziyad Rashdi al-Nakhalah[[9]](applewebdata://0F94409D-43AC-48B3-ABEE-FD801B5BBAB6#_ftn9),  residing in Damascus. Al-Nakhalah has been listed on the US terrorism lists since 2014.
@@ -108,7 +154,9 @@ This movement began its activities within a completely similar approach to the M
 The Islamic Jihad Movement distinguishes itself by its members' distance from drug trafficking, arms trade, and sex trade, which are engaged in by most active factions in political Islamic movements. Therefore, many leaders in this movement are very committed to Islamic Sharia law, allowing them to recruit a large portion of the religious Palestinian groups.
 
  
+
 ## **Muslim Youth Movement **
+
  
 
 Currently led by Salafi leader "Haitham Shaabi".
@@ -118,16 +166,19 @@ Currently led by Salafi leader "Haitham Shaabi".
 The Muslim Youth Movement is classified as a radical Salafi organization that emerged from the merger of three groups from the political Islam movements, namely:
 
  
+
 - **Fatah al-Islam Group**
 
 The remnants of the Fatah al-Islam organization after their escape from the Nahr al-Bared camp.
 
  
+
 - **Jund al-Sham Group**
 
 An extremely extremist group led by the leader "Osama Shihabi[[10]](applewebdata://0F94409D-43AC-48B3-ABEE-FD801B5BBAB6#_ftn10)", who is also the leader of "Fatah al-Islam" in Lebanon, succeeding the former leader of the organization, Abdul Rahman Awad[[11]](applewebdata://0F94409D-43AC-48B3-ABEE-FD801B5BBAB6#_ftn11).
 
  
+
 - **Bilal Badr Group**
 
 An extremist group of radical extremists led by the leader "Bilal Badr". The number of members of this group does not exceed forty, but they have received high-level training in the Syrian Zabadani areas by elements from Hezbollah.
@@ -141,7 +192,9 @@ The three organizations are linked to the military intelligence branch in Damasc
 The three organizations caused military clashes against Fatah movement in 2017, which led to Fatah expelling them from the "Al-Tireh" neighborhood. This group was not eliminated due to the intervention of leader "Jamal Suleiman" to secure a safe exit for them at that time. Hence, we realize that the Muslim Youth Movement is an advanced front for the "Ansar Allah" group inside Ain al-Hilweh camp.
 
  
+
 ## **The group "Ansar Allah" **
+
  
 
 This group was founded by the leader Jamal Suleiman[[12]](applewebdata://0F94409D-43AC-48B3-ABEE-FD801B5BBAB6#_ftn12), and Suleiman is known as a leader who defected from the Fatah movement. He was supported by the Syrians during the Syrian guardianship over Lebanon. With the Syrian withdrawal from Lebanon, he sought to organize several radical extremist youths to form his armed organization, which participated in many battles with the Syrian army. Jamal Suleiman is known for his strong relationship with Hezbollah, to the extent that we imagine him as Iran's first man in Ain al-Hilweh camp.

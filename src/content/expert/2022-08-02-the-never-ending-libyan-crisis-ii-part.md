@@ -5,9 +5,13 @@ author: "Filip Benes"
 region: "Libya"
 responses: 0
 summary: "Libya witnessed the formation of two governments in August 2014, which led to a sharp escalation of violence in the country and fundamentally disabled the"
+category: "Policy Analysis"
+subtitle: "Libya witnessed the formation of two governments in August 2014, which led to a sharp escalation of violence in the country and fundamentally disabled the"
+image: "https://globaluserfiles.com/media/186178_30086c41bac2c489c37a77a52d7298ff3ec44c22.webp/v1/s/nsplsh_52f810cc4973491aa1f8222b83cb2e06_mv2.webp"
 ---
 
 ## **Second Civil War**
+
  
 
 Libya witnessed the formation of two governments in August 2014, which led to a sharp escalation of violence in the country and fundamentally disabled the functioning of the state, including its individual apparatuses. Extremist groups took advantage of this situation, which strengthened their local position and became a growing threat to the unstable state. This situation caused a fatal political crisis including social and economic issues. Between June 2014 and August 2015, an estimated 3,700 people were killed in various conflicts and over 418,000 were forced to flee their homes. The majority of the population was denied basic human needs, leading to an even more rapid decline in living standards. The problems mainly related to the availability of medical care, electricity and drinking water supplies or schooling. A major problem was also the damaged infrastructure, which made it impossible to fight the radicals more effectively. The country's economy became completely dependent on oil production, the performance of which was at a lower level at the time. In October 2014, UN Secretary-General Ban Ki-moon visited Libya and called for a ceasefire, saying: "I am convinced that all problems in Libya can be solved through dialogue. However, we understand that the journey will be long and difficult. Building peace is always difficult.”
@@ -17,7 +21,9 @@ Libya witnessed the formation of two governments in August 2014, which led to a 
 Another problem that emerged in Libya in October 2014 was the so-called Islamic State (ISIS) whose ranks were mainly composed of returnees from Syria. ISIS first made itself known at the end of October by capturing the coastal city of Darna in eastern Libya. Another act that filled the headlines was the demonstrative execution of 21 captured Egyptian Copts on the seashore. Already in 2015, ISIS captured the city of Sirta in western Libya. This caused further escalation of the problem, as it threatened to go to war with Egypt. Although this did not happen, Egypt later sided with Haftar, which was quite predictable given the nature of his rule.
 
  
+
 ## **Libyan Political Agreement**
+
  
 
 In October 2015, the UN Special Envoy for Libya (UNSMIL) Bernardino León initiated the first meeting of representatives of the GNC and the HoR. The purpose of the meeting was to agree on cooperation between the opposing parties. However, the assumptions of cooperation were rejected on both sides. The terms were again revised by GNC Prime Minister al-Sarraj and subsequently approved by the UN. The two sides met again in the Moroccan as-Schirat, where they finally signed the Libyan Political Agreement on December 17. According to the articles of the agreement, all executive power was to pass under the newly created Presidential Council (PC), the Government of National Accord (GNA) and the Supreme Council of State (HCS). At the same time, new elections were to be called in the next 3 years. The nine-member Presidential Council was established as the highest body proposing ministers to the GNA. According to the plan, the upper chamber of the parliament was to be formed from the HoR and the lower chamber from the GNC. The majority of states immediately recognized the new PC, GNA and HCS as the sole sovereign body of Libya. With immediate effect, the eastern government with the support of Prime Minister al-Thini's HoR, which refused to approve the full extent of the powers of the newly established GNA, was to cease to be recognized. The Supreme Council of State (HCS) was only established in early 2016 as a successor to the GNC, including most of the original MPs, thus ending the original parliament.

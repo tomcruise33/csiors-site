@@ -5,6 +5,18 @@ author: "Jan Záhořík"
 region: "Libya"
 responses: 0
 summary: "\"Academic exploration highlights Libya's dichotomy of division and optimism, showcasing societal resilience and the anticipation of a united, hopeful future.\""
+category: "Policy Analysis"
+subtitle: "\"Academic exploration highlights Libya's dichotomy of division and optimism, showcasing societal resilience and the anticipation of a united, hopeful future.\""
+image: "https://globaluserfiles.com/media/186178_f4992a685df43fb9289afd0c99543759f2998f60.jpeg/v1/s/20230430_164045.jpeg"
+tags:
+  - "libya-"
+  - "recovery-"
+  - "division-"
+  - "optimism-"
+  - "resilience-"
+  - "unity-"
+  - "hope"
+  - "libyarecovery-"
 ---
 
 **Until 2011, Libya enjoyed relatively stable environment and prosperity under the long-term rule of Colonel Mu’amar Qaddafi.** Since 1969 when Qaddafi took power after the coup which overthrew the Sanusi dynasty, Libya became one of the most economically successful countries in Africa. This was facilitated by a combination of two factors: large deposits of oil and low number of inhabitants. These factors allowed Qaddafi to sponsor free education and health care and minimize dissent and opposition coming primarily from the Islamists and the remnants of what used to be the Sanussiya order. 

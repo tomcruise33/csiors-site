@@ -5,6 +5,18 @@ author: "Issam Khoury"
 region: "Syria"
 responses: 0
 summary: "Power shifts within the Syrian regime reveal strategic maneuvers by Bashar and Maher al-Assad, balancing economic influence and military dominance."
+category: "Policy Analysis"
+subtitle: "Power shifts within the Syrian regime reveal strategic maneuvers by Bashar and Maher al-Assad, balancing economic influence and military dominance."
+image: "https://globaluserfiles.com/media/pxb_2702724_d12bbea706e7822dda034d659d298426.jpg/v1/s/pxb_2702724_d12bbea706e7822dda034d659d298426.jpg"
+tags:
+  - "syria-"
+  - "middleeastpolitics-"
+  - "assadregime-"
+  - "basharalassad-"
+  - "maheralassad-"
+  - "syrianeconomy-"
+  - "powerdynamics-"
+  - "syrianconflict"
 ---
 
 The role exchange among Syrian state officials has become a familiar scenario for the Syrian people. Since Bashar al-Assad assumed power, a balance has existed between the economic figures associated with Maher al-Assad and those aligned with Bashar. Maher al-Assad strategically employed traditional Damascus merchants, such as Mohammed Hamcho[[1]](applewebdata://4CEB246E-1696-494B-91B5-C4A332939B13#_ftn1), as fronts for his wealth, while also relying on certain smugglers for illicit operations, including Wisam al-Assad and the Barakat family from the Syrian coast, as well as the Berri and Qatirji families in Aleppo and its countryside.

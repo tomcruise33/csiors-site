@@ -5,6 +5,18 @@ author: "Issam Khoury"
 region: "Syria"
 responses: 0
 summary: "\"Tensions rise as Russia and Turkey navigate complex alliances in Syria and Ukraine, balancing national interests amid growing regional and global conflicts.\""
+category: "Policy Analysis"
+subtitle: "\"Tensions rise as Russia and Turkey navigate complex alliances in Syria and Ukraine, balancing national interests amid growing regional and global conflicts.\""
+image: "https://globaluserfiles.com/media/pxb_279015_bc1484e4ffd0b7dd0ff23d160df60457.jpg/v1/s/pxb_279015_bc1484e4ffd0b7dd0ff23d160df60457.jpg"
+tags:
+  - "nationalsecurity-"
+  - "middleeasttensions-"
+  - "geopolitics-"
+  - "syriacrisis-"
+  - "ukraineconflict-"
+  - "russiaturkeyrelations-"
+  - "globalpolitics-"
+  - "nato-"
 ---
 
 (Ukrainian intelligence recruited armed men from the "Hay'at Tahrir al-Sham" organization in Idlib province, northwestern Syria, to carry out operations against Russian forces) said Russian Foreign Minister Sergey Lavrov on September 12, 2024.

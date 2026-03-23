@@ -5,6 +5,15 @@ author: "Issam Khoury"
 region: "MENA"
 responses: 0
 summary: "\"Analyzing Iran's missile response to the \"Kerman\" attack, the text explores strategic motives, regional impacts, and U.S. policy implications.\""
+category: "Policy Analysis"
+subtitle: "\"Analyzing Iran's missile response to the \"Kerman\" attack, the text explores strategic motives, regional impacts, and U.S. policy implications.\""
+image: "https://globaluserfiles.com/media/186178_0d5ca5dfff38938c019e48432baefd48dd61c2c8.jpeg/v1/s/32307.jpeg"
+tags:
+  - "geopolitics-"
+  - "iranretaliation-"
+  - "uspolicy-"
+  - "regionalsecurity-"
+  - "election2024"
 ---
 
 *
@@ -26,7 +35,10 @@ Of course, Joel's tweet came after Iran launched 24 missiles targeting three are
  
 
  
-- The stronghold of the terrorist group ISIS in the Idlib region of Syria.- A Mossad spy headquarters in the Kurdistan region of Iraq.- Strongholds of terrorist groups in other occupied areas within Syrian territory [[3]](#_ftn3).
+
+- The stronghold of the terrorist group ISIS in the Idlib region of Syria.
+- A Mossad spy headquarters in the Kurdistan region of Iraq.
+- Strongholds of terrorist groups in other occupied areas within Syrian territory [[3]](#_ftn3).
 
  
 

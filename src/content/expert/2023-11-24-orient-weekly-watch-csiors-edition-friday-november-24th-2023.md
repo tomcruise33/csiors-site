@@ -2,9 +2,12 @@
 title: "Orient Weekly Watch: CSIORS Edition - Friday, November 24th, 2023"
 date: 2023-11-24
 author: "csiors"
-region: "MENA"
+region: "Jordan"
 responses: 0
 summary: "Let us navigate the Middle East's nuances: Lybian market; Saudi Arabia's Vision for 2030; Jordan looks for non-conventional water resources."
+category: "Policy Analysis"
+subtitle: "Let us navigate the Middle East's nuances: Lybian market; Saudi Arabia's Vision for 2030; Jordan looks for non-conventional water resources."
+image: "https://globaluserfiles.com/media/186178_f847ce5d4051502ee4568e5fa76c86218f142312.png/v1/s/foto-weekly-watch-(27).png"
 ---
 
 Let us guide you through the Middle East with curated links: insightful analyses and forecasts from top sources on regional complexities.

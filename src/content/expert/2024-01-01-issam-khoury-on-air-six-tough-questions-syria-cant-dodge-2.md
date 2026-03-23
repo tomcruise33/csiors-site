@@ -1,5 +1,5 @@
 ---
-title: "CSIORS Senior Advisor Expounds on U.S. Stance in Syria during Syria TV Segment"
+title: "Issam Khoury on Air: Six Tough Questions Syria Can’t Dodge"
 date: 2024-01-01
 author: "Issam Khoury"
 region: "Syria"

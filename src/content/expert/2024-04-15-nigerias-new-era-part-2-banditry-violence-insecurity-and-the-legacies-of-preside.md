@@ -5,6 +5,17 @@ author: "Jan Záhořík"
 region: "Nigeria"
 responses: 0
 summary: "Dive into the roots of Nigeria's insecurity and the impact of Buhari's policies in \"Nigeria's New Era Part 2\""
+category: "Policy Analysis"
+subtitle: "Dive into the roots of Nigeria's insecurity and the impact of Buhari's policies in \"Nigeria's New Era Part 2\""
+image: "https://globaluserfiles.com/media/186178_d8387a857baabaa9915316a12f6c08286168c89e.jpeg/v1/s/20210828_141228.jpeg"
+tags:
+  - "nigeria-"
+  - "westafrica-"
+  - "buharilegacy-"
+  - "insecurity-"
+  - "violence-"
+  - "banditry-"
+  - "socioeconomicissues-"
 ---
 
 For those who remember, twenty years ago it was possible to travel freely throughout Nigeria and explore the wonders and treasures of this vast and magnificent country, whose wealth is greater than the rest of West Africa put together. Twenty years later, it is almost impossible to travel anywhere except a few southern regions without fear of being kidnapped, robbed, harassed or killed. Many people in Nigeria blame the Buhari regime for 'making things worse' in terms of corruption, security and violence. Muhamadou Buhari was Nigeria's 7th (1983-1985) and 15th (2015-2023) president, whose first term was marked by authoritarianism and repression, giving rise to the term Buharism. Thirty years later, he was re-elected, defeating incumbent President Goodluck Jonathan, the first time an incumbent president had lost an election after his first term.
@@ -109,4 +120,5 @@ The truth is that the poor education system and the fact that millions of childr
 [[8]](#_ftnref8) Ideyi, N. (2008). The root cause of violence in Nigeria: The Niger Delta crisis, a reference point. OGIRISI: A New Journal of African Studies*, *5*, 85-109.
 
  
+
 ## [[9]](#_ftnref9) Raji, M. (2024). Banditry is rebellion against neglect of poor people in North — Buhari’s ex-minister, Shittu. [https://www.vanguardngr.com/2024/03/banditry-is-rebellion-against-neglect-of-poor-people-in-north-buharis-ex-minister-shittu/](https://www.vanguardngr.com/2024/03/banditry-is-rebellion-against-neglect-of-poor-people-in-north-buharis-ex-minister-shittu/)

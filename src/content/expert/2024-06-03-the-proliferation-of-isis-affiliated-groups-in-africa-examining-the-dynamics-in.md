@@ -5,6 +5,18 @@ author: "Fuat Emir Şefkatli"
 region: "Sahel"
 responses: 0
 summary: "\"ISIS expands further in the Sahel, Mozambique, and Puntland, leveraging propaganda and exploiting governance issues to strengthen control.\""
+category: "Policy Analysis"
+subtitle: "\"ISIS expands further in the Sahel, Mozambique, and Puntland, leveraging propaganda and exploiting governance issues to strengthen control.\""
+image: "https://globaluserfiles.com/media/pxb_696566_15730881f26e3340a8c43476b0058224.jpg/v1/s/pxb_696566_15730881f26e3340a8c43476b0058224.jpg"
+tags:
+  - "governance-"
+  - "sahel-"
+  - "security-"
+  - "africa-"
+  - "terrorism-"
+  - "isis-"
+  - "mozambique-"
+  - "puntland-"
 ---
 
 Recent hikes in terrorist activity in specific regions of Africa are prominently reflected in numerous reports by regional and international organizations. The relevant UN report highlights that groups affiliated with Al-Qaeda and ISIS are expanding, particularly in the Sahel region, the eastern part of the continent (Puntland, Semi-Autonomous Region of Somalia), and the south (Mozambique). According to the report, ISIS in the Greater Sahara (ISGS) in Mali, Burkina Faso, and Niger, the ISIS Somalia in Puntland, and ISIS-affiliated Ansar al-Sunna in Mozambique have seen a notable increase in attacks and violent actions since the first quarter of 2024.

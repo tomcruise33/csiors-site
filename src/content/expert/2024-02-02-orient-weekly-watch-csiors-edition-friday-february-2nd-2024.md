@@ -5,6 +5,18 @@ author: "csiors"
 region: "Libya"
 responses: 0
 summary: "Let us navigate the Middle East nuances: a development in Libya; Algerian go away from France; Durra gas field dispute ended."
+category: "Policy Analysis"
+subtitle: "Let us navigate the Middle East nuances: a development in Libya; Algerian go away from France; Durra gas field dispute ended."
+image: "https://globaluserfiles.com/media/186178_fc7371ebccf402267689a03eee3053ff710b498a.jpeg/v1/s/foto-weekly-watch-(32).jpeg"
+tags:
+  - "middleeast-"
+  - "middle-east-"
+  - "libya-stability"
+  - "french-algerian"
+  - "religiousfreedom"
+  - "migration-challenges"
+  - "immigration-law"
+  - "durra-gas-field"
 ---
 
 Let us guide you through the Middle East with curated links: insightful analyses and forecasts from top sources on regional complexities.

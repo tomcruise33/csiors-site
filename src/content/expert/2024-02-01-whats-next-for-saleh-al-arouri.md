@@ -5,6 +5,18 @@ author: "Issam Khoury"
 region: "Lebanon"
 responses: 0
 summary: "\"Assassination in Lebanon stirs tensions; Hezbollah may respond. Risks of regional escalation and internal division loom, reshaping security dynamics.\""
+category: "Policy Analysis"
+subtitle: "\"Assassination in Lebanon stirs tensions; Hezbollah may respond. Risks of regional escalation and internal division loom, reshaping security dynamics.\""
+image: "https://globaluserfiles.com/media/pxb_3698938_8184503669007da7c7d8d38dd777a7db.jpg/v1/s/pxb_3698938_8184503669007da7c7d8d38dd777a7db.jpg"
+tags:
+  - "middleeastpolitics-"
+  - "lebanoncrisis-"
+  - "hezbollahresponse-"
+  - "regionaltensions-"
+  - "securitydynamics-"
+  - "assassinationfallout-"
+  - "geopoliticalshifts-"
+  - "strategicimplications"
 ---
 
 **"Any assassination targeting any citizen in Lebanon, regardless of their nationality, will be met with a strong response from Hezbollah****"**[[1]](#_ftn1). This statement was originally part of a militant speech delivered by the Secretary-General of Hezbollah on August 28, 2023.

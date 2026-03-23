@@ -5,6 +5,18 @@ author: "Jan Záhořík"
 region: "Sahel"
 responses: 0
 summary: "\"Opinion Column: The Sahel Shift - Unpacking the End of French Dominance in Africa and the Rise of New Global Players.\""
+category: "Policy Analysis"
+subtitle: "\"Opinion Column: The Sahel Shift - Unpacking the End of French Dominance in Africa and the Rise of New Global Players.\""
+image: "https://globaluserfiles.com/media/186178_8bf4f2dd0517da41130358898422fed6ff28bae4.jpeg/v1/s/img_20230828_124033_mp.jpeg"
+tags:
+  - "turkey"
+  - "globaldynamics-"
+  - "sahelshift-"
+  - "russia"
+  - "china"
+  - "endfrenchrule-"
+  - "riseofchina-"
+  - "turkeyinafrica-"
 ---
 
 At the beginning, I shall say this piece is meant to be rather an opinion column or short essay based on my experience from several African countries (not only) in the Sahel region, and as a researcher and consultant. Readers may and may not agree with what is being said here. This essay is about why France (and possibly the West as such) is losing the game in many parts of Africa, what the historical roots of this situation might be and how the political, diplomatic and economic context keeps changing (not only) in the Sahel region, and how the dominant position of France is being replaced by China, Turkey, Russia, and other external powers. This essay is meant to be a realistic description and analysis of events taking place in Africa, nothing more. And more detailed pieces will follow. 

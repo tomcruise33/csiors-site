@@ -5,6 +5,9 @@ author: "Issam Khoury"
 region: "Syria"
 responses: 0
 summary: "Four armored vehicles flying the American flag, accompanied by combat units of the Syrian Democratic Forces, headed on December 2, 2022 to the vicinity of the"
+category: "Policy Analysis"
+subtitle: "Four armored vehicles flying the American flag, accompanied by combat units of the Syrian Democratic Forces, headed on December 2, 2022 to the vicinity of the"
+image: "https://globaluserfiles.com/media/186178_465320f3fd6bb529e1c5d493755bc3cca16fefd2.webp/v1/s/11062b_2057f64f1de14f5ba2aa52292de502ca_mv2.webp"
 ---
 
 Four armored vehicles flying the American flag, accompanied by combat units of the Syrian Democratic Forces, headed on December 2, 2022 to the vicinity of the Al-Malikiyah "Derik" area in northeastern Syria. Their aim was monitoring the Turkish-Syrian border. A similar patrol went to monitor the Syrian-Iraqi border.
@@ -22,8 +25,10 @@ This security activity comes after reducing the work of the American patrols fro
         
 
             
+
 ## **The enemies of the Autonomous Administration of North and East Syria**
  
+
 Turkey accused the Kurdistan Workers' Party (PKK) of carrying out the terrorist attack on November 13, 2022. Turkish investigations showed that the perpetrator of the terrorist attack, "Ahlam al-Bashir [[1]]( https://www.hurriyetdailynews.com/perpetrator-of-istanbul-terror-attack-sent-to-courthouse-178603)", was of Syrian origin and had received training from Kurdish terrorist groups in the city of Kobani [[2]](https://manage.wix.com/dashboard/ce2b32ac-7f73-4f26-878d-3d523c7c3149/blog/create-post?referralInfo=sidebar&lang=en#/_ftnref2) to carry out operation that claimed the lives of six people on “Istiklal” street, which is the vital heart of Istanbul [[3]](https://twitter.com/TRTArabi/status/1592102713772322816?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1592102713772322816%7Ctwgr%5E11ab9aa358d29cb35fa3442236bc456fdb011535%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fwww.alquds.co.uk%2FD985D986D981D8B0D8A9-D8AAD981D8ACD98AD8B1-D8A5D8B3D8B7D986D8A8D988D984-D8AAD8B9D8AAD8B1D981-D8A8D8A7D986D8AAD985D8A7D8A6D987D8A7-D984%2F).
 
  
@@ -57,7 +62,9 @@ The project of democratic self-administration in northeastern Syria is a project
  
 
  
+
 ## **The responses of the Autonomous Administration of North and East Syria**
+
  
 
 Saleh Muslim, who is the most prominent leader of the Democratic Union Party, announced in an interview with the journalist Jazeel Khoury on Sky News [[7]](https://www.youtube.com/watch?v=Rh6sfAyK2Zo) on November 27, 2022, that the perpetrator of the attack was of Palestinian origin, not Kurdish, and that three of her brothers were affiliated with ISIS, and were killed in the areas of Manbij, Raqqa, and Iraq at different times. As for her fourth brother, he is one of the fighters of the Turkish-backed opposition factions, which means that ISIS is the one behind the attack.
@@ -75,8 +82,10 @@ Mazloum Abdi, commander of the Syrian Democratic Forces, announced in a [tweet[8
 Actually, the Syrian Democratic Forces consist of different ethnic formations such as Syriacs, Assyrians, and some [Arab tribal[9]](https://www.youtube.com/watch?v=9s9BVoEktxE) components that declare their hostility to Turkish interventions, but the greatest clarity in the Syrian Democratic Forces is for the Kurds, and the Kurds always try to portray Turkey as an enemy whose only goal is to eliminate the Kurds, as well This was stated by the Kurdish writer Hussein Omar on the [Round Table[10]](https://www.youtube.com/watch?v=_g9KCdXipGE) program on November 21, 2022 on Al-Yaum TV channel[[11]](https://alyaumtv.net/).
 
  
+
 ## **Russian position**
  
+
 I24 Arabic TV channel [[12]]( https://twitter.com/i24NEWS_AR/status/1598001725369188352), announced in its bulletin on November 30, 2022, that Ibrahim Kalin, "the spokesman for the Turkish presidency," stated that the Syrian government is aware of and approves of the Turkish military operation against the Syrian Democratic Forces, as the same report indicated about Russian-Turkish coordination leading to a withdrawal The Syrian Democratic Forces from some areas, provided that the void is filled by the Fifth Corps forces, affiliated with the Syrian army, which makes this process a continuation of the Sochi agreement (Russian-Iranian-Turkish), from which Russia aims to re-float Assad with the regional parties.
 
  
@@ -112,7 +121,9 @@ In fact, for the Turkish plan to succeed, Ankara is calling on Russia and the Un
  
 
  
+
 ## **Possibilities of ground incursion**
+
  
 
 The ground incursion into northeastern Syria will not be easy for Turkey without an international “Russian-American” state of agreement. Turkey has always sought to pass the safe zone project south of its borders, but the international powers were not satisfied with this project, because it would annoy the Kurds, the partners of the United States of America. in the anti-terrorism project.
@@ -138,7 +149,9 @@ Turkey seeks, through its intensive air strikes on the villages and military sit
 Since the Kurds do not possess air defense systems, their only dependence is on the tunnels, and this will certainly increase the cost of the ground battle for the national army. Hence, the Turkish government sought, through its Arab media channels, to broadcast a mobilizing discourse showing that the battles of Tal Rifaat, Manbij, and Ayn al-Arab, are battles in the interest of the Syrian Arabs, whom the “Autonomous Administration of North and East Syria" government does not want them, and the access of the Syrian Arabs to these areas will mean the provision of housing havens and wide job opportunities for the displaced Syrians residing in Turkey.
 
  
+
 ## **Quiet American rejection**
+
  
 
 John Kirby, a spokesperson for the White House National Security Council, announced on December 8, 2022, that his country was clear with Turkey about the dangers of its military operations in northwestern Syria, even as Washington supports Ankara's right to defend itself.
@@ -153,7 +166,9 @@ From here we understand that the Americans are mainly interested in not exposing
  
 
  
+
 ## **The conclusion**
+
  
 
 The Russians, who dominate the area east of the Euphrates, are interested in the Syrian regime forces recapturing the areas of Manbij and Tall Rifat from the Kurds, and they do not mind at all that the Turks obtain the Kobani region “Ayn al-Arab” to connect the areas of Tal Abyad and Jarabulus, which are under the control of the Turkish-backed Syrian National Army. Or to hand over all those areas to the Syrian army, through a consensus between Turkey and Syria based on the Adana agreement, provided that the fruit of this project is a guarantee of Turkey’s security.

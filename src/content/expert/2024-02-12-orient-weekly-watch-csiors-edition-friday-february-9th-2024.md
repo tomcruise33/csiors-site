@@ -2,9 +2,21 @@
 title: "Orient Weekly Watch: CSIORS Edition - Friday, February 9th, 2024"
 date: 2024-02-12
 author: "csiors"
-region: "Egypt"
+region: "Morocco"
 responses: 0
 summary: "Let us navigate the Middle East nuances: Egypt's Informal Market; first african fossile exhibition; Tehran media office."
+category: "Policy Analysis"
+subtitle: "Let us navigate the Middle East nuances: Egypt's Informal Market; first african fossile exhibition; Tehran media office."
+image: "https://globaluserfiles.com/media/186178_edc35ba962ecf7dfb2271932be9fa64ae4775f77.jpeg/v1/s/foto-weekly-watch-(33).jpeg"
+tags:
+  - "rumors-uae-investments"
+  - "dollar-drop"
+  - "imf-visit-egypt"
+  - "gold-price-fluctuations"
+  - "fez-national-library-morocco"
+  - "fossil-heritage-exhibition"
+  - "africa-cradle-humankind"
+  - "scientific-research-collaboration"
 ---
 
 Let us guide you through the Middle East with curated links: insightful analyses and forecasts from top sources on regional complexities.

@@ -5,6 +5,9 @@ author: "Issam Khoury"
 region: "Syria"
 responses: 0
 summary: "Since the outbreak of the Syrian revolution, the Syrian regime has consistently attempted to attribute numerous violations committed against civilians to the"
+category: "Policy Analysis"
+subtitle: "Since the outbreak of the Syrian revolution, the Syrian regime has consistently attempted to attribute numerous violations committed against civilians to the"
+image: "https://globaluserfiles.com/media/186178_ddffef31adb2b47bc1490cff32e74ddbbe21edae.png/v1/s/xx.png"
 ---
 
 Since the outbreak of the Syrian revolution, the Syrian regime has consistently attempted to attribute numerous violations committed against civilians to the Islamic State organization. This organization has become synonymous with inhumane acts, leading the international community to readily criticize it without further scrutinizing the underlying violations. The ease with which this criticism is accepted stems from the significant threat the Islamic State poses to various countries' national security.

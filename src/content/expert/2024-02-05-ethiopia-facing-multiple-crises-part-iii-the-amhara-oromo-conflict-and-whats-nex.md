@@ -5,6 +5,18 @@ author: "Jan Záhořík"
 region: "Ethiopia"
 responses: 0
 summary: "\"Exploring the critical Amhara-Oromo conflict amidst Ethiopia's looming crises, highlighting ethnic tensions, economic challenges, and uncertain future.\""
+category: "Policy Analysis"
+subtitle: "\"Exploring the critical Amhara-Oromo conflict amidst Ethiopia's looming crises, highlighting ethnic tensions, economic challenges, and uncertain future.\""
+image: "https://globaluserfiles.com/media/186178_b04617fa2065a84deeeabcc2ac45fe2873681cf2.jpeg/v1/s/20230403_161426.jpeg"
+tags:
+  - "regionaltensions-"
+  - "-ethiopianconflict-"
+  - "amharaoromo-"
+  - "politicalunrest-"
+  - "ethnicfederalism-"
+  - "crisisinethiopia-"
+  - "humanitariancrisis-"
+  - "ethiopianpolitics-"
 ---
 
 **The War in Tigray which has affected the whole country has in one way or another metastasized into series of other conflicts and tensions.** 

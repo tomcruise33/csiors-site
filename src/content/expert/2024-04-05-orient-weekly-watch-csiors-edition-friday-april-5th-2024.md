@@ -2,9 +2,21 @@
 title: "Orient Weekly Watch: CSIORS Edition - Friday, April 5th, 2024"
 date: 2024-04-05
 author: "csiors"
-region: "Turkey"
+region: "Morocco"
 responses: 0
 summary: "Let us navigate the Middle East nuances: France invests in Western Sahara;  Egypt's financial advantages; Iran and Turkey for energy collaboration."
+category: "Policy Analysis"
+subtitle: "Let us navigate the Middle East nuances: France invests in Western Sahara;  Egypt's financial advantages; Iran and Turkey for energy collaboration."
+image: "https://globaluserfiles.com/media/186178_6303da0c6cc5c188777107cfa161105409b78e93.jpeg/v1/s/foto-weekly-watch-(17).jpeg"
+tags:
+  - "france-invest-western-sahara"
+  - "renewed-ties-morocco"
+  - "diplomatic-conflict-resolved"
+  - "phosphate-resources-economic-motives"
+  - "egypt-financing-boost"
+  - "economic-challenges-addressed"
+  - "privatization-reforms-sector-progress"
+  - "inflation-stability-financing-needs"
 ---
 
 Let us guide you through the Middle East with curated links: insightful analyses and forecasts from top sources on regional complexities.

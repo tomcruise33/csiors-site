@@ -5,6 +5,18 @@ author: "Tomas Krizan"
 region: "Syria"
 responses: 0
 summary: "Facing the trials of informal employment, Syrian refugees in Turkey grapple with exploitation and low wages in a gray economy, competing against locals for scar"
+category: "Policy Analysis"
+subtitle: "Facing the trials of informal employment, Syrian refugees in Turkey grapple with exploitation and low wages in a gray economy, competing against locals for scar"
+image: "https://globaluserfiles.com/media/186178_ea74e69aae3983e4609564a7a7ae008d355570e1.webp/v1/s/nsplsh_61354b4d796c4e4439426f_mv2_d_4256_2660_s_4_2.webp"
+tags:
+  - "informal-employment-"
+  - "syrian-refugees-"
+  - "istanbul-"
+  - "child-labor-"
+  - "textile-industry-"
+  - "agricultural-sector-"
+  - "education-system-"
+  - "covid-19-impact-"
 ---
 
 As Turkey hosts millions of Syrian refugees, the issue of informal employment, particularly in the textile industry, continues to pose significant challenges. Hindered by language barriers and bureaucratic obstacles, an overwhelming 95% of working Syrians in Turkey find themselves employed informally within the gray economy. This precarious employment situation not only leaves Syrian workers vulnerable to exploitation, low wages, and lack of social security and benefits, but also exacerbates existing tensions within the labor market, as different social and ethnic groups find themselves competing for limited resources.

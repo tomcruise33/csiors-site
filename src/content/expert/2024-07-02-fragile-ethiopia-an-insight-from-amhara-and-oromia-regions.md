@@ -5,6 +5,18 @@ author: "Jan Záhořík"
 region: "Ethiopia"
 responses: 0
 summary: "\"The paper examines the socio-political turmoil in Amhara and Oromia regions, detailing local conflicts, public sentiment, and the impact on daily life\""
+category: "Policy Analysis"
+subtitle: "\"The paper examines the socio-political turmoil in Amhara and Oromia regions, detailing local conflicts, public sentiment, and the impact on daily life\""
+image: "https://globaluserfiles.com/media/186178_0bdd4f87d3e78fc0c0c82e10ab4c464381051b54.jpeg/v1/s/photo-2024-01-22-11-54-28.jpeg"
+tags:
+  - "conflictanalysis-"
+  - "amhara-"
+  - "ethiopia-"
+  - "oromia-"
+  - "sociopolitical-"
+  - "publicsentiment-"
+  - "dailylife-"
+  - "economicimpact-"
 ---
 
 Since the war in Tigray (2020-2022), Ethiopia has been on the spiral of violence and turmoil which affects daily lives of citizens especially in Amhara and Oromia regions, the two most populous parts of Ethiopia, a country of roughly 130 million people. For many years, there have been debates on the position of Ethiopia as the hegemon of the Horn of Africa, particularly during the years of the Ethiopian People’s Revolutionary Democratic Front (EPRDF) whose main force was the Tigray People’s Liberation Front (TPLF). 

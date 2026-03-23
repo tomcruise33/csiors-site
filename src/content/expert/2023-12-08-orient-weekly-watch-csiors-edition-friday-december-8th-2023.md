@@ -5,6 +5,18 @@ author: "csiors"
 region: "Turkey"
 responses: 0
 summary: "Let us navigate the Middle East nuances: Egypt launches a Satellite, Putin uncommon visit to the Middle East; Greek and Turkey reset their hostilities."
+category: "Policy Analysis"
+subtitle: "Let us navigate the Middle East nuances: Egypt launches a Satellite, Putin uncommon visit to the Middle East; Greek and Turkey reset their hostilities."
+image: "https://globaluserfiles.com/media/186178_794e5e902f3ad8a7197a6aebeaab4615a404d834.png/v1/s/foto-weekly-watch-(29).png"
+tags:
+  - "turkey"
+  - "egypt"
+  - "middle-east"
+  - "saudi-arabia"
+  - "russia"
+  - "china"
+  - "satellite"
+  - "egypt-satellite"
 ---
 
 Let us guide you through the Middle East with curated links: insightful analyses and forecasts from top sources on regional complexities.

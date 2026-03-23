@@ -5,6 +5,16 @@ author: "Issam Khoury"
 region: "Syria"
 responses: 0
 summary: "\"Russian control in Syria: strategic asset dominance, recruitment for global conflicts, and geopolitical tensions with Israel, US, and NATO.\""
+category: "Policy Analysis"
+subtitle: "\"Russian control in Syria: strategic asset dominance, recruitment for global conflicts, and geopolitical tensions with Israel, US, and NATO.\""
+image: "https://globaluserfiles.com/media/186178_890720898be98b4420191e0317afd57dac01c816.jpeg/v1/s/ahmad-wassouf-wljgvartvhc-unsplash.jpeg"
+tags:
+  - "syria-"
+  - "geopoliticaltensions-"
+  - "russia-"
+  - "strategiccontrol-"
+  - "militaryrecruitment-"
+  - "regionalsecurity"
 ---
 
 **The title "Out of Service" became synonymous with Damascus International Airport in 2023 due to repeated targeting of its runways by Israeli aircraft. **This title also applies to Aleppo International Airport, prompting Syrians to feel reassured by traveling from "Martyr Bassel Al-Assad" Airport in Khmeimim[[1]](#_ftn1), Latakia Governorate. This airport, untouched by Israeli attacks, serves as a Russian military base in the Middle East.
@@ -64,7 +74,11 @@ Obtaining precise information from Russian bases in Syria is challenging, as the
 Recently, videos have surfaced showing Syrians who have obtained Russian citizenship. They were brought by Russian contractors to the Russian naval base in Tartus, where they underwent blood tests to ensure they were free from chronic diseases. After two days, they were transferred to Russia via the Khmeimim Airport. According to sources close to their families, the Russian contractors requested the following documents from them: 
 
  
-- A clean criminal record, - Completion of mandatory service card, - An unemployment card,- Approval from Syrian security to travel.
+
+- A clean criminal record, 
+- Completion of mandatory service card, 
+- An unemployment card,
+- Approval from Syrian security to travel.
 
  
 

@@ -5,6 +5,18 @@ author: "csiors"
 region: "Lebanon"
 responses: 0
 summary: "\"Let us navigate the Middle East's nuances with this week's highlights: ADQ-Turkey rail, Lebanon-Israel border tensions, and Algerian media on Morocco's quake.\""
+category: "Policy Analysis"
+subtitle: "\"Let us navigate the Middle East's nuances with this week's highlights: ADQ-Turkey rail, Lebanon-Israel border tensions, and Algerian media on Morocco's quake.\""
+image: "https://globaluserfiles.com/media/186178_274869d2be7d6ce19b1e1ebf06c3fb2ea0705103.png/v1/s/progetto-senza-titolo-(19).png"
+tags:
+  - "mena"
+  - "abu-dhabi-adq"
+  - "bosporous-railway"
+  - "moroccanearthquake"
+  - "morocco"
+  - "algeria"
+  - "algerianmedia"
+  - "lebanonisrael"
 ---
 
 Let us guide you through the Middle East with curated links: insightful analyses and forecasts from top sources on regional complexities.

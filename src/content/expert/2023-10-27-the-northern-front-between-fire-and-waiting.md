@@ -2,9 +2,21 @@
 title: "The Northern Front: Between Fire and Waiting"
 date: 2023-10-27
 author: "Issam Khoury"
-region: "MENA"
+region: "Syria"
 responses: 0
 summary: "\"Israel grapples with challenges on multiple fronts, facing both immediate tensions and threats, amid a backdrop of regional politics and Iranian influence\""
+category: "Policy Analysis"
+subtitle: "\"Israel grapples with challenges on multiple fronts, facing both immediate tensions and threats, amid a backdrop of regional politics and Iranian influence\""
+image: "https://globaluserfiles.com/media/pxb_3473138_51caa31db47e8913402dd079ad755913.jpg/v1/s/pxb_3473138_51caa31db47e8913402dd079ad755913.jpg"
+tags:
+  - "palestinianfactions"
+  - "northernfronttensions-"
+  - "israelichallenges-"
+  - "iranianinfluence-"
+  - "gazaconflict2023-"
+  - "shiitemilitias"
+  - "regionalpolitics-"
+  - "hezbollahthreat-"
 ---
 
 **"Our position is clear. If the Americans intervene, we will do the same. If America steps into this conflict, all American targets become legitimate, and we won't hold back. They must cease their support for the Zionist entity."**
@@ -54,18 +66,23 @@ In light of these events, the Israeli military devised two primary strategies:
 **Defensive Strategy** Within this strategy, the Israeli army focuses on the following points:
 
  
+
 - **Media Mobilization** Since the onset of the attacks by the Al-Qassam Brigades and Islamic Jihad on the morning of Oct 07, 2023, Israelis began circulating distressing videos of attacks on civilians to garner global empathy. They also rolled out paid ads on social media highlighting the plight of their civilians.
 
  
+
 - **General Mobilization** The military announced a general mobilization plan, aiming to enlist 300,000 troops.
 
  
+
 - **Declaration of War** Prime Minister Benjamin Netanyahu declared war without seeking approval from the Knesset. He then called upon the opposition to join forces and establish an emergency state for the nation's protection. This move temporarily shelved internal political disputes in Israel to prioritize national security.
 
  
+
 - **Diplomatic Outreach** Several countries, including Germany, Italy, Austria, Britain, France, Ukraine, and the United States, swiftly expressed support for Israel. Notably, the U.S. deployed an aircraft carrier, aiming to deter Hezbollah and Iran from intervening in the Israel-Gaza conflict.
 
  
+
 - **Evacuation of Settlements** As a safety measure and to ensure unobstructed military movement, the Israeli army commenced evacuating settlements near the Gaza Strip.
 
  

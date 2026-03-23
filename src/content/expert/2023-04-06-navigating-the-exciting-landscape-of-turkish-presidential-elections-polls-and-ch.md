@@ -5,6 +5,9 @@ author: "Tomas Krizan"
 region: "Turkey"
 responses: 0
 summary: "Turkey's presidential elections have always been an exciting blend of diverse opinions, passionate debates, and suspenseful outcomes. As the country prepares"
+category: "Policy Analysis"
+subtitle: "Turkey's presidential elections have always been an exciting blend of diverse opinions, passionate debates, and suspenseful outcomes. As the country prepares"
+image: "https://globaluserfiles.com/media/186178_a9cd3ce2f0f6530d8941622ffa9e7834674ee6b9.png/v1/s/x.png"
 ---
 
 Turkey's presidential elections have always been an exciting blend of diverse opinions, passionate debates, and suspenseful outcomes. As the country prepares for the upcoming polls, the political landscape is as dynamic as ever. This article delves into the most recent polls for the presidential elections in Turkey and examines the challenges that have been part of the electoral process in the last 20 years.

@@ -5,6 +5,18 @@ author: "Jan Záhořík"
 region: "Nigeria"
 responses: 0
 summary: "\"Nigeria's ethnic identity crises, colonial impacts, and the need for reforms to foster unity and mitigate corruption.\""
+category: "Policy Analysis"
+subtitle: "\"Nigeria's ethnic identity crises, colonial impacts, and the need for reforms to foster unity and mitigate corruption.\""
+image: "https://globaluserfiles.com/media/186178_e1351cd61008c88122233b835d1022a24b213f5d.jpeg/v1/s/unnamed.jpeg"
+tags:
+  - "nigeria-"
+  - "nationalunity-"
+  - "ethnicidentity-"
+  - "coloniallegacy-"
+  - "biafrawar-"
+  - "corruption-"
+  - "politicalreform-"
+  - "socioeconomicdevelopment"
 ---
 
 In April 2024, a group of Yoruba nationalists attempted to proclaim independence of the Yoruba from Nigeria.[[1]](#_ftn1) Although it was a rather desperate and poorly prepared attempt destined to fail, it shows that Nigeria is in crisis – especially when it comes to unresolved issues of national cohesion, identity and ethnic diversity combined with marginalization, oppression and corruption. 
@@ -52,7 +64,11 @@ One of the key problems of Nigeria today and for the future is, just like in man
  
 
 [2] Utibe Monday Titus – Ilufoye Sarafa Ogundiya (2023): The national question and Nigeria’s ethnic and identity crisis. African Identities, p. 7. DOI: https://doi.org/10.1080/14725843.2023.2265574 
-# [3] Gavin Williams (2024): Revisiting the Legacy and Lessons of the Nigerian Civil War: A Reflection on History and Healing, in: https://www.theelephant.info/analysis/2024/03/29/revisiting-the-legacy-and-lessons-of-the-nigerian-civil-war-a-reflection-on-history-and-healing/# [4] Shayera Dark (2017): The legacy of Biafra and the idea of being Nigerian, in: https://africasacountry.com/2017/06/the-legacy-of-biafra-and-the-idea-of-being-nigerian
+
+# [3] Gavin Williams (2024): Revisiting the Legacy and Lessons of the Nigerian Civil War: A Reflection on History and Healing, in: https://www.theelephant.info/analysis/2024/03/29/revisiting-the-legacy-and-lessons-of-the-nigerian-civil-war-a-reflection-on-history-and-healing/
+
+# [4] Shayera Dark (2017): The legacy of Biafra and the idea of being Nigerian, in: https://africasacountry.com/2017/06/the-legacy-of-biafra-and-the-idea-of-being-nigerian
+
 [5] Paul Agu Igwe (2024): NIgerian identity crisis: what’s behind the growing insecurity and separatism? African Identities, p. 7., https://doi.org/10.1080/14725843.2023.2299367 
 
  

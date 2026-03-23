@@ -2,9 +2,21 @@
 title: "Military Movements of the Rescue Government"
 date: 2024-10-17
 author: "Issam Khoury"
-region: "MENA"
+region: "Syria"
 responses: 0
 summary: "There is significant mobilization in the areas of Idlib controlled by the armed opposition."
+category: "Policy Analysis"
+subtitle: "There is significant mobilization in the areas of Idlib controlled by the armed opposition."
+image: "https://globaluserfiles.com/media/pxb_309349_0a8f93e4c5db656c703436b9a4c75928.jpg/v1/s/pxb_309349_0a8f93e4c5db656c703436b9a4c75928.jpg"
+tags:
+  - "syrianopposition-"
+  - "iranianinfluence-"
+  - "hezbollah-"
+  - "idlibconflict-"
+  - "rescuegovernment-"
+  - "militarymovements-"
+  - "turkishforces-"
+  - "russianairpower-"
 ---
 
 There is significant mobilization in the areas of Idlib controlled by the armed opposition, where the Rescue Government has gathered a large quantity of medical and emergency supplies, established field hospitals, and stored various blood types in preparation for a potential battle. Several military leaders have moved their families from towns near the Turkish-Russian separation line M4 to deeper areas within Idlib province. All military factions have been asked to mobilize fighters in anticipation of any imminent military action. The Ministry of Defense in the Rescue Government has assigned a liaison officer to each faction to organize movements whenever such actions are approved.

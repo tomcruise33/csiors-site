@@ -2,9 +2,21 @@
 title: "Orient Weekly Watch: CSIORS Edition - Friday, March 15th, 2024"
 date: 2024-03-15
 author: "csiors"
-region: "Morocco"
+region: "Sudan"
 responses: 0
 summary: "Let us navigate the Middle East nuances: moroccan professionals ill-prepared for AI; tension between Algeria and Morocco; Ramadan food aid in Saudi Arabia."
+category: "Policy Analysis"
+subtitle: "Let us navigate the Middle East nuances: moroccan professionals ill-prepared for AI; tension between Algeria and Morocco; Ramadan food aid in Saudi Arabia."
+image: "https://globaluserfiles.com/media/186178_ced5c87fc815686516621145d2e72305eac0bacb.jpeg/v1/s/foto-weekly-watch-(10).jpeg"
+tags:
+  - "moroccan-av-professionals-unprepared"
+  - "ethical-ai-regulation"
+  - "ai-revolution-morocco"
+  - "women-in-ai-leadership"
+  - "algeria-morocco-conflict-escalation"
+  - "diplomatic-tensions-regional-instability"
+  - "northafrica-diplomacy-geopolitics"
+  - "algeria-morocco-relations-diplomacy"
 ---
 
 Let us guide you through the Middle East with curated links: insightful analyses and forecasts from top sources on regional complexities.

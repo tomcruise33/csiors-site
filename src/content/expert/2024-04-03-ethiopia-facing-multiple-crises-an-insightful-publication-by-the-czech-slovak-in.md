@@ -5,10 +5,25 @@ author: "Jan Záhořík"
 region: "Ethiopia"
 responses: 0
 summary: "CSIORS publication by Senior Advisor for Africa, Jan Záhořík, explores critical challenges facing Ethiopia."
+category: "Policy Analysis"
+subtitle: "CSIORS publication by Senior Advisor for Africa, Jan Záhořík, explores critical challenges facing Ethiopia."
+image: "https://globaluserfiles.com/media/186178_67c13386c892b2ff911b7d581f6dde3c84dd6a31.png/v1/s/ethiopia-cover-more.png"
+tags:
+  - "csiors-"
+  - "janzahorik-"
+  - "ethiopiacrisis-"
+  - "africastudies-"
+  - "conflictanalysis-"
+  - "migrationissues-"
+  - "droughtimpact-"
+  - "geopoliticalinsights"
 ---
 
 In the insightful publication *"ETHIOPIA - Facing multiple crises"* by Jan Záhořík - Senior advisor for Africa at the Czech-Slovak Institute of Oriental Studies, critical questions about Ethiopia's current state are addressed:
-- **What are the causes and impacts of the Amhara-Oromo conflict on Ethiopia's stability?**- **How do Ethiopia's engagements with Somaliland and Somalia affect its regional influence and security?**- **In what ways are migration and droughts shaping the socio-economic landscape of Ethiopia?**
+
+- **What are the causes and impacts of the Amhara-Oromo conflict on Ethiopia's stability?**
+- **How do Ethiopia's engagements with Somaliland and Somalia affect its regional influence and security?**
+- **In what ways are migration and droughts shaping the socio-economic landscape of Ethiopia?**
 
  
 

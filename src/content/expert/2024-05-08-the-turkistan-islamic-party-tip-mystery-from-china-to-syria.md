@@ -5,6 +5,15 @@ author: "Issam Khoury"
 region: "Syria"
 responses: 0
 summary: "\"TIP strengthens as a key player in Syria's ongoing conflict.\""
+category: "Policy Analysis"
+subtitle: "\"TIP strengthens as a key player in Syria's ongoing conflict.\""
+image: "https://globaluserfiles.com/media/186178_e38e07c309c88f62e7dcaee28800d0df961d784a.png/v1/s/screenshot-2024-04-19-at-1.25.28%E2%80%AFpm.png"
+tags:
+  - "syriaconflict-"
+  - "regionalstability-"
+  - "globaljihad-"
+  - "turkistanislamicparty-"
+  - "internationalsecurity"
 ---
 
 The global call for jihad has prompted a significant number of radical fighters to travel to Syria in support of the oppressed Sunni majority against the Syrian regime. With the arrival of radical jihadists in Syrian territory, the peaceful nature of the Syrian revolution has transformed into a state of civil war. Flags of Islamic unity have been raised in areas controlled by the Syrian opposition, and Afghan and Pakistani Islamic attire has become prevalent among male fighters, which is uncommon in Syrian culture.

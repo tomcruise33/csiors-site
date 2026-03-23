@@ -5,6 +5,18 @@ author: "Issam Khoury"
 region: "Syria"
 responses: 0
 summary: "Russian-Syrian military exercises at Tartus aimed at training and recruiting Syrian forces for Russian military operations, especially in Ukraine."
+category: "Policy Analysis"
+subtitle: "Russian-Syrian military exercises at Tartus aimed at training and recruiting Syrian forces for Russian military operations, especially in Ukraine."
+image: "https://globaluserfiles.com/media/pxb_292812_2bd8c5dbc2bda3d8c307935294f20009.jpg/v1/s/pxb_292812_2bd8c5dbc2bda3d8c307935294f20009.jpg"
+tags:
+  - "syria-"
+  - "geopolitics-"
+  - "russia-"
+  - "militarytraining-"
+  - "tartus-"
+  - "division25-"
+  - "ukraineconflict-"
+  - "drones-"
 ---
 
 Russian forces conducted joint exercises with the Syrian army at the port of Tartus on June 8, 2024, to counter a simulated attack on the port. The Pantsir-S[[1]](#_ftn1) air defense systems were used along with the boat crews of the Black Sea Fleet's "Cadet" anti-sabotage detachment, the Verba[[2]](#_ftn2) portable anti-aircraft missile systems, and the Strela-10 anti-aircraft[[3]](#_ftn3) missile systems.

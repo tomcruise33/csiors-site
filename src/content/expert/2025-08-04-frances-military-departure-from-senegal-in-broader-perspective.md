@@ -5,6 +5,17 @@ author: "Jan Záhořík"
 region: "MENA"
 responses: 0
 summary: "France’s exit from Senegal marks more than a military move—it’s a sign of a broader African shift toward sovereignty, pragmatism, and multipolar power."
+category: "Policy Analysis"
+subtitle: "France’s exit from Senegal marks more than a military move—it’s a sign of a broader African shift toward sovereignty, pragmatism, and multipolar power."
+image: "https://globaluserfiles.com/media/pxb_246975_601c1892da805f66f70c325b231db047.jpg/v1/s/pxb_246975_601c1892da805f66f70c325b231db047.jpg"
+tags:
+  - "csiors"
+  - "geopolitics-"
+  - "africa-"
+  - "brics-"
+  - "multipolarity-"
+  - "senegal-"
+  - "france-"
 ---
 
 Apart from the 17th BRICS Summit which took place in Rio de Janeiro, it is fair to say that the most important event on the “changing world order map” was French troops packing their stuff and leaving Senegal, so far one of the most loyal allies of Paris on the continent. It is, however, no surprise in the context of changes and transformations that especially Francophone Africa is experiencing in last few years. The withdrawal is not only seen as a military withdrawal per se, but as the end of one chapter that has been present in West Africa since the colonial days. For generations, French-Senegalese cooperations seemed unshakable and French physical presence in Senegal somewhat “natural”, Dakar itself is a favorite spot for many French tourists but also retired people trying to find new homes there. 

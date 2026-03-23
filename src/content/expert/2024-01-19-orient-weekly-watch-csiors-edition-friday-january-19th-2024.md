@@ -5,6 +5,18 @@ author: "csiors"
 region: "Libya"
 responses: 0
 summary: "Let us navigate the Middle East nuances: Moroccan Ramadan; Libya collaboration with Britain; Middle East tension about oil prices."
+category: "Policy Analysis"
+subtitle: "Let us navigate the Middle East nuances: Moroccan Ramadan; Libya collaboration with Britain; Middle East tension about oil prices."
+image: "https://globaluserfiles.com/media/186178_2b96dac511eb3a1ddb02fd9545c433c0f9bd9d37.jpeg/v1/s/foto-weekly-watch-(21).jpeg"
+tags:
+  - "middle-east"
+  - "oil-prices"
+  - "middle-east-tensions"
+  - "supply-disruptions-"
+  - "geopolitical-events"
+  - "international-cooperation"
+  - "libya-stability"
+  - "fairelections"
 ---
 
 Let us guide you through the Middle East with curated links: insightful analyses and forecasts from top sources on regional complexities.

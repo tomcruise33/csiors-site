@@ -5,6 +5,18 @@ author: "Jan Záhořík"
 region: "MENA"
 responses: 0
 summary: "Exploring Soviet and Russian influence in Africa, from Cold War military aid and diplomacy to modern-day educational collaboration and geopolitical strategies."
+category: "Policy Analysis"
+subtitle: "Exploring Soviet and Russian influence in Africa, from Cold War military aid and diplomacy to modern-day educational collaboration and geopolitical strategies."
+image: "https://globaluserfiles.com/media/pxb_7345240_1476f156cc583f18222d84666b039c9e.jpg/v1/s/pxb_7345240_1476f156cc583f18222d84666b039c9e.jpg"
+tags:
+  - "diplomacy-"
+  - "geopolitics-"
+  - "africarelations-"
+  - "sovietafrica-"
+  - "russiaafrica-"
+  - "coldwar-"
+  - "militaryaid-"
+  - "educationalcollaboration-"
 ---
 
 The media in Western world are full of news about how Russia is “penetrating” Africa or how the Western influence is being challenged by newly rediscovered Russian-African relations. In this part, we will briefly outline historical trajectories of Russian – African relations in order to understand the “return” of Russia to Africa, as well as the African perceptions on Russia’s increased presence on the continent. Although we should not overestimate Russia’s influence in Africa, there is a number of aspects that the government in Moscow may use for future collaboration. 

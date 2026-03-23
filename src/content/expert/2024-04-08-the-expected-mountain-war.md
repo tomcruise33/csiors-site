@@ -2,9 +2,20 @@
 title: "The Expected Mountain War"
 date: 2024-04-08
 author: "Issam Khoury"
-region: "MENA"
+region: "Syria"
 responses: 0
 summary: "\"Israel preps for Qalamoun mountain warfare; tensions rise with Russian posts, IDF brigade setup.\""
+category: "Policy Analysis"
+subtitle: "\"Israel preps for Qalamoun mountain warfare; tensions rise with Russian posts, IDF brigade setup.\""
+image: "https://globaluserfiles.com/media/pxb_7659679_e352bc8565f996b7779075c39ae09c7d.jpg/v1/s/pxb_7659679_e352bc8565f996b7779075c39ae09c7d.jpg"
+tags:
+  - "middleeastsecurity-"
+  - "israelqalamounwarfare-"
+  - "idfmountainbrigade-"
+  - "russianobservation-"
+  - "syrianbordertensions-"
+  - "hezbollahchallenge-"
+  - "militaryreadiness"
 ---
 
 Ten Russian observation posts on the Syrian-Israeli border, with an additional site added on Mar 20, 2024, in the town of Bire Ajam in Quneitra. This increase aims to calm the front likely to ignite, especially as the Israelis, in addition to their frequent airstrikes on Damascus and on sites of Iranian Revolutionary Guard supporters in southern Syria, are carrying out assassination operations against a number of figures. According to field observers from the Quneitra area, a member of the Syrian State Security, "Mahmoud Abu Ratib[[1]](#_ftn1)," was kidnapped for several hours, and then his body was seen at the border strip.

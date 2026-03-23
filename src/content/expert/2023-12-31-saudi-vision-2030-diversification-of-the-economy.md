@@ -5,6 +5,16 @@ author: "Filip Benes"
 region: "MENA"
 responses: 0
 summary: "Vision 2030, under the leadership of Crown Prince Mohammed bin Salman, represents a significant shift in Saudi Arabia's approach to economic development."
+category: "Policy Analysis"
+subtitle: "Vision 2030, under the leadership of Crown Prince Mohammed bin Salman, represents a significant shift in Saudi Arabia's approach to economic development."
+image: "https://globaluserfiles.com/media/186178_1461f21c7ccb634902286b76d25f027f1f1b1e4e.jpeg/v1/s/img_0278.jpeg"
+tags:
+  - "saudieconomy-"
+  - "princemuhammadbinsalman"
+  - "saudivision2030-"
+  - "neomcity"
+  - "sustainabledevelopment"
+  - "aramco"
 ---
 
 Vision 2030, under **the leadership of Crown Prince Mohammed bin Salman,** represents a significant shift in Saudi Arabia's approach to economic and societal development. The vision aims to diversify the economy beyond its traditional reliance on oil revenue and to open the country up to the world.

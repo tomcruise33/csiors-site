@@ -5,6 +5,18 @@ author: "csiors"
 region: "MENA"
 responses: 0
 summary: "Let us navigate the Middle East's nuances with this week's highlights: Economic corridor dynamics, Africa needs educators, Identity Crisis among Kurds and Arabs"
+category: "Policy Analysis"
+subtitle: "Let us navigate the Middle East's nuances with this week's highlights: Economic corridor dynamics, Africa needs educators, Identity Crisis among Kurds and Arabs"
+image: "https://globaluserfiles.com/media/186178_e42628ccf699a727f785291eb1d02ddf3fc7d4c1.png/v1/s/foto-weekly-watch-(6).png"
+tags:
+  - "parallelzonesplan-"
+  - "kurds"
+  - "-europe-economic-corridor"
+  - "imec"
+  - "india"
+  - "india-economy"
+  - "biden"
+  - "sub-saharan"
 ---
 
 Let us guide you through the Middle East with curated links: insightful analyses and forecasts from top sources on regional complexities.

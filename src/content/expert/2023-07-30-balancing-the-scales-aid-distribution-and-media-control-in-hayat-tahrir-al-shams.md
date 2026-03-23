@@ -5,6 +5,18 @@ author: "Issam Khoury"
 region: "Syria"
 responses: 0
 summary: "Exploring the influence of Hay'at Tahrir al-Sham on the Salvation Government's media, job market, and aid distribution post-earthquake in Syria."
+category: "Policy Analysis"
+subtitle: "Exploring the influence of Hay'at Tahrir al-Sham on the Salvation Government's media, job market, and aid distribution post-earthquake in Syria."
+image: "https://globaluserfiles.com/media/186178_41181a46826a5cb9d55f3f195cb945948f8ad21b.jpeg/v1/s/bank-phrom-tzm3oyu_6sk-unsplash.jpeg"
+tags:
+  - "salvationgovernment-"
+  - "hayattahriralsham-"
+  - "syria-"
+  - "earthquakerelief-"
+  - "mediacontrol--"
+  - "aiddistribution-"
+  - "jobmarket"
+  - "turkey"
 ---
 
 “From here, international donor bodies should strive to provide aid through non-governmental organizations that are able to provide direct support to those affected without resorting to the directives of the workers in the Salvation Government.”

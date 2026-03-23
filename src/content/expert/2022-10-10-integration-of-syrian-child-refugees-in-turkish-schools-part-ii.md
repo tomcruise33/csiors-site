@@ -5,6 +5,9 @@ author: "Tomas Krizan"
 region: "Syria"
 responses: 0
 summary: "High school in Istanbul In Istanbul, I visited a public elementary school in the Esenyurt neighborhood, which is known as the neighborhood of Syrian refugees."
+category: "Policy Analysis"
+subtitle: "High school in Istanbul In Istanbul, I visited a public elementary school in the Esenyurt neighborhood, which is known as the neighborhood of Syrian refugees."
+image: "https://globaluserfiles.com/media/186178_f5481416c9273271ee3e502075135cfb6ae6adff.webp/v1/s/66053a_36caa019a3224dfab3be69512ed2d730_mv2.webp"
 ---
 
 High school in Istanbul In Istanbul, I visited a public elementary school in the Esenyurt neighborhood, which is known as the neighborhood of Syrian refugees. Despite this, the percentage of Syrian children in the classrooms here is low. There are roughly 30 students in each class, of which one or two are from Syria. Here I interviewed the older children. There were mostly eleven to thirteen-year-old children, and their stay in Turkey in some cases even exceeded six years. They also differed from the children who were in the temporary education center in that some of them had already been at school in Syria for a year. For example, 11-year-old Hamza completed the first three grades in Syria and then went with his family to Turkey, where after completing a year of study in a temporary educational center, he entered high school from the fifth grade and today he has no problems mastering the curriculum at the same pace as his Turkish peers: "After arriving in Turkey, I learned Turkish very quickly. That's why I'm already in public school and I like it here." (Hamza, 11 years old)

@@ -5,6 +5,9 @@ author: "csiors"
 region: "MENA"
 responses: 0
 summary: "Political literature often illustrates the concept of \"The art of the possible\" [1] as a pragmatic approach, one that is removed from idealistic thinking"
+category: "Policy Analysis"
+subtitle: "Political literature often illustrates the concept of \"The art of the possible\" [1] as a pragmatic approach, one that is removed from idealistic thinking"
+image: "https://globaluserfiles.com/media/186178_93f08014018a4866c3d30b93274f80d391a0b4fc.png/v1/s/screenshot-2023-05-02-at-6.40.53-pm.png"
 ---
 
 Political literature often illustrates the concept of "The art of the possible" [[1]](https://manage.wix.com/dashboard/ce2b32ac-7f73-4f26-878d-3d523c7c3149/blog/create-post?referralInfo=sidebar&lang=en&tab=general-settings#_ftn1) as a pragmatic approach, one that is removed from idealistic thinking. Yet, if this principle is aligned with the constitutional rights upheld by major nations, it serves a fundamental purpose: the advancement of constitutional justice.

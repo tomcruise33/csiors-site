@@ -5,6 +5,18 @@ author: "csiors"
 region: "Libya"
 responses: 0
 summary: "Let us navigate the Middle East nuances: economic expansion in Libya; Syrians asylum requests blocked; Jordan's airspaces reopen."
+category: "Policy Analysis"
+subtitle: "Let us navigate the Middle East nuances: economic expansion in Libya; Syrians asylum requests blocked; Jordan's airspaces reopen."
+image: "https://globaluserfiles.com/media/186178_b92a2034257e88ac3b549d57439898300af4d43a.jpeg/v1/s/foto-weekly-watch-(24).jpeg"
+tags:
+  - "world-bank-"
+  - "libyan-economy"
+  - "economic-growth-"
+  - "stability-oil-sector"
+  - "cyprus-halts-asylum"
+  - "syrian-refugees-lebanon-"
+  - "malta-pushbacks-libya"
+  - "greek-island-hotspots"
 ---
 
 Let us guide you through the Middle East with curated links: insightful analyses and forecasts from top sources on regional complexities.

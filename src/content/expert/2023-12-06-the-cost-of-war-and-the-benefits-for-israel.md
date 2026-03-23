@@ -2,9 +2,21 @@
 title: "The cost of war and the benefits for Israel"
 date: 2023-12-06
 author: "Issam Khoury"
-region: "MENA"
+region: "Israel/Palestine"
 responses: 0
 summary: "\"Israel's 2023 economic resilience and military aid in response to Hamas attack, highlighting US support and defense spending.\""
+category: "Policy Analysis"
+subtitle: "\"Israel's 2023 economic resilience and military aid in response to Hamas attack, highlighting US support and defense spending.\""
+image: "https://globaluserfiles.com/media/pxb_3241421_4fbf04565b0f1d59bff0d5562d21eec8.jpg/v1/s/pxb_3241421_4fbf04565b0f1d59bff0d5562d21eec8.jpg"
+tags:
+  - "middleeasttensions-"
+  - "israelhamasconflict-"
+  - "israelieconomy2023-"
+  - "usforeignaid-"
+  - "defensespendinganalysis-"
+  - "geopoliticaleconomics-"
+  - "militaryfinances-"
+  - "israelgdpinsights-"
 ---
 
 **The Israeli Minister of Finance, Bezalel Smotrich, announced on October 19, 2023, that his government is preparing a large and comprehensive aid package for those affected by the Hamas attack.** This aid package is said to be bigger and wider than the assistance provided by the Israeli government during the COVID-19 pandemic[[1]](#_ftn1).
@@ -38,12 +50,15 @@ From here, we understand that both Republicans and Democrats are united in their
 However, if we examine the numbers assumed by Calcalist newspaper, we can see that the estimated cost of the war, amounting to $51 billion, includes the following expenses:
 
  
+
 - Financial losses in terms of revenue range between $10 billion (40 billion shekels) and $15 billion (60 billion shekels).
 
  
+
 - Compensations for affected companies range between $4.25 billion (17 billion shekels) and $5 billion (20 billion shekels).
 
  
+
 - Rehabilitation of damaged infrastructure ranges between $5 billion (10 billion shekels) and $5 billion (20 billion shekels).
 
  

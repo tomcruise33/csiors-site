@@ -4,8 +4,9 @@ date: 2023-04-20
 author: "Issam Khoury"
 region: "MENA"
 responses: 0
-summary: "Safe Means for Radicals: 
-Social media has diversified, and some platforms even encrypt calls to ensure privacy. Perhaps the most popular method for extremist"
+summary: "Safe Means for Radicals:  Social media has diversified, and some platforms even encrypt calls to ensure privacy. Perhaps the most popular method for extremist"
+category: "Policy Analysis"
+subtitle: "Safe Means for Radicals:  Social media has diversified, and some platforms even encrypt calls to ensure privacy. Perhaps the most popular method for extremist"
 ---
 
 Religion is an intellectual tool that strongly attracts human groups. Extremist Islamic radical groups have exploited this in their advocacy activities, making them highly capable of drawing people to their cause in a short time. According to al-Bukhari, the Prophet Muhammad says: "A Muslim is a brother of another Muslim, so he should not oppress him, nor should he hand him over to an oppressor. Whoever fulfills the needs of his brother, Allah will fulfill his needs; whoever brings his (Muslim) brother out of discomfort, Allah will bring him out of the discomforts of the Day of Resurrection, and whoever screens a Muslim, Allah will screen him on the Day of Resurrection.”

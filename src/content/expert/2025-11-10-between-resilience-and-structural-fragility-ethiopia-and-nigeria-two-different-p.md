@@ -5,6 +5,18 @@ author: "Jan Záhořík"
 region: "Ethiopia"
 responses: 0
 summary: "Ethiopia and Nigeria—two distinct health care paths revealing Africa’s struggle between resilience, inequality, and dependency."
+category: "Policy Analysis"
+subtitle: "Ethiopia and Nigeria—two distinct health care paths revealing Africa’s struggle between resilience, inequality, and dependency."
+image: "https://globaluserfiles.com/media/186178_2c6c51686bc46d7cfabbed8097e3b515381d5025.png/v1/s/screenshot-2025-11-10-at-10.21.22.png"
+tags:
+  - "csiors-"
+  - "nigeria-"
+  - "governance-"
+  - "africa-"
+  - "ethiopia-"
+  - "inequality-"
+  - "development-"
+  - "healthcare-"
 ---
 
 African health care systems are often portrayed as a uniform archetype: underfunded, understaffed, donor-dependent, and chronically unable to translate development rhetoric into reliable service delivery. That framing is analytically convenient but misleading. Ethiopia and Nigeria — two of Africa’s most important states in demographic, political, and symbolic terms — illustrate this diversity very clearly. They share severe fiscal constraints, they both declared universal health coverage (UHC) as a strategic objective, and both are struggling with rapidly growing burdens of non-communicable diseases alongside persistent tuberculosis, malaria, and maternal mortality. Yet the logic of their health systems is fundamentally different. Ethiopia represents a state-driven, community-based primary care model that has produced impressive, low-cost gains but has proven vulnerable to political breakdown. Nigeria represents a market-heavy, institutionally fragmented system with far more money in absolute terms, but where outcomes remain dramatically worse. Comparing them reveals that the principal problem in African healthcare is not a lack of knowledge or even a lack of financing per se, but rather structural political economy constraints and weak institutional accountability.

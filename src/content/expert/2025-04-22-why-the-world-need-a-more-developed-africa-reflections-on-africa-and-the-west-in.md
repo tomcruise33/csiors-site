@@ -5,6 +5,18 @@ author: "Jan Záhořík"
 region: "MENA"
 responses: 0
 summary: "\"Trump wants USAID gone while China pours billions into Africa; if Europe keeps lecturing instead of investing, a 2.5‑billion‑person powerhouse will look East.\""
+category: "Policy Analysis"
+subtitle: "\"Trump wants USAID gone while China pours billions into Africa; if Europe keeps lecturing instead of investing, a 2.5‑billion‑person powerhouse will look East.\""
+image: "https://globaluserfiles.com/media/186178_3bf431f65e477044dd2d7cb0673a034387b7e854.jpeg/v1/s/img_20230609_155721_hdr.jpeg"
+tags:
+  - "africarising-"
+  - "geopolitics-"
+  - "euinvest-"
+  - "usaid-"
+  - "chinainafrica-"
+  - "industrialization-"
+  - "globalsouth-"
+  - "strategicpartnership-"
 ---
 
 **As geopolitical landscapes shift and economic uncertainty deepens, there is one policy priority that demands renewed focus: the development of Africa.**

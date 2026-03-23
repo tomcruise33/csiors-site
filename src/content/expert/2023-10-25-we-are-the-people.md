@@ -2,9 +2,18 @@
 title: "We are the people"
 date: 2023-10-25
 author: "Issam Khoury"
-region: "MENA"
+region: "Syria"
 responses: 0
 summary: "\"In the face of deteriorating conditions, Sweida's protests symbolize growing opposition to Assad's regime, drawing international attention.\""
+category: "Policy Analysis"
+subtitle: "\"In the face of deteriorating conditions, Sweida's protests symbolize growing opposition to Assad's regime, drawing international attention.\""
+image: "https://globaluserfiles.com/media/186178_1e9938088e46f2034e7a8288df3e233716b86ead.jpeg/v1/s/jpeg-image-4d62-99c1-8f-0.jpeg"
+tags:
+  - "syrian-crisis-"
+  - "middle-east-politics-"
+  - "sweidaprotests-"
+  - "syrianrevival-"
+  - "druzestand"
 ---
 
 Revolutions collapse if they last too long, and revolutionary values can shift when there is diversity in the leadership based on them.

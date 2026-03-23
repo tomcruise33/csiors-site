@@ -5,6 +5,9 @@ author: "Issam Khoury"
 region: "Syria"
 responses: 0
 summary: "December the 24th in 2003 was an exceptional day in Syria. Saturday was added as an official holiday in the week to be added to Friday, which was the week’s"
+category: "Policy Analysis"
+subtitle: "December the 24th in 2003 was an exceptional day in Syria. Saturday was added as an official holiday in the week to be added to Friday, which was the week’s"
+image: "https://globaluserfiles.com/media/186178_d003e1bce7764eb4fa30b81463ba96ea5cd17122.webp/v1/s/nsplsh_596a7a34345f72616c6241_mv2_d_3872_2592_s_4_2.webp"
 ---
 
 December the 24th in 2003 was an exceptional day in Syria. Saturday was added as an official holiday in the week to be added to Friday, which was the week’s only day off since Syria's independence in 1964. This measure came within the series of conditions demanded by the European Union from Damascus in order to Enter into an economic partnership within the Euro-Mediterranean [[1]](https://www.addustour.com/articles/379374-%D8%A7%D9%84%D8%B3%D8%A8%D8%AA-%D8%B9%D8%B7%D9%84%D8%A9-%D8%B1%D8%B3%D9%85%D9%8A%D8%A9-%D9%81%D9%8A-%D8%B3%D9%88%D8%B1%D9%8A%D8%A7-%D9%85%D9%86-%D8%A8%D8%AF%D8%A7%D9%8A%D8%A9-%D8%B4%D8%A8%D8%A7%D8%B7) project, i.e., the addition of the day off did not come within the framework of protecting the rights of workers, or to support family life, but the political authority at the time promoted this amendment as a blessing from President Bashar al-Assad.

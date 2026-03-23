@@ -5,6 +5,18 @@ author: "csiors"
 region: "Morocco"
 responses: 0
 summary: "Let us navigate the Middle East nuances: record of tourism in Egypt; more jobs in Jordan; new High School Facility in Rabat."
+category: "Policy Analysis"
+subtitle: "Let us navigate the Middle East nuances: record of tourism in Egypt; more jobs in Jordan; new High School Facility in Rabat."
+image: "https://globaluserfiles.com/media/186178_759f14ff237151cc0ab5f1ea69d3f9f9b027383d.jpeg/v1/s/foto-weekly-watch-(23).jpeg"
+tags:
+  - "middleeast-"
+  - "middle-east-"
+  - "morocco"
+  - "egypt"
+  - "jordan"
+  - "minister-of-labor"
+  - "national-employment-program"
+  - "labor-law-reforms-"
 ---
 
 Let us guide you through the Middle East with curated links: insightful analyses and forecasts from top sources on regional complexities.

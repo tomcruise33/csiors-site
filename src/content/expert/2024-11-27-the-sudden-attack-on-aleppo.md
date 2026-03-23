@@ -5,6 +5,15 @@ author: "Issam Khoury"
 region: "Syria"
 responses: 0
 summary: "\"Hay'at Tahrir al-Sham's rapid advance near Aleppo signals a power shift, raising stakes for Turkey-backed factions and the Syrian regime.\""
+category: "Policy Analysis"
+subtitle: "\"Hay'at Tahrir al-Sham's rapid advance near Aleppo signals a power shift, raising stakes for Turkey-backed factions and the Syrian regime.\""
+image: "https://globaluserfiles.com/media/pxb_772778_3fd34e621df89f730a01cfb5f4e00de9.jpg/v1/s/pxb_772778_3fd34e621df89f730a01cfb5f4e00de9.jpg"
+tags:
+  - "hayattahriralsham-"
+  - "middleeastpolitics"
+  - "syrianconflict-"
+  - "turkeysyriatensions-"
+  - "aleppoattack-"
 ---
 
 In a span of ten hours, the forces of Hay'at Tahrir al-Sham managed to storm the barriers of the Syrian regime and Hezbollah militias, now just ten kilometers away from the city of Aleppo, in what is termed the (ردع العدوان"Countering Aggression"( operation that began on the morning of November 27, 2024. The surprising aspect of this attack, according to observers, is the absence of any Russian resistance to the attackers and the near-mass flight of the Syrian army and Hezbollah fighters, with the Syrian regime reporting only twenty-five soldiers killed, indicating a staged surrender of military positions. This was anticipated in our report "Military Movements of the Rescue Government" dated October 16, 2024, where the military wing of the so-called Rescue Government seized over 25 villages in just ten hours. They also completely dominated the 46th Brigade of the Syrian army, taking over all its equipment and tanks, and were able to cut the road connecting Damascus and Aleppo, signifying a clear breach of the demarcation line established by the Russians and Turks, known as the M4 highway.

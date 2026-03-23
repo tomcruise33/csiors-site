@@ -2,9 +2,21 @@
 title: "Czech(oslovak)-African Relations, Part 1: Historical Perspective"
 date: 2024-07-11
 author: "Jan Záhořík"
-region: "MENA"
+region: "Ethiopia"
 responses: 0
 summary: "\"Uncovering the intriguing Cold War alliances and educational exchanges that shaped Czech(oslovak)-African relations.\""
+category: "Policy Analysis"
+subtitle: "\"Uncovering the intriguing Cold War alliances and educational exchanges that shaped Czech(oslovak)-African relations.\""
+image: "https://globaluserfiles.com/media/186178_02edd3b62df3277ffb4d9b1833bfd197be3f6d56.jpeg/v1/s/20230323_104459.jpeg"
+tags:
+  - "libya-"
+  - "mozambique-"
+  - "ethiopia-"
+  - "coldwardiplomacy-"
+  - "czechoslovakiainafrica-"
+  - "historicalrelations-"
+  - "ethiopianrelations-"
+  - "africanindependence-"
 ---
 
 Czech government has adopted its new Strategy for Africa in 2021, the first of its kind since the birth of the country in 1993. In this article, we will take a look at historical trajectories of Czech(oslovak)-African relations before we’ll get to current relations between the Czech Republic and Africa. 

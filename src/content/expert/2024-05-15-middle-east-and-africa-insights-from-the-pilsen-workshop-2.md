@@ -5,7 +5,7 @@ author: "csiors"
 region: "Horn of Africa"
 responses: 0
 summary: "Examining historical and geopolitical complexities in the Middle East and Africa, focusing on the Italo-Ottoman War, Horn of Africa and Syria."
-category: "Policy Analysis"
+category: "Seminars"
 subtitle: "Examining historical and geopolitical complexities in the Middle East and Africa, focusing on the Italo-Ottoman War, Horn of Africa and Syria."
 image: "https://globaluserfiles.com/media/186178_fb34ae60a07744b90f0cdc440bf77b0a0c3fe32b.jpeg/v1/s/img_3407-1.jpeg"
 tags:

@@ -5,6 +5,7 @@ author: "Issam Khoury"
 region: "Syria"
 responses: 0
 summary: ""
+category: "Press Mentions"
 ---
 
 

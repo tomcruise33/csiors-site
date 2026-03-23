@@ -5,6 +5,17 @@ author: "Issam Khoury"
 region: "Syria"
 responses: 0
 summary: "\"Jordan strikes drug routes in Syria amidst tension; local conflicts intensify with external influences, complicating southern Syria's stability.\""
+category: "Policy Analysis"
+subtitle: "\"Jordan strikes drug routes in Syria amidst tension; local conflicts intensify with external influences, complicating southern Syria's stability.\""
+image: "https://globaluserfiles.com/media/186178_2756a9ebeb9021e106e39a31cd4011022cc42ed6.jpeg/v1/s/dsc_0097a.jpeg"
+tags:
+  - "regionalinstability-"
+  - "-southernsyriaunrest-"
+  - "jordanairstrikessyria-"
+  - "drugtraffickingsyria-"
+  - "armedgroupsconflict-"
+  - "syriacrisis-"
+  - "militaryinvolvement"
 ---
 
 On January 5, 2023, the **Jordanian air force targeted a drug dealer's house in the village of Al-Sha'ab in the Syrian countryside of Sweida with two airstrikes**[[1]](#_ftn1). Another strike hit warehouses near the village of Al-Ghariya. Recently, these Jordanian airstrikes inside Syrian territory have become routine and similar to Israel's strikes in Syria. This indicates a lack of trust in the Syrian regime's ability to manage the "step-by-step[[2]](#_ftn2)" project proposed by Jordan to reintegrate Syria into the Arab fold through Arab incentives, provided that Iran withdraws from its territories and guarantees Hezbollah and Shia militias' withdrawal from frontlines and security checkpoints.

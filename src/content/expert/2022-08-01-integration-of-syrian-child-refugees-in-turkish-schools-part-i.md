@@ -5,6 +5,9 @@ author: "Tomas Krizan"
 region: "Syria"
 responses: 0
 summary: "The Syrian conflict has devastated the entire country since 2011. In April 2019, the number of refugees from Syria seeking refuge in another country was more"
+category: "Policy Analysis"
+subtitle: "The Syrian conflict has devastated the entire country since 2011. In April 2019, the number of refugees from Syria seeking refuge in another country was more"
+image: "https://globaluserfiles.com/media/186178_389b086dc6bcc6c59f48fcbfb1b328e4a6e845ca.webp/v1/s/66053a_93692f5aad9e41769993e5063aac244d_mv2.webp"
 ---
 
 The Syrian conflict has devastated the entire country since 2011. In April 2019, the number of refugees from Syria seeking refuge in another country was more than five and a half million. More than three million of them were in Turkey that year. This article is about refugee children from Syria who have entered Turkish schools. It is based on qualitative research I conducted in February and March 2019 in Turkey. I visited two institutions where Syrian children studied. The first of them was the Temporary Education Center in Karaman. The second was the state high school in Istanbul.

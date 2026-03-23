@@ -2,9 +2,21 @@
 title: "Migration from West Africa to Europe: new waves, old problems"
 date: 2023-12-13
 author: "Jan Záhořík"
-region: "MENA"
+region: "Tunisia"
 responses: 0
 summary: "\"Analyzing West Africa-Europe migration trends, EU-Tunisia agreements, COVID-19 impacts, and socio-political dynamics, including sex work challenges.\""
+category: "Policy Analysis"
+subtitle: "\"Analyzing West Africa-Europe migration trends, EU-Tunisia agreements, COVID-19 impacts, and socio-political dynamics, including sex work challenges.\""
+image: "https://globaluserfiles.com/media/186178_8c65b794e704be209f3ee0f033fa03a081b153f2.jpeg/v1/s/img_20230623_111628_hdr.jpeg"
+tags:
+  - "westafricaeuropemigration-"
+  - "eutunisiaagreement-"
+  - "covid19impact-"
+  - "sociopoliticaldynamics-"
+  - "sexworkchallenges-"
+  - "economicstagnation-"
+  - "failedintegration-"
+  - "internationalterrorism-"
 ---
 
 In last few weeks, all major European newspapers have been full of reports on increasing waves of migration from West Africa via Senegal and Mauritania to Canary Islands. At about the same time, the EU representatives signed an agreement with Tunisia regarding further control and solution-making of irregular migration from Africa via the North African country.[[1]](#_ftn1) Why Tunis? Tunisia is very close to Italy and Italy receives enormous number of migrants every year. Tunisia is also much safer than Libya for migrants from Sub-Saharan Africa who are also pushed from Algeria.[[2]](#_ftn2)

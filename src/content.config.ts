@@ -25,6 +25,10 @@ const expert = defineCollection({
     region: z.string(),
     responses: z.number(),
     summary: z.string(),
+    subtitle: z.string().optional(),
+    image: z.string().optional(),
+    category: z.string().optional(),
+    tags: z.array(z.string()).optional(),
   }),
 });
 

@@ -5,6 +5,15 @@ author: "Issam Khoury"
 region: "Syria"
 responses: 0
 summary: "\"Skirmishes rise between Syrian Democratic Forces and Turkey-backed factions, as both sides seek leverage before Trump’s administration begins.\""
+category: "Policy Analysis"
+subtitle: "\"Skirmishes rise between Syrian Democratic Forces and Turkey-backed factions, as both sides seek leverage before Trump’s administration begins.\""
+image: "https://globaluserfiles.com/media/pxb_3874478_4a17177836d00f4ca36617ca4ab6b13c.jpg/v1/s/pxb_3874478_4a17177836d00f4ca36617ca4ab6b13c.jpg"
+tags:
+  - "middleeastpolitics-"
+  - "syrianconflict-"
+  - "sdf-"
+  - "turkeysyriatensions-"
+  - "trumpadministration"
 ---
 
 All the countries of the world are waiting for President Donald Trump's inauguration, as he promised to bring peace and end wars and conflicts around the globe. Notably, this expectation is not limited to major countries like Ukraine and Russia but extends to non-state organizations such as the Autonomous Administration of North and East Syria (AANES). The media there has been buzzing with various scenarios regarding the reality of that region if American forces withdraw from northeastern Syria, and the Turks have been called upon to fill the void.

@@ -5,6 +5,18 @@ author: "Jan Záhořík"
 region: "Ethiopia"
 responses: 0
 summary: "Major Challenges in Higher Education in Nigeria and Ethiopia  Nigeria and Ethiopia are the two most populous countries in Africa. At the same time, bo"
+category: "Policy Analysis"
+subtitle: "Major Challenges in Higher Education in Nigeria and Ethiopia  Nigeria and Ethiopia are the two most populous countries in Africa. At the same time, bo"
+image: "https://globaluserfiles.com/media/186178_3ef5240913cb68f1a94b74f326149ab7bdc2b31b.webp/v1/s/dall%C2%B7e-2025-02-12-12.06.51---a-rough-hand-drawn-pencil-sketch-illustrating-the-struggles-of-higher-education-in-nigeria-and-ethiopia.-the-drawing-should-have-an-organic-less-pol.webp"
+tags:
+  - "nigeria-"
+  - "ethiopia"
+  - "futureofnigeria-"
+  - "highereducation-"
+  - "educationreform-"
+  - "edtech-"
+  - "educationcrisis-"
+  - "africadevelopment-"
 ---
 
 **Major Challenges in Higher Education in Nigeria and Ethiopia **

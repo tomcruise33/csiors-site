@@ -5,92 +5,171 @@ import { getCollection } from 'astro:content';
 const briefs = await getCollection('briefs');
 const expert = await getCollection('expert');
 
-// Sort by date descending
-const allBriefs = briefs.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
-const allExpert = expert.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+const allBriefs = briefs
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+  .map(b => ({ type: 'brief' as const, entry: b }));
 
-// Combine and sort all content
-const allContent = [
-  ...allBriefs.map(b => ({ type: 'brief' as const, entry: b })),
-  ...allExpert.map(e => ({ type: 'expert' as const, entry: e })),
-].sort((a, b) => b.entry.data.date.valueOf() - a.entry.data.date.valueOf());
+const allExpert = expert
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+  .map(e => ({ type: 'expert' as const, entry: e }));
 
-const featured = allContent[0];
-const rest = allContent.slice(1);
+// All content sorted by date
+const allContent = [...allBriefs, ...allExpert]
+  .sort((a, b) => b.entry.data.date.valueOf() - a.entry.data.date.valueOf());
+
+// Featured = latest brief (has EWS data)
+const featured = allBriefs[0];
+// Rest = all expert articles
+const articles = allExpert;
 
 function formatDate(date: Date) {
   return date.toLocaleDateString('en-US', { day: 'numeric', month: 'long', year: 'numeric' });
 }
+
+function formatDateShort(date: Date) {
+  return date.toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
+}
 ---
 <BaseLayout lang="en" title="Intelligence Feed — CSIORS" description="Browse CSIORS intelligence briefs and expert analyses on migration, food security, and regional stability.">
-<div class="container">
 
+<div class="container">
   <section class="page-hero">
     <div class="page-hero-tag">Intelligence Feed</div>
     <h1 class="page-hero-title">Briefs & Analysis</h1>
     <p class="page-hero-lede">Field-data-driven intelligence on migration, food security, and regional stability. Briefs published 2–3 times per week; expert analysis monthly.</p>
   </section>
-
-  <!-- Feed items -->
-  <section class="feed-stream">
-
-    {featured && (
-      <article class="feed-item feed-featured">
-        {featured.type === 'brief' ? (
-          <div class="feed-type">Field Alert</div>
-        ) : (
-          <div class="feed-type feed-type-expert">Expert Analysis</div>
-        )}
-        <div class="brief-meta">
-          <span class="brief-region">{featured.entry.data.region}</span>
-          <span class="brief-dot"></span>
-          <span class="brief-date">{formatDate(featured.entry.data.date)}</span>
-        </div>
-        <h2 class="feed-headline"><a href={`/${featured.type === 'brief' ? 'briefs' : 'expert'}/${featured.entry.id}`}>{featured.entry.data.title}</a></h2>
-        <p class="feed-summary">{featured.entry.data.summary}</p>
-        {featured.type === 'brief' && (
-          <div class="feed-data-strip">
-            <span class="feed-data-item"><span class="feed-data-label">EWS</span> <span class="feed-data-val" style={`color: var(--${featured.entry.data.alert === 'alert' ? 'red-alert' : featured.entry.data.alert === 'watch' ? 'amber' : 'green'})`}>{featured.entry.data.ews}/100</span></span>
-            {featured.entry.data.food_price && (
-              <span class="feed-data-item"><span class="feed-data-label">Food</span> <span class="feed-data-val">{featured.entry.data.food_price}</span></span>
-            )}
-            <span class="feed-data-item"><span class="feed-data-label">Responses</span> <span class="feed-data-val">{featured.entry.data.responses}</span></span>
-          </div>
-        )}
-        {featured.type === 'brief' && featured.entry.data.sources && (
-          <div class="feed-source">CSIORS Intelligence Brief · {featured.entry.data.sources}</div>
-        )}
-        {featured.type === 'expert' && (
-          <div class="feed-expert-meta">
-            <strong>{featured.entry.data.author}</strong> · Enriched with {featured.entry.data.responses} field responses
-          </div>
-        )}
-      </article>
-    )}
-
-    {rest.map(item => (
-      <article class={`feed-item ${item.type === 'expert' ? 'feed-expert-item' : ''}`}>
-        {item.type === 'expert' && <div class="feed-type feed-type-expert">Expert Analysis</div>}
-        <div class="brief-meta">
-          <span class="brief-region">{item.entry.data.region}</span>
-          <span class="brief-dot"></span>
-          <span class="brief-date">{formatDate(item.entry.data.date)}</span>
-        </div>
-        <h2 class="feed-headline-sm"><a href={`/${item.type === 'brief' ? 'briefs' : 'expert'}/${item.entry.id}`}>{item.entry.data.title}</a></h2>
-        <p class="feed-summary-sm">{item.entry.data.summary}</p>
-        {item.type === 'expert' && (
-          <div class="feed-expert-meta">
-            <strong>{item.entry.data.author}</strong> · Enriched with {item.entry.data.responses} field responses
-          </div>
-        )}
-      </article>
-    ))}
-
-  </section>
-
-  <div class="feed-more">
-    <p class="feed-end-note">Showing {allContent.length} published items. New briefs arrive 2–3 times per week.</p>
-  </div>
-
 </div>
+
+<!-- ===== LATEST BRIEF (featured) ===== -->
+{featured && (
+<div class="container">
+  <section class="feed-featured-section">
+    <div class="feed-section-label">Latest Intelligence Brief</div>
+    <article class="feed-featured-card">
+      <div class="feed-featured-body">
+        <div class="feed-type">Field Alert — {featured.entry.data.region}</div>
+        <h2 class="feed-featured-title">
+          <a href={`/briefs/${featured.entry.id}`}>{featured.entry.data.title}</a>
+        </h2>
+        <p class="feed-featured-summary">{featured.entry.data.summary}</p>
+        <div class="feed-data-strip">
+          <span class="feed-data-item">
+            <span class="feed-data-label">EWS</span>
+            <span class="feed-data-val" style={`color: var(--${featured.entry.data.alert === 'alert' ? 'red-alert' : featured.entry.data.alert === 'watch' ? 'amber' : 'green'})`}>
+              {featured.entry.data.ews}/100
+            </span>
+          </span>
+          {featured.entry.data.food_price && (
+            <span class="feed-data-item">
+              <span class="feed-data-label">Food price</span>
+              <span class="feed-data-val">{featured.entry.data.food_price}</span>
+            </span>
+          )}
+          <span class="feed-data-item">
+            <span class="feed-data-label">Responses</span>
+            <span class="feed-data-val">{featured.entry.data.responses}</span>
+          </span>
+          <span class="feed-data-item feed-data-date">{formatDate(featured.entry.data.date)}</span>
+        </div>
+      </div>
+    </article>
+  </section>
+</div>
+)}
+
+<!-- ===== EXPERT ARTICLES GRID ===== -->
+<div class="container">
+  <section class="feed-articles-section">
+    <div class="feed-section-header">
+      <div class="feed-section-label">Expert Analysis · Policy Research</div>
+      <div class="feed-article-count">{articles.length} publications · 2022–2026</div>
+    </div>
+
+    <!-- Category filter (JS-powered) -->
+    <div class="feed-filters" id="feedFilters">
+      <button class="feed-filter active" data-filter="all">All</button>
+      <button class="feed-filter" data-filter="Ethiopia">Ethiopia</button>
+      <button class="feed-filter" data-filter="Libya">Libya</button>
+      <button class="feed-filter" data-filter="Sudan">Sudan</button>
+      <button class="feed-filter" data-filter="Syria">Syria</button>
+      <button class="feed-filter" data-filter="Nigeria">Nigeria</button>
+      <button class="feed-filter" data-filter="Horn of Africa">Horn of Africa</button>
+      <button class="feed-filter" data-filter="MENA">MENA / Other</button>
+    </div>
+
+    <!-- Article grid -->
+    <div class="articles-grid" id="articlesGrid">
+      {articles.map(item => (
+        <article
+          class="article-card"
+          data-region={item.entry.data.region}
+        >
+          <a href={`/expert/${item.entry.id}`} class="article-card-link">
+            <div class="article-card-img">
+              {item.entry.data.image ? (
+                <img
+                  src={item.entry.data.image}
+                  alt=""
+                  loading="lazy"
+                  onerror="this.parentElement.classList.add('no-img')"
+                />
+              ) : (
+                <div class="article-card-img-placeholder">
+                  <span class="article-card-region-bg">{item.entry.data.region}</span>
+                </div>
+              )}
+            </div>
+            <div class="article-card-body">
+              <div class="article-card-meta">
+                <span class="article-card-region">{item.entry.data.region}</span>
+                <span class="article-card-date">{formatDateShort(item.entry.data.date)}</span>
+              </div>
+              <h3 class="article-card-title">{item.entry.data.title}</h3>
+              {item.entry.data.subtitle && (
+                <p class="article-card-sub">{item.entry.data.subtitle}</p>
+              )}
+              <div class="article-card-footer">
+                <span class="article-card-author">{item.entry.data.author}</span>
+                {item.entry.data.category && (
+                  <span class="article-card-cat">{item.entry.data.category}</span>
+                )}
+              </div>
+            </div>
+          </a>
+        </article>
+      ))}
+    </div>
+
+    <div class="feed-load-more" id="feedLoadMore" style="display:none;">
+      <button class="feed-load-btn" id="loadMoreBtn">Load more articles</button>
+    </div>
+  </section>
+</div>
+
+<script>
+  // Filter by region
+  const filters = document.querySelectorAll('.feed-filter');
+  const cards = document.querySelectorAll('.article-card');
+
+  filters.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filters.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.getAttribute('data-filter');
+      cards.forEach(card => {
+        const region = card.getAttribute('data-region') || '';
+        if (filter === 'all') {
+          (card as HTMLElement).style.display = '';
+        } else if (filter === 'MENA') {
+          // Show anything not in the specific filters
+          const specific = ['Ethiopia','Libya','Sudan','Syria','Nigeria','Horn of Africa'];
+          (card as HTMLElement).style.display = specific.some(r => region.includes(r)) ? 'none' : '';
+        } else {
+          (card as HTMLElement).style.display = region.includes(filter) ? '' : 'none';
+        }
+      });
+    });
+  });
+</script>
+
 </BaseLayout>

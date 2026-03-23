@@ -2,9 +2,18 @@
 title: "Ashkelon or Tel Aviv: Decisive Targets in the Gaza Conflict Narrative"
 date: 2023-11-03
 author: "Issam Khoury"
-region: "MENA"
+region: "Israel/Palestine"
 responses: 0
 summary: "\"Ashkelon and Tel Aviv in Hamas' crosshairs amid Gaza's plight.\""
+category: "Policy Analysis"
+subtitle: "\"Ashkelon and Tel Aviv in Hamas' crosshairs amid Gaza's plight.\""
+image: "https://globaluserfiles.com/media/186178_1c82ab3b9aa05bafd6d31ae87810cefa91a0377e.jpeg/v1/s/img_9be0eb1418f2-1.jpeg"
+tags:
+  - "gazaconflict-"
+  - "ashkelon-"
+  - "telaviv-"
+  - "hamasstrategy-"
+  - "middleeasttensions"
 ---
 
 Most of the Hamas fighters who infiltrated were either returned or killed inside Israeli borders on October 13, 2023. The raging conflict between Palestinians and Israelis entered a second phase, with the primary focus being the evacuation of Northern Gaza.
@@ -42,7 +51,13 @@ The tragedy is that the destroyed homes of Palestinians have been turned into mi
 The risk inherent in this proposal is that the Egyptian state has shown no interest in hosting Palestinian refugees in the Sinai region. Such an influx could increase the population density in the southern towns of the Gaza Strip, potentially negatively affecting sustainable development projects for Palestinians. This may also heighten Palestinian resentment towards Israelis, possibly sparking a new conflict between the two sides in the future.
 
  
-- Therefore, it is essential for the United Nations to activate peace channels between the warring parties, based on the following points:- The release of Israeli civilians in exchange for a commitment to avoid targeting civilian Palestinian camps in northern Gaza.- The establishment of a United Nations unit deployed along the Gaza-Israel border to ensure the resolution of military conflicts.- The recognition of Gaza as a state with 'Limited Legitimacy', which would involve security and administrative coordination with the neighboring Egyptian state until the establishment of a recognized Palestinian state.- The provision of international financial aid to the Egyptian state aimed at assisting Palestinian civilians in Gaza with administrative affairs, such as issuing passports and internationally recognized educational documents, and enabling their free travel through Egyptian airports, among other things.- The activation of sustainable development projects for Palestinians to reduce their dependency on Hamas and other extremist organizations.
+
+- Therefore, it is essential for the United Nations to activate peace channels between the warring parties, based on the following points:
+- The release of Israeli civilians in exchange for a commitment to avoid targeting civilian Palestinian camps in northern Gaza.
+- The establishment of a United Nations unit deployed along the Gaza-Israel border to ensure the resolution of military conflicts.
+- The recognition of Gaza as a state with 'Limited Legitimacy', which would involve security and administrative coordination with the neighboring Egyptian state until the establishment of a recognized Palestinian state.
+- The provision of international financial aid to the Egyptian state aimed at assisting Palestinian civilians in Gaza with administrative affairs, such as issuing passports and internationally recognized educational documents, and enabling their free travel through Egyptian airports, among other things.
+- The activation of sustainable development projects for Palestinians to reduce their dependency on Hamas and other extremist organizations.
 
  
 

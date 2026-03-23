@@ -5,6 +5,18 @@ author: "Jan Záhořík"
 region: "MENA"
 responses: 0
 summary: "\"Senegal's Uncertain Future: Rising Migration, Political Unrest, and Youth Discontent Amidst a Changing West Africa.\""
+category: "Policy Analysis"
+subtitle: "\"Senegal's Uncertain Future: Rising Migration, Political Unrest, and Youth Discontent Amidst a Changing West Africa.\""
+image: "https://globaluserfiles.com/media/186178_c942d2a4036cf22cc48521b5b8b25410c32a49df.jpeg/v1/s/img_20230824_105138_mp.jpeg"
+tags:
+  - "senegal2023-"
+  - "youthinsenegal-"
+  - "euandafrica-"
+  - "senegalmigration-"
+  - "politicalunrestsenegal-"
+  - "ousmanesonko-"
+  - "senegalprotests-"
+  - "africayouthmovement-"
 ---
 
 This year, Senegal has attracted attention of international media more than is usual. In recent months, there has been a big increase in the number of migrants from Senegal, but unlike in the past, Senegalese are among them in large numbers. **Frustration prevails among the young because they see no future here**, these are the words of a bartender who responds to my questions. Senegal, Gambia and Mauritania in particular have long served as stepping stones for migrants from West Africa. Boats from Dakar in Senegal as well as Nouadhibou from Mauritania try to reach the Canary Islands in bigger numbers this year as is documented by the UN and international media. 

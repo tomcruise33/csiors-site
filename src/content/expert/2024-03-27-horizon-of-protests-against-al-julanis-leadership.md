@@ -2,13 +2,27 @@
 title: "Horizon of protests against al-Julani's leadership"
 date: 2024-03-27
 author: "Issam Khoury"
-region: "MENA"
+region: "Syria"
 responses: 0
 summary: "\"Insight into Idlib protests against HTS and al-Julani's rule, focusing on detainee releases and evolving demands for change.\""
+category: "Policy Analysis"
+subtitle: "\"Insight into Idlib protests against HTS and al-Julani's rule, focusing on detainee releases and evolving demands for change.\""
+image: "https://globaluserfiles.com/media/186178_70abc6732da236dd02d499479d828eb071990c69.jpeg/v1/s/pexels-ahmed-akacha-19264036.jpeg"
+tags:
+  - "hayattahriralsham-"
+  - "abumuhammadaljulani-"
+  - "nusrafront-"
+  - "syriansalvationgovernment-"
+  - "abumariaalqahtani-"
+  - "jihadissa-"
+  - "abuahmadzakour-"
+  - "abuahmadhudud-"
 ---
 
 **The streets of Idlib, Sarmada, Jisr al-Shughour, and Binnish were filled with protests demanding clear changes in the authorities managing the Hay'at Tahrir al-Sham in Idlib province.** Initially, the protesters insisted on two main demands:
-- Release of detainees: Hay'at Tahrir al-Sham detained a large number of young men on various charges such as collaborating with the Syrian regime, collaborating with Moscow, and dealing with different international parties.- Dissolution of the General Security apparatus: **This is the most important security administration under Hay'at Tahrir al-Sham, known for its quick arrests and torture of suspects, sometimes leading to death, in order to obtain confessions proving their collaboration with the Syrian regime, or any international parties.**
+
+- Release of detainees: Hay'at Tahrir al-Sham detained a large number of young men on various charges such as collaborating with the Syrian regime, collaborating with Moscow, and dealing with different international parties.
+- Dissolution of the General Security apparatus: **This is the most important security administration under Hay'at Tahrir al-Sham, known for its quick arrests and torture of suspects, sometimes leading to death, in order to obtain confessions proving their collaboration with the Syrian regime, or any international parties.**
 
  
 
@@ -25,9 +39,11 @@ This influence extended beyond the military wing to the political aspect. **In 2
 Al-Julani, in his mid-forties, is knowledgeable in Islamic jurisprudence. Due to the presence of popular clerical leaders such as Abu Maria al-Qahtani and Jihad Issa, nicknamed "Abu Ahmad Zakour[[1]](#_ftn1)," it was difficult for al-Julani to monopolize power. Therefore, he sought to neutralize these leaders to the extent that he placed al-Qahtani under house arrest, while the leader Zakour fled to the Euphrates Shield areas, revealing many of al-Julani's secrets, the most prominent of which are:
 
  
+
 - Revealing the second most important name after al-Joulani, which is "Abu Ahmad Hudud," the most important security official for the internal security of Hay'at Tahrir al-Sham, whose real name is Ahmad Hussein al-Sharaa, who is the cousin of Abu Muhammad al-Joulani, and he also goes by the alias Wissam al-Sharaa.
 
  
+
 - The truth was revealed that al-Joulani sought in secret to eliminate the National Army in the areas of Euphrates Shield and Peace Spring, claiming that his forces were transferring military expertise to them, and he appointed Abu Ahmad Zakour to lead that coordination. **However, in secret, "Abu Ahmad Hudud" was seeking to encroach on areas of Euphrates Shield for the benefit of Hay'at Tahrir al-Sham.**
 
  
@@ -57,7 +73,10 @@ As for the al-Ahrar Army led by Abu Saleh al-Tahhan, one of its leaders, Abdul Q
 Following this policy, we see al-Jolani as smarter than Bashar al-Assad, who suppressed his people after the 2011 protests. **It seems that al-Jolani has learned from Assad's mistakes, so we expect him to take several other administrative measures to show a form of victory to the citizens. **Among the prominent steps are:
 
  
-- Releasing the largest number of detainees.- Expanding freedoms beyond the pre-protest period.- Granting some factions economic opportunities that were monopolized by their leaders.
+
+- Releasing the largest number of detainees.
+- Expanding freedoms beyond the pre-protest period.
+- Granting some factions economic opportunities that were monopolized by their leaders.
 
  
 

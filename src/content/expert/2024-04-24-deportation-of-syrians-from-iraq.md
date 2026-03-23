@@ -5,6 +5,17 @@ author: "Issam Khoury"
 region: "Syria"
 responses: 0
 summary: "\"Iraq's crackdown on Syrian refugees involves detentions and deportations, highlighting serious human rights issues.\""
+category: "Policy Analysis"
+subtitle: "\"Iraq's crackdown on Syrian refugees involves detentions and deportations, highlighting serious human rights issues.\""
+image: "https://globaluserfiles.com/media/186178_2bf1852c07e05c6e4cd521147cfc8cac09a97c5d.jpeg/v1/s/pexels-itsmmo-9741362.jpeg"
+tags:
+  - "iraq-"
+  - "middleeastpolitics"
+  - "internationallaw-"
+  - "syrianrefugees-"
+  - "humanrights-"
+  - "deportation-"
+  - "refugeecrisis-"
 ---
 
 Several Syrian families have been detained for several months in the "Residences" prison in the Karrada area and the National Security prison in the Iraqi capital, Baghdad. The Iraqi government is conducting a widespread arrest campaign targeting those holding illegal residencies in its territories. It is noteworthy that many detainees have documented records from the High Commissioner for Human Rights in the Kurdistan Region of Iraq, recognizing them as refugees protected by the international community. Iraq is a signatory to the 1951[[1]](applewebdata://0E66B6EB-30B0-4BCC-86D5-E110BEEEC2D7#_ftn1) Refugee Convention and the 1967 Protocol[[2]](applewebdata://0E66B6EB-30B0-4BCC-86D5-E110BEEEC2D7#_ftn2) Relating to the Status of Refugees.

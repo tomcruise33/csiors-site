@@ -5,6 +5,18 @@ author: "Jan Záhořík"
 region: "Sahel"
 responses: 0
 summary: "\"Examining Chad's Political Crisis, Socio-Economic Issues, French Influence, and Environmental Impacts on Sahel Agriculture.\""
+category: "Policy Analysis"
+subtitle: "\"Examining Chad's Political Crisis, Socio-Economic Issues, French Influence, and Environmental Impacts on Sahel Agriculture.\""
+image: "https://globaluserfiles.com/media/186178_7c5a2b1388106bd9fa5aefdba591d08924b5f3bf.jpeg/v1/s/photo-2024-03-05-18-04-47.jpeg"
+tags:
+  - "frenchinfluence-"
+  - "chad-"
+  - "sahel-"
+  - "politicalcrisis-"
+  - "tribaldynamics-"
+  - "economicstruggles-"
+  - "foreignmilitary-"
+  - "environmentalimpact"
 ---
 
 The first week of March 2024, international media have been full of reports on the **political crisis in Chad, reporting massive shooting** in the capital city N’Djamena, leaving dozens of people killed or wounded. According to the media, **the reason was a clash between president Mahamat Deby Itno and his relative, Yalla Dillo, from the opposition Socialist Party Without Borders (PSF).** It was not the first time the clash between the two camps took place as Chad has a long history of power struggle as a result of shifting clan and tribal allegiances.[[1]](applewebdata://24ABE9A7-727B-49B4-B539-030161D680A6#_ftn1) Internet was blocked for several days contributing to even more insecurity and rumors that began to circulate in the capital city and beyond. 

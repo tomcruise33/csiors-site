@@ -5,6 +5,9 @@ author: "Issam Khoury"
 region: "Syria"
 responses: 0
 summary: "The victims of the two earthquakes that struck Turkey with a magnitude of 7.8 on the Richter and 7.5 on the Richter scale have constantly been increasing since"
+category: "Policy Analysis"
+subtitle: "The victims of the two earthquakes that struck Turkey with a magnitude of 7.8 on the Richter and 7.5 on the Richter scale have constantly been increasing since"
+image: "https://globaluserfiles.com/media/186178_5cea1e6ce17e03ab0922ba011248a61458889ea1.webp/v1/s/nsplsh_f52cfe4ea5ec4824a3fd94a6221d986e_mv2.webp"
 ---
 
 The victims of the two earthquakes that struck Turkey with a magnitude of 7.8 on the Richter and 7.5 on the Richter scale have constantly been increasing since February 6, 2023, and the reason for that was the intensity of the destruction that left a large part of the wounded trapped under tons of rubble, and actually, these two earthquakes caused a vast landslide More than 50 meters and a depth of 40 meters in the Hatay region of Turkey and made the city of Antioch a completely destroyed city, and those damages extended to all cities located in (Gaziantep, Hatay[[1]](https://manage.wix.com/dashboard/9ee5bb2a-ca89-463b-9978-f536d75bb478/blog/create-post?tab=published&lang=en#_ftn1), Şanlıurfa, Malatya, Adıyaman, Kilis, Osmaniye, Adana, Diyarbakir).

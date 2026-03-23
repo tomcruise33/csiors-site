@@ -5,6 +5,9 @@ author: "Issam Khoury"
 region: "MENA"
 responses: 0
 summary: "Poverty is often identified as the primary factor attracting young people to join extremist organizations. The lack of job opportunities, especially in areas"
+category: "Policy Analysis"
+subtitle: "Poverty is often identified as the primary factor attracting young people to join extremist organizations. The lack of job opportunities, especially in areas"
+image: "https://globaluserfiles.com/media/186178_eb02ac9d607472fdff4cb1cbcdf67bd14206a2ed.jpeg/v1/s/dsc_0099.jpeg"
 ---
 
 Poverty is often identified as the primary factor attracting young people to join extremist organizations. The lack of job opportunities, especially in areas affected by civil war, can make this option seem viable. For instance, in the Syrian Badia, where pockets of the radical terrorist organization "Islamic State" are present, extreme poverty is rampant.

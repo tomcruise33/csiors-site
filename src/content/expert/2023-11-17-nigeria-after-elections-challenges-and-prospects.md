@@ -5,6 +5,18 @@ author: "Jan Záhořík"
 region: "Nigeria"
 responses: 0
 summary: "\"Nigeria's post-election future: Urgent industrialization for change and stability.\""
+category: "Policy Analysis"
+subtitle: "\"Nigeria's post-election future: Urgent industrialization for change and stability.\""
+image: "https://globaluserfiles.com/media/186178_fc9ca946ec86ab38d0434d8bcf2b9385299a223b.jpeg/v1/s/ba685e33-a89b-49c5-b246-64bc29c58952.jpeg"
+tags:
+  - "internationalrelations-"
+  - "csiors-"
+  - "nigeria-"
+  - "elections-"
+  - "africanstudies-"
+  - "janzahoik-"
+  - "industrialrevolution-"
+  - "economicgrowth-"
 ---
 
 “To roar again, Nigeria must unleash an industrial revolution.“
@@ -78,7 +90,9 @@ Nigeria is still divided, and although it doesn't seem so at first glance, there
 In a taxi in Abuja, Nigeria's capital, on my way home from a working dinner, I had to go through four checkpoints. At each one there is at least one policeman, some of whom you can see at a glance are intoxicated, one of whom is looking into my backpack where my laptop is and wants to inspect it. At each check-point, one is supposed to give a policeman a small cash so that the car can move on. This is just one of many things that made me wonder why so many young Nigerians want to leave the country, a country with an enormous potential. In order to boost the economic growth and stabilize the situation, the country desperately needs to initiate the process of industrialization. In the words of the African Development Bank head: “To roar again, Nigeria must unleash an industrial revolution.“[[5]](applewebdata://254CCA7E-840F-4BEC-B9BB-5928B8DD6EDB#_ftn5) That is also one of the main conclusions of the abovementioned debates in Lagos and Abuja which stressed the necessity of industrialization, inclusive development and stabilization of security situation. Without this, ordinary Nigerians will hardly see any major difference.
 
  
+
 # [[1]](applewebdata://254CCA7E-840F-4BEC-B9BB-5928B8DD6EDB#_ftnref1) See e.g. Chris Kwaja (2023): After Nigeria’s Elections: Nurturing the Seeds of Better Democracy, in: https://www.usip.org/publications/2023/04/after-nigerias-elections-nurturing-seeds-better-democracy (accessed on 14/11/2023).
+
 [[2]](applewebdata://254CCA7E-840F-4BEC-B9BB-5928B8DD6EDB#_ftnref2) See e.g. African Development Bank (2023): Nigeria Economic Outlook, in: https://www.afdb.org/en/countries-west-africa-nigeria/nigeria-economic-outlook (accessed on 14/11/2023). 
 
  

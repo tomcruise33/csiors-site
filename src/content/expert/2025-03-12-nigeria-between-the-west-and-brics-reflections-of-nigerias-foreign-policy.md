@@ -5,6 +5,14 @@ author: "Jan Záhořík"
 region: "Nigeria"
 responses: 0
 summary: "Nigeria navigates between the West and BRICS, balancing economic and political interests while maintaining strategic autonomy in a shifting global landscape."
+category: "Policy Analysis"
+subtitle: "Nigeria navigates between the West and BRICS, balancing economic and political interests while maintaining strategic autonomy in a shifting global landscape."
+image: "https://globaluserfiles.com/media/186178_76f78c48f4232362410266af5870a25b1f20f505.webp/v1/s/dall%C2%B7e-2025-03-12-10.30.12---a-minimalist-pencil-sketch-illustrating-nigerias-foreign-policy-balance.-the-drawing-features-a-simple-scale-with-nigeria-in-the-center-balancing-tw.webp"
+tags:
+  - "nigeria-"
+  - "foreignpolicy-"
+  - "geopolitics-"
+  - "brics"
 ---
 
 Nigeria, Africa’s most populous nation and largest economy, occupies a strategic position in global geopolitics. Its vast natural resources, particularly oil and gas, combined with its influential role in African regional politics, have made it a key player in international affairs. In recent years, Nigeria has sought to navigate its foreign policy between two major power blocs: the Western nations, traditionally led by the United States and Europe, and the emerging BRICS coalition (Brazil, Russia, India, China, and South Africa). This balancing act reflects Nigeria’s aspirations to maximize its economic and political interests while maintaining strategic autonomy.

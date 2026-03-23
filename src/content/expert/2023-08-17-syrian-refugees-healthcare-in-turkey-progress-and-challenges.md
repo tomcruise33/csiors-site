@@ -5,6 +5,18 @@ author: "Tomas Krizan"
 region: "Syria"
 responses: 0
 summary: "Syrian refugees in Turkey face healthcare challenges, language barriers, and the strains of COVID-19 on an overburdened system."
+category: "Policy Analysis"
+subtitle: "Syrian refugees in Turkey face healthcare challenges, language barriers, and the strains of COVID-19 on an overburdened system."
+image: "https://globaluserfiles.com/media/186178_97196dbdcb8099b0663812f36ec330025b698fe0.jpeg/v1/s/hospital-room-1520044.jpeg"
+tags:
+  - "syrian-refugees-"
+  - "covid-19-impact-"
+  - "turkey-healthcare-"
+  - "language-barriers-"
+  - "unofficial-clinics-"
+  - "who-refugee-health-program-"
+  - "access-to-medicine-"
+  - "turkish-ministry-of-health-"
 ---
 
 From 2011 to 2014, when Syrians attained the status of persons under temporary protection, their healthcare needs were overseen by the so-called Directorate for Disaster and Emergency Management (AFAD). However, until this status was introduced, refugees' access to medicine and treatment was very limited, except in emergency cases. The Turkish Ministry of Health created the Chief Directorate for Migrant Health Services under the Public Health Institute, which was to take over all responsibilities related to healthcare for migrants, especially Syrians living under temporary protection. In November 2015, a circular No. 9648 entitled "Basics for providing health services to persons living under temporary protection" was issued. This made the Ministry of Health responsible for all primary and preventive care, diagnosis, treatment, immunization, environmental hygiene, reproductive and women's health, child and adolescent health, and the fight against communicable diseases, epidemics, and tuberculosis. Syrians living under temporary protection now have access to all healthcare, including mental health, in all public institutions free of charge. [[1]](#_ftn1)
@@ -16,7 +28,11 @@ Due to the growing complexity of humanitarian crises worldwide and their health 
  
 
 The World Health Organization (WHO) closely cooperates with the Turkish Ministry of Health in providing culturally and linguistically sensitive health services for Syrian refugees. The WHO branch in Turkey:
-- supports 7 refugee health training centers where Syrian doctors and nurses undergo workplace training and also provide health services for Syrian patients- prepares Arabic-Turkish interpreters to serve as guides for patients at various levels of healthcare- provides further medical education to Turkish and Syrian healthcare workers in diagnosing and treating mental health, such as depression, anxiety, and post-traumatic disorders- provides training and staff to care for the health of the Syrian community and provide home care for elderly and disabled Syrians
+
+- supports 7 refugee health training centers where Syrian doctors and nurses undergo workplace training and also provide health services for Syrian patients
+- prepares Arabic-Turkish interpreters to serve as guides for patients at various levels of healthcare
+- provides further medical education to Turkish and Syrian healthcare workers in diagnosing and treating mental health, such as depression, anxiety, and post-traumatic disorders
+- provides training and staff to care for the health of the Syrian community and provide home care for elderly and disabled Syrians
 
  
 

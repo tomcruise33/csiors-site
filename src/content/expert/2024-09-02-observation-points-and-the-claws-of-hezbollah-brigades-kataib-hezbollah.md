@@ -5,6 +5,18 @@ author: "Issam Khoury"
 region: "Syria"
 responses: 0
 summary: "\"Iranian-backed militias target U.S. observation towers in Syria, escalating tensions and leveraging local tribes to resist American influence in the region.\""
+category: "Policy Analysis"
+subtitle: "\"Iranian-backed militias target U.S. observation towers in Syria, escalating tensions and leveraging local tribes to resist American influence in the region.\""
+image: "https://globaluserfiles.com/media/pxb_5515372_82cc9a19e1c800240e1466f32753738e.jpg/v1/s/pxb_5515372_82cc9a19e1c800240e1466f32753738e.jpg"
+tags:
+  - "syria-"
+  - "middleeasttensions"
+  - "geopolitics-"
+  - "middleeastconflict-"
+  - "usmilitary-"
+  - "militias-"
+  - "hezbollah-"
+  - "security-"
 ---
 
 The assassination war pursued by the Mossad and the Israeli army has left Iran and its allies in a state of confusion. They are unable to inflict pain on Israel as clearly as it does, yet they are compelled to promote in the media, in front of their audience, that they have much in store and surprising actions against Israel. The red flag has been raised on the minarets of some husseiniyahs in the Iranian city of Qom, a clear indication of the inevitability of Iranian revenge for the killing of Ismail Haniyeh at the Iranian guesthouse. Hassan Nasrallah announced on August 1, 2024, that his party would avenge the killing of military leader Fouad Shukr.

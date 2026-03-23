@@ -5,6 +5,18 @@ author: "csiors"
 region: "Turkey"
 responses: 0
 summary: "Let us navigate the Middle East nuances: collaboration between Indonesia and Algeria; unchanged interests from Egypt's Bank; Turkey could vote Sweden to NATO."
+category: "Policy Analysis"
+subtitle: "Let us navigate the Middle East nuances: collaboration between Indonesia and Algeria; unchanged interests from Egypt's Bank; Turkey could vote Sweden to NATO."
+image: "https://globaluserfiles.com/media/186178_e9cbb93a98176f92deb6cb10618e46ab11dbc9e2.jpeg/v1/s/foto-weekly-watch-(11).jpeg"
+tags:
+  - "turkey"
+  - "algeria"
+  - "egypt"
+  - "indonesia-algeria-bilateral-ties"
+  - "trade-investment-cooperation"
+  - "pertamina-energy-investment"
+  - "-global-diplomacy-palestinian-concerns"
+  - "central-bank-egypt-interest-rates"
 ---
 
 Let us guide you through the Middle East with curated links: insightful analyses and forecasts from top sources on regional complexities.

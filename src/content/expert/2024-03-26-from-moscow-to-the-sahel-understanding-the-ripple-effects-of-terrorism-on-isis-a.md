@@ -5,6 +5,18 @@ author: "Fuat Emir Şefkatli"
 region: "Sahel"
 responses: 0
 summary: "\"Global jihad intensifies in Africa post-2023, leveraging crises in Sahel. Fragile states inadvertently aid ISIS's expansion and activities.\""
+category: "Policy Analysis"
+subtitle: "\"Global jihad intensifies in Africa post-2023, leveraging crises in Sahel. Fragile states inadvertently aid ISIS's expansion and activities.\""
+image: "https://globaluserfiles.com/media/pxb_7537100_79d7c6eb3e354f90c8f4863f98b14a85.jpg/v1/s/pxb_7537100_79d7c6eb3e354f90c8f4863f98b14a85.jpg"
+tags:
+  - "internationalterrorism-"
+  - "globaljihad-"
+  - "africa-"
+  - "sahelcrisis-"
+  - "isisexpansion-"
+  - "moscowattack-"
+  - "terrorism-"
+  - "fragilestates-"
 ---
 
 The attack carried out on the evening of March 22nd at the "Crocus City Hall" concert hall in Moscow is recorded as one of the bloodiest terrorist attacks within the borders of Russia to date. According to official statements, 143 individuals have lost their lives, while more than 100 have been injured. Russian intelligence units and security forces swiftly announced the detention of 11 individuals, including the 4 terrorists responsible for the attack. Moreover, images disseminated on social media after attack highlighted the militants’ calm and professional attitudes, sparking discussions on whether this attack was connected to ISIS. This speculation was clarified after ISIS claimed responsibility for the attack through their Telegram channel. It was understood that the terrorists, identified as Tajik nationals, executed this bloody act on behalf of ISIS Khorasan Branch.

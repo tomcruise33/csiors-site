@@ -5,6 +5,17 @@ author: "Jan Záhořík"
 region: "Nigeria"
 responses: 0
 summary: "2026 will decide Nigeria’s future. Without real security and governance reform, the 2027 elections risk accelerating fragmentation instead of democracy."
+category: "Policy Analysis"
+subtitle: "2026 will decide Nigeria’s future. Without real security and governance reform, the 2027 elections risk accelerating fragmentation instead of democracy."
+image: "https://globaluserfiles.com/media/pxb_6595453_975280953e0517b2db856a925d58b6ef.jpg/v1/s/pxb_6595453_975280953e0517b2db856a925d58b6ef.jpg"
+tags:
+  - "nigeria"
+  - "westafrica"
+  - "securitygovernance"
+  - "elections2027"
+  - "politicalrisk"
+  - "statebuilding"
+  - "sahel"
 ---
 
 Nigeria will hold general elections in early 2027. Long before ballots are cast, however, the country faces a decisive year in 2026: a period in which political competition will intensify while structural crises in security, governance, and livelihoods continue to deepen. Over the past two decades, successive governments have failed to deliver the most basic public good, safety and security. Ordinary Nigerians have experienced expanding insurgency, mass kidnapping, communal violence, daily criminality, economic decline, and a growing perception that the state itself benefits from insecurity. As one Nigerian friend of mine bluntly observes, many citizens now believe that “security officials and politicians have either been compromised or complacent while killings and destruction of livelihood occur.” 

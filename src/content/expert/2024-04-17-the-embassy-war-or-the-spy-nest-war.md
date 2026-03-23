@@ -2,9 +2,21 @@
 title: "The Embassy War or the Spy Nest War"
 date: 2024-04-17
 author: "Issam Khoury"
-region: "MENA"
+region: "Israel/Palestine"
 responses: 0
 summary: "Explore the \"Embassy War\": A look at how diplomatic sites double as military hubs in Middle East espionage and conflict."
+category: "Policy Analysis"
+subtitle: "Explore the \"Embassy War\": A look at how diplomatic sites double as military hubs in Middle East espionage and conflict."
+image: "https://globaluserfiles.com/media/186178_c126c33b364bdc82c2e36ba1b70ca51e85826d4f.png/v1/s/obr%C3%A1zok13.png"
+tags:
+  - "israel"
+  - "internationalrelations"
+  - "geopolitics-"
+  - "embassywar-"
+  - "middleeastespionage-"
+  - "diplomaticconflict-"
+  - "iranisraelrelations-"
+  - "covertoperations-"
 ---
 
 Iranian Foreign Minister Hossein Amir Abdollahian tweeted on April 1, 2024, via Twitter platform: "The Swiss ambassador has been summoned as a representative of American interests in Iran, and America is held responsible for the attack on the Iranian consulate as it is an ally of Israel.[[1]](#_ftn1)"
@@ -57,10 +69,21 @@ In February/November 2008, the prominent military leader of Hezbollah, Imad Mugh
 Zahedi's tasks in Lebanon and Syria were to ensure the loyalty of followers to the Iranian Revolutionary Guard. He worked on two main aspects:
 
  
-- **The popular aspect, with the main goal of gaining popular acceptance for Iran by providing a range of services, including:*** Strengthen the role of Iranian cultural centers in Syrian cities.- Building "Husseiniyat" mosques that provide financial aid to the poor in Lebanon and Syria.- Increase scholarships for studying at Iranian universities.
+
+- **The popular aspect, with the main goal of gaining popular acceptance for Iran by providing a range of services, including:***
+ Strengthen the role of Iranian cultural centers in Syrian cities.
+- Building "Husseiniyat" mosques that provide financial aid to the poor in Lebanon and Syria.
+- Increase scholarships for studying at Iranian universities.
 
  
-- ***The security aspect, this part aims to get rid of elements not loyal to Tehran, and among the prominent steps:***Marginalize the prominent security role of Brigadier Asef Shawkat, by dismissing him from the Military Intelligence Division, promoting him to the rank of brigadier, and linking him to the Chief of Staff, which is an administrative position with no impact in a security state like Syria.- Limit the powers of the Military Intelligence Division in Syria and place the highest security leadership in the hands of the Syrian State Security branch, affiliated with Iranian intelligence.- Intensify training missions for Syrian security elements in Tehran.- Transfer the files of Palestinian elements affiliated with Hamas to the Iranian Revolutionary Guard.- Sow discord among the Lebanese March 14 Alliance team, paving the way for their political and security marginalization.- Zahedi joining the Hezbollah Lebanese Shura Council[[2]](#_ftn2), to ensure the Revolutionary Guard's control over all party decisions.
+
+- ***The security aspect, this part aims to get rid of elements not loyal to Tehran, and among the prominent steps:***
+Marginalize the prominent security role of Brigadier Asef Shawkat, by dismissing him from the Military Intelligence Division, promoting him to the rank of brigadier, and linking him to the Chief of Staff, which is an administrative position with no impact in a security state like Syria.
+- Limit the powers of the Military Intelligence Division in Syria and place the highest security leadership in the hands of the Syrian State Security branch, affiliated with Iranian intelligence.
+- Intensify training missions for Syrian security elements in Tehran.
+- Transfer the files of Palestinian elements affiliated with Hamas to the Iranian Revolutionary Guard.
+- Sow discord among the Lebanese March 14 Alliance team, paving the way for their political and security marginalization.
+- Zahedi joining the Hezbollah Lebanese Shura Council[[2]](#_ftn2), to ensure the Revolutionary Guard's control over all party decisions.
 
  
 

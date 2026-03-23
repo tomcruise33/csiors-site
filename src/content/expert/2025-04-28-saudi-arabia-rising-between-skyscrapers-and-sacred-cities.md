@@ -5,6 +5,18 @@ author: "Tomas Krizan"
 region: "MENA"
 responses: 0
 summary: "Saudi Arabia balances sacred heritage with soaring skylines—Medina’s “mini-Manhattan” shows how modern projects rise while tradition and faith remain central."
+category: "Policy Analysis"
+subtitle: "Saudi Arabia balances sacred heritage with soaring skylines—Medina’s “mini-Manhattan” shows how modern projects rise while tradition and faith remain central."
+image: "https://globaluserfiles.com/media/186178_76ac7fc066a2bfd47aa8d892d64dea36fdc8b78a.png/v1/s/8836-32538b63-4c81-4999-b263-a80c0365789b.png"
+tags:
+  - "saudiarabia-"
+  - "medina-"
+  - "vision2030-"
+  - "heritageandmodernity-"
+  - "minimanhattan-"
+  - "middleeasttravel-"
+  - "culturalblend-"
+  - "skylinesandsouqs"
 ---
 
 *
@@ -12,7 +24,9 @@ summary: "Saudi Arabia balances sacred heritage with soaring skylines—Medina�
         
 
             
+
 #  
+
 Street signs near the Prophet’s Mosque in Medina, where new hotels and cranes signal the city's rapid development.*
 
 Saudi Arabia is undergoing a remarkable transformation, with glittering skyscrapers and modern infrastructure rising alongside centuries-old mosques and traditional marketplaces. Nowhere is this contrast more evident than in the holy city of **Medina**, where the reverence of sacred sites coexists with a skyline punctuated by construction cranes. Visitors arriving on the state-of-the-art **Haramain High-Speed Train** can step off into a city that is both an ancient pilgrimage destination and a burgeoning urban center. The nation’s ambitious reform agenda, known as **Vision 2030**, seeks to diversify and modernize the economy – but it also emphasizes preserving cultural identity. This delicate balance between modernization and tradition defines the Saudi experience today, creating a landscape where **glass towers** cast their shadows on **historical mosques**, and where change is embraced with cautious optimism.

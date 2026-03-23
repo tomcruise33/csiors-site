@@ -5,6 +5,18 @@ author: "Filip Benes"
 region: "MENA"
 responses: 0
 summary: "\"Saudi Arabia's 2023 economy thrives with rapid expansion, diversification from oil to sectors like renewable energy, tourism, and tech.\""
+category: "Policy Analysis"
+subtitle: "\"Saudi Arabia's 2023 economy thrives with rapid expansion, diversification from oil to sectors like renewable energy, tourism, and tech.\""
+image: "https://globaluserfiles.com/media/186178_c38540b7d11019b20fa3d60462f06e9aebae5513.jpeg/v1/s/img_0061.jpeg"
+tags:
+  - "saudieconomy2023-"
+  - "vision2030-"
+  - "economicexpansion-"
+  - "oilandbeyond-"
+  - "gigaprojects-"
+  - "neomcity-"
+  - "sustainabledevelopment-"
+  - "investinsaudi"
 ---
 
 Saudi Arabia's economy in 2023 presents a **dynamic landscape**, driven primarily by its oil industry, but also marked by significant diversification efforts and substantial investments in various sectors[1][2][3].

@@ -5,9 +5,21 @@ author: "Saywan Ibrahim"
 region: "Iraq"
 responses: 0
 summary: "Eight years after ISIL’s fall, peace in Ninewa is fragile. Saywan Ibrahim examines mistrust, return, and justice in Iraq’s “small Iraq.”"
+category: "Policy Analysis"
+subtitle: "Eight years after ISIL’s fall, peace in Ninewa is fragile. Saywan Ibrahim examines mistrust, return, and justice in Iraq’s “small Iraq.”"
+image: "https://globaluserfiles.com/media/186178_30c4c42a5d647f93a67423d5371e3aa2412b55f9.png/v1/s/in-ninewa-peace-holds-but-trust-remains-fragile.png"
+tags:
+  - "iraq-"
+  - "ninewa-"
+  - "peacebuilding-"
+  - "postconflict-"
+  - "reconciliation-"
+  - "research-"
+  - "humansecurity"
 ---
 
 #  
+
  
 
 *Eight years after the defeat of Islamic State in Iraq and Levant (ISIL), life in Ninewa is inching back to normal. Reconstruction of landmarks such as Mosul Airport and the Al-Nuri Mosque offers glimpses of renewal. Yet mistrust and division still run deep. Stability remains fragile, communities and authorities continue to struggle with return, justice, and the difficult work of building a shared future.*
@@ -17,7 +29,9 @@ summary: "Eight years after ISIL’s fall, peace in Ninewa is fragile. Saywan Ib
 *This article opens a series of analytical pieces on Ninewa’s enduring challenges—return and reintegration, disputes over identity and belonging both intra- and inter-communal, security, political exclusion, and the search for peace and justice, as well as my reflections and observations from a decade of working on and covering the region as a researcher, advisor, and consultant to local authorities and international organizations.*
 
  
+
 ## **War and Aftermath**
+
  
 
 Since the ISIL conflict began, I have worked across crisis response, humanitarian access and safety, and peacebuilding—monitoring developments during the conflict and in its aftermath, while responding to the humanitarian crisis in Ninewa province and the Kurdistan Region. I closely witnessed its impact. The burning of libraries, universities, schools, temples, and archaeological sites by ISIL carried the shock of a harbinger of cultural devastation, erasing centuries of history and memory. In the aftermath of ISIL's defeat, I have continued to work closely with communities across Ninewa and the region where the wreckage of infrastructure and the trauma of war remain visible today.
@@ -39,7 +53,9 @@ Today, the province enjoys a measure of stability. Car bombs and assassinations 
 The withdrawal of international organizations, whose development, peacebuilding, and social cohesion programs remain urgently needed, has only deepened this vulnerability.
 
  
+
 ## **Diversity and Division**
+
  
 
 Ninewa is often described as a “small Iraq” for its diversity. Ezidis, Sunni and Shia Muslims, Chaldeans and Assyrians, Turkmen, distinct Kurdish tribes such as the Gargari and Shabak, and Arab tribes like the Shammar and Jubour all share the province. That same diversity also made it vulnerable. Extremist groups—first Al-Qaeda, then the ISIL—exploited these divisions through genocidal attacks on Ezidis, massacres of Shia families and the exile of Christians. The campaigns tore at Ninewa’s social fabric, leaving deep mistrust that endures today.
@@ -65,7 +81,9 @@ A road diverging from Highway 47, running through a constellation of Ezidi and A
 A member of the community told me he often changes his story depending on who mans the post—his affiliations, political ties or even the reason for his trip. “Basically, I have to prove I am a good man every day,” he said. “Otherwise, I will be turned back.” These checkpoints symbolize not just security, but also the enduring mistrust between citizens and the state.
 
  
+
 ## **Return and Its Fault Lines**
+
  
 
 The process of return highlights many of Ninewa’s challenges. Buses now bring families—often stigmatized as “ISIL families”—from Al-Hol Camp in Syria under heavy security. Their arrival stirs anxiety in communities scarred by ISIL atrocities and is seen by some as a political gesture ahead of elections rather than part of a national reintegration strategy. By August 15, 2025, more than 25,000 Iraqi nationals had been repatriated from Al-Hol, with most originally from Anbar Salah al-Din and Ninewa. returnees are first received at the Al-Amal center (located south of Mosul) before their return to their areas of origin, a process that adds to local unease about the pace and management of returns. In 2024 alone, Iraq increased the number of citizens repatriated from the Al-Hol and Roj camps by 165 percent compared with the previous year.
@@ -87,7 +105,9 @@ Across Ninewa, communities question whether return and reintegration can succeed
 In Ayadiya, a Sunni Turkmen-majority town, I met an elderly man holding a plastic bag of family IDs outside a government office. He hesitated to go in, fearing questions about relatives accused of ties to the Islamic State. His hesitation is not unusual: many returnees remain caught between official promises of compensation and the undercurrent of suspicion that shadows their lives.
 
  
+
 ## **Memory and Justice**
+
  
 
 In Ezidi areas, memory itself has become politicized. Posters displayed at checkpoints, village gates and marketplaces on the 11th anniversary of the Ezidi genocide denounce the absence of justice: *“The delay in transitional justice is another genocide against the Ezidis.”* Others strike a tone of defiance: *“Our memory is stronger than genocide attempts.”*
@@ -107,7 +127,9 @@ Elsewhere in teahouses and marketplaces across Ninewa, politics dominates conver
 At the same time, the exclusion of youth and women from decision-making shows how political life remains closed, even as unemployment rises and opportunities remain scarce.
 
  
+
 ## **Divided Narratives**
+
  
 
 Events beyond Iraq add to this unease. The shift in power in northern Syria in December 2024 carried different meanings for different groups in Ninewa. For some, it was seen as a regime change with uncertain implications. For Ezidis and Shia communities, it raised fears of renewed extremism. Others regarded it as another turn in the region’s shifting dynamics. For minorities in particular, the violence directed against Alawites and Druze deepened the sense that they, too, remain vulnerable. Either way, it reinforced Ninewa’s exposure to forces beyond its borders.

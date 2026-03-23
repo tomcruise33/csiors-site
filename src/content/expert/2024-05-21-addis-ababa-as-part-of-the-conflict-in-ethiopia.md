@@ -5,6 +5,18 @@ author: "Jan Záhořík"
 region: "Ethiopia"
 responses: 0
 summary: "\"Addis Ababa's conflict involves Tigray, Amhara, and Oromo divisions, with significant demographic changes and political tensions exacerbating the situation.\""
+category: "Policy Analysis"
+subtitle: "\"Addis Ababa's conflict involves Tigray, Amhara, and Oromo divisions, with significant demographic changes and political tensions exacerbating the situation.\""
+image: "https://globaluserfiles.com/media/186178_833af2bfbabc5ba19178d1fe9c8ad6f9a44c2c58.jpeg/v1/s/20230403_183224.jpeg"
+tags:
+  - "addisababa-"
+  - "humanrights-"
+  - "ethnictensions-"
+  - "ethiopiaconflict-"
+  - "oromo-"
+  - "amhara-"
+  - "tigray-"
+  - "urbangrowth-"
 ---
 
 Current conflict in Ethiopia, which basically divides the society and deepens scars in the Tigray, Amhara, Oromo triangle of ethnic groups, has included also the capital city, Addis Ababa. Addis Ababa is home to about ten million people and the number is still growing due to significant rural-urban migration. Addis Ababa has been at the center of political disputes many times, due to its complex history. Addis Ababa was established at the end of 19th century in the area of the village called Finfinne inhabited by Oromo-speaking people. In the late 20th century, with the rise of the Oromo nationalism, this fact gained prominence and the question of “who owns Addis Ababa?” became one of the central parts of the Oromo movements.[1]

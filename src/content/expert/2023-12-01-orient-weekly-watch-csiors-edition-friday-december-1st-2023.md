@@ -5,6 +5,18 @@ author: "csiors"
 region: "Libya"
 responses: 0
 summary: "Let us navigate the Middle East nuances: digital trasformation in Morocco; Italy called Libya for immigrant control; Iran and the deal for military jets."
+category: "Policy Analysis"
+subtitle: "Let us navigate the Middle East nuances: digital trasformation in Morocco; Italy called Libya for immigrant control; Iran and the deal for military jets."
+image: "https://globaluserfiles.com/media/186178_61c84fd3b177ca21603ca785ea31a192ac68e57b.jpeg/v1/s/foto-weekly-watch-(5).jpeg"
+tags:
+  - "international-relations-"
+  - "immigration-"
+  - "morocco"
+  - "tunisian-migration"
+  - "tunisia"
+  - "italy"
+  - "libya"
+  - "russia"
 ---
 
 Let us guide you through the Middle East with curated links: insightful analyses and forecasts from top sources on regional complexities.

@@ -5,6 +5,18 @@ author: "Jan Záhořík"
 region: "Sahel"
 responses: 0
 summary: "\"Exploring the emergence of a multipolar Sahel amid declining French dominance.\""
+category: "Policy Analysis"
+subtitle: "\"Exploring the emergence of a multipolar Sahel amid declining French dominance.\""
+image: "https://globaluserfiles.com/media/186178_ba8dccdecf5708bba12f66b00e010d6d24d6eccc.jpeg/v1/s/3af850e6-2d60-4c16-988d-99b2e0e3c6bc-(1).jpeg"
+tags:
+  - "internationalrelations-"
+  - "multipolarsahel-"
+  - "westafrica-"
+  - "globaldynamics-"
+  - "sahelshift-"
+  - "frenchinfluence-"
+  - "africangeopolitics-"
+  - "nigerpolitics-"
 ---
 
 **What is the most probable scenario in Niger, and possibly in all (Francophone) West Africa is the road towards multipolarity in which France would be one of many foreign actors in one way or another operating economically and diplomatically but without such an enormous power as it had for generations since decolonization.**

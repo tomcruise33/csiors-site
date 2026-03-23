@@ -5,6 +5,18 @@ author: "csiors"
 region: "Morocco"
 responses: 0
 summary: "Let us navigate the Middle East nuances: new migration agreement for Morocco; mobile payment in Algeria; innovations on Saudi Arabia's tech scene."
+category: "Policy Analysis"
+subtitle: "Let us navigate the Middle East nuances: new migration agreement for Morocco; mobile payment in Algeria; innovations on Saudi Arabia's tech scene."
+image: "https://globaluserfiles.com/media/186178_8d0aa0203fb546a3a52a2a34bcdc35befc564293.jpeg/v1/s/foto-weekly-watch-(21).jpeg"
+tags:
+  - "european-parliament"
+  - "migration-pact"
+  - "asylum-procedures"
+  - "refugee-distribution"
+  - "gie-monetique-"
+  - "mobile-payment-"
+  - "interoperability"
+  - "algerian-media"
 ---
 
 Let us guide you through the Middle East with curated links: insightful analyses and forecasts from top sources on regional complexities.

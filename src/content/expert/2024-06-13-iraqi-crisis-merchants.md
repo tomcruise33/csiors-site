@@ -5,6 +5,16 @@ author: "Issam Khoury"
 region: "Iraq"
 responses: 0
 summary: "\"Refugees in Iraq face exorbitant fees for residency permits, turning them into commodities in a system rife with corruption and exploitation.\""
+category: "Policy Analysis"
+subtitle: "\"Refugees in Iraq face exorbitant fees for residency permits, turning them into commodities in a system rife with corruption and exploitation.\""
+image: "https://globaluserfiles.com/media/pxb_1172016_4852242cf7ff3450458a8a88ffb36cb5.jpg/v1/s/pxb_1172016_4852242cf7ff3450458a8a88ffb36cb5.jpg"
+tags:
+  - "humanitariancrisis-"
+  - "iraqrefugeecrisis-"
+  - "corruption"
+  - "exploitation-"
+  - "refugeerights-"
+  - "migration"
 ---
 
 ***Corruption, violation of refugee rights, and manipulation of obligations imposed on governments that have ratified the Refugee Protection Protocol, and the competition between the Iraqi central government and the Kurdistan Regional Government, with refugees paying the price, turning from a vulnerable group into a group traded upon. In light of this, we see the weakness of the information published by the High Commissioner for Human Rights in Iraq. Is it weakness, cover-up, or a lack of transparency and good governance?***
@@ -18,7 +28,10 @@ The outbreak of the civil war in Syria has led to an increase in the number of r
  
 
 The number of refugees in those camps is estimated at approximately 174,132 people[[1]](#_ftn1), distributed as follows:
-- Erbil Governorate: 5,387 families consisting of 26,577 individuals- Dohuk Governorate: 27,115 families consisting of 136,876 individuals- Sulaymaniyah Governorate: 2,218 families consisting of 10,679 individuals.
+
+- Erbil Governorate: 5,387 families consisting of 26,577 individuals
+- Dohuk Governorate: 27,115 families consisting of 136,876 individuals
+- Sulaymaniyah Governorate: 2,218 families consisting of 10,679 individuals.
 
  
 
@@ -33,7 +46,9 @@ Inside the camps, a commercial, social, and educational community has emerged, i
  
 
  
+
 # **The Syrian displacement to Iraq**
+
  
 
 Kurdish Syrians were among the first to migrate to the Kurdistan Region of Iraq, relying on the deep connections between their parties in Syria and the Kurdistan Democratic Party, the Patriotic Union of Kurdistan, and the Kurdistan Workers' Party. Later, particularly after 2015, many Syrian Christian and Druze families migrated to Erbil with the aim of seeking opportunities to migrate to Australia, New Zealand, and Canada. It seems that these embassies were sympathetic to these minorities.
@@ -199,7 +214,9 @@ This reality has become tangible to refugees, so most of them prefer to reside i
             
 
  
+
 # **Entering to Iraq**
+
  
 
 At the end of March 2024, the Iraqi government stopped issuing travel visas for Syrians. Before that, law firms and transaction processing offices charged $150 to secure a tourist visa for Syrian individuals with a valid passport for six months to enter the Kurdistan region of Iraq. However, the cost of travel visas for Syrians to other regions in central and southern Iraq exceeded $1,200.
@@ -231,6 +248,7 @@ Due to the deteriorating medical reality in the self-administered areas of north
 The Syrian-Iraqi borders are vast and cannot be controlled, especially with tribal connections between the two sides of the border, tangible cooperation within the same tribe, in addition to the prevalent corruption in the security forces and Iraqi officers. The most prominent of these crossings are:
 
  
+
 - **Al-Ya'rubiyah Crossing:** It is designated for trucks and goods, and sometimes some illegal migrants hide among the goods, and they are overlooked due to bribery. Also, a few kilometers away from this crossing, local groups are active in organizing illegal crossings in cooperation with Iraqi parties, where the latter determine the safe crossing time after ensuring the absence of border patrols.
 
  
@@ -248,6 +266,7 @@ The Syrian-Iraqi borders are vast and cannot be controlled, especially with trib
  
 
  
+
 - **Faysh Khabur Crossing:** It is a crossing that cannot be crossed illegally, but it is used for illegal escape under the pretext of medical reasons, and sometimes some officials' cars pass through without inspecting illegal immigrants who are close to these officials.
 
  
@@ -263,6 +282,7 @@ The Syrian-Iraqi borders are vast and cannot be controlled, especially with trib
             
 
  
+
 - **Al Bukamal Crossing: **Controlled by Syrian customs and units of the Popular Mobilization Forces on the Syrian side, and on the Iraqi side, there are anti-terrorism units, army units, in addition to units affiliated with the Popular Mobilization Forces, making it difficult for smuggling networks to illegally cross. Therefore, the smuggling circle at this crossing is limited to officers and leaders in the Popular Mobilization Forces units, where they hide illegal Syrians in their cars, and since their cars are not subject to inspection, they transport illegal refugees to the city of Ramadi for an agreed amount of money, usually around $2,500. Only Syrians loyal to the Syrian regime or Syrians opposed to the self-administration government in northeastern Syria resort to this crossing.
 
  
@@ -284,7 +304,9 @@ Erbil is the preferred destination for refugees after crossing the Syrian border
  
 
  
+
 # **The journey from Iraqi Kurdistan to Baghdad**
+
  
 
 Job opportunities in the Kurdistan region of Iraq are very weak due to low investments and high population density, with a large number of displaced persons and refugees in the region. 
@@ -314,7 +336,9 @@ Through our investigative research and interviews with residents living illegall
  
 
  
+
 # **Moving between the cities of the central Iraqi government**
+
  
 
 There are many military checkpoints "Al-Saytara" at the entrances of cities, and this prevents illegal refugees from moving freely between cities, so they also resort to smugglers, who are also linked to the security apparatus, army officers, or Popular Mobilization Forces, where the cost of transporting an illegal immigrant between the city of Ramadi and the city of Baghdad is $100, and prices vary between cities.
@@ -322,7 +346,9 @@ There are many military checkpoints "Al-Saytara" at the entrances of cities, and
  
 
  
+
 # **Residence, Work, and Detention**
+
  
 
 Iraqi society is tribal, and in tribal customs, there is a general culture that calls for honoring the guests and protecting the refugees. Therefore, we see real tolerance from the locals towards illegal refugees in terms of securing residence or providing housing at an affordable price, especially if the refugees are families with women and children.

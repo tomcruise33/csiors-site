@@ -5,6 +5,9 @@ author: "Issam Khoury"
 region: "Syria"
 responses: 0
 summary: "The visit of the Chairman of the Joint Chiefs of Staff in the US Army, General Mark Milley, [1] to an American base in Syria [2] on March 4, 2023, preceded a"
+category: "Policy Analysis"
+subtitle: "The visit of the Chairman of the Joint Chiefs of Staff in the US Army, General Mark Milley, [1] to an American base in Syria [2] on March 4, 2023, preceded a"
+image: "https://globaluserfiles.com/media/186178_c16871c9b5107d8f22b895aeea5c2d16c58bbaa6.png/v1/s/xxx.png"
 ---
 
 The visit of the Chairman of the Joint Chiefs of Staff in the US Army, General Mark Milley, [[1]](https://manage.wix.com/dashboard/ce2b32ac-7f73-4f26-878d-3d523c7c3149/blog/create-post?tab=published&lang=en#_ftn1) to an American base in Syria [[2]](https://manage.wix.com/dashboard/ce2b32ac-7f73-4f26-878d-3d523c7c3149/blog/create-post?tab=published&lang=en#_ftn2) on March 4, 2023, preceded a congressional vote on March 8, 2023. The draft resolution, proposed by Republican Representative Matthew Gaetz, [[3]](https://manage.wix.com/dashboard/ce2b32ac-7f73-4f26-878d-3d523c7c3149/blog/create-post?tab=published&lang=en#_ftn3) aimed to withdraw US forces from Syria. General Milley's visit may have contributed to the failure of this project, as 321 representatives opposed it, 103 approved it, and 11 ignored it. [[4]](https://manage.wix.com/dashboard/ce2b32ac-7f73-4f26-878d-3d523c7c3149/blog/create-post?tab=published&lang=en#_ftn4)

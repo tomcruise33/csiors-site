@@ -5,6 +5,18 @@ author: "Issam Khoury"
 region: "Syria"
 responses: 0
 summary: "“The border control strategy” This is a roadmap for resolving disputes in Syria under American guidance, and with the oversight of Syrian figures who"
+category: "Policy Analysis"
+subtitle: "“The border control strategy” This is a roadmap for resolving disputes in Syria under American guidance, and with the oversight of Syrian figures who"
+image: "https://globaluserfiles.com/media/186178_bb985f648eb9e75cde31e923a958578ee415647b.jpeg/v1/s/parzone.jpeg"
+tags:
+  - "syria-"
+  - "middleeast-"
+  - "diplomacy-"
+  - "internationalrelations-"
+  - "stability-"
+  - "conflictresolution-"
+  - "parallelzonesplan-"
+  - "issamkhoury-"
 ---
 
 **“The border control strategy”**

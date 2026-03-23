@@ -5,6 +5,18 @@ author: "csiors"
 region: "Libya"
 responses: 0
 summary: "Let us navigate the Middle East nuances: investments in Egypt's economy; Libya migration; new conservatives policy in Iran."
+category: "Policy Analysis"
+subtitle: "Let us navigate the Middle East nuances: investments in Egypt's economy; Libya migration; new conservatives policy in Iran."
+image: "https://globaluserfiles.com/media/186178_44cdf5500e46d179dde3d05261a23d39ac6510ac.jpeg/v1/s/foto-weekly-watch-(7).jpeg"
+tags:
+  - "voluntary-returns"
+  - "egypt-economic-recovery"
+  - "investments"
+  - "gcc-initiative"
+  - "geopolitical-challenges"
+  - "uk-compensate-libya"
+  - "mediterranean-migrants-"
+  - "global-migration"
 ---
 
 Let us guide you through the Middle East with curated links: insightful analyses and forecasts from top sources on regional complexities.

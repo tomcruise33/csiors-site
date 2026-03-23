@@ -5,6 +5,18 @@ author: "Issam Khoury"
 region: "Syria"
 responses: 0
 summary: "\"Israeli forces prepare for potential ground invasion in Golan Heights, affecting Hezbollah, Syria, and Iran. Regional tensions escalate.\""
+category: "Policy Analysis"
+subtitle: "\"Israeli forces prepare for potential ground invasion in Golan Heights, affecting Hezbollah, Syria, and Iran. Regional tensions escalate.\""
+image: "https://globaluserfiles.com/media/186178_f13699f3f4b097ff98ac86c59417aaf2660c8d45.png/v1/s/likelihood.png"
+tags:
+  - "iranianinfluence-"
+  - "israeligroundincursion-"
+  - "hezbollahreactions-"
+  - "syrianconflict-"
+  - "lebanonunrest-"
+  - "golanheightstension-"
+  - "middleeaststrategies-"
+  - "dronewarfare-"
 ---
 
 Media reports on February 28, 2024, revealed massive explosions in a minefield west of Tel Adnanah between the settlement of Ein Zivan and Avital on the Golan Heights within Israel. Notably, it was the Israelis who detonated this field, seemingly preparing their forces for a potential ground invasion on their northern front.

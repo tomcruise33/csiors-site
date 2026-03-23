@@ -5,6 +5,18 @@ author: "Issam Khoury"
 region: "Syria"
 responses: 0
 summary: "\"Turkish-Syrian relations intensify amid Israeli, Iranian, and US influence. Erdoğan seeks control in Syria, balancing opposition and Assad regime.\""
+category: "Policy Analysis"
+subtitle: "\"Turkish-Syrian relations intensify amid Israeli, Iranian, and US influence. Erdoğan seeks control in Syria, balancing opposition and Assad regime.\""
+image: "https://globaluserfiles.com/media/pxb_2529140_20c86bd9af8e9dd94ee229da358ea315.jpg/v1/s/pxb_2529140_20c86bd9af8e9dd94ee229da358ea315.jpg"
+tags:
+  - "middleeastpolitics-"
+  - "iranianinfluence-"
+  - "geopoliticaltensions-"
+  - "hezbollah-"
+  - "syrianconflict-"
+  - "basharalassad-"
+  - "turkishpolicy-"
+  - "israeliexpansion-"
 ---
 
 The Turkish president has announced on several occasions his desire to meet Bashar al-Assad within a Russian mediation framework. During the Syrian president's speech at the Arab-Islamic summit on Nov 11, 2024, the Turkish president left the hall, prompting the media to speculate that he was annoyed by Bashar al-Assad's presence at the summit. However, the Turkish Foreign Ministry quickly justified the matter by stating that President Erdoğan had to leave to have a conversation with the Saudi king outside the hall, and the Turkish ambassador to Saudi Arabia represented him at the meeting.

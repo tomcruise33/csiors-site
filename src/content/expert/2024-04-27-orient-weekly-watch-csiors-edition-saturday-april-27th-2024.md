@@ -2,9 +2,21 @@
 title: "Orient Weekly Watch: CSIORS Edition - Saturday, April 27th, 2024"
 date: 2024-04-27
 author: "csiors"
-region: "Morocco"
+region: "Libya"
 responses: 0
 summary: "Let us navigate the Middle East nuances: Egypt and Lithuania ICT collaboration; Morocco's export market; consultative meeting in Tunis."
+category: "Policy Analysis"
+subtitle: "Let us navigate the Middle East nuances: Egypt and Lithuania ICT collaboration; Morocco's export market; consultative meeting in Tunis."
+image: "https://globaluserfiles.com/media/186178_2b89940ab90ee3aa7df72354f058a9aa61ad1704.jpeg/v1/s/foto-weekly-watch-(28).jpeg"
+tags:
+  - "amr-talaat"
+  - "marius-skuodis"
+  - "ict-collaboration"
+  - "digital-transformation"
+  - "morocco-citrus-exports"
+  - "brazil-market-access"
+  - "international-agricultural-show"
+  - "bilateral-trade-cooperation"
 ---
 
 Let us guide you through the Middle East with curated links: insightful analyses and forecasts from top sources on regional complexities.

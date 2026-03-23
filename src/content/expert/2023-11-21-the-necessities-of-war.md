@@ -2,9 +2,19 @@
 title: "The Necessities of War"
 date: 2023-11-21
 author: "Issam Khoury"
-region: "MENA"
+region: "Israel/Palestine"
 responses: 0
 summary: "\"Economic drive behind Gaza's war: IMEC project's safety and geopolitical shifts, distinct from general regional discussions.\""
+category: "Policy Analysis"
+subtitle: "\"Economic drive behind Gaza's war: IMEC project's safety and geopolitical shifts, distinct from general regional discussions.\""
+image: "https://globaluserfiles.com/media/pxb_3829463_78e6c88a108ad43fa6c9b1204c3afe77.jpg/v1/s/pxb_3829463_78e6c88a108ad43fa6c9b1204c3afe77.jpg"
+tags:
+  - "israel"
+  - "imecproject-"
+  - "gazaconflict"
+  - "geopoliticaltactics-"
+  - "economicwarfare-"
+  - "hamasmissile-"
 ---
 
 "Certainly Israel is forced to achieve a declared military victory in front of its partners in the IMEC project in order to ensure the safety of their goods shipped to the port of Haifa"​
@@ -60,7 +70,9 @@ Half of Gaza's population consists of children, which undoubtedly attracts popul
  
 
  
+
 # **The promise to eliminate Hamas and Islamic Jihad:**
+
  
 
 This promise is not achievable since in every Gaza war, the Israeli army has failed to eliminate Hamas, but has managed to eliminate some of its leaders. The dilemma is that this movement is capable of easily appointing alternatives to its assassinated leaders. Therefore, the best option for the Israeli army is to focus on targeting the manufacturing and storage sites of Hamas weapons. This does not require a ground invasion but rather effective Israeli intelligence within Hamas decision-making centers. However, it seems that Israel does not possess these human qualifications, so it mobilizes a large army around Hamas in order to carry out a land, sea, and air invasion that saves face after Hamas's incursion into its territories.
@@ -68,7 +80,9 @@ This promise is not achievable since in every Gaza war, the Israeli army has fai
  
 
  
+
 # **The Gaza War is An Economic Necessity for the Success of the Indian-Middle East-Europe Economic Corridor (IMEC):**
+
  
 
  
@@ -82,7 +96,11 @@ The observer of the economic corridor “IMEC” map in Jordan sees it passing t
 From here, Hamas fighters realize that they do not benefit from this project, and their elements in the West Bank territories are also not beneficiaries. Therefore, their incursion into Israel came as a message with the broad goal of sabotaging such a project and drowning Israel in side projects, including:
 
  
-- Rehabilitating the Iron Dome program.- Seeking the release of Israeli prisoners.- Distracting the Israeli political and military administration with security issues.- Reorganizing the borders of the Israeli state.
+
+- Rehabilitating the Iron Dome program.
+- Seeking the release of Israeli prisoners.
+- Distracting the Israeli political and military administration with security issues.
+- Reorganizing the borders of the Israeli state.
 
  
 
@@ -101,7 +119,9 @@ Certainly, Israel is forced to achieve a declared military victory in front of i
  
 
  
+
 # **The necessity of cutting off Tehran's arms:**
+
  
 
 The media apparatus of the Iranian Revolutionary Guard, in addition to several nationalist and Islamic Arab channels, managed to mobilize the Arab and Muslim communities to support the Palestinian cause. Therefore, if the Islamic radical groups supported by Iran decide to militarily intervene to open the northern front of Israel, they will be welcomed by a large segment of the Arab world.
@@ -123,7 +143,9 @@ Therefore, Israel, with the United States behind it, may adopt a carrot-and-stic
 Certainly, two months is a short period considering the military-rich area of tunnels such as Gaza. Therefore, Israel is expected to use deadly and high-quality weapons to ensure the destruction of the tunnels or to prevent them from protecting Palestinian militants. In general, these military behaviors will bring wide criticism against Israel from human rights organizations. Israel has prepared for this by enhancing legislation to punish sympathizers with Palestine in several countries, including on social media.
 
  
+
 # **Improving the conditions for negotiating prisoners:**
+
  
 
 Hamas seeks to shed light on the prisoners' file, clarifying that some of them have been killed due to Israeli airstrikes on civilians in Gaza. On October 16, 2023, Hamas released a video showing their treatment of an Israeli prisoner after being targeted.

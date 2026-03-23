@@ -5,6 +5,18 @@ author: "Jan Záhořík"
 region: "Nigeria"
 responses: 0
 summary: "Why is Nigeria struggling with rising protests, corruption, and insecurity? Where will its socio-economic reforms lead in a nation facing deep inequality?"
+category: "Policy Analysis"
+subtitle: "Why is Nigeria struggling with rising protests, corruption, and insecurity? Where will its socio-economic reforms lead in a nation facing deep inequality?"
+image: "https://globaluserfiles.com/media/186178_3ac01930e7f2fd49116c6bed3b0a446807b03f13.webp/v1/s/makoko-lagos.webp"
+tags:
+  - "nigeria-"
+  - "economiccrisis-"
+  - "insecurity-"
+  - "corruption-"
+  - "socioeconomicreform-"
+  - "protests-"
+  - "inequality-"
+  - "futureofnigeria-"
 ---
 
 On 1st of October, Nigeria was celebrating the Independence Day, independence it gained from the UK in 1960, and on the eve of the national holiday, I was chatting with a dear colleague from the University of Ibadan in Oyo State about what might happen. Originally, the protests were planned in many Nigerian cities with people demonstrating against the inflation, rising prices of basic commodities, and generally socio-economic troubles. Where do these moods come from? What is the basis of that? That is the question easy and at the same time uneasy to respond. 

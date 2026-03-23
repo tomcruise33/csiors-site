@@ -5,6 +5,18 @@ author: "Jan Záhořík"
 region: "Nigeria"
 responses: 0
 summary: "\"Nigeria's pivotal role in ECOWAS & its reforms under Tinubu could redefine West Africa's socio-economic landscape & security dynamics.\""
+category: "Policy Analysis"
+subtitle: "\"Nigeria's pivotal role in ECOWAS & its reforms under Tinubu could redefine West Africa's socio-economic landscape & security dynamics.\""
+image: "https://globaluserfiles.com/media/186178_76303b4c88c59037420b1b2d8935d1203b1ce29a.jpeg/v1/s/img_20230611_143543_hdr.jpeg"
+tags:
+  - "nigeria-"
+  - "westafrica-"
+  - "securitychallenges-"
+  - "ecowas-"
+  - "economicreform-"
+  - "tinubureforms-"
+  - "africanpolitics-"
+  - "socioeconomicinequality-"
 ---
 
 Nigerians like to talk about their country as a "giant of Africa", and in many ways it is true. It's GDP annually ranks in the top three on the continent, along with Egypt and South Africa. In terms of West African economic output, Nigeria's GDP is larger than the rest of the region combined. Lagos itself is a booming and bustling megacity that, if independent, could be the sixth largest economy in Africa. While these figures are impressive, not all is well for ordinary Nigerians. Eight years of Buhari's presidency have led to a dramatic deterioration in security, with all forms of banditry, kidnapping and murder becoming almost daily occurrences if you follow the local Nigerian media. The regions most affected by these criminal activities are in the north, in Sokoto, Kaduna, Katsina, Borno, etc. But crime and violence are also reported from the south, from Port Harcourt, Lagos and many other cities. If people get on the "wrong" bus, they can be robbed by the "driver" and his accomplices. It would be difficult to find anyone in Nigeria who has not heard such a story from their network or from someone close to them. 

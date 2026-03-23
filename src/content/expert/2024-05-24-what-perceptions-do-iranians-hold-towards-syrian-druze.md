@@ -5,6 +5,17 @@ author: "Issam Khoury"
 region: "Syria"
 responses: 0
 summary: "\"Rising tensions in Suwayda as Iranian-backed militias deploy, escalating security risks and local unrest.\""
+category: "Policy Analysis"
+subtitle: "\"Rising tensions in Suwayda as Iranian-backed militias deploy, escalating security risks and local unrest.\""
+image: "https://globaluserfiles.com/media/pxb_6987075_e20b132b15c7d143da2fba0062e3ce80.jpg/v1/s/pxb_6987075_e20b132b15c7d143da2fba0062e3ce80.jpg"
+tags:
+  - "druzecommunity-"
+  - "middleeasttensions-"
+  - "syriaconflict-"
+  - "suwayda-"
+  - "iranianmilitias-"
+  - "securityrisks-"
+  - "civilunrest"
 ---
 
 Fighters affiliated with the Fatemiyoun Brigade[[1]](#_ftn1) and Zainabiyoun Brigade[[2]](#_ftn2), supported by the Iranian Revolutionary Guard, appeared near Khalkhala Airport in the Suwayda[[3]](#_ftn3) Governorate. This presence raised questions among field observers, especially since the Syrian regime had not previously allowed non-Syrian armed groups into military sites in Suwayda, except for Hezbollah fighters.
@@ -38,7 +49,9 @@ These threats alarmed Suwayda residents, predominantly Druze, who felt that thei
  
 
  
+
 # ***Probability of War in Suwayda***
+
  
 
  
@@ -58,16 +71,19 @@ The fighters of the Zainabiyoun and Fatemiyoun brigades are known for their fier
 Hence, we anticipate the Syrian regime's strategy in Suwayda battles to unfold as follows:
 
  
+
 - **Deployment of checkpoints **
 
 Increasing the number of Syrian army fighters in Suwayda aims to enhance the security situation for military units and security headquarters scattered throughout the province. It is expected that these security and military headquarters will be surrounded gradually by a series of military checkpoints, gradually expanding to approach major cities.
 
  
+
 - **Urban battles **
 
 The Syrian regime is unlikely to engage directly with civilians protesting in city squares and towns. Instead, it may resort to assassinating some activists to intimidate others from participating in protests. If Suwayda residents continue to protest in squares, the regime might move to arrest some protesters. If Suwayda residents decide to detain officers to release detainees, it would be challenging due to the extensive security and military checkpoints protecting key officers' headquarters, potentially leading to armed clashes within cities and on the outskirts of security checkpoints. The military advantage would undoubtedly lie with the better-equipped Syrian regime, prompting armed activists from the Druze community to hide in the mountains and initiate guerrilla warfare against the Syrian regime to drive it out of Suwayda cities.
 
  
+
 - **Mountain battles**
 
  The Fatemiyoun and Zainabiyoun brigades will be tasked with managing mountain battles, which are expected to result in significant human losses among Druze youth, as well as Pakistani and Afghan attackers. This might prompt Druze elders to seek negotiations with the Syrian regime, aligning with Bashar al-Assad's security apparatus goals.
@@ -89,7 +105,9 @@ Furthermore, it is essential for opposition forces competing against the Syrian 
  
 
  
+
 # ***The Evolution of the Situation in Suwayda Governorate***
+
  
 
 Since the beginning of the Syrian revolution in 2011, the Syrian regime has sought to win over Syrian minorities by associating the label of terrorism with Sunni Muslim opposition members, accusing them of allegiance to radical extremist movements. The regime released many radical extremists and assisted them in establishing extremist militias that carried out terrorist acts against minorities.

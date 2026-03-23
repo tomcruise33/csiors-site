@@ -2,9 +2,21 @@
 title: "Orient Weekly Watch: CSIORS Edition - Friday, October 27th, 2023"
 date: 2023-10-27
 author: "csiors"
-region: "MENA"
+region: "Tunisia"
 responses: 0
 summary: "Let us navigate the Middle East's nuances: Tunisian town's migration to Europe; heightened hydrocarbon prices due to conflict; Saudi's developmental initiatives"
+category: "Policy Analysis"
+subtitle: "Let us navigate the Middle East's nuances: Tunisian town's migration to Europe; heightened hydrocarbon prices due to conflict; Saudi's developmental initiatives"
+image: "https://globaluserfiles.com/media/pxb_3986723_362456ee5fe781c4aa1a0276ec98ca38.jpg/v1/s/pxb_3986723_362456ee5fe781c4aa1a0276ec98ca38.jpg"
+tags:
+  - "middle-east"
+  - "hydrocarbon-prices"
+  - "tunisian-migration"
+  - "europe"
+  - "israel-hamas-conflict"
+  - "saudi-development"
+  - "economic-diversification"
+  - "north-africa"
 ---
 
 Let us guide you through the Middle East with curated links: insightful analyses and forecasts from top sources on regional complexities.

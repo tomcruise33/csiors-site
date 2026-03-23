@@ -5,6 +5,18 @@ author: "Jan Záhořík"
 region: "Ethiopia"
 responses: 0
 summary: "\"Ethiopia-Somaliland deal sparks regional tension, affecting Afar people, risking security and fueling potential migration.\""
+category: "Policy Analysis"
+subtitle: "\"Ethiopia-Somaliland deal sparks regional tension, affecting Afar people, risking security and fueling potential migration.\""
+image: "https://globaluserfiles.com/media/186178_60428526e33889cc9b7402afce960832e0eecccf.jpeg/v1/s/photo-2024-01-22-11-54-30.jpeg"
+tags:
+  - "afarregion-"
+  - "addisababa-"
+  - "semera"
+  - "abiyahmed-"
+  - "musebihiabdi-"
+  - "djiboutiport-"
+  - "ethiopia"
+  - "eritrea"
 ---
 
 **Recently, the Horn of Africa politics has been enriched by the Memorandum signed between Ethiopia’s Prime Minister Abiy Ahmed and the government of the Republic of Somaliland**, an entity which is still not internationally recognized. **The memorandum of understanding has been designed to allow Ethiopia leasing 20km of coastal area in Somaliland in exchange for a share in Ethiopian Airlines**, Ethiopia’s most prosperous and globally known company, plus it paved the way to the recognition of Somaliland as an independent state.[[1]](#_ftn1) **This decision has sparked some serious debates and concerns both in the region as well as among world powers.** The United States quickly reacted saying Somaliland will not be recognized and that the region needs to calm down instead of fuelling controversies.[[2]](#_ftn2) China followed with a statement supporting the federal government in Mogadishu and respecting the integrity of Somalia. The same reaction came from Turkey, Egypt, the Arab League and other major actors in one way or another involved in the Horn of Africa affairs.[[3]](#_ftn3)
@@ -98,6 +110,7 @@ During the times of the war in Tigray, **the Afar region was heavily affected by
  
 
  
+
 #  
 
         
@@ -107,7 +120,9 @@ During the times of the war in Tigray, **the Afar region was heavily affected by
         
 
             
+
 #  
+
  
 
 [1] Zacharias Zelalem (2024): Ambiguous Ethiopia port deal fuels uncertainty over Somaliland statehood, in: [https://www.aljazeera.com/features/2024/1/4/ambiguous-ethiopia-port-deal-fuels-uncertainty-over-somaliland-statehood](https://www.aljazeera.com/features/2024/1/4/ambiguous-ethiopia-port-deal-fuels-uncertainty-over-somaliland-statehood)

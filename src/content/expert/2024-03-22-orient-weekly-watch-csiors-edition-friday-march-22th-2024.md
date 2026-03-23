@@ -5,6 +5,18 @@ author: "csiors"
 region: "Libya"
 responses: 0
 summary: "Let us navigate the Middle East nuances: Egypt raises fuel prices; border between Libya and Tunisia closed; Rial declines in Iran."
+category: "Policy Analysis"
+subtitle: "Let us navigate the Middle East nuances: Egypt raises fuel prices; border between Libya and Tunisia closed; Rial declines in Iran."
+image: "https://globaluserfiles.com/media/186178_da39b59e901ddb0e8ee8614647285a1e45d445af.jpeg/v1/s/foto-weekly-watch-(11).jpeg"
+tags:
+  - "tunisia-libya"
+  - "ras-jedir-"
+  - "libya-insecurity"
+  - "border-tensions"
+  - "egypt-fuel-price-rise"
+  - "currency-depreciation"
+  - "global-price-surges"
+  - "economic-challenges-inflation"
 ---
 
 Let us guide you through the Middle East with curated links: insightful analyses and forecasts from top sources on regional complexities.

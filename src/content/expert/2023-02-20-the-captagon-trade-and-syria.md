@@ -5,6 +5,9 @@ author: "Issam Khoury"
 region: "Syria"
 responses: 0
 summary: "The National Defense Authorization Act (NDAA) [1] for Fiscal Year 2023 included, in one of its clauses, a bill to disrupt and dismantle the production of"
+category: "Policy Analysis"
+subtitle: "The National Defense Authorization Act (NDAA) [1] for Fiscal Year 2023 included, in one of its clauses, a bill to disrupt and dismantle the production of"
+image: "https://globaluserfiles.com/media/186178_746cae2e81c2cfff2a58b753394f45130efd532b.webp/v1/s/nsplsh_5f6a62436c6f7344734434_mv2_d_5184_3456_s_4_2.webp"
 ---
 
 The National Defense Authorization Act (NDAA) [[1]](https://www.dol.gov/agencies/owcp/FECA/NDAA2023) for Fiscal Year 2023 included, in one of its clauses, a bill to disrupt and dismantle the production of Captagon pills produced by the regime in Syria. Representative French Hill portrayed [[2] ](https://hill.house.gov/news/documentsingle.aspx?DocumentID=9049)it on December 8, 2022, as a source of his pride.

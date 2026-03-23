@@ -5,6 +5,15 @@ author: "Jan Záhořík"
 region: "Ethiopia"
 responses: 0
 summary: "GERD: Ethiopia’s exceptionalism or exposure? From Adwa’s legacy to Addis Ababa’s role, the Nile dam tells a bigger story."
+category: "Policy Analysis"
+subtitle: "GERD: Ethiopia’s exceptionalism or exposure? From Adwa’s legacy to Addis Ababa’s role, the Nile dam tells a bigger story."
+image: "https://globaluserfiles.com/media/pxb_1868352_afbef42a8aca733cd612b7b34fbad78d.jpg/v1/s/pxb_1868352_afbef42a8aca733cd612b7b34fbad78d.jpg"
+tags:
+  - "africa"
+  - "ethiopia-"
+  - "gerd-"
+  - "energy-"
+  - "diplomacy"
 ---
 
 Ethiopia has a history of positioning itself differently from the rest of the continent. Its ability to resist European colonization, imperial heritage, and role in African diplomacy have long nurtured a sense of national singularity. This narrative of exceptionalism is not merely historical rhetoric; it has been woven into Ethiopia’s identity, political discourse, and legitimacy, and at this very moment, with the opening of the Grand Ethiopian Renaissance Dam (GERD) — Africa’s largest hydroelectric project — we may see a continuation of this trend, and this narrative which has symbolical as well as political dimensions. Beyond energy production, the GERD is intended to mark Ethiopia’s entry into the club of modern powers, to galvanize national unity, and to demonstrate resilience against external pressures. To understand the dam’s importance, one must situate it in Ethiopia’s more extended history of exceptionalism — from the battlefield of Adwa to the halls of the African Union.
