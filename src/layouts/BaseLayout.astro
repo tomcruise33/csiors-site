@@ -9,13 +9,17 @@ interface Props {
   title?: string;
   description?: string;
   lang?: 'en' | 'sk';
+  jsonLd?: Record<string, unknown>;
 }
 
 const {
   title = 'CSIORS — Czech Slovak Institute of Oriental Studies',
   description = 'Data-driven intelligence on migration, food security, and regional stability across the Middle East, North Africa, and the Horn of Africa.',
   lang = 'en',
+  jsonLd,
 } = Astro.props;
+
+const jsonLdString = jsonLd ? JSON.stringify(jsonLd) : null;
 ---
 <!DOCTYPE html>
 <html lang={lang}>
@@ -25,6 +29,7 @@ const {
   <meta name="description" content={description}>
   <title>{title}</title>
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  {jsonLdString && <script type="application/ld+json" set:html={jsonLdString} />}
 </head>
 <body>
   <Ticker />
