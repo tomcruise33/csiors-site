@@ -19,7 +19,7 @@ import path from 'path';
 const KOBO_TOKEN = process.env.KOBO_TOKEN;
 const GROK_API_KEY = process.env.GROK_API_KEY;
 const KOBO_ASSET_UID = process.env.KOBO_ASSET_UID || 'abcLY2v3kPakMtrmBisUsm';
-const KOBO_BASE = 'https://kf.kobotoolbox.org';
+const KOBO_BASE = process.env.KOBO_BASE || 'https://eu.kobotoolbox.org'; // EU server
 const GROK_MODEL = 'grok-4-1-fast-non-reasoning';
 
 // ── Helpers ─────────────────────────────────────────────────────────
@@ -53,12 +53,21 @@ async function fetchSubmissions(dayRange = 7) {
   });
 
   if (!res.ok) {
+    const body = await res.text();
+    console.error(`   → Response body: ${body.slice(0, 500)}`);
     throw new Error(`KoboToolbox API error: ${res.status} ${res.statusText}`);
   }
 
   const data = await res.json();
-  console.log(`   → ${data.results.length} submissions found`);
-  return data.results;
+  const results = data.results || [];
+  console.log(`   → ${results.length} submissions found (total: ${data.count || 'unknown'})`);
+
+  // Debug: show field names from first submission
+  if (results.length > 0) {
+    console.log(`   → Fields in first submission: ${Object.keys(results[0]).filter(k => !k.startsWith('_')).join(', ')}`);
+  }
+
+  return results;
 }
 
 // ── Step 2: Analyze submissions by country ──────────────────────────
@@ -287,8 +296,23 @@ async function main() {
   if (!KOBO_TOKEN) throw new Error('Missing KOBO_TOKEN environment variable');
   if (!GROK_API_KEY) throw new Error('Missing GROK_API_KEY environment variable');
 
-  // Fetch and analyze
-  const submissions = await fetchSubmissions(7);
+  console.log(`📋 Config:`);
+  console.log(`   KoboToolbox: ${KOBO_BASE}`);
+  console.log(`   Asset UID: ${KOBO_ASSET_UID}`);
+  console.log(`   Grok model: ${GROK_MODEL}`);
+  console.log(`   KOBO_TOKEN: ${KOBO_TOKEN ? '***' + KOBO_TOKEN.slice(-4) : 'MISSING'}`);
+  console.log(`   GROK_API_KEY: ${GROK_API_KEY ? '***' + GROK_API_KEY.slice(-4) : 'MISSING'}\n`);
+
+  // Fetch and analyze — try 30 days if 7 days returns nothing
+  let submissions = await fetchSubmissions(7);
+  if (submissions.length === 0) {
+    console.log('   → No data in 7 days, trying 30 days...');
+    submissions = await fetchSubmissions(30);
+  }
+  if (submissions.length === 0) {
+    console.log('   → No data in 30 days, trying 90 days...');
+    submissions = await fetchSubmissions(90);
+  }
 
   if (submissions.length === 0) {
     console.log('⚠️  No new submissions in the past 7 days. Skipping brief generation.');
