@@ -55,14 +55,23 @@ function formatDateShort(date: Date) {
 
 // Top authors for showcase (by article count)
 const topAuthors = Object.entries(authorCounts)
-  .filter(([name]) => name !== 'csiors')
+  .filter((entry) => entry[0] !== 'csiors')
   .sort((a, b) => b[1] - a[1])
   .slice(0, 4)
-  .map(([name, count]) => ({
-    name,
-    count,
-    profile: getAuthorByName(name),
-  }));
+  .map((entry) => {
+    const authorName = entry[0];
+    const articleCount = entry[1];
+    const profile = getAuthorByName(authorName);
+    const initials = authorName.split(' ').map((n) => n[0]).join('');
+    return { authorName, articleCount, profile, initials };
+  });
+
+// Pre-computed values for template
+const analystCount = Object.keys(authorCounts).filter((n) => n !== 'csiors').length;
+const regionPills = topRegions.map((entry) => ({ region: entry[0], count: entry[1] }));
+const briefEwsColor = latestBrief
+  ? (latestBrief.data.alert === 'alert' ? 'var(--red-alert)' : latestBrief.data.alert === 'watch' ? 'var(--amber)' : 'var(--green)')
+  : '';
 
 // JSON-LD structured data
 const structuredData = {
@@ -107,7 +116,7 @@ const structuredData = {
             <span class="hp-stat-lbl">Countries</span>
           </div>
           <div class="hp-stat">
-            <span class="hp-stat-val">{Object.keys(authorCounts).filter(n => n !== 'csiors').length}</span>
+            <span class="hp-stat-val">{analystCount}</span>
             <span class="hp-stat-lbl">Analysts</span>
           </div>
           <div class="hp-stat">
@@ -122,10 +131,10 @@ const structuredData = {
       </div>
       <div class="hp-hero-visual">
         <div class="hp-region-map">
-          {topRegions.map(([region, count]) => (
+          {regionPills.map((item) => (
             <div class="hp-region-pill">
-              <span class="hp-region-name">{region}</span>
-              <span class="hp-region-count">{count}</span>
+              <span class="hp-region-name">{item.region}</span>
+              <span class="hp-region-count">{item.count}</span>
             </div>
           ))}
         </div>
@@ -184,7 +193,7 @@ const structuredData = {
         <div class="feed-data-strip">
           <span class="feed-data-item">
             <span class="feed-data-label">EWS</span>
-            <span class="feed-data-val" style={`color: var(--${latestBrief.data.alert === 'alert' ? 'red-alert' : latestBrief.data.alert === 'watch' ? 'amber' : 'green'})`}>
+            <span class="feed-data-val" style={`color: ${briefEwsColor}`}>
               {latestBrief.data.ews}/100
             </span>
           </span>
@@ -255,19 +264,19 @@ const structuredData = {
     </div>
     <p class="hp-experts-intro">CSIORS analysis is produced by a network of regional specialists with deep field knowledge and academic credentials. Every publication is grounded in primary data and on-the-ground expertise.</p>
     <div class="hp-experts-grid">
-      {topAuthors.map(({ name, count, profile }) => (
+      {topAuthors.map((a) => (
         <div class="hp-expert-card">
           <div class="hp-expert-avatar">
-            <span class="hp-expert-initials">{name.split(' ').map(n => n[0]).join('')}</span>
+            <span class="hp-expert-initials">{a.initials}</span>
           </div>
           <div class="hp-expert-info">
-            <div class="hp-expert-name">{profile?.name || name}</div>
-            <div class="hp-expert-title">{profile?.title || 'Research Fellow'}</div>
-            <p class="hp-expert-bio">{profile?.bio?.slice(0, 180)}…</p>
+            <div class="hp-expert-name">{a.profile?.name || a.authorName}</div>
+            <div class="hp-expert-title">{a.profile?.title || 'Research Fellow'}</div>
+            <p class="hp-expert-bio">{a.profile?.bio?.slice(0, 180)}…</p>
             <div class="hp-expert-meta">
-              <span class="hp-expert-articles">{count} publications</span>
-              {profile?.regions && (
-                <span class="hp-expert-regions">{profile.regions.slice(0, 3).join(' · ')}</span>
+              <span class="hp-expert-articles">{a.articleCount} publications</span>
+              {a.profile?.regions && (
+                <span class="hp-expert-regions">{a.profile.regions.slice(0, 3).join(' · ')}</span>
               )}
             </div>
           </div>
