@@ -17,7 +17,7 @@ const briefs = defineCollection({
 });
 
 const expert = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/content/briefs/../expert' }),
+  loader: glob({ pattern: '**/*.md', base: './src/content/expert' }),
   schema: z.object({
     title: z.string(),
     date: z.coerce.date(),

@@ -1,17 +1,17 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { getCollection } from 'astro:content';
+import { getCollection, render } from 'astro:content';
 
 export async function getStaticPaths() {
   const briefs = await getCollection('briefs');
   return briefs.map(entry => ({
-    params: { slug: entry.slug },
+    params: { slug: entry.id },
     props: { entry },
   }));
 }
 
 const { entry } = Astro.props;
-const { Content } = await entry.render();
+const { Content } = await render(entry);
 
 const alertColor = entry.data.alert === 'alert' ? 'var(--red-alert)' : entry.data.alert === 'watch' ? 'var(--amber)' : 'var(--green)';
 const dateStr = entry.data.date.toLocaleDateString('en-US', { day: 'numeric', month: 'long', year: 'numeric' });

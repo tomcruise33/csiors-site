@@ -46,7 +46,7 @@ function formatDate(date: Date) {
           <span class="brief-dot"></span>
           <span class="brief-date">{formatDate(featured.entry.data.date)}</span>
         </div>
-        <h2 class="feed-headline"><a href={`/${featured.type === 'brief' ? 'briefs' : 'expert'}/${featured.entry.slug}`}>{featured.entry.data.title}</a></h2>
+        <h2 class="feed-headline"><a href={`/${featured.type === 'brief' ? 'briefs' : 'expert'}/${featured.entry.id}`}>{featured.entry.data.title}</a></h2>
         <p class="feed-summary">{featured.entry.data.summary}</p>
         {featured.type === 'brief' && (
           <div class="feed-data-strip">
@@ -76,7 +76,7 @@ function formatDate(date: Date) {
           <span class="brief-dot"></span>
           <span class="brief-date">{formatDate(item.entry.data.date)}</span>
         </div>
-        <h2 class="feed-headline-sm"><a href={`/${item.type === 'brief' ? 'briefs' : 'expert'}/${item.entry.slug}`}>{item.entry.data.title}</a></h2>
+        <h2 class="feed-headline-sm"><a href={`/${item.type === 'brief' ? 'briefs' : 'expert'}/${item.entry.id}`}>{item.entry.data.title}</a></h2>
         <p class="feed-summary-sm">{item.entry.data.summary}</p>
         {item.type === 'expert' && (
           <div class="feed-expert-meta">
