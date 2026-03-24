@@ -10,6 +10,9 @@ interface Props {
   description?: string;
   lang?: 'en' | 'sk';
   jsonLd?: Record<string, unknown>;
+  ogImage?: string;
+  ogType?: string;
+  canonicalUrl?: string;
 }
 
 const {
@@ -17,9 +20,13 @@ const {
   description = 'Data-driven intelligence on migration, food security, and regional stability across the Middle East, North Africa, and the Horn of Africa.',
   lang = 'en',
   jsonLd,
+  ogImage = 'https://csiors.org/og-default.png',
+  ogType = 'website',
+  canonicalUrl,
 } = Astro.props;
 
 const jsonLdString = jsonLd ? JSON.stringify(jsonLd) : null;
+const pageUrl = canonicalUrl || Astro.url.href;
 ---
 <!DOCTYPE html>
 <html lang={lang}>
@@ -29,6 +36,22 @@ const jsonLdString = jsonLd ? JSON.stringify(jsonLd) : null;
   <meta name="description" content={description}>
   <title>{title}</title>
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="canonical" href={pageUrl}>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content={ogType}>
+  <meta property="og:title" content={title}>
+  <meta property="og:description" content={description}>
+  <meta property="og:url" content={pageUrl}>
+  <meta property="og:image" content={ogImage}>
+  <meta property="og:site_name" content="CSIORS">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content={title}>
+  <meta name="twitter:description" content={description}>
+  <meta name="twitter:image" content={ogImage}>
+
   {jsonLdString && <script type="application/ld+json" set:html={jsonLdString} />}
 </head>
 <body>

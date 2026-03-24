@@ -1,0 +1,186 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { authors, getAuthorSlug, getAuthorByName } from '../../data/authors';
+
+export function getStaticPaths() {
+  return Object.values(authors).map(author => ({
+    params: { slug: author.id },
+    props: { author },
+  }));
+}
+
+const { author } = Astro.props;
+
+// Fetch all content by this author
+const allExpert = (await getCollection('expert'))
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+const allBriefs = (await getCollection('briefs'))
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+
+// Match articles by this author (handle diacritics, quotes, multi-author)
+const authorPlain = author.name.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+
+function matchesAuthor(articleAuthor: string | undefined): boolean {
+  if (!articleAuthor) return false;
+  const cleaned = articleAuthor.replace(/[""]/g, '').toLowerCase();
+  const plainCleaned = cleaned.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  // Check direct match
+  if (plainCleaned === authorPlain) return true;
+  // Check multi-author (comma or & separated)
+  const parts = plainCleaned.split(/[,&]/).map(p => p.trim());
+  return parts.some(p => p === authorPlain);
+}
+
+const expertArticles = allExpert.filter(e => matchesAuthor(e.data.author));
+const briefArticles = allBriefs.filter(b => matchesAuthor(b.data.author));
+
+const allArticles = [
+  ...expertArticles.map(e => ({
+    type: 'expert' as const,
+    title: e.data.title,
+    date: e.data.date,
+    region: e.data.region,
+    category: e.data.category || 'Expert Analysis',
+    slug: `/expert/${e.id}`,
+    summary: e.data.summary || '',
+  })),
+  ...briefArticles.map(b => ({
+    type: 'brief' as const,
+    title: b.data.title,
+    date: b.data.date,
+    region: b.data.region,
+    category: 'Field Brief',
+    slug: `/briefs/${b.id}`,
+    summary: b.data.summary || '',
+  })),
+].sort((a, b) => b.date.valueOf() - a.date.valueOf());
+
+// Pre-build specialization tags HTML
+const specHtml = author.specialization.map(s =>
+  `<span class="author-spec-tag">${s}</span>`
+).join('');
+
+// Pre-build region tags HTML
+const regionHtml = author.regions.map(r =>
+  `<span class="author-region-tag">${r}</span>`
+).join('');
+
+// Pre-build articles list HTML
+const articlesHtml = allArticles.map(a => {
+  const dateStr = a.date.toLocaleDateString('en-US', { day: 'numeric', month: 'long', year: 'numeric' });
+  return `<a href="${a.slug}" class="author-article-card">
+    <div class="author-article-meta">
+      <span class="author-article-type author-article-type-${a.type}">${a.category}</span>
+      <span class="author-article-region">${a.region}</span>
+    </div>
+    <h3 class="author-article-title">${a.title}</h3>
+    ${a.summary ? `<p class="author-article-summary">${a.summary}</p>` : ''}
+    <span class="author-article-date">${dateStr}</span>
+  </a>`;
+}).join('');
+
+// LinkedIn link HTML
+const linkedinHtml = author.linkedin
+  ? `<a href="${author.linkedin}" target="_blank" rel="noopener" class="author-linkedin">LinkedIn Profile &rarr;</a>`
+  : '';
+
+// Status badge
+const statusHtml = author.active
+  ? '<span class="author-status author-status-active">Active Contributor</span>'
+  : '<span class="author-status author-status-inactive">Former Contributor</span>';
+
+// JSON-LD structured data
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: author.name,
+  jobTitle: author.title,
+  affiliation: {
+    '@type': 'Organization',
+    name: author.affiliation,
+  },
+  description: author.bio,
+  url: `https://csiors.org/author/${author.id}`,
+  worksFor: {
+    '@type': 'Organization',
+    name: 'CSIORS',
+    url: 'https://csiors.org',
+  },
+};
+---
+<BaseLayout
+  title={`${author.name} — CSIORS`}
+  description={`${author.title}. ${author.specialization.slice(0, 3).join(', ')}.`}
+  jsonLd={jsonLd}
+>
+
+<div class="container">
+  <div class="author-page">
+    <div class="author-header">
+      {author.image && (
+        <div class="author-photo">
+          <img src={author.image} alt={author.name} class="author-photo-img" />
+        </div>
+      )}
+      <div class="author-header-info">
+        <div class="author-header-top">
+          <Fragment set:html={statusHtml} />
+        </div>
+        <h1 class="author-name">{author.name}</h1>
+        <p class="author-title">{author.title}</p>
+        <p class="author-affiliation">{author.affiliation}</p>
+        <Fragment set:html={linkedinHtml} />
+      </div>
+    </div>
+
+    <div class="author-layout">
+      <div class="author-main">
+        <section class="author-bio-section">
+          <h2 class="author-section-title">Biography</h2>
+          <p class="author-bio-text">{author.bio}</p>
+        </section>
+
+        <section class="author-articles-section">
+          <h2 class="author-section-title">
+            Publications
+            <span class="author-article-count">{allArticles.length}</span>
+          </h2>
+          {allArticles.length > 0 ? (
+            <div class="author-articles-list">
+              <Fragment set:html={articlesHtml} />
+            </div>
+          ) : (
+            <p class="author-no-articles">No published analysis yet.</p>
+          )}
+        </section>
+      </div>
+
+      <aside class="author-sidebar">
+        <div class="sidebar-block">
+          <div class="sidebar-title">Specialization</div>
+          <div class="author-tags">
+            <Fragment set:html={specHtml} />
+          </div>
+        </div>
+
+        <div class="sidebar-block">
+          <div class="sidebar-title">Regional Focus</div>
+          <div class="author-tags">
+            <Fragment set:html={regionHtml} />
+          </div>
+        </div>
+
+        <div class="sidebar-block">
+          <div class="sidebar-title">Contribute</div>
+          <p class="contribute-text">
+            Have regional insights to share? CSIORS welcomes field contributions from experts worldwide.
+          </p>
+          <a href="/contact" class="contribute-link">Get in touch &rarr;</a>
+        </div>
+      </aside>
+    </div>
+  </div>
+</div>
+
+</BaseLayout>

@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection, render } from 'astro:content';
+import { getAuthorByName } from '../../data/authors';
 
 export async function getStaticPaths() {
   const expert = await getCollection('expert');
@@ -14,8 +15,32 @@ const { entry } = Astro.props;
 const { Content } = await render(entry);
 
 const dateStr = entry.data.date.toLocaleDateString('en-US', { day: 'numeric', month: 'long', year: 'numeric' });
+
+// Build author link(s) HTML
+const rawAuthor = entry.data.author || 'CSIORS';
+const authorNames = rawAuthor.split(/[,&]/).map((n: string) => n.trim().replace(/[""]/g, ''));
+const authorLinksHtml = authorNames.map((name: string) => {
+  const found = getAuthorByName(name);
+  if (found) {
+    return `<a href="/author/${found.id}" class="author-byline-link">${found.name}</a>`;
+  }
+  return name;
+}).join(' &amp; ');
+
+// Sidebar author info
+const primaryAuthor = getAuthorByName(authorNames[0]);
+const sidebarAuthorHtml = primaryAuthor
+  ? `<a href="/author/${primaryAuthor.id}" class="author-byline-link">${primaryAuthor.name}</a>
+     <p class="contribute-text" style="margin-top:0.5rem">${primaryAuthor.title}. Specializes in ${primaryAuthor.specialization.slice(0, 3).join(', ')}.</p>
+     <a href="/author/${primaryAuthor.id}" style="font-family:'IBM Plex Mono',monospace;font-size:0.75rem;color:var(--gradient-blue);text-decoration:none;display:inline-block;margin-top:0.4rem">View full profile &rarr;</a>`
+  : `<strong>${rawAuthor}</strong><p class="contribute-text" style="margin-top:0.5rem">Contributing expert for CSIORS. Regional specialist in ${entry.data.region}.</p>`;
+
+// Pre-build tags HTML
+const tagsHtml = (entry.data.tags && entry.data.tags.length > 0)
+  ? `<div class="article-tags">${entry.data.tags.map((tag: string) => `<span class="article-tag">#${tag}</span>`).join('')}</div>`
+  : '';
 ---
-<BaseLayout lang="en" title={`${entry.data.title} — CSIORS`} description={entry.data.summary}>
+<BaseLayout lang="en" title={`${entry.data.title} — CSIORS`} description={entry.data.summary} ogImage={entry.data.image || 'https://csiors.org/og-default.png'} ogType="article">
 
 <!-- Hero image -->
 {entry.data.image && (
@@ -28,7 +53,7 @@ const dateStr = entry.data.date.toLocaleDateString('en-US', { day: 'numeric', mo
 <div class="container">
   <article class="article-page">
     <div class="article-meta-top">
-      <a href="/feed" class="article-back">&larr; Intelligence Feed</a>
+      <a href="/feed" class="article-back">&larr; Analysis</a>
     </div>
 
     <div class="article-layout">
@@ -41,16 +66,10 @@ const dateStr = entry.data.date.toLocaleDateString('en-US', { day: 'numeric', mo
           <p class="article-subtitle">{entry.data.subtitle}</p>
         )}
         <p class="article-byline">
-          <strong>{entry.data.author}</strong> &middot; {dateStr} &middot; {entry.data.region}
+          <Fragment set:html={authorLinksHtml} /> &middot; {dateStr} &middot; {entry.data.region}
         </p>
 
-        {entry.data.tags && entry.data.tags.length > 0 && (
-          <div class="article-tags">
-            {entry.data.tags.map(tag => (
-              <span class="article-tag">#{tag}</span>
-            ))}
-          </div>
-        )}
+        <Fragment set:html={tagsHtml} />
 
         <div class="article-body">
           <Content />
@@ -61,10 +80,7 @@ const dateStr = entry.data.date.toLocaleDateString('en-US', { day: 'numeric', mo
         <!-- Author -->
         <div class="sidebar-block">
           <div class="sidebar-title">About the Author</div>
-          <div class="expert-by"><strong>{entry.data.author}</strong></div>
-          <p class="contribute-text" style="margin-top: 0.5rem;">
-            Contributing expert for CSIORS. Regional specialist in {entry.data.region}.
-          </p>
+          <div class="expert-by"><Fragment set:html={sidebarAuthorHtml} /></div>
         </div>
 
         <!-- Region -->

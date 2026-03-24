@@ -1,5 +1,36 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { authors } from '../data/authors';
+
+// Pre-build team cards HTML to avoid esbuild JSX parse issues
+const activeAuthors = Object.values(authors).filter(a => a.active);
+const inactiveAuthors = Object.values(authors).filter(a => !a.active);
+
+const teamCardsHtml = activeAuthors.map(a => {
+  const specs = a.specialization.slice(0, 3).join(', ');
+  const linkedinLink = a.linkedin
+    ? `<a href="${a.linkedin}" target="_blank" rel="noopener" style="font-family:'IBM Plex Mono',monospace;font-size:0.7rem;color:var(--gradient-blue);text-decoration:none;display:inline-block;margin-top:0.5rem;">LinkedIn &rarr;</a>`
+    : '';
+  const photoHtml = a.image
+    ? `<img src="${a.image}" alt="${a.name}" class="team-card-photo" />`
+    : '';
+  return `<a href="/author/${a.id}" class="team-card" style="text-decoration:none;color:inherit;">
+    ${photoHtml}
+    <div class="team-role">${a.title}</div>
+    <h3 class="team-name">${a.name}</h3>
+    <p class="team-affiliation">${a.affiliation}</p>
+    <p class="team-bio">${specs}</p>
+    <span style="font-family:'IBM Plex Mono',monospace;font-size:0.7rem;color:var(--gradient-blue);display:inline-block;margin-top:0.5rem;">View profile &rarr;</span>
+  </a>`;
+}).join('');
+
+const formerHtml = inactiveAuthors.map(a => {
+  return `<a href="/author/${a.id}" class="team-card team-card-former" style="text-decoration:none;color:inherit;opacity:0.7;">
+    <div class="team-role">${a.title}</div>
+    <h3 class="team-name">${a.name}</h3>
+    <p class="team-bio">${a.specialization.slice(0, 3).join(', ')}</p>
+  </a>`;
+}).join('');
 ---
 <BaseLayout lang="en" title="About — CSIORS" description="Learn about the Czech Slovak Institute of Oriental Studies — our mission, methodology, field network, and team.">
 <div class="container">
@@ -7,7 +38,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   <section class="page-hero">
     <div class="page-hero-tag">About</div>
     <h1 class="page-hero-title">The Czech Slovak Institute of Oriental Studies</h1>
-    <p class="page-hero-lede">A data-driven research unit focused on migration, food security, and regional stability across the Middle East, North Africa, and the Horn of Africa.</p>
+    <p class="page-hero-lede">A data-driven research institute focused on migration, food security, and regional stability across the Middle East, North Africa, and the Horn of Africa.</p>
   </section>
 
   <!-- Mission -->
@@ -17,6 +48,22 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <div class="prose">
       <p>CSIORS exists to bridge the gap between ground-level reality and policy-level decision-making. We combine anonymous field surveys from conflict and crisis zones with expert academic analysis to produce intelligence that is timely, verifiable, and operationally useful.</p>
       <p>We believe early warning systems only work when they are fed by real voices. Our respondent network — spanning 37 countries and over 50 cities — provides that ground truth. Every data point comes from a person living the situation, not an algorithm guessing from satellite images.</p>
+    </div>
+  </section>
+
+  <!-- Partnership -->
+  <section class="page-section">
+    <div class="about-rule"></div>
+    <h2 class="section-heading">Partnerships</h2>
+    <div class="prose">
+      <p>CSIORS maintains an institutional partnership with <strong>BRIDGE Research &amp; Innovation</strong> (Parliaments. Peace. Policy.) based in Addis Ababa, Ethiopia. This collaboration strengthens our analytical coverage of the Horn of Africa and supports our field data collection in the region.</p>
+    </div>
+    <div class="partner-strip">
+      <div class="partner-card">
+        <div class="partner-name">BRIDGE Research &amp; Innovation</div>
+        <div class="partner-location">Addis Ababa, Ethiopia</div>
+        <div class="partner-focus">Parliaments &middot; Peace &middot; Policy</div>
+      </div>
     </div>
   </section>
 
@@ -43,7 +90,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       <div class="method-card">
         <div class="method-number">04</div>
         <h3 class="method-title">Expert Enrichment</h3>
-        <p class="method-text">Monthly deep-dive analyses by regional experts — starting with Jan Zahorik on Ethiopia and the Horn of Africa — are auto-enriched with the latest field data, adding empirical weight to academic insight.</p>
+        <p class="method-text">Deep-dive analyses by regional experts are enriched with the latest field data, adding empirical weight to academic insight across all our focus regions.</p>
       </div>
     </div>
   </section>
@@ -70,7 +117,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </div>
       <div class="stat-item">
         <div class="stat-value">2–3×</div>
-        <div class="stat-label">Briefs per week</div>
+        <div class="stat-label">Analyses per week</div>
       </div>
     </div>
   </section>
@@ -80,39 +127,52 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <div class="about-rule"></div>
     <h2 class="section-heading">Team</h2>
     <div class="team-grid">
-      <div class="team-card">
-        <div class="team-role">Founder & CEO</div>
-        <h3 class="team-name">Tom Krizan</h3>
-        <p class="team-bio">Leads CSIORS operations, field network expansion, and the development of data-driven early warning systems for humanitarian contexts.</p>
-      </div>
-      <div class="team-card">
-        <div class="team-role">Contributing Expert</div>
-        <h3 class="team-name">Jan Zahorik</h3>
-        <p class="team-bio">Regional specialist in Ethiopia and the Horn of Africa. Provides monthly expert analyses enriched with CSIORS field data. First contributor to our expanding expert network.</p>
-      </div>
+      <Fragment set:html={teamCardsHtml} />
+      <!-- Open call -->
       <div class="team-card team-card-open">
         <div class="team-role">Expanding</div>
         <h3 class="team-name">Your Expertise</h3>
         <p class="team-bio">We are actively building our network of regional experts across MENA and the Horn of Africa. If your research intersects with our focus areas, <a href="/contact">get in touch</a>.</p>
       </div>
     </div>
+
+    {inactiveAuthors.length > 0 && (
+      <div style="margin-top: 2.5rem;">
+        <h3 style="font-family:'IBM Plex Mono',monospace;font-size:0.78rem;font-weight:600;text-transform:uppercase;letter-spacing:0.06em;color:var(--text-secondary);margin-bottom:1rem;">Former Contributors</h3>
+        <div class="team-grid">
+          <Fragment set:html={formerHtml} />
+        </div>
+      </div>
+    )}
   </section>
 
-  <!-- Content Strategy -->
+  <!-- Publications -->
+  <section class="page-section">
+    <div class="about-rule"></div>
+    <h2 class="section-heading">Publications</h2>
+    <div class="publications-grid">
+      <div class="publication-card">
+        <div class="publication-year">2024</div>
+        <h3 class="publication-title">Ethiopia: Facing Multiple Crises</h3>
+        <p class="publication-author">By Jan Záhořík</p>
+        <p class="publication-desc">A comprehensive analysis of Ethiopia's intersecting economic, security, and social challenges — from BRICS membership and inflation to the Tigray aftermath, kidnapping epidemics, and the fragile social contract. Based on field research and regional expertise.</p>
+        <div class="publication-meta">
+          <span class="publication-type">Printed Research Report</span>
+          <span class="publication-publisher">CSIORS Press, Bratislava</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What We Publish -->
   <section class="page-section">
     <div class="about-rule"></div>
     <h2 class="section-heading">What We Publish</h2>
     <div class="content-tiers">
       <div class="tier-item">
         <div class="tier-freq">2–3× / week</div>
-        <h3 class="tier-title">Intelligence Briefs</h3>
-        <p class="tier-desc">AI-synthesized, human-reviewed short-form intelligence on food prices, displacement, and safety conditions. Drawn from field data and open sources.</p>
-        <span class="tier-access">Open access</span>
-      </div>
-      <div class="tier-item">
-        <div class="tier-freq">Monthly</div>
-        <h3 class="tier-title">Expert Analysis</h3>
-        <p class="tier-desc">Long-form deep dives by regional specialists, auto-enriched with the latest anonymous survey responses for empirical grounding.</p>
+        <h3 class="tier-title">Analysis</h3>
+        <p class="tier-desc">Field briefs, expert analyses, country profiles, and policy papers — all drawn from field data and open sources, reviewed by human analysts before publication.</p>
         <span class="tier-access">Open access</span>
       </div>
       <div class="tier-item tier-gated">
