@@ -5,171 +5,149 @@ import { getCollection } from 'astro:content';
 const briefs = await getCollection('briefs');
 const expert = await getCollection('expert');
 
-const allBriefs = briefs
-  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
-  .map(b => ({ type: 'brief' as const, entry: b }));
+// Merge all content
+const allContent = [
+  ...briefs.map(b => ({ type: 'brief' as const, entry: b })),
+  ...expert.map(e => ({ type: 'expert' as const, entry: e })),
+].sort((a, b) => b.entry.data.date.valueOf() - a.entry.data.date.valueOf());
 
-const allExpert = expert
-  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
-  .map(e => ({ type: 'expert' as const, entry: e }));
-
-// All content sorted by date
-const allContent = [...allBriefs, ...allExpert]
-  .sort((a, b) => b.entry.data.date.valueOf() - a.entry.data.date.valueOf());
-
-// Featured = latest brief (has EWS data)
-const featured = allBriefs[0];
-// Rest = all expert articles
-const articles = allExpert;
-
-function formatDate(date: Date) {
-  return date.toLocaleDateString('en-US', { day: 'numeric', month: 'long', year: 'numeric' });
+// Build region list from actual data
+const regionSet = new Set<string>();
+for (const item of allContent) {
+  const r = item.entry.data.region;
+  if (r) regionSet.add(r);
 }
+const regions = [...regionSet].sort();
 
 function formatDateShort(date: Date) {
-  return date.toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
+  return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
 }
+function getHref(item: typeof allContent[0]) {
+  return item.type === 'brief' ? `/briefs/${item.entry.id}` : `/expert/${item.entry.id}`;
+}
+
+// Pre-render filter buttons
+const filtersHtml = `<button class="feed-filter active" data-filter="all">All <span class="feed-filter-count">${allContent.length}</span></button>` +
+  regions.map(r => {
+    const count = allContent.filter(c => c.entry.data.region === r).length;
+    return `<button class="feed-filter" data-filter="${r}">${r} <span class="feed-filter-count">${count}</span></button>`;
+  }).join('');
+
+// Pre-render all article cards
+const cardsHtml = allContent.map(item => {
+  const e = item.entry;
+  const href = getHref(item);
+  const authorName = e.data.author?.replace(/"/g, '') || '';
+  const region = e.data.region || '';
+  const typeLabel = item.type === 'brief' ? 'Brief' : 'Analysis';
+  const imgHtml = e.data.image
+    ? `<img src="${e.data.image}" alt="" loading="lazy" />`
+    : `<div class="article-card-img-placeholder"><span class="article-card-region-bg">${region}</span></div>`;
+
+  return `<article class="article-card" data-region="${region}" data-type="${item.type}">
+    <a href="${href}" class="article-card-link">
+      <div class="article-card-img">${imgHtml}</div>
+      <div class="article-card-body">
+        <div class="article-card-meta">
+          <span class="article-card-type">${typeLabel}</span>
+          <span class="article-card-region">${region}</span>
+          <span class="article-card-date">${formatDateShort(e.data.date)}</span>
+        </div>
+        <h3 class="article-card-title">${e.data.title}</h3>
+        <div class="article-card-footer">
+          <span class="article-card-author">${authorName}</span>
+        </div>
+      </div>
+    </a>
+  </article>`;
+}).join('');
 ---
-<BaseLayout lang="en" title="Intelligence Feed — CSIORS" description="Browse CSIORS intelligence briefs and expert analyses on migration, food security, and regional stability.">
+<BaseLayout lang="en" title="Analysis — CSIORS" description="Browse all CSIORS analysis: field briefs and expert research on migration, food security, and regional stability.">
 
 <div class="container">
   <section class="page-hero">
-    <div class="page-hero-tag">Intelligence Feed</div>
-    <h1 class="page-hero-title">Briefs & Analysis</h1>
-    <p class="page-hero-lede">Field-data-driven intelligence on migration, food security, and regional stability. Briefs published 2–3 times per week; expert analysis monthly.</p>
+    <div class="page-hero-tag">Analysis</div>
+    <h1 class="page-hero-title">All Analysis</h1>
+    <p class="page-hero-lede">{allContent.length} publications covering migration, food security, and regional stability across the Middle East, North Africa, and the Horn of Africa.</p>
   </section>
 </div>
 
-<!-- ===== LATEST BRIEF (featured) ===== -->
-{featured && (
 <div class="container">
-  <section class="feed-featured-section">
-    <div class="feed-section-label">Latest Intelligence Brief</div>
-    <article class="feed-featured-card">
-      <div class="feed-featured-body">
-        <div class="feed-type">Field Alert — {featured.entry.data.region}</div>
-        <h2 class="feed-featured-title">
-          <a href={`/briefs/${featured.entry.id}`}>{featured.entry.data.title}</a>
-        </h2>
-        <p class="feed-featured-summary">{featured.entry.data.summary}</p>
-        <div class="feed-data-strip">
-          <span class="feed-data-item">
-            <span class="feed-data-label">EWS</span>
-            <span class="feed-data-val" style={`color: var(--${featured.entry.data.alert === 'alert' ? 'red-alert' : featured.entry.data.alert === 'watch' ? 'amber' : 'green'})`}>
-              {featured.entry.data.ews}/100
-            </span>
-          </span>
-          {featured.entry.data.food_price && (
-            <span class="feed-data-item">
-              <span class="feed-data-label">Food price</span>
-              <span class="feed-data-val">{featured.entry.data.food_price}</span>
-            </span>
-          )}
-          <span class="feed-data-item">
-            <span class="feed-data-label">Responses</span>
-            <span class="feed-data-val">{featured.entry.data.responses}</span>
-          </span>
-          <span class="feed-data-item feed-data-date">{formatDate(featured.entry.data.date)}</span>
-        </div>
+  <section class="feed-section">
+    <!-- Filters -->
+    <div class="feed-filters" id="feedFilters" set:html={filtersHtml}></div>
+
+    <!-- Grid -->
+    <div class="articles-grid" id="articlesGrid" set:html={cardsHtml}></div>
+
+    <!-- Pagination controls -->
+    <div class="feed-pagination" id="feedPagination">
+      <span class="feed-page-info" id="pageInfo"></span>
+      <div class="feed-page-btns">
+        <button class="feed-page-btn" id="prevBtn" disabled>&larr; Previous</button>
+        <button class="feed-page-btn" id="nextBtn">Next &rarr;</button>
       </div>
-    </article>
-  </section>
-</div>
-)}
-
-<!-- ===== EXPERT ARTICLES GRID ===== -->
-<div class="container">
-  <section class="feed-articles-section">
-    <div class="feed-section-header">
-      <div class="feed-section-label">Expert Analysis · Policy Research</div>
-      <div class="feed-article-count">{articles.length} publications · 2022–2026</div>
-    </div>
-
-    <!-- Category filter (JS-powered) -->
-    <div class="feed-filters" id="feedFilters">
-      <button class="feed-filter active" data-filter="all">All</button>
-      <button class="feed-filter" data-filter="Ethiopia">Ethiopia</button>
-      <button class="feed-filter" data-filter="Libya">Libya</button>
-      <button class="feed-filter" data-filter="Sudan">Sudan</button>
-      <button class="feed-filter" data-filter="Syria">Syria</button>
-      <button class="feed-filter" data-filter="Nigeria">Nigeria</button>
-      <button class="feed-filter" data-filter="Horn of Africa">Horn of Africa</button>
-      <button class="feed-filter" data-filter="MENA">MENA / Other</button>
-    </div>
-
-    <!-- Article grid -->
-    <div class="articles-grid" id="articlesGrid">
-      {articles.map(item => (
-        <article
-          class="article-card"
-          data-region={item.entry.data.region}
-        >
-          <a href={`/expert/${item.entry.id}`} class="article-card-link">
-            <div class="article-card-img">
-              {item.entry.data.image ? (
-                <img
-                  src={item.entry.data.image}
-                  alt=""
-                  loading="lazy"
-                  onerror="this.parentElement.classList.add('no-img')"
-                />
-              ) : (
-                <div class="article-card-img-placeholder">
-                  <span class="article-card-region-bg">{item.entry.data.region}</span>
-                </div>
-              )}
-            </div>
-            <div class="article-card-body">
-              <div class="article-card-meta">
-                <span class="article-card-region">{item.entry.data.region}</span>
-                <span class="article-card-date">{formatDateShort(item.entry.data.date)}</span>
-              </div>
-              <h3 class="article-card-title">{item.entry.data.title}</h3>
-              {item.entry.data.subtitle && (
-                <p class="article-card-sub">{item.entry.data.subtitle}</p>
-              )}
-              <div class="article-card-footer">
-                <span class="article-card-author">{item.entry.data.author}</span>
-                {item.entry.data.category && (
-                  <span class="article-card-cat">{item.entry.data.category}</span>
-                )}
-              </div>
-            </div>
-          </a>
-        </article>
-      ))}
-    </div>
-
-    <div class="feed-load-more" id="feedLoadMore" style="display:none;">
-      <button class="feed-load-btn" id="loadMoreBtn">Load more articles</button>
     </div>
   </section>
 </div>
 
 <script>
-  // Filter by region
-  const filters = document.querySelectorAll('.feed-filter');
-  const cards = document.querySelectorAll('.article-card');
+  const PER_PAGE = 20;
+  let currentPage = 1;
+  let activeFilter = 'all';
 
+  const cards = Array.from(document.querySelectorAll('#articlesGrid .article-card'));
+  const filters = document.querySelectorAll('.feed-filter');
+  const pageInfo = document.getElementById('pageInfo');
+  const prevBtn = document.getElementById('prevBtn') as HTMLButtonElement;
+  const nextBtn = document.getElementById('nextBtn') as HTMLButtonElement;
+
+  function getFiltered() {
+    if (activeFilter === 'all') return cards;
+    return cards.filter(c => c.getAttribute('data-region') === activeFilter);
+  }
+
+  function render() {
+    const filtered = getFiltered();
+    const total = filtered.length;
+    const totalPages = Math.ceil(total / PER_PAGE);
+    if (currentPage > totalPages) currentPage = totalPages || 1;
+    const start = (currentPage - 1) * PER_PAGE;
+    const end = start + PER_PAGE;
+
+    // Hide all, show only current page of filtered
+    cards.forEach(c => (c as HTMLElement).style.display = 'none');
+    filtered.forEach((c, i) => {
+      (c as HTMLElement).style.display = (i >= start && i < end) ? '' : 'none';
+    });
+
+    // Update info
+    if (pageInfo) {
+      pageInfo.textContent = `Showing ${Math.min(start + 1, total)}–${Math.min(end, total)} of ${total}`;
+    }
+    if (prevBtn) prevBtn.disabled = currentPage <= 1;
+    if (nextBtn) nextBtn.disabled = currentPage >= totalPages;
+  }
+
+  // Filter clicks
   filters.forEach(btn => {
     btn.addEventListener('click', () => {
       filters.forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
-      const filter = btn.getAttribute('data-filter');
-      cards.forEach(card => {
-        const region = card.getAttribute('data-region') || '';
-        if (filter === 'all') {
-          (card as HTMLElement).style.display = '';
-        } else if (filter === 'MENA') {
-          // Show anything not in the specific filters
-          const specific = ['Ethiopia','Libya','Sudan','Syria','Nigeria','Horn of Africa'];
-          (card as HTMLElement).style.display = specific.some(r => region.includes(r)) ? 'none' : '';
-        } else {
-          (card as HTMLElement).style.display = region.includes(filter) ? '' : 'none';
-        }
-      });
+      activeFilter = btn.getAttribute('data-filter') || 'all';
+      currentPage = 1;
+      render();
+      // Scroll to top of grid
+      document.getElementById('feedFilters')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
   });
+
+  // Pagination clicks
+  prevBtn?.addEventListener('click', () => { currentPage--; render(); window.scrollTo({ top: 0, behavior: 'smooth' }); });
+  nextBtn?.addEventListener('click', () => { currentPage++; render(); window.scrollTo({ top: 0, behavior: 'smooth' }); });
+
+  // Initial render
+  render();
 </script>
 
 </BaseLayout>

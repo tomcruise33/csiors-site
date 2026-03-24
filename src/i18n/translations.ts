@@ -1,8 +1,8 @@
 export const translations = {
   en: {
     // Nav
-    'nav.briefs': 'Latest Briefs',
-    'nav.feed': 'Intelligence Feed',
+    'nav.briefs': 'Home',
+    'nav.feed': 'Analysis',
     'nav.about': 'About',
     'nav.contact': 'Contact',
     'nav.survey': 'Field Survey',
