@@ -27,6 +27,11 @@ const {
 
 const jsonLdString = jsonLd ? JSON.stringify(jsonLd) : null;
 const pageUrl = canonicalUrl || Astro.url.href;
+
+// Pre-build JSON-LD script tag (esbuild workaround — no JSX conditionals in template)
+const jsonLdScriptHtml = jsonLdString
+  ? `<script type="application/ld+json">${jsonLdString}</script>`
+  : '';
 ---
 <!DOCTYPE html>
 <html lang={lang}>
@@ -52,7 +57,7 @@ const pageUrl = canonicalUrl || Astro.url.href;
   <meta name="twitter:description" content={description}>
   <meta name="twitter:image" content={ogImage}>
 
-  {jsonLdString && <script type="application/ld+json" set:html={jsonLdString} />}
+  <Fragment set:html={jsonLdScriptHtml} />
 </head>
 <body>
   <Ticker />

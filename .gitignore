@@ -3,3 +3,5 @@ dist/
 .vercel/
 .astro/
 public/publications/
+.DS_Store
+*.bak
