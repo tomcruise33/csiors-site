@@ -31,7 +31,7 @@ export const authors: Record<string, Author> = {
     bioSk: 'Afrikanista a sociálny vedec so zameraním na modernú históriu a politiku Etiópie a Afrického rohu.',
     specialization: ['Horn of Africa', 'Ethiopian Politics', 'Nationalism & Identity', 'Conflict Analysis', 'Migration', 'Sahel Security'],
     regions: ['Ethiopia', 'Sudan', 'Somalia', 'Horn of Africa', 'Nigeria', 'Senegal', 'Sahel'],
-    affiliation: 'University of West Bohemia / CSIORS',
+    affiliation: 'CSIORS',
     linkedin: 'https://www.linkedin.com/in/jan-z%C3%A1ho%C5%99%C3%ADk-638a2719/',
     active: true,
   },

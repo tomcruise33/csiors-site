@@ -119,7 +119,7 @@ const structuredData = {
   description: 'Data-driven intelligence on migration, food security, and regional stability across the Middle East, North Africa, and the Horn of Africa.',
   foundingDate: '2022',
   areaServed: ['Middle East', 'North Africa', 'Horn of Africa'],
-  memberOf: { '@type': 'Organization', name: 'University of West Bohemia' },
+  memberOf: { '@type': 'Organization', name: 'BRIDGE Research & Innovation, Addis Ababa' },
 };
 ---
 <BaseLayout
@@ -129,40 +129,7 @@ const structuredData = {
   jsonLd={structuredData}
 >
 
-<!-- ===== HERO ===== -->
-<section class="hp-hero">
-  <div class="container">
-    <div class="hp-hero-inner">
-      <p class="hp-hero-tag">Independent Research Institute · University of West Bohemia</p>
-      <h1 class="hp-hero-title">Data-driven analysis on migration, food security, and political stability</h1>
-      <p class="hp-hero-sub">CSIORS produces field-informed research across the Middle East, North Africa, and the Horn of Africa. Our anonymous survey network spans 37 countries — every analysis is grounded in real data from the ground.</p>
-      <div class="hp-hero-actions">
-        <a href="/feed" class="hp-btn hp-btn--primary">Browse all analysis</a>
-        <a href="/about" class="hp-btn hp-btn--ghost">About the institute</a>
-      </div>
-    </div>
-    <div class="hp-hero-stats">
-      <div class="hp-stat">
-        <span class="hp-stat-val" data-count={allContent.length}>{allContent.length}</span>
-        <span class="hp-stat-lbl">Publications</span>
-      </div>
-      <div class="hp-stat">
-        <span class="hp-stat-val" data-count="37">37</span>
-        <span class="hp-stat-lbl">Countries</span>
-      </div>
-      <div class="hp-stat">
-        <span class="hp-stat-val" data-count={authorSet.size}>{authorSet.size}</span>
-        <span class="hp-stat-lbl">Analysts</span>
-      </div>
-      <div class="hp-stat">
-        <span class="hp-stat-val">50+</span>
-        <span class="hp-stat-lbl">Cities Monitored</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== FEATURED ===== -->
+<!-- ===== FEATURED ANALYSIS (first thing visitors see) ===== -->
 <Fragment set:html={featuredHtml} />
 
 <!-- ===== LATEST ANALYSIS SLIDER ===== -->
@@ -170,7 +137,7 @@ const structuredData = {
   <div class="container">
     <div class="hp-section-top">
       <h2 class="hp-section-title">Latest Analysis</h2>
-      <a href="/feed" class="hp-section-link">View all &rarr;</a>
+      <a href="/feed" class="hp-section-link">View all {allContent.length} &rarr;</a>
     </div>
   </div>
   <div class="hp-slider-wrap">
@@ -178,7 +145,40 @@ const structuredData = {
   </div>
 </section>
 
-<!-- ===== REGIONS / TOPICS ===== -->
+<!-- ===== ABOUT STRIP (compact, not the hero) ===== -->
+<section class="hp-about">
+  <div class="container">
+    <div class="hp-about-inner">
+      <div class="hp-about-text">
+        <p class="hp-about-lede">CSIORS is an independent research institute producing field-informed analysis across the Middle East, North Africa, and the Horn of Africa. Our anonymous survey network spans 37 countries — every publication is grounded in real data from the ground.</p>
+        <div class="hp-about-actions">
+          <a href="/about" class="hp-btn hp-btn--ghost">About the institute</a>
+          <a href="/feed" class="hp-btn hp-btn--ghost">Browse all analysis</a>
+        </div>
+      </div>
+      <div class="hp-about-stats">
+        <div class="hp-stat">
+          <span class="hp-stat-val" data-count={allContent.length}>{allContent.length}</span>
+          <span class="hp-stat-lbl">Publications</span>
+        </div>
+        <div class="hp-stat">
+          <span class="hp-stat-val" data-count="37">37</span>
+          <span class="hp-stat-lbl">Countries</span>
+        </div>
+        <div class="hp-stat">
+          <span class="hp-stat-val" data-count={authorSet.size}>{authorSet.size}</span>
+          <span class="hp-stat-lbl">Analysts</span>
+        </div>
+        <div class="hp-stat">
+          <span class="hp-stat-val">50+</span>
+          <span class="hp-stat-lbl">Cities</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== REGIONS ===== -->
 <section class="hp-topics">
   <div class="container">
     <h2 class="hp-section-title">Regions We Cover</h2>
@@ -237,11 +237,7 @@ const structuredData = {
       }
     });
   }, { threshold: 0.3 });
-  document.querySelectorAll('.hp-hero-stats, .hp-cta').forEach(el => obs.observe(el));
-  // Auto-trigger hero counters with slight delay
-  setTimeout(() => {
-    document.querySelectorAll('.hp-hero-stats [data-count]').forEach(el => animateCounter(el));
-  }, 400);
+  document.querySelectorAll('.hp-about-stats, .hp-cta').forEach(el => obs.observe(el));
 </script>
 
 </BaseLayout>
