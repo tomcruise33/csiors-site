@@ -35,20 +35,30 @@ const sidebarAuthorHtml = primaryAuthor
      <a href="/author/${primaryAuthor.id}" style="font-family:'IBM Plex Mono',monospace;font-size:0.75rem;color:var(--gradient-blue);text-decoration:none;display:inline-block;margin-top:0.4rem">View full profile &rarr;</a>`
   : `<strong>${rawAuthor}</strong><p class="contribute-text" style="margin-top:0.5rem">Contributing expert for CSIORS. Regional specialist in ${entry.data.region}.</p>`;
 
-// Pre-build tags HTML
+// === PRE-BUILD ALL CONDITIONAL HTML (esbuild workaround) ===
+const heroImgHtml = entry.data.image
+  ? `<div class="article-hero-img"><img src="${entry.data.image}" alt="${entry.data.title.replace(/"/g, '&quot;')}" /><div class="article-hero-overlay"></div></div>`
+  : '';
+
+const categoryLabel = entry.data.category || 'Expert Analysis';
+
+const subtitleHtml = entry.data.subtitle
+  ? `<p class="article-subtitle">${entry.data.subtitle}</p>`
+  : '';
+
 const tagsHtml = (entry.data.tags && entry.data.tags.length > 0)
   ? `<div class="article-tags">${entry.data.tags.map((tag: string) => `<span class="article-tag">#${tag}</span>`).join('')}</div>`
   : '';
----
-<BaseLayout lang="en" title={`${entry.data.title} — CSIORS`} description={entry.data.summary} ogImage={entry.data.image || 'https://csiors.org/og-default.png'} ogType="article">
 
-<!-- Hero image -->
-{entry.data.image && (
-  <div class="article-hero-img">
-    <img src={entry.data.image} alt={entry.data.title} />
-    <div class="article-hero-overlay"></div>
-  </div>
-)}
+const fieldDataHtml = (entry.data.responses && entry.data.responses > 0)
+  ? `<div class="sidebar-block"><div class="sidebar-title">Field Data</div><p class="contribute-text">This analysis was enriched with <strong>${entry.data.responses}</strong> anonymous field responses from the CSIORS survey network.</p></div>`
+  : '';
+
+const ogImg = entry.data.image || 'https://csiors.org/og-default.png';
+---
+<BaseLayout lang="en" title={`${entry.data.title} — CSIORS`} description={entry.data.summary} ogImage={ogImg} ogType="article">
+
+<Fragment set:html={heroImgHtml} />
 
 <div class="container">
   <article class="article-page">
@@ -59,44 +69,31 @@ const tagsHtml = (entry.data.tags && entry.data.tags.length > 0)
     <div class="article-layout">
       <div class="article-main">
         <div class="feed-type feed-type-expert" style="margin-bottom: 0.75rem;">
-          {entry.data.category || 'Expert Analysis'}
+          <Fragment set:html={categoryLabel} />
         </div>
         <h1 class="article-title">{entry.data.title}</h1>
-        {entry.data.subtitle && (
-          <p class="article-subtitle">{entry.data.subtitle}</p>
-        )}
+        <Fragment set:html={subtitleHtml} />
         <p class="article-byline">
           <Fragment set:html={authorLinksHtml} /> &middot; {dateStr} &middot; {entry.data.region}
         </p>
-
         <Fragment set:html={tagsHtml} />
-
         <div class="article-body">
           <Content />
         </div>
       </div>
 
       <aside class="article-sidebar">
-        <!-- Author -->
         <div class="sidebar-block">
           <div class="sidebar-title">About the Author</div>
           <div class="expert-by"><Fragment set:html={sidebarAuthorHtml} /></div>
         </div>
 
-        <!-- Region -->
         <div class="sidebar-block">
           <div class="sidebar-title">Region</div>
           <p class="contribute-text">{entry.data.region}</p>
         </div>
 
-        {entry.data.responses > 0 && (
-          <div class="sidebar-block">
-            <div class="sidebar-title">Field Data</div>
-            <p class="contribute-text">
-              This analysis was enriched with <strong>{entry.data.responses}</strong> anonymous field responses from the CSIORS survey network.
-            </p>
-          </div>
-        )}
+        <Fragment set:html={fieldDataHtml} />
 
         <div class="sidebar-block">
           <div class="sidebar-title">Contribute</div>

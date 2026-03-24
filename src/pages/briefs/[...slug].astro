@@ -15,6 +15,25 @@ const { Content } = await render(entry);
 
 const alertColor = entry.data.alert === 'alert' ? 'var(--red-alert)' : entry.data.alert === 'watch' ? 'var(--amber)' : 'var(--green)';
 const dateStr = entry.data.date.toLocaleDateString('en-US', { day: 'numeric', month: 'long', year: 'numeric' });
+
+// === PRE-BUILD ALL CONDITIONAL HTML (esbuild workaround) ===
+const sourcesHtml = entry.data.sources
+  ? ` &middot; ${entry.data.sources}`
+  : '';
+
+const foodPriceHtml = entry.data.food_price
+  ? `<div class="data-row"><span class="data-label">Food price change</span><span class="data-value up">${entry.data.food_price}</span></div>`
+  : '';
+
+const bylineHtml = `<strong>CSIORS Intelligence Brief</strong> &middot; ${dateStr}${sourcesHtml}`;
+
+const dataBoxHtml = `<div class="lead-data-box"><div class="data-box-inner">
+  <div class="data-box-title">${entry.data.region} — Key Indicators</div>
+  <div class="data-row"><span class="data-label">Early Warning Score</span><span class="data-value" style="color: ${alertColor}">${entry.data.ews} / 100</span></div>
+  ${foodPriceHtml}
+  <div class="data-row"><span class="data-label">Field responses</span><span class="data-value">${entry.data.responses}</span></div>
+  <div class="data-source">CSIORS field survey &middot; ${dateStr}</div>
+</div></div>`;
 ---
 <BaseLayout title={`${entry.data.title} — CSIORS`} description={entry.data.summary}>
 <div class="container">
@@ -29,8 +48,7 @@ const dateStr = entry.data.date.toLocaleDateString('en-US', { day: 'numeric', mo
         <div class="lead-tag">Field Alert — {entry.data.region}</div>
         <h1 class="article-title">{entry.data.title}</h1>
         <p class="article-byline">
-          <strong>CSIORS Intelligence Brief</strong> &middot; {dateStr}
-          {entry.data.sources && <span> &middot; {entry.data.sources}</span>}
+          <Fragment set:html={bylineHtml} />
         </p>
         <div class="article-body">
           <Content />
@@ -38,26 +56,7 @@ const dateStr = entry.data.date.toLocaleDateString('en-US', { day: 'numeric', mo
       </div>
 
       <aside class="article-sidebar">
-        <div class="lead-data-box">
-          <div class="data-box-inner">
-            <div class="data-box-title">{entry.data.region} — Key Indicators</div>
-            <div class="data-row">
-              <span class="data-label">Early Warning Score</span>
-              <span class="data-value" style={`color: ${alertColor}`}>{entry.data.ews} / 100</span>
-            </div>
-            {entry.data.food_price && (
-              <div class="data-row">
-                <span class="data-label">Food price change</span>
-                <span class="data-value up">{entry.data.food_price}</span>
-              </div>
-            )}
-            <div class="data-row">
-              <span class="data-label">Field responses</span>
-              <span class="data-value">{entry.data.responses}</span>
-            </div>
-            <div class="data-source">CSIORS field survey &middot; {dateStr}</div>
-          </div>
-        </div>
+        <Fragment set:html={dataBoxHtml} />
 
         <div class="sidebar-block" style="margin-top: 2rem;">
           <div class="sidebar-title">Contribute</div>
