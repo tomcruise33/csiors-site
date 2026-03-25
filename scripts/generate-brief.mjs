@@ -22,6 +22,10 @@ const KOBO_ASSET_UID = process.env.KOBO_ASSET_UID || 'abcLY2v3kPakMtrmBisUsm';
 const KOBO_BASE = process.env.KOBO_BASE || 'https://eu.kobotoolbox.org'; // EU server
 const GROK_MODEL = 'grok-4-1-fast-non-reasoning';
 
+// ── Quality gates ───────────────────────────────────────────────────
+const MIN_RESPONSES_FOR_BRIEF = 3;       // don't publish on <3 responses
+const REJECT_UNKNOWN_COUNTRY = true;      // skip "Unknown" countries
+
 // ── Helpers ─────────────────────────────────────────────────────────
 function today() {
   return new Date().toISOString().slice(0, 10);
@@ -39,6 +43,31 @@ function slugify(text) {
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/^-|-$/g, '')
     .slice(0, 60);
+}
+
+/**
+ * Extract a field from a KoboToolbox submission by trying multiple aliases.
+ * v2 forms use group prefixes like "group_location/country".
+ */
+function extractField(sub, aliases) {
+  for (const alias of aliases) {
+    if (sub[alias] !== undefined && sub[alias] !== null && sub[alias] !== '') return sub[alias];
+    // Handle nested group/field paths
+    if (alias.includes('/')) {
+      const parts = alias.split('/');
+      let obj = sub;
+      for (const part of parts) {
+        if (obj && typeof obj === 'object' && part in obj) {
+          obj = obj[part];
+        } else {
+          obj = null;
+          break;
+        }
+      }
+      if (obj !== null && obj !== undefined && obj !== '') return obj;
+    }
+  }
+  return null;
 }
 
 // ── Step 1: Fetch KoboToolbox submissions ───────────────────────────
@@ -70,67 +99,115 @@ async function fetchSubmissions(dayRange = 7) {
   return results;
 }
 
+// ── KoboToolbox field aliases (matching v2 form structure) ───────────
+const FIELD_ALIASES = {
+  country:     ['group_location/country', 'country', 'location/country', 'البلد'],
+  city:        ['group_location/city', 'city', 'location/city', 'المدينة'],
+  mood:        ['group_security/public_mood', 'public_mood', 'security/mood', 'المزاج_العام'],
+  movement:    ['group_security/freedom_movement', 'freedom_of_movement', 'security/movement', 'حرية_التنقل'],
+  departures:  ['group_migration/observed_departures', 'observed_departures', 'migration/departures', 'المغادرات'],
+  job:         ['group_employment/job_availability', 'job_availability', 'employment/job_avail', 'توفر_العمل'],
+  flour:       ['group_prices/flour_price', 'flour_price', 'prices/flour_1kg', 'سعر_الطحين'],
+  rice:        ['group_prices/rice_price', 'rice_price', 'prices/rice_1kg', 'سعر_الأرز'],
+  oil:         ['group_prices/oil_price', 'oil_price', 'prices/cooking_oil_1l', 'سعر_الزيت'],
+  eggs:        ['group_prices/eggs_price', 'eggs_price', 'prices/eggs_10pcs', 'سعر_البيض'],
+  water:       ['group_prices/water_price', 'water_price', 'prices/water_1_5l', 'سعر_الماء'],
+};
+
 // ── Step 2: Analyze submissions by country ──────────────────────────
 function analyzeByCountry(submissions) {
   const countries = {};
 
   for (const sub of submissions) {
-    // Adapt field names to your actual KoboToolbox survey structure
-    const country = sub.country || sub.Country || sub.location_country || 'Unknown';
+    const country = extractField(sub, FIELD_ALIASES.country) || 'Unknown';
+    const city = extractField(sub, FIELD_ALIASES.city) || '';
+
     if (!countries[country]) {
       countries[country] = {
         count: 0,
-        displacement: [],
-        foodPrices: [],
-        safety: [],
-        healthcare: [],
+        cities: new Set(),
+        mood: [],
+        movement: [],
+        departures: [],
+        job: [],
+        prices: { flour: [], rice: [], oil: [], eggs: [], water: [] },
         raw: [],
       };
     }
     const c = countries[country];
     c.count++;
+    if (city) c.cities.add(city);
     c.raw.push(sub);
 
-    // Extract numeric fields (adapt to your actual field names)
-    if (sub.displacement_30d !== undefined) c.displacement.push(Number(sub.displacement_30d));
-    if (sub.food_price_change !== undefined) c.foodPrices.push(Number(sub.food_price_change));
-    if (sub.safety_perception !== undefined) c.safety.push(sub.safety_perception);
-    if (sub.healthcare_access !== undefined) c.healthcare.push(sub.healthcare_access);
+    // Extract actual KoboToolbox fields
+    const mood = extractField(sub, FIELD_ALIASES.mood);
+    if (mood) c.mood.push(mood);
+
+    const movement = extractField(sub, FIELD_ALIASES.movement);
+    if (movement) c.movement.push(movement);
+
+    const departures = extractField(sub, FIELD_ALIASES.departures);
+    if (departures) c.departures.push(departures);
+
+    const job = extractField(sub, FIELD_ALIASES.job);
+    if (job) c.job.push(job);
+
+    // Prices
+    for (const priceKey of ['flour', 'rice', 'oil', 'eggs', 'water']) {
+      const val = extractField(sub, FIELD_ALIASES[priceKey]);
+      if (val !== null && !isNaN(Number(val))) c.prices[priceKey].push(Number(val));
+    }
   }
 
   return countries;
 }
 
+// ── Scoring maps (lowercase — matching v2 categorical values) ───────
+const MOOD_SCORES = {
+  'hopeful': 0, 'optimistic': 0,
+  'neutral': 5, 'stable': 5,
+  'worried': 15, 'concerned': 15,
+  'angry': 20, 'desperate': 25, 'fearful': 25,
+};
+const MOVE_SCORES = {
+  'free': 0, 'mostly_free': 5,
+  'restricted': 15, 'very_restricted': 25,
+};
+const JOB_SCORES = {
+  'good': 0, 'available': 0,
+  'limited': 10, 'moderate': 10,
+  'scarce': 20, 'none': 25,
+};
+const DEPARTURE_SCORES = {
+  'none': 0, 'few': 5, 'some': 10, 'many': 20, 'mass': 25,
+};
+
 // ── Step 3: Calculate EWS score ─────────────────────────────────────
 function calculateEWS(countryData) {
-  let score = 25; // baseline
+  let score = 10; // low baseline
 
-  // Food price component (0-30 points)
-  if (countryData.foodPrices.length > 0) {
-    const avgFoodChange = countryData.foodPrices.reduce((a, b) => a + b, 0) / countryData.foodPrices.length;
-    score += Math.min(30, Math.max(0, avgFoodChange * 2));
+  // Mood component (0-25 points)
+  if (countryData.mood.length > 0) {
+    const moodScores = countryData.mood.map(m => MOOD_SCORES[String(m).toLowerCase()] ?? 10);
+    score += Math.round(moodScores.reduce((a, b) => a + b, 0) / moodScores.length);
   }
 
-  // Displacement component (0-30 points)
-  if (countryData.displacement.length > 0) {
-    const displacementRate = countryData.displacement.filter(d => d === 1 || d === true).length / countryData.displacement.length;
-    score += Math.round(displacementRate * 30);
+  // Movement restriction component (0-25 points)
+  if (countryData.movement.length > 0) {
+    const moveScores = countryData.movement.map(m => MOVE_SCORES[String(m).toLowerCase()] ?? 10);
+    score += Math.round(moveScores.reduce((a, b) => a + b, 0) / moveScores.length);
   }
 
-  // Safety component (0-20 points)
-  if (countryData.safety.length > 0) {
-    const negativeCount = countryData.safety.filter(s =>
-      typeof s === 'string' && (s.toLowerCase().includes('deteriorat') || s.toLowerCase().includes('unsafe') || s.toLowerCase().includes('bad'))
-    ).length;
-    score += Math.round((negativeCount / countryData.safety.length) * 20);
+  // Job availability component (0-25 points)
+  if (countryData.job.length > 0) {
+    const jobScores = countryData.job.map(j => JOB_SCORES[String(j).toLowerCase()] ?? 10);
+    score += Math.round(jobScores.reduce((a, b) => a + b, 0) / jobScores.length);
   }
 
-  // Healthcare component (0-20 points)
-  if (countryData.healthcare.length > 0) {
-    const limitedCount = countryData.healthcare.filter(h =>
-      typeof h === 'string' && (h.toLowerCase().includes('limit') || h.toLowerCase().includes('none') || h.toLowerCase().includes('no access'))
-    ).length;
-    score += Math.round((limitedCount / countryData.healthcare.length) * 20);
+  // Departures component (0-25 points)
+  if (countryData.departures.length > 0) {
+    const depScores = countryData.departures.map(d => DEPARTURE_SCORES[String(d).toLowerCase()] ?? 10);
+    score += Math.round(depScores.reduce((a, b) => a + b, 0) / depScores.length);
   }
 
   return Math.min(100, Math.round(score));
@@ -142,7 +219,16 @@ function pickTopStory(countriesData) {
   let topScore = -1;
 
   for (const [country, data] of Object.entries(countriesData)) {
-    if (data.count < 2) continue; // need at least 2 responses for reliability
+    // Quality gates
+    if (REJECT_UNKNOWN_COUNTRY && (!country || country === 'Unknown' || country === 'unknown')) {
+      console.log(`   ⚠️  Skipping "${country}" — unknown country`);
+      continue;
+    }
+    if (data.count < MIN_RESPONSES_FOR_BRIEF) {
+      console.log(`   ⚠️  Skipping "${country}" — only ${data.count} responses (min: ${MIN_RESPONSES_FOR_BRIEF})`);
+      continue;
+    }
+
     const ews = calculateEWS(data);
     if (ews > topScore) {
       topScore = ews;
@@ -150,33 +236,37 @@ function pickTopStory(countriesData) {
     }
   }
 
-  // Fallback: if no country has 2+ responses, pick the one with most
-  if (!topCountry) {
-    const sorted = Object.entries(countriesData).sort((a, b) => b[1].count - a[1].count);
-    if (sorted.length > 0) {
-      const [name, data] = sorted[0];
-      topCountry = { name, ...data, ews: calculateEWS(data) };
-    }
-  }
-
-  return topCountry;
+  return topCountry; // null if no country passes quality gates — pipeline will skip
 }
 
 // ── Step 5: Generate brief via Grok API ─────────────────────────────
 async function generateBrief(topStory, allCountries) {
   const alertLevel = topStory.ews >= 51 ? 'alert' : topStory.ews >= 26 ? 'watch' : 'stable';
 
-  const avgFoodPrice = topStory.foodPrices.length > 0
-    ? (topStory.foodPrices.reduce((a, b) => a + b, 0) / topStory.foodPrices.length).toFixed(0)
+  // Aggregate price data
+  const allPrices = Object.entries(topStory.prices || {})
+    .filter(([, vals]) => vals.length > 0)
+    .map(([item, vals]) => {
+      const avg = (vals.reduce((a, b) => a + b, 0) / vals.length).toFixed(0);
+      return `${item}: ${avg}`;
+    });
+  const foodPriceStr = allPrices.length > 0 ? allPrices.join(', ') : 'N/A';
+
+  // Mood summary
+  const moodSummary = topStory.mood.length > 0
+    ? [...new Set(topStory.mood.map(m => String(m).toLowerCase()))].join(', ')
     : 'N/A';
 
-  const foodPriceStr = avgFoodPrice !== 'N/A' ? `${avgFoodPrice > 0 ? '+' : ''}${avgFoodPrice}%` : 'N/A';
-
-  const displacementRate = topStory.displacement.length > 0
-    ? Math.round((topStory.displacement.filter(d => d === 1 || d === true).length / topStory.displacement.length) * 100)
+  // Departures summary
+  const departuresSummary = topStory.departures.length > 0
+    ? [...new Set(topStory.departures.map(d => String(d).toLowerCase()))].join(', ')
     : 'N/A';
+
+  // Cities covered
+  const citiesList = topStory.cities ? [...topStory.cities].join(', ') : 'N/A';
 
   const contextSummary = Object.entries(allCountries)
+    .filter(([name]) => name !== 'Unknown')
     .map(([name, data]) => `${name}: ${data.count} responses, EWS ${calculateEWS(data)}`)
     .join('; ');
 
@@ -195,14 +285,16 @@ Your writing style:
   const userPrompt = `Generate an intelligence brief based on the following field data collected this week:
 
 FOCUS COUNTRY: ${topStory.name}
+- Cities covered: ${citiesList}
 - Field responses: ${topStory.count}
 - Early Warning Score (EWS): ${topStory.ews}/100 (${alertLevel})
-- Average food price change: ${foodPriceStr}
-- Recent displacement rate: ${displacementRate}${typeof displacementRate === 'number' ? '%' : ''}
+- Public mood: ${moodSummary}
+- Observed departures: ${departuresSummary}
+- Market prices: ${foodPriceStr}
 - Alert level: ${alertLevel}
 
 OTHER MONITORED COUNTRIES THIS WEEK:
-${contextSummary}
+${contextSummary || 'No other countries with sufficient data this week.'}
 
 Generate the following in JSON format:
 {
