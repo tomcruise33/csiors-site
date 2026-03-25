@@ -53,7 +53,7 @@ const fieldDataHtml = (entry.data.responses && entry.data.responses > 0)
   ? `<div class="sidebar-block"><div class="sidebar-title">Field Data</div><p class="contribute-text">This analysis was enriched with <strong>${entry.data.responses}</strong> anonymous field responses from the CSIORS survey network.</p></div>`
   : '';
 
-const ogImg = entry.data.image || 'https://csiors.org/og-default.png';
+const ogImg = entry.data.image || `https://csiors.org/og/${entry.id}.png`;
 ---
 <BaseLayout lang="en" title={`${entry.data.title} — CSIORS`} description={entry.data.summary} ogImage={ogImg} ogType="article">
 

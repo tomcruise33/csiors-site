@@ -35,7 +35,7 @@ const dataBoxHtml = `<div class="lead-data-box"><div class="data-box-inner">` +
   `<div class="data-source">CSIORS field survey &middot; ${dateStr}</div>` +
   `</div></div>`;
 ---
-<BaseLayout title={`${entry.data.title} — CSIORS`} description={entry.data.summary}>
+<BaseLayout title={`${entry.data.title} — CSIORS`} description={entry.data.summary} ogImage={`https://csiors.org/og/${entry.id}.png`} ogType="article">
 <div class="container">
 
   <article class="article-page">

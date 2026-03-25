@@ -1,0 +1,110 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const allExpert = await getCollection('expert');
+const allBriefs = await getCollection('briefs');
+
+// Build search index as JSON
+const searchIndex = [
+  ...allExpert.map(e => ({
+    t: e.data.title,
+    s: e.data.summary || e.data.subtitle || '',
+    r: e.data.region || '',
+    a: (e.data.author || 'CSIORS').replace(/"/g, ''),
+    d: e.data.date.toISOString().slice(0, 10),
+    u: '/expert/' + e.id,
+    k: 'expert',
+  })),
+  ...allBriefs.map(b => ({
+    t: b.data.title,
+    s: b.data.summary || '',
+    r: b.data.region || '',
+    a: 'CSIORS',
+    d: b.data.date.toISOString().slice(0, 10),
+    u: '/briefs/' + b.id,
+    k: 'brief',
+  })),
+].sort((a, b) => b.d.localeCompare(a.d));
+
+const indexJson = JSON.stringify(searchIndex);
+---
+<BaseLayout
+  lang="en"
+  title="Search — CSIORS"
+  description="Search across all CSIORS analyses, briefs, and expert commentary."
+>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero-tag">Search</div>
+    <h1 class="page-hero-title">Find Analysis</h1>
+    <p class="page-hero-lede">Search across {searchIndex.length} publications from the CSIORS archive.</p>
+  </div>
+</section>
+
+<section class="search-section">
+  <div class="container">
+    <div class="search-box">
+      <input type="text" id="search-input" class="search-input" placeholder="Search by title, region, author, keyword..." autofocus />
+      <div class="search-meta" id="search-meta"></div>
+    </div>
+    <div id="search-results" class="search-results"></div>
+  </div>
+</section>
+
+<script define:vars={{ indexJson }}>
+  const index = JSON.parse(indexJson);
+  const input = document.getElementById('search-input');
+  const results = document.getElementById('search-results');
+  const meta = document.getElementById('search-meta');
+
+  function search(query) {
+    if (!query || query.length < 2) {
+      results.innerHTML = '';
+      meta.textContent = '';
+      return;
+    }
+    const terms = query.toLowerCase().split(/\s+/).filter(t => t.length > 1);
+    const scored = index.map(item => {
+      const text = (item.t + ' ' + item.s + ' ' + item.r + ' ' + item.a).toLowerCase();
+      let score = 0;
+      for (const term of terms) {
+        if (item.t.toLowerCase().includes(term)) score += 10;
+        if (item.r.toLowerCase().includes(term)) score += 5;
+        if (item.a.toLowerCase().includes(term)) score += 3;
+        if (item.s.toLowerCase().includes(term)) score += 2;
+      }
+      return { ...item, score };
+    }).filter(item => item.score > 0).sort((a, b) => b.score - a.score);
+
+    meta.textContent = scored.length + ' result' + (scored.length !== 1 ? 's' : '');
+
+    if (scored.length === 0) {
+      results.innerHTML = '<p class="search-empty">No results found. Try different keywords.</p>';
+      return;
+    }
+
+    results.innerHTML = scored.slice(0, 30).map(item => {
+      const typeLabel = item.k === 'brief' ? 'Field Brief' : 'Analysis';
+      return '<a href="' + item.u + '" class="search-result">' +
+        '<div class="search-result-meta">' +
+        '<span class="search-result-type">' + typeLabel + '</span>' +
+        '<span class="search-result-region">' + item.r + '</span>' +
+        '<time>' + item.d + '</time>' +
+        '</div>' +
+        '<h3 class="search-result-title">' + item.t + '</h3>' +
+        (item.s ? '<p class="search-result-summary">' + item.s.slice(0, 200) + '</p>' : '') +
+        '<span class="search-result-author">' + item.a + '</span>' +
+        '</a>';
+    }).join('');
+  }
+
+  input.addEventListener('input', () => search(input.value));
+
+  // Check URL params
+  const urlQ = new URLSearchParams(window.location.search).get('q');
+  if (urlQ) { input.value = urlQ; search(urlQ); }
+</script>
+
+</BaseLayout>

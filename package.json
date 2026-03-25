@@ -4,13 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "og": "node scripts/generate-og-images.mjs"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@astrojs/vercel": "^10.0.1",
+    "@rollup/rollup-linux-arm64-gnu": "^4.60.0",
     "astro": "^6.0.5"
   }
 }

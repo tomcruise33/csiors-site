@@ -2666,3 +2666,110 @@ footer {
   .hp-stat-val { font-size: 1.1rem; }
   .hp-slide { flex: 0 0 230px; }
 }
+
+/* ═══════════════════════════════
+   SEARCH PAGE
+   ═══════════════════════════════ */
+.search-section {
+  padding: 2rem 0 4rem;
+}
+.search-box {
+  margin-bottom: 2rem;
+}
+.search-input {
+  width: 100%;
+  padding: 0.9rem 1.2rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  color: var(--text-primary);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.search-input:focus {
+  border-color: var(--gradient-blue);
+}
+.search-input::placeholder {
+  color: var(--text-muted);
+}
+.search-meta {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  margin-top: 0.5rem;
+  letter-spacing: 0.04em;
+}
+.search-results {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.search-result {
+  display: block;
+  padding: 1.2rem 0;
+  border-bottom: 1px solid var(--border);
+  text-decoration: none;
+  transition: background 0.15s;
+}
+.search-result:hover {
+  background: rgba(255,255,255,0.02);
+}
+.search-result-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 0.4rem;
+}
+.search-result-type {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.55rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: white;
+  background: linear-gradient(135deg, var(--gradient-blue), var(--gradient-purple));
+  padding: 0.1rem 0.45rem;
+  border-radius: 2px;
+}
+.search-result-region {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.6rem;
+  color: var(--gradient-blue);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.search-result-meta time {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.6rem;
+  color: var(--text-muted);
+}
+.search-result-title {
+  font-family: 'IBM Plex Serif', serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--text-primary);
+  margin-bottom: 0.3rem;
+}
+.search-result:hover .search-result-title {
+  color: var(--gradient-blue);
+}
+.search-result-summary {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 0.3rem;
+}
+.search-result-author {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.6rem;
+  color: var(--text-muted);
+}
+.search-empty {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  padding: 2rem 0;
+  text-align: center;
+}
