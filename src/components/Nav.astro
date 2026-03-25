@@ -1,12 +1,17 @@
 ---
 interface Props { lang?: 'en' | 'sk'; }
 const { lang = 'en' } = Astro.props;
+const path = Astro.url.pathname;
+function isActive(href: string) {
+  if (href === '/') return path === '/';
+  return path.startsWith(href);
+}
 ---
 <nav class="nav-bar">
-  <a href="/">Home</a>
-  <a href="/feed">Analysis</a>
-  <a href="/about">About</a>
-  <a href="/contact">Contact</a>
+  <a href="/" class={isActive('/') ? 'active' : ''}>Home</a>
+  <a href="/feed" class={isActive('/feed') ? 'active' : ''}>Analysis</a>
+  <a href="/about" class={isActive('/about') ? 'active' : ''}>About</a>
+  <a href="/contact" class={isActive('/contact') ? 'active' : ''}>Contact</a>
   <a href="https://ee-eu.kobotoolbox.org/x/VYfRrAuW" target="_blank" rel="noopener">Field Survey</a>
-  <a href="/watchtower" class="wt-link">Watchtower</a>
+  <a href="/watchtower" class={(isActive('/watchtower') ? 'active ' : '') + 'wt-link'}>Watchtower</a>
 </nav>

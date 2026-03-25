@@ -13,11 +13,14 @@ const today = new Date().toLocaleDateString(locale, {
 ---
 <header class="masthead">
   <div class="masthead-brand">
-    <img src="/images/logo-icon.png" alt="" class="masthead-logo" width="60" height="60" />
+    <a href="/" class="masthead-logo-link">
+      <img src="/images/logo-icon.png" alt="CSIORS" class="masthead-logo" width="52" height="52" />
+    </a>
     <div>
       <div class="masthead-name">CSIORS</div>
-      <div class="masthead-sub">{t(lang, 'masthead.sub')}</div>
+      <div class="masthead-sub">Czech-Slovak Institute of Oriental Studies</div>
     </div>
   </div>
-  <div class="masthead-date"><span class="live-dot"></span> {today} &nbsp;&middot;&nbsp; {t(lang, 'masthead.monitored')} &nbsp;&middot;&nbsp; {t(lang, 'masthead.lastData')}</div>
+  <div class="masthead-rule"></div>
+  <div class="masthead-date"><span class="live-dot"></span> {today}</div>
 </header>

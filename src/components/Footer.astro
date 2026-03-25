@@ -3,20 +3,27 @@ import { t } from '../i18n/translations';
 interface Props { lang?: 'en' | 'sk'; }
 const { lang = 'en' } = Astro.props;
 const prefix = lang === 'sk' ? '/sk' : '';
+const year = new Date().getFullYear();
 ---
 <div class="container">
   <footer>
-    <div class="footer-brand">
-      <img src="/images/logo-footer.png" alt="" class="footer-logo" width="24" height="24" />
-      <span class="footer-name">CSIORS</span>
+    <div class="footer-rule"></div>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="/images/logo-footer.png" alt="" class="footer-logo" width="24" height="24" />
+        <span class="footer-name">CSIORS</span>
+      </div>
+      <div class="footer-links">
+        <a href={`${prefix}/about`}>{t(lang, 'nav.about')}</a>
+        <a href={`${prefix}/feed`}>{t(lang, 'nav.feed')}</a>
+        <a href={`${prefix}/watchtower`}>{t(lang, 'nav.watchtower')}</a>
+        <a href="https://ee-eu.kobotoolbox.org/x/VYfRrAuW" target="_blank" rel="noopener">{t(lang, 'nav.survey')}</a>
+        <a href={`${prefix}/contact`}>{t(lang, 'nav.contact')}</a>
+      </div>
     </div>
-    <div class="footer-links">
-      <a href={`${prefix}/about`}>{t(lang, 'nav.about')}</a>
-      <a href={`${prefix}/feed`}>{t(lang, 'nav.feed')}</a>
-      <a href={`${prefix}/watchtower`}>{t(lang, 'nav.watchtower')}</a>
-      <a href="https://ee-eu.kobotoolbox.org/x/VYfRrAuW" target="_blank" rel="noopener">{t(lang, 'nav.survey')}</a>
-      <a href={`${prefix}/contact`}>{t(lang, 'nav.contact')}</a>
+    <div class="footer-meta">
+      <span class="footer-copy">&copy; {year} Czech-Slovak Institute of Oriental Studies. All rights reserved.</span>
+      <span class="footer-reg">Registered in Slovakia &middot; Partner: BRIDGE Research &amp; Innovation, Addis Ababa</span>
     </div>
-    <div class="footer-copy">{t(lang, 'footer.copy')}</div>
   </footer>
 </div>
