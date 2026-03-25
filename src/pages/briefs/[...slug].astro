@@ -27,13 +27,13 @@ const foodPriceHtml = entry.data.food_price
 
 const bylineHtml = `<strong>CSIORS Intelligence Brief</strong> &middot; ${dateStr}${sourcesHtml}`;
 
-const dataBoxHtml = `<div class="lead-data-box"><div class="data-box-inner">
-  <div class="data-box-title">${entry.data.region} — Key Indicators</div>
-  <div class="data-row"><span class="data-label">Early Warning Score</span><span class="data-value" style="color: ${alertColor}">${entry.data.ews} / 100</span></div>
-  ${foodPriceHtml}
-  <div class="data-row"><span class="data-label">Field responses</span><span class="data-value">${entry.data.responses}</span></div>
-  <div class="data-source">CSIORS field survey &middot; ${dateStr}</div>
-</div></div>`;
+const dataBoxHtml = `<div class="lead-data-box"><div class="data-box-inner">` +
+  `<div class="data-box-title">${entry.data.region} — Key Indicators</div>` +
+  `<div class="data-row"><span class="data-label">Early Warning Score</span><span class="data-value" style="color: ${alertColor}">${entry.data.ews} / 100</span></div>` +
+  foodPriceHtml +
+  `<div class="data-row"><span class="data-label">Field responses</span><span class="data-value">${entry.data.responses}</span></div>` +
+  `<div class="data-source">CSIORS field survey &middot; ${dateStr}</div>` +
+  `</div></div>`;
 ---
 <BaseLayout title={`${entry.data.title} — CSIORS`} description={entry.data.summary}>
 <div class="container">

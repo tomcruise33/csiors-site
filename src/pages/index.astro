@@ -56,33 +56,26 @@ const featuredHtml = featured ? (() => {
   const e = featured.entry;
   const href = getHref(featured);
   const authorName = e.data.author?.replace(/"/g, '') || '';
-  return `
-  <section class="hp-featured">
-    <div class="container">
-      <a href="${href}" class="hp-featured-card">
-        ${e.data.image ? `
-          <div class="hp-featured-img">
-            <img src="${e.data.image}" alt="" loading="lazy" />
-            <div class="hp-featured-overlay"></div>
-          </div>
-        ` : `<div class="hp-featured-img hp-featured-noimg"></div>`}
-        <div class="hp-featured-body">
-          <div class="hp-featured-meta">
-            <span class="hp-featured-type">${featured.type === 'brief' ? 'Field Brief' : 'Analysis'}</span>
-            <span class="hp-featured-region">${e.data.region || ''}</span>
-            <time class="hp-featured-date">${formatDate(e.data.date)}</time>
-          </div>
-          <h2 class="hp-featured-title">${e.data.title}</h2>
-          ${e.data.subtitle ? `<p class="hp-featured-sub">${e.data.subtitle}</p>` : ''}
-          ${e.data.summary ? `<p class="hp-featured-sub">${e.data.summary}</p>` : ''}
-          <div class="hp-featured-foot">
-            <span class="hp-featured-author">${authorName}</span>
-            <span class="hp-featured-readmore">Read analysis &rarr;</span>
-          </div>
-        </div>
-      </a>
-    </div>
-  </section>`;
+  const imgBlock = e.data.image
+    ? `<div class="hp-featured-img"><img src="${e.data.image}" alt="" loading="lazy" /><div class="hp-featured-overlay"></div></div>`
+    : `<div class="hp-featured-img hp-featured-noimg"></div>`;
+  const subtitleBlock = e.data.subtitle ? `<p class="hp-featured-sub">${e.data.subtitle}</p>` : '';
+  const summaryBlock = e.data.summary ? `<p class="hp-featured-sub">${e.data.summary}</p>` : '';
+  return `<section class="hp-featured"><div class="container">` +
+    `<a href="${href}" class="hp-featured-card">` +
+    imgBlock +
+    `<div class="hp-featured-body">` +
+    `<div class="hp-featured-meta">` +
+    `<span class="hp-featured-type">${featured.type === 'brief' ? 'Field Brief' : 'Analysis'}</span>` +
+    `<span class="hp-featured-region">${e.data.region || ''}</span>` +
+    `<time class="hp-featured-date">${formatDate(e.data.date)}</time>` +
+    `</div>` +
+    `<h2 class="hp-featured-title">${e.data.title}</h2>` +
+    subtitleBlock + summaryBlock +
+    `<div class="hp-featured-foot">` +
+    `<span class="hp-featured-author">${authorName}</span>` +
+    `<span class="hp-featured-readmore">Read analysis &rarr;</span>` +
+    `</div></div></a></div></section>`;
 })() : '';
 
 const sliderHtml = latest.map((item, i) => {
@@ -92,17 +85,16 @@ const sliderHtml = latest.map((item, i) => {
   const imgHtml = e.data.image
     ? `<img src="${e.data.image}" alt="" loading="lazy" />`
     : `<div class="hp-slide-noimg"><span>${e.data.region || ''}</span></div>`;
-  return `<a href="${href}" class="hp-slide">
-    <div class="hp-slide-img">${imgHtml}</div>
-    <div class="hp-slide-body">
-      <div class="hp-slide-meta">
-        <span class="hp-slide-region">${e.data.region || ''}</span>
-        <time>${formatDateShort(e.data.date)}</time>
-      </div>
-      <h3 class="hp-slide-title">${e.data.title}</h3>
-      <span class="hp-slide-author">${authorName}</span>
-    </div>
-  </a>`;
+  return `<a href="${href}" class="hp-slide">` +
+    `<div class="hp-slide-img">${imgHtml}</div>` +
+    `<div class="hp-slide-body">` +
+    `<div class="hp-slide-meta">` +
+    `<span class="hp-slide-region">${e.data.region || ''}</span>` +
+    `<time>${formatDateShort(e.data.date)}</time>` +
+    `</div>` +
+    `<h3 class="hp-slide-title">${e.data.title}</h3>` +
+    `<span class="hp-slide-author">${authorName}</span>` +
+    `</div></a>`;
 }).join('');
 
 const regionsHtml = topRegions.map(([region, count]) =>

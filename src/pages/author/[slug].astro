@@ -69,15 +69,15 @@ const regionHtml = author.regions.map(r =>
 // Pre-build articles list HTML
 const articlesHtml = allArticles.map(a => {
   const dateStr = a.date.toLocaleDateString('en-US', { day: 'numeric', month: 'long', year: 'numeric' });
-  return `<a href="${a.slug}" class="author-article-card">
-    <div class="author-article-meta">
-      <span class="author-article-type author-article-type-${a.type}">${a.category}</span>
-      <span class="author-article-region">${a.region}</span>
-    </div>
-    <h3 class="author-article-title">${a.title}</h3>
-    ${a.summary ? `<p class="author-article-summary">${a.summary}</p>` : ''}
-    <span class="author-article-date">${dateStr}</span>
-  </a>`;
+  return `<a href="${a.slug}" class="author-article-card">` +
+    `<div class="author-article-meta">` +
+    `<span class="author-article-type author-article-type-${a.type}">${a.category}</span>` +
+    `<span class="author-article-region">${a.region}</span>` +
+    `</div>` +
+    `<h3 class="author-article-title">${a.title}</h3>` +
+    (a.summary ? `<p class="author-article-summary">${a.summary}</p>` : '') +
+    `<span class="author-article-date">${dateStr}</span>` +
+    `</a>`;
 }).join('');
 
 // LinkedIn link HTML

@@ -30,9 +30,9 @@ const authorLinksHtml = authorNames.map((name: string) => {
 // Sidebar author info
 const primaryAuthor = getAuthorByName(authorNames[0]);
 const sidebarAuthorHtml = primaryAuthor
-  ? `<a href="/author/${primaryAuthor.id}" class="author-byline-link">${primaryAuthor.name}</a>
-     <p class="contribute-text" style="margin-top:0.5rem">${primaryAuthor.title}. Specializes in ${primaryAuthor.specialization.slice(0, 3).join(', ')}.</p>
-     <a href="/author/${primaryAuthor.id}" style="font-family:'IBM Plex Mono',monospace;font-size:0.75rem;color:var(--gradient-blue);text-decoration:none;display:inline-block;margin-top:0.4rem">View full profile &rarr;</a>`
+  ? `<a href="/author/${primaryAuthor.id}" class="author-byline-link">${primaryAuthor.name}</a>` +
+    `<p class="contribute-text" style="margin-top:0.5rem">${primaryAuthor.title}. Specializes in ${primaryAuthor.specialization.slice(0, 3).join(', ')}.</p>` +
+    `<a href="/author/${primaryAuthor.id}" style="font-family:'IBM Plex Mono',monospace;font-size:0.75rem;color:var(--gradient-blue);text-decoration:none;display:inline-block;margin-top:0.4rem">View full profile &rarr;</a>`
   : `<strong>${rawAuthor}</strong><p class="contribute-text" style="margin-top:0.5rem">Contributing expert for CSIORS. Regional specialist in ${entry.data.region}.</p>`;
 
 // === PRE-BUILD ALL CONDITIONAL HTML (esbuild workaround) ===
@@ -46,9 +46,8 @@ const subtitleHtml = entry.data.subtitle
   ? `<p class="article-subtitle">${entry.data.subtitle}</p>`
   : '';
 
-const tagsHtml = (entry.data.tags && entry.data.tags.length > 0)
-  ? `<div class="article-tags">${entry.data.tags.map((tag: string) => `<span class="article-tag">#${tag}</span>`).join('')}</div>`
-  : '';
+const tagSpans = (entry.data.tags || []).map((tag: string) => '<span class="article-tag">#' + tag + '</span>').join('');
+const tagsHtml = tagSpans ? '<div class="article-tags">' + tagSpans + '</div>' : '';
 
 const fieldDataHtml = (entry.data.responses && entry.data.responses > 0)
   ? `<div class="sidebar-block"><div class="sidebar-title">Field Data</div><p class="contribute-text">This analysis was enriched with <strong>${entry.data.responses}</strong> anonymous field responses from the CSIORS survey network.</p></div>`

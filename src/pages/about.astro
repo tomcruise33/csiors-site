@@ -14,22 +14,22 @@ const teamCardsHtml = activeAuthors.map(a => {
   const photoHtml = a.image
     ? `<img src="${a.image}" alt="${a.name}" class="team-card-photo" />`
     : '';
-  return `<a href="/author/${a.id}" class="team-card" style="text-decoration:none;color:inherit;">
-    ${photoHtml}
-    <div class="team-role">${a.title}</div>
-    <h3 class="team-name">${a.name}</h3>
-    <p class="team-affiliation">${a.affiliation}</p>
-    <p class="team-bio">${specs}</p>
-    <span style="font-family:'IBM Plex Mono',monospace;font-size:0.7rem;color:var(--gradient-blue);display:inline-block;margin-top:0.5rem;">View profile &rarr;</span>
-  </a>`;
+  return `<a href="/author/${a.id}" class="team-card" style="text-decoration:none;color:inherit;">` +
+    photoHtml +
+    `<div class="team-role">${a.title}</div>` +
+    `<h3 class="team-name">${a.name}</h3>` +
+    `<p class="team-affiliation">${a.affiliation}</p>` +
+    `<p class="team-bio">${specs}</p>` +
+    `<span style="font-family:'IBM Plex Mono',monospace;font-size:0.7rem;color:var(--gradient-blue);display:inline-block;margin-top:0.5rem;">View profile &rarr;</span>` +
+    `</a>`;
 }).join('');
 
 const formerHtml = inactiveAuthors.map(a => {
-  return `<a href="/author/${a.id}" class="team-card team-card-former" style="text-decoration:none;color:inherit;opacity:0.7;">
-    <div class="team-role">${a.title}</div>
-    <h3 class="team-name">${a.name}</h3>
-    <p class="team-bio">${a.specialization.slice(0, 3).join(', ')}</p>
-  </a>`;
+  return `<a href="/author/${a.id}" class="team-card team-card-former" style="text-decoration:none;color:inherit;opacity:0.7;">` +
+    `<div class="team-role">${a.title}</div>` +
+    `<h3 class="team-name">${a.name}</h3>` +
+    `<p class="team-bio">${a.specialization.slice(0, 3).join(', ')}</p>` +
+    `</a>`;
 }).join('');
 ---
 <BaseLayout lang="en" title="About — CSIORS" description="Learn about the Czech Slovak Institute of Oriental Studies — our mission, methodology, field network, and team.">

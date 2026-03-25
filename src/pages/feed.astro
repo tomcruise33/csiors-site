@@ -44,22 +44,19 @@ const cardsHtml = allContent.map(item => {
     ? `<img src="${e.data.image}" alt="" loading="lazy" />`
     : `<div class="article-card-img-placeholder"><span class="article-card-region-bg">${region}</span></div>`;
 
-  return `<article class="article-card" data-region="${region}" data-type="${item.type}">
-    <a href="${href}" class="article-card-link">
-      <div class="article-card-img">${imgHtml}</div>
-      <div class="article-card-body">
-        <div class="article-card-meta">
-          <span class="article-card-type">${typeLabel}</span>
-          <span class="article-card-region">${region}</span>
-          <span class="article-card-date">${formatDateShort(e.data.date)}</span>
-        </div>
-        <h3 class="article-card-title">${e.data.title}</h3>
-        <div class="article-card-footer">
-          <span class="article-card-author">${authorName}</span>
-        </div>
-      </div>
-    </a>
-  </article>`;
+  return `<article class="article-card" data-region="${region}" data-type="${item.type}">` +
+    `<a href="${href}" class="article-card-link">` +
+    `<div class="article-card-img">${imgHtml}</div>` +
+    `<div class="article-card-body">` +
+    `<div class="article-card-meta">` +
+    `<span class="article-card-type">${typeLabel}</span>` +
+    `<span class="article-card-region">${region}</span>` +
+    `<span class="article-card-date">${formatDateShort(e.data.date)}</span>` +
+    `</div>` +
+    `<h3 class="article-card-title">${e.data.title}</h3>` +
+    `<div class="article-card-footer">` +
+    `<span class="article-card-author">${authorName}</span>` +
+    `</div></div></a></article>`;
 }).join('');
 ---
 <BaseLayout lang="en" title="Analysis — CSIORS" description="Browse all CSIORS analysis: field briefs and expert research on migration, food security, and regional stability.">
