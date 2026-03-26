@@ -2,13 +2,8 @@ export const prerender = false;
 
 import type { APIRoute } from 'astro';
 
-// ReliefWeb JSON API — more reliable than RSS, supports filtering by country
-const RW_API = 'https://api.reliefweb.int/v1/reports';
-const COUNTRIES = [
-  'Syria', 'Ethiopia', 'Sudan', 'Yemen', 'Lebanon', 'Nigeria',
-  'Turkey', 'Iraq', 'Somalia', 'Morocco', 'Libya', 'Egypt',
-  'Tunisia', 'Eritrea', 'South Sudan', 'Kenya', 'Djibouti',
-];
+// ReliefWeb JSON API v1 — POST with JSON body for complex filters
+const RW_API = 'https://api.reliefweb.int/v1/reports?appname=csiors.org';
 
 // Simple in-memory cache (Vercel serverless = cold start OK, 15min TTL)
 let cache: { items: any[]; ts: number } | null = null;
@@ -27,43 +22,62 @@ export const GET: APIRoute = async () => {
   }
 
   try {
-    const url = new URL(RW_API);
-    url.searchParams.set('appname', 'csiors.org');
-    url.searchParams.set('limit', '20');
-    url.searchParams.set('fields[include][]', 'title');
-    url.searchParams.set('sort[]', 'date:desc');
-    // Filter by CSIORS focus countries
-    const filter = {
-      operator: 'OR',
-      conditions: COUNTRIES.map(c => ({
-        field: 'country.name',
-        value: c,
-      })),
+    const body = {
+      limit: 20,
+      fields: { include: ['title', 'country.name'] },
+      sort: ['date:desc'],
+      filter: {
+        operator: 'OR',
+        conditions: [
+          { field: 'country.name', value: 'Syria' },
+          { field: 'country.name', value: 'Ethiopia' },
+          { field: 'country.name', value: 'Sudan' },
+          { field: 'country.name', value: 'Yemen' },
+          { field: 'country.name', value: 'Lebanon' },
+          { field: 'country.name', value: 'Nigeria' },
+          { field: 'country.name', value: 'Iraq' },
+          { field: 'country.name', value: 'Somalia' },
+          { field: 'country.name', value: 'Libya' },
+          { field: 'country.name', value: 'Egypt' },
+          { field: 'country.name', value: 'Eritrea' },
+          { field: 'country.name', value: 'South Sudan' },
+          { field: 'country.name', value: 'Kenya' },
+          { field: 'country.name', value: 'Djibouti' },
+        ],
+      },
     };
-    url.searchParams.set('filter', JSON.stringify(filter));
 
-    const res = await fetch(url.toString(), {
-      headers: { 'Accept': 'application/json' },
+    const res = await fetch(RW_API, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json',
+      },
+      body: JSON.stringify(body),
     });
 
-    if (!res.ok) throw new Error(`ReliefWeb API: ${res.status}`);
-    const data = await res.json();
+    if (!res.ok) {
+      const text = await res.text();
+      throw new Error(`ReliefWeb API ${res.status}: ${text.slice(0, 200)}`);
+    }
 
+    const data = await res.json();
     const items: { source: string; region: string; title: string }[] = [];
+
     for (const report of (data.data || [])) {
       const title = report.fields?.title || '';
       if (!title) continue;
 
-      // Extract country from title (ReliefWeb titles often start with "Country: ...")
-      let region = 'MENA';
+      // Get country from structured field, fallback to parsing title
+      const countries = report.fields?.country || [];
+      let region = countries[0]?.name || 'MENA';
+
+      // Clean title: remove "Country: " prefix if present
+      let displayTitle = title;
       const colonIdx = title.indexOf(':');
       if (colonIdx > 0 && colonIdx < 30) {
-        region = title.slice(0, colonIdx).trim();
+        displayTitle = title.slice(colonIdx + 1).trim();
       }
-
-      let displayTitle = colonIdx > 0 && colonIdx < 30
-        ? title.slice(colonIdx + 1).trim()
-        : title;
       if (displayTitle.length > 65) displayTitle = displayTitle.slice(0, 62) + '...';
 
       items.push({ source: 'ReliefWeb', region, title: displayTitle });
