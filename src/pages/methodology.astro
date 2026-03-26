@@ -1,0 +1,125 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: 'Data Methodology — CSIORS',
+  description: 'How CSIORS collects, validates, and publishes field data from conflict and crisis zones.',
+  url: 'https://csiors.org/methodology/',
+  isPartOf: { '@type': 'WebSite', name: 'CSIORS', url: 'https://csiors.org' },
+};
+---
+<BaseLayout
+  lang="en"
+  title="Data Methodology — CSIORS"
+  description="How CSIORS collects, validates, and publishes field data from conflict and crisis zones. Our commitment to transparency, anonymity, and analytical integrity."
+  jsonLd={jsonLd}
+>
+<div class="container">
+
+  <section class="page-hero">
+    <div class="page-hero-tag">Methodology</div>
+    <h1 class="page-hero-title">How We Collect and Use Field Data</h1>
+    <p class="page-hero-lede">CSIORS operates a qualitative early-warning system built on anonymous field reporting from conflict and crisis zones. This page explains how that data is collected, validated, and published — and what it can and cannot tell you.</p>
+  </section>
+
+  <!-- What Our Data Is -->
+  <section class="page-section">
+    <div class="about-rule"></div>
+    <h2 class="section-heading">What our data is</h2>
+    <div class="prose">
+      <p>CSIORS maintains an anonymous field informant network across 37 countries in the Middle East, North Africa, and the Horn of Africa. Respondents submit structured reports on commodity prices, employment conditions, security, and migration through a KoboToolbox survey form.</p>
+      <p>This is not a statistically representative survey. It is a qualitative intelligence system — each submission is a data point from a specific person in a specific place at a specific time. We do not claim that our data represents national conditions. We report what our respondents observe, cross-referenced against independent sources.</p>
+      <p>The honest framing: when we write "our respondent in Raqqa reports flour at 5,000 SYP," that is one person's observation. When WFP reports a national average, that draws on hundreds of data points. Both are valuable. They serve different purposes.</p>
+    </div>
+  </section>
+
+  <!-- Collection -->
+  <section class="page-section">
+    <div class="about-rule"></div>
+    <h2 class="section-heading">Data collection</h2>
+    <div class="prose">
+      <p>Field data is collected through a structured KoboToolbox survey covering commodity prices (flour, rice, cooking oil, eggs, water, fuel), employment (daily wages, rent, job availability), security (public mood, freedom of movement, incidents), and migration (observed departures, reasons, destinations). An open-ended field observation field allows respondents to report what they consider most important.</p>
+      <p>All fields except country and city are optional. This is deliberate — a respondent under time pressure or security risk can submit a partial report quickly. A complete report is more analytically valuable, but a partial report is better than no report.</p>
+      <p>The survey is available in Arabic and English. Submissions are synced automatically every 6 hours via the KoboToolbox API.</p>
+    </div>
+  </section>
+
+  <!-- Anonymity -->
+  <section class="page-section">
+    <div class="about-rule"></div>
+    <h2 class="section-heading">Respondent anonymity</h2>
+    <div class="prose">
+      <p>The safety of our respondents is a non-negotiable priority. Many operate in active conflict zones, areas under authoritarian governance, or regions where reporting on local conditions carries personal risk.</p>
+      <p>Respondents identify themselves only through self-assigned initials. No names are collected. No GPS coordinates are extracted from devices. City-level location is the maximum geographic precision we record. An optional email field allows respondents to receive impact updates, but providing it is entirely voluntary.</p>
+      <p>We do not publish any information that could identify individual respondents. Published reports attribute data to cities, never to individuals.</p>
+    </div>
+  </section>
+
+  <!-- Validation -->
+  <section class="page-section">
+    <div class="about-rule"></div>
+    <h2 class="section-heading">Validation and quality control</h2>
+    <div class="prose">
+      <p>Every submission passes through automated quality checks: currency detection (distinguishing local currency from USD), cross-commodity price ratio analysis (flagging entries where, for example, rice is reported at 1/300th the price of flour), and completeness scoring.</p>
+      <p>Entries that fail these checks are flagged as "suspect" and excluded from published analysis. Suspect entries are retained in the dataset for review — they may contain valid qualitative observations even if price data is unreliable.</p>
+      <p>Before any data point is included in a published Situational Report, it is cross-referenced against at least one independent external source. Our primary reference is WFP's market price monitoring data. We also consult REACH Initiative reports, ACLED security incident data, and UNHCR displacement statistics where relevant.</p>
+      <p>When our data deviates significantly from external benchmarks, we report the deviation and possible explanations rather than suppressing it. Divergence from official data can itself be a signal worth investigating.</p>
+    </div>
+  </section>
+
+  <!-- Trust Scoring -->
+  <section class="page-section">
+    <div class="about-rule"></div>
+    <h2 class="section-heading">Respondent trust scoring</h2>
+    <div class="prose">
+      <p>Every respondent builds a trust profile over time based on four factors: consistency of their price reports across submissions (40%), frequency of reporting (20%), completeness of their entries (15%), and alignment with external benchmarks when available (25%).</p>
+      <p>New respondents start as "unverified" (0–2 submissions). After 3–5 consistent submissions, they become "provisional." Respondents with 6 or more consistent submissions are classified as "established." Data from established respondents carries more weight in our analysis and can independently trigger a Situational Report.</p>
+      <p>This is not about surveillance — it is about data quality. A respondent who has consistently provided reliable data over six months gives us more analytical confidence than a first-time submission. Both are valuable, but they are weighted differently.</p>
+    </div>
+  </section>
+
+  <!-- Publication Rules -->
+  <section class="page-section">
+    <div class="about-rule"></div>
+    <h2 class="section-heading">When we publish</h2>
+    <div class="prose">
+      <p>CSIORS does not publish on a fixed schedule. A Situational Report is produced when the data warrants it — specifically, when any of four conditions are met:</p>
+      <p>An established respondent submits an entry with an Early Warning Score above 51 (the alert threshold). Three or more submissions accumulate from a single country within 60 days, with at least one external cross-reference available. A respondent reports a change of 20% or more in a key price indicator compared to their own previous submission. Or a quarterly review is triggered when a country reaches 10 or more cumulative entries.</p>
+      <p>Every Situational Report is reviewed by CSIORS leadership before publication. There is no automatic publishing — the pipeline identifies signals, but a human decides whether and how to publish.</p>
+    </div>
+  </section>
+
+  <!-- Limitations -->
+  <section class="page-section">
+    <div class="about-rule"></div>
+    <h2 class="section-heading">What our data cannot tell you</h2>
+    <div class="prose">
+      <p>Our data cannot provide statistically representative market monitoring. For that, consult WFP VAM or REACH Initiative publications, which draw on much larger samples with systematic geographic coverage.</p>
+      <p>Our data cannot predict future conditions. We report observed trends and flag early warning signals, but we do not forecast.</p>
+      <p>Our data cannot cover all areas equally. Our respondent network is concentrated where we have contacts — currently strongest in northeast Syria. Absence of data from a region should not be interpreted as absence of problems.</p>
+      <p>Every published report includes an explicit limitations section stating sample size, geographic coverage, respondent verification status, and what the analysis cannot claim.</p>
+    </div>
+  </section>
+
+  <!-- For Respondents -->
+  <section class="page-section">
+    <div class="about-rule"></div>
+    <h2 class="section-heading">For our respondents</h2>
+    <div class="prose">
+      <p>If you contribute field reports to CSIORS: your data matters. Every submission adds to our understanding of conditions in your area. When enough data accumulates, it becomes a published Situational Report that informs researchers, policymakers, and organizations working in your region.</p>
+      <p>You can see how your data is used by reading our published <a href="/feed">analyses</a>. If you provided your email address, you will receive periodic updates on reports that draw on data from your region.</p>
+      <p>Your anonymity is protected. Your safety comes first. If you have questions or concerns about how your data is handled, contact us at <a href="mailto:tomaskrizan@csiors.org">tomaskrizan@csiors.org</a>.</p>
+    </div>
+  </section>
+
+  <!-- Version -->
+  <section class="page-section" style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.08);">
+    <div class="prose" style="opacity: 0.5; font-size: 0.85rem;">
+      <p>Data Methodology v1.0 — March 2026. This document is reviewed and updated as our data collection methods evolve.</p>
+    </div>
+  </section>
+
+</div>
+</BaseLayout>
