@@ -8,6 +8,23 @@ const year = new Date().getFullYear();
 <div class="container">
   <footer>
     <div class="footer-rule"></div>
+
+    <div class="footer-newsletter">
+      <div class="footer-newsletter-text">
+        <strong>Stay informed</strong>
+        <span>Field intelligence and expert analysis delivered to your inbox.</span>
+      </div>
+      <form
+        action="https://buttondown.com/api/emails/embed-subscribe/csiors"
+        method="post"
+        target="popupwindow"
+        class="footer-newsletter-form"
+      >
+        <input type="email" name="email" placeholder="Your email address" required class="footer-newsletter-input" />
+        <button type="submit" class="footer-newsletter-btn">Subscribe</button>
+      </form>
+    </div>
+
     <div class="footer-inner">
       <div class="footer-brand">
         <img src="/images/logo-footer.png" alt="" class="footer-logo" width="24" height="24" />
@@ -16,6 +33,7 @@ const year = new Date().getFullYear();
       <div class="footer-links">
         <a href={`${prefix}/about`}>{t(lang, 'nav.about')}</a>
         <a href={`${prefix}/feed`}>{t(lang, 'nav.feed')}</a>
+        <a href={`${prefix}/newsletter`}>Newsletter</a>
         <a href={`${prefix}/watchtower`}>{t(lang, 'nav.watchtower')}</a>
         <a href="https://ee-eu.kobotoolbox.org/x/VYfRrAuW" target="_blank" rel="noopener">{t(lang, 'nav.survey')}</a>
         <a href={`${prefix}/contact`}>{t(lang, 'nav.contact')}</a>

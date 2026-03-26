@@ -1,0 +1,72 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: 'Newsletter — CSIORS',
+  description: 'Subscribe to CSIORS field intelligence and expert analysis from the Middle East, North Africa, and the Horn of Africa.',
+  url: 'https://csiors.org/newsletter/',
+};
+---
+<BaseLayout
+  lang="en"
+  title="Newsletter — CSIORS"
+  description="Subscribe to CSIORS field intelligence and expert analysis from the Middle East, North Africa, and the Horn of Africa."
+  jsonLd={jsonLd}
+>
+<div class="container">
+
+  <section class="page-hero">
+    <div class="page-hero-tag">Newsletter</div>
+    <h1 class="page-hero-title">Field Intelligence, Delivered</h1>
+    <p class="page-hero-lede">Expert analysis, situational reports, and early warning signals from our field network across 37 countries — straight to your inbox.</p>
+  </section>
+
+  <section class="newsletter-main">
+    <div class="newsletter-card">
+      <form
+        action="https://buttondown.com/api/emails/embed-subscribe/csiors"
+        method="post"
+        target="popupwindow"
+        class="newsletter-form"
+      >
+        <label for="newsletter-email" class="newsletter-label">Email address</label>
+        <div class="newsletter-input-row">
+          <input type="email" name="email" id="newsletter-email" placeholder="you@example.com" required class="newsletter-input" />
+          <button type="submit" class="newsletter-submit">Subscribe</button>
+        </div>
+        <p class="newsletter-note">Free. No spam. Unsubscribe anytime.</p>
+      </form>
+    </div>
+
+    <div class="newsletter-what">
+      <h2 class="newsletter-section-title">What you get</h2>
+      <div class="newsletter-features">
+        <div class="newsletter-feature">
+          <div class="newsletter-feature-icon">&#9670;</div>
+          <div>
+            <strong>Situational Reports</strong>
+            <p>Signal-driven field reports cross-validated against WFP benchmarks, published when conditions warrant — not on a fixed schedule.</p>
+          </div>
+        </div>
+        <div class="newsletter-feature">
+          <div class="newsletter-feature-icon">&#9670;</div>
+          <div>
+            <strong>Expert Analysis</strong>
+            <p>Deep research from regional specialists covering migration, food security, conflict dynamics, and political transitions.</p>
+          </div>
+        </div>
+        <div class="newsletter-feature">
+          <div class="newsletter-feature-icon">&#9670;</div>
+          <div>
+            <strong>Early Warning Signals</strong>
+            <p>Be the first to know when our field network detects emerging crises — price spikes, displacement patterns, security shifts.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+</BaseLayout>
