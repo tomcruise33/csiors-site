@@ -20,13 +20,15 @@ const {
   description = 'Data-driven intelligence on migration, food security, and regional stability across the Middle East, North Africa, and the Horn of Africa.',
   lang = 'en',
   jsonLd,
-  ogImage = 'https://csiors.org/og-default.png',
+  ogImage = '/images/og-image.png',
   ogType = 'website',
   canonicalUrl,
 } = Astro.props;
 
 const jsonLdString = jsonLd ? JSON.stringify(jsonLd) : null;
 const pageUrl = canonicalUrl || Astro.url.href;
+const siteOrigin = Astro.url.origin || 'https://csiors.org';
+const absoluteOgImage = ogImage.startsWith('http') ? ogImage : siteOrigin + ogImage;
 
 // Pre-build JSON-LD script tag (esbuild workaround — no JSX conditionals in template)
 const jsonLdScriptHtml = jsonLdString
@@ -40,7 +42,14 @@ const jsonLdScriptHtml = jsonLdString
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content={description}>
   <title>{title}</title>
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/svg+xml" href="/images/logo-new-full.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#0a0c14">
+  <meta name="theme-color" content="#0a0c14">
   <link rel="canonical" href={pageUrl}>
 
   <!-- Open Graph -->
@@ -48,14 +57,14 @@ const jsonLdScriptHtml = jsonLdString
   <meta property="og:title" content={title}>
   <meta property="og:description" content={description}>
   <meta property="og:url" content={pageUrl}>
-  <meta property="og:image" content={ogImage}>
+  <meta property="og:image" content={absoluteOgImage}>
   <meta property="og:site_name" content="CSIORS">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content={title}>
   <meta name="twitter:description" content={description}>
-  <meta name="twitter:image" content={ogImage}>
+  <meta name="twitter:image" content={absoluteOgImage}>
 
   <Fragment set:html={jsonLdScriptHtml} />
 </head>
