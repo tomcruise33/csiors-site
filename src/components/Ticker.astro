@@ -46,7 +46,7 @@ const csioursJson = JSON.stringify(csiors);
     if (!track) return;
 
     try {
-      const res = await fetch('/api/ticker');
+      const res = await fetch('/data/ticker');
       if (!res.ok) return;
       const rwItems = await res.json();
       if (!rwItems.length) return;
