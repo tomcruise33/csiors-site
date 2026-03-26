@@ -3,11 +3,11 @@
  * CSIORS AI Content Pipeline
  *
  * Fetches field data from KoboToolbox, calculates EWS indicators,
- * and generates an intelligence brief using Grok API.
+ * and generates a field brief using DeepSeek API.
  * Output: a markdown file ready for the Astro content collection.
  *
  * Usage:
- *   KOBO_TOKEN=xxx GROK_API_KEY=xxx node scripts/generate-brief.mjs
+ *   KOBO_TOKEN=xxx DEEPSEEK_API_KEY=xxx node scripts/generate-brief.mjs
  *
  * Or via GitHub Actions (secrets injected automatically).
  */
@@ -17,10 +17,10 @@ import path from 'path';
 
 // ── Config ──────────────────────────────────────────────────────────
 const KOBO_TOKEN = process.env.KOBO_TOKEN;
-const GROK_API_KEY = process.env.GROK_API_KEY;
+const DEEPSEEK_API_KEY = process.env.DEEPSEEK_API_KEY;
 const KOBO_ASSET_UID = process.env.KOBO_ASSET_UID || 'abcLY2v3kPakMtrmBisUsm';
 const KOBO_BASE = process.env.KOBO_BASE || 'https://eu.kobotoolbox.org'; // EU server
-const GROK_MODEL = 'grok-4-1-fast-non-reasoning';
+const DEEPSEEK_MODEL = 'deepseek-chat';
 
 // ── Quality gates ───────────────────────────────────────────────────
 const MIN_RESPONSES_FOR_BRIEF = 3;       // don't publish on <3 responses
@@ -270,19 +270,19 @@ async function generateBrief(topStory, allCountries) {
     .map(([name, data]) => `${name}: ${data.count} responses, EWS ${calculateEWS(data)}`)
     .join('; ');
 
-  const systemPrompt = `You are a senior intelligence analyst at CSIORS (Czech Slovak Institute of Oriental Studies). You write concise, data-driven intelligence briefs about migration, food security, and regional stability across the Middle East, North Africa, and the Horn of Africa.
+  const systemPrompt = `You are a senior research analyst at CSIORS (Czech Slovak Institute of Oriental Studies). You write concise, data-driven field briefs about migration, food security, and regional stability across the Middle East, North Africa, and the Horn of Africa.
 
 Your writing style:
 - Factual, measured, no sensationalism
-- Lead with the most operationally significant finding
+- Lead with the most significant finding
 - Reference specific data points (EWS scores, percentages, response counts)
 - Note data limitations (small sample sizes, geographic gaps)
 - Compare with recent trends when possible
-- Use humanitarian/intelligence community terminology
+- Use academic and humanitarian terminology
 - 400-600 words for the body
 - Write in English`;
 
-  const userPrompt = `Generate an intelligence brief based on the following field data collected this week:
+  const userPrompt = `Generate a field brief based on the following data collected this week:
 
 FOCUS COUNTRY: ${topStory.name}
 - Cities covered: ${citiesList}
@@ -301,21 +301,22 @@ Generate the following in JSON format:
   "title": "A headline for this brief (50-80 chars, specific and data-driven)",
   "summary": "A 1-2 sentence summary for the feed page (max 200 chars)",
   "body": "The full brief body in markdown (400-600 words). Include sections with ## headers: Overview, Key Findings, Data Limitations, Outlook.",
-  "sources": "Data sources used, e.g. 'Field data, WFP price monitoring, open-source signals'"
+  "sources": "Data sources used, e.g. 'Field data, WFP price monitoring, open-source signals'",
+  "tags": ["array of 3-5 topic tags from: migration, food-security, displacement, conflict, economy, governance, humanitarian, climate, health, infrastructure"]
 }
 
 Return ONLY the JSON, no other text.`;
 
-  console.log(`🤖 Generating brief with Grok (${GROK_MODEL})...`);
+  console.log(`🤖 Generating brief with DeepSeek (${DEEPSEEK_MODEL})...`);
 
-  const res = await fetch('https://api.x.ai/v1/chat/completions', {
+  const res = await fetch('https://api.deepseek.com/chat/completions', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
-      Authorization: `Bearer ${GROK_API_KEY}`,
+      Authorization: `Bearer ${DEEPSEEK_API_KEY}`,
     },
     body: JSON.stringify({
-      model: GROK_MODEL,
+      model: DEEPSEEK_MODEL,
       messages: [
         { role: 'system', content: systemPrompt },
         { role: 'user', content: userPrompt },
@@ -327,7 +328,7 @@ Return ONLY the JSON, no other text.`;
 
   if (!res.ok) {
     const err = await res.text();
-    throw new Error(`Grok API error: ${res.status} — ${err}`);
+    throw new Error(`DeepSeek API error: ${res.status} — ${err}`);
   }
 
   const data = await res.json();
@@ -347,6 +348,7 @@ Return ONLY the JSON, no other text.`;
     ews: topStory.ews,
     food_price: foodPriceStr,
     responses: topStory.count,
+    tags: brief.tags || [],
   };
 }
 
@@ -356,6 +358,8 @@ function writeBrief(brief) {
   const slug = slugify(brief.title);
   const filename = `${date}-${slug}.md`;
   const filepath = path.join('src', 'content', 'briefs', filename);
+
+  const tagsYaml = (brief.tags || []).map(t => `  - "${t}"`).join('\n');
 
   const frontmatter = `---
 title: "${brief.title.replace(/"/g, '\\"')}"
@@ -367,6 +371,8 @@ food_price: "${brief.food_price}"
 responses: ${brief.responses}
 summary: "${brief.summary.replace(/"/g, '\\"')}"
 sources: "${brief.sources.replace(/"/g, '\\"')}"
+tags:
+${tagsYaml}
 ---
 
 ${brief.body}
@@ -386,14 +392,14 @@ async function main() {
 
   // Validate env
   if (!KOBO_TOKEN) throw new Error('Missing KOBO_TOKEN environment variable');
-  if (!GROK_API_KEY) throw new Error('Missing GROK_API_KEY environment variable');
+  if (!DEEPSEEK_API_KEY) throw new Error('Missing DEEPSEEK_API_KEY environment variable');
 
   console.log(`📋 Config:`);
   console.log(`   KoboToolbox: ${KOBO_BASE}`);
   console.log(`   Asset UID: ${KOBO_ASSET_UID}`);
-  console.log(`   Grok model: ${GROK_MODEL}`);
+  console.log(`   DeepSeek model: ${DEEPSEEK_MODEL}`);
   console.log(`   KOBO_TOKEN: ${KOBO_TOKEN ? '***' + KOBO_TOKEN.slice(-4) : 'MISSING'}`);
-  console.log(`   GROK_API_KEY: ${GROK_API_KEY ? '***' + GROK_API_KEY.slice(-4) : 'MISSING'}\n`);
+  console.log(`   DEEPSEEK_API_KEY: ${DEEPSEEK_API_KEY ? '***' + DEEPSEEK_API_KEY.slice(-4) : 'MISSING'}\n`);
 
   // Fetch and analyze — try 30 days if 7 days returns nothing
   let submissions = await fetchSubmissions(7);
