@@ -133,6 +133,7 @@ const structuredData = {
 <Fragment set:html={featuredHtml} />
 
 <!-- ===== LATEST ANALYSIS SLIDER ===== -->
+{latest.length > 0 ? (
 <section class="hp-slider-section">
   <div class="container">
     <div class="hp-section-top">
@@ -144,6 +145,13 @@ const structuredData = {
     <div class="hp-slider" set:html={sliderHtml}></div>
   </div>
 </section>
+) : (
+<section class="hp-slider-section">
+  <div class="container">
+    <p class="hp-empty">No analyses with images yet. <a href="/feed">Browse all analysis &rarr;</a></p>
+  </div>
+</section>
+)}
 
 <!-- ===== ABOUT STRIP (compact, not the hero) ===== -->
 <section class="hp-about">

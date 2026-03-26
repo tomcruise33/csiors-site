@@ -11,10 +11,28 @@ function ariaCurrent(href: string) {
 }
 ---
 <nav class="nav-bar" aria-label="Main navigation">
-  <a href="/" class={isActive('/') ? 'active' : ''} aria-current={ariaCurrent('/')}>Home</a>
-  <a href="/feed" class={isActive('/feed') ? 'active' : ''} aria-current={ariaCurrent('/feed')}>Analysis</a>
-  <a href="/about" class={isActive('/about') ? 'active' : ''} aria-current={ariaCurrent('/about')}>About</a>
-  <a href="/methodology" class={isActive('/methodology') ? 'active' : ''} aria-current={ariaCurrent('/methodology')}>Methodology</a>
-  <a href="/contact" class={isActive('/contact') ? 'active' : ''} aria-current={ariaCurrent('/contact')}>Contact</a>
-  <a href="/watchtower" class={isActive('/watchtower') ? 'active' : ''} aria-current={ariaCurrent('/watchtower')}>Watchtower</a>
+  <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu">
+    <span class="nav-toggle-bar"></span>
+    <span class="nav-toggle-bar"></span>
+    <span class="nav-toggle-bar"></span>
+  </button>
+  <div class="nav-links" id="nav-links">
+    <a href="/" class={isActive('/') ? 'active' : ''} aria-current={ariaCurrent('/')}>Home</a>
+    <a href="/feed" class={isActive('/feed') ? 'active' : ''} aria-current={ariaCurrent('/feed')}>Analysis</a>
+    <a href="/about" class={isActive('/about') ? 'active' : ''} aria-current={ariaCurrent('/about')}>About</a>
+    <a href="/methodology" class={isActive('/methodology') ? 'active' : ''} aria-current={ariaCurrent('/methodology')}>Methodology</a>
+    <a href="/contact" class={isActive('/contact') ? 'active' : ''} aria-current={ariaCurrent('/contact')}>Contact</a>
+    <a href="/watchtower" class={isActive('/watchtower') ? 'active' : ''} aria-current={ariaCurrent('/watchtower')}>Watchtower</a>
+  </div>
 </nav>
+<script>
+  const toggle = document.querySelector('.nav-toggle');
+  const links = document.getElementById('nav-links');
+  if (toggle && links) {
+    toggle.addEventListener('click', () => {
+      const open = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!open));
+      links.classList.toggle('nav-open', !open);
+    });
+  }
+</script>
