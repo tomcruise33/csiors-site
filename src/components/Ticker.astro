@@ -1,33 +1,99 @@
 ---
 import { getCollection } from 'astro:content';
 
-// Pull latest 8 real articles for the ticker
+// Build-time: pull latest 6 real CSIORS articles
 const allExpert = (await getCollection('expert'))
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
-  .slice(0, 8);
+  .slice(0, 6);
 
-const items = allExpert.map(a => {
+const csiors = allExpert.map(a => {
   const region = a.data.region || 'MENA';
-  // Truncate long titles for the ticker
-  const title = a.data.title.length > 70
-    ? a.data.title.slice(0, 67) + '...'
+  const title = a.data.title.length > 65
+    ? a.data.title.slice(0, 62) + '...'
     : a.data.title;
-  return { region, title };
+  return { source: 'CSIORS', region, title };
 });
+
+const csioursJson = JSON.stringify(csiors);
 ---
-{items.length > 0 && (
-<div class="ticker">
-  <div class="ticker-track">
-    {items.map(item => (
+<div class="ticker" id="ticker">
+  <div class="ticker-track" id="ticker-track">
+    {csiors.map(item => (
       <span class="ticker-item">
-        <span class="ticker-pip"></span> {item.region}: {item.title}
+        <span class="ticker-pip"></span>
+        <span class="ticker-source">{item.source}</span> {item.region}: {item.title}
       </span>
     ))}
-    {items.map(item => (
+    {csiors.map(item => (
       <span class="ticker-item">
-        <span class="ticker-pip"></span> {item.region}: {item.title}
+        <span class="ticker-pip"></span>
+        <span class="ticker-source">{item.source}</span> {item.region}: {item.title}
       </span>
     ))}
   </div>
 </div>
-)}
+
+<script define:vars={{ csioursJson }}>
+  // Client-side: fetch ReliefWeb API and merge with CSIORS items
+  const RELIEFWEB_COUNTRIES = [
+    'Syria', 'Ethiopia', 'Sudan', 'Yemen', 'Lebanon',
+    'Nigeria', 'Turkey', 'Iraq', 'Somalia', 'Morocco',
+    'Libya', 'Egypt', 'Tunisia', 'Eritrea'
+  ];
+
+  async function fetchReliefWeb() {
+    try {
+      const filter = encodeURIComponent(JSON.stringify({
+        field: 'country.name',
+        value: RELIEFWEB_COUNTRIES,
+        operator: 'OR'
+      }));
+      const fields = 'fields[include][]=title&fields[include][]=country.name';
+      const url = `https://api.reliefweb.int/v1/reports?appname=csiors&limit=6&${fields}&filter[field]=country.name&filter[operator]=OR&sort[]=date:desc&` +
+        RELIEFWEB_COUNTRIES.map(c => `filter[value][]=${encodeURIComponent(c)}`).join('&');
+
+      const res = await fetch(url);
+      if (!res.ok) return [];
+      const json = await res.json();
+
+      return (json.data || []).map(item => {
+        const fields = item.fields || {};
+        const country = fields.country?.[0]?.name || 'MENA';
+        let title = fields.title || '';
+        if (title.length > 65) title = title.slice(0, 62) + '...';
+        return { source: 'ReliefWeb', region: country, title };
+      });
+    } catch {
+      return [];
+    }
+  }
+
+  function buildTickerHTML(items) {
+    return items.map(item => {
+      const srcClass = item.source === 'CSIORS' ? 'ticker-source' : 'ticker-source ticker-source-rw';
+      return `<span class="ticker-item"><span class="ticker-pip"></span><span class="${srcClass}">${item.source}</span> ${item.region}: ${item.title}</span>`;
+    }).join('');
+  }
+
+  async function enhanceTicker() {
+    const track = document.getElementById('ticker-track');
+    if (!track) return;
+
+    const rwItems = await fetchReliefWeb();
+    if (rwItems.length === 0) return;
+
+    // Interleave: CSIORS, RW, CSIORS, RW, ...
+    const csiors = JSON.parse(csioursJson);
+    const merged = [];
+    const max = Math.max(csiors.length, rwItems.length);
+    for (let i = 0; i < max; i++) {
+      if (i < csiors.length) merged.push(csiors[i]);
+      if (i < rwItems.length) merged.push(rwItems[i]);
+    }
+
+    const html = buildTickerHTML(merged);
+    track.innerHTML = html + html; // duplicate for seamless loop
+  }
+
+  enhanceTicker();
+</script>

@@ -106,7 +106,19 @@ body {
   background: rgba(255,255,255,0.5);
   flex-shrink: 0;
 }
-/* removed fake .live class — ticker now uses real data */
+.ticker-source {
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  background: rgba(255,255,255,0.15);
+  padding: 0.1rem 0.35rem;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+.ticker-source-rw {
+  background: rgba(0, 114, 188, 0.4);
+}
 
 /* ===== MASTHEAD ===== */
 .masthead {
