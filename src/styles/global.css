@@ -1908,7 +1908,7 @@ body {
 
 /* ── About Strip ── */
 .hp-about {
-  padding: 3rem 0;
+  padding: 2rem 0;
   border-bottom: 1px solid var(--border);
   background: var(--bg-surface);
 }
@@ -2022,7 +2022,7 @@ body {
    FEATURED CARD
    ═══════════════════════════════ */
 .hp-featured {
-  padding: 2.5rem 0 3rem;
+  padding: 1.5rem 0 2rem;
   border-bottom: 1px solid var(--border);
 }
 .hp-featured-card {
@@ -2037,12 +2037,12 @@ body {
   transition: all 0.35s ease;
 }
 .hp-featured-card:hover {
-  border-color: rgba(6,147,227,0.35);
-  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+  border-color: var(--accent-light);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
 }
 .hp-featured-img {
   position: relative;
-  min-height: 320px;
+  min-height: 260px;
   overflow: hidden;
 }
 .hp-featured-noimg {
@@ -2101,9 +2101,9 @@ body {
 }
 .hp-featured-title {
   font-family: 'IBM Plex Serif', serif;
-  font-size: clamp(1.1rem, 2.2vw, 1.5rem);
+  font-size: clamp(1.3rem, 2.5vw, 1.8rem);
   font-weight: 700;
-  line-height: 1.3;
+  line-height: 1.25;
   color: var(--text-primary);
   margin-bottom: 0.8rem;
 }
@@ -2145,7 +2145,7 @@ body {
    ARTICLE SLIDER
    ═══════════════════════════════ */
 .hp-slider-section {
-  padding: 3rem 0;
+  padding: 2rem 0;
   border-bottom: 1px solid var(--border);
 }
 .hp-slider-wrap {
@@ -2307,7 +2307,7 @@ body {
    CTA
    ═══════════════════════════════ */
 .hp-cta {
-  padding: 3.5rem 0;
+  padding: 2.5rem 0;
 }
 .hp-cta-inner {
   display: grid;

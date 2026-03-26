@@ -18,9 +18,9 @@ const allContent = [
 // Featured: latest with image
 const featured = allContent.find(c => c.entry.data.image) || allContent[0];
 
-// Latest 8 for slider (excluding featured)
+// Latest 8 for slider (excluding featured, only with images)
 const latest = allContent
-  .filter(c => c.entry.id !== featured?.entry.id)
+  .filter(c => c.entry.id !== featured?.entry.id && c.entry.data.image)
   .slice(0, 8);
 
 // Stats
@@ -169,27 +169,19 @@ const structuredData = {
   </div>
 </section>
 
-<!-- ===== REGIONS ===== -->
-<section class="hp-topics">
-  <div class="container">
-    <h2 class="hp-section-title">Regions We Cover</h2>
-    <div class="hp-topics-grid" set:html={regionsHtml}></div>
-  </div>
-</section>
-
 <!-- ===== CTA ===== -->
 <section class="hp-cta">
   <div class="container">
     <div class="hp-cta-inner">
       <div>
-        <h2 class="hp-cta-title">Contribute Field Intelligence</h2>
-        <p class="hp-cta-text">Based in one of our 37 monitored countries? Your anonymous field report strengthens our Early Warning System. Takes 5 minutes.</p>
+        <h2 class="hp-cta-title">Contribute Field Data</h2>
+        <p class="hp-cta-text">Based in one of our 37 monitored countries? Your anonymous field report feeds directly into our research. Takes 5 minutes.</p>
         <a href="https://ee-eu.kobotoolbox.org/x/VYfRrAuW" target="_blank" rel="noopener" class="hp-btn hp-btn--primary">Submit Field Report</a>
       </div>
       <div class="hp-cta-side">
         <a href="/watchtower" class="hp-cta-card">
           <span class="hp-cta-card-label">Watchtower</span>
-          <span class="hp-cta-card-desc">Real-time EWS dashboard for institutional partners</span>
+          <span class="hp-cta-card-desc">Field data accumulation and early warning signals</span>
           <span class="hp-cta-card-arrow">&rarr;</span>
         </a>
         <a href="/contact" class="hp-cta-card">
