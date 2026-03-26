@@ -34,8 +34,40 @@ const dataBoxHtml = `<div class="lead-data-box"><div class="data-box-inner">` +
   `<div class="data-row"><span class="data-label">Field responses</span><span class="data-value">${entry.data.responses}</span></div>` +
   `<div class="data-source">CSIORS field survey &middot; ${dateStr}</div>` +
   `</div></div>`;
+
+// Article JSON-LD structured data for intelligence briefs
+const briefUrl = 'https://csiors.org/briefs/' + entry.id + '/';
+const briefOgImg = 'https://csiors.org/og/' + entry.id + '.png';
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: entry.data.title,
+  description: entry.data.summary || '',
+  image: briefOgImg,
+  datePublished: entry.data.date.toISOString().split('T')[0],
+  author: {
+    '@type': 'Organization',
+    name: 'Czech-Slovak Institute of Oriental Studies',
+    url: 'https://csiors.org',
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'Czech-Slovak Institute of Oriental Studies',
+    url: 'https://csiors.org',
+    logo: {
+      '@type': 'ImageObject',
+      url: 'https://csiors.org/images/logo-icon.png',
+    },
+  },
+  mainEntityOfPage: {
+    '@type': 'WebPage',
+    '@id': briefUrl,
+  },
+  url: briefUrl,
+  about: entry.data.region,
+};
 ---
-<BaseLayout title={`${entry.data.title} — CSIORS`} description={entry.data.summary} ogImage={`https://csiors.org/og/${entry.id}.png`} ogType="article">
+<BaseLayout title={`${entry.data.title} — CSIORS`} description={entry.data.summary} ogImage={briefOgImg} ogType="article" jsonLd={jsonLd}>
 <div class="container">
 
   <article class="article-page">

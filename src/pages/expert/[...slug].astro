@@ -54,8 +54,43 @@ const fieldDataHtml = (entry.data.responses && entry.data.responses > 0)
   : '';
 
 const ogImg = entry.data.image || `https://csiors.org/og/${entry.id}.png`;
+
+// ScholarlyArticle JSON-LD structured data
+const articleUrl = 'https://csiors.org/expert/' + entry.id + '/';
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ScholarlyArticle',
+  headline: entry.data.title,
+  description: entry.data.summary || '',
+  image: ogImg,
+  datePublished: entry.data.date.toISOString().split('T')[0],
+  author: authorNames.map((name: string) => {
+    const found = getAuthorByName(name);
+    return {
+      '@type': 'Person',
+      name: found ? found.name : name,
+      url: found ? 'https://csiors.org/author/' + found.id + '/' : undefined,
+    };
+  }),
+  publisher: {
+    '@type': 'Organization',
+    name: 'Czech-Slovak Institute of Oriental Studies',
+    url: 'https://csiors.org',
+    logo: {
+      '@type': 'ImageObject',
+      url: 'https://csiors.org/images/logo-icon.png',
+    },
+  },
+  mainEntityOfPage: {
+    '@type': 'WebPage',
+    '@id': articleUrl,
+  },
+  url: articleUrl,
+  about: entry.data.region,
+  keywords: (entry.data.tags || []).join(', '),
+};
 ---
-<BaseLayout lang="en" title={`${entry.data.title} — CSIORS`} description={entry.data.summary} ogImage={ogImg} ogType="article">
+<BaseLayout lang="en" title={`${entry.data.title} — CSIORS`} description={entry.data.summary} ogImage={ogImg} ogType="article" jsonLd={jsonLd}>
 
 <Fragment set:html={heroImgHtml} />
 
