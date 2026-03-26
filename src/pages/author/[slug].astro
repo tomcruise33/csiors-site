@@ -15,10 +15,6 @@ const { author } = Astro.props;
 // Fetch all content by this author
 const allExpert = (await getCollection('expert'))
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
-const allBriefs = (await getCollection('briefs'))
-  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
-const allReports = (await getCollection('reports'))
-  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 
 // Match articles by this author (handle diacritics, quotes, multi-author)
 const authorPlain = author.name.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
@@ -27,36 +23,22 @@ function matchesAuthor(articleAuthor: string | undefined): boolean {
   if (!articleAuthor) return false;
   const cleaned = articleAuthor.replace(/[""]/g, '').toLowerCase();
   const plainCleaned = cleaned.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-  // Check direct match
   if (plainCleaned === authorPlain) return true;
-  // Check multi-author (comma or & separated)
   const parts = plainCleaned.split(/[,&]/).map(p => p.trim());
   return parts.some(p => p === authorPlain);
 }
 
 const expertArticles = allExpert.filter(e => matchesAuthor(e.data.author));
-const briefArticles = allBriefs.filter(b => matchesAuthor(b.data.author));
 
-const allArticles = [
-  ...expertArticles.map(e => ({
-    type: 'expert' as const,
-    title: e.data.title,
-    date: e.data.date,
-    region: e.data.region,
-    category: e.data.category || 'Expert Analysis',
-    slug: `/expert/${e.id}`,
-    summary: e.data.summary || '',
-  })),
-  ...briefArticles.map(b => ({
-    type: 'brief' as const,
-    title: b.data.title,
-    date: b.data.date,
-    region: b.data.region,
-    category: 'Field Brief',
-    slug: `/briefs/${b.id}`,
-    summary: b.data.summary || '',
-  })),
-].sort((a, b) => b.date.valueOf() - a.date.valueOf());
+const allArticles = expertArticles.map(e => ({
+  type: 'expert' as const,
+  title: e.data.title,
+  date: e.data.date,
+  region: e.data.region,
+  category: e.data.category || 'Expert Analysis',
+  slug: `/expert/${e.id}`,
+  summary: e.data.summary || '',
+})).sort((a, b) => b.date.valueOf() - a.date.valueOf());
 
 // Note: Situational Reports are org-authored (CSIORS), not attributed to individuals
 

@@ -4,14 +4,12 @@ import { getCollection } from 'astro:content';
 
 // Aggregate real stats from content
 const allExpert = await getCollection('expert');
-const allBriefs = await getCollection('briefs');
 const allReports = await getCollection('reports');
-const totalAnalyses = allExpert.length + allBriefs.length + allReports.length;
+const totalAnalyses = allExpert.length + allReports.length;
 
 // Unique regions
 const regionSet = new Set();
 for (const a of allExpert) { if (a.data.region) regionSet.add(a.data.region); }
-for (const b of allBriefs) { if (b.data.region) regionSet.add(b.data.region); }
 for (const r of allReports) { if (r.data.region) regionSet.add(r.data.region); }
 const regionCount = regionSet.size;
 
@@ -24,12 +22,8 @@ for (const a of allExpert) {
 const authorCount = authorSet.size;
 
 // Latest analysis date
-const allDates = [...allExpert, ...allBriefs, ...allReports].map(a => a.data.date).sort((a, b) => b.valueOf() - a.valueOf());
+const allDates = [...allExpert, ...allReports].map(a => a.data.date).sort((a, b) => b.valueOf() - a.valueOf());
 const latestDate = allDates[0] ? allDates[0].toLocaleDateString('en-US', { month: 'long', year: 'numeric' }) : 'N/A';
-
-// Briefs with field responses
-const briefsWithResponses = allBriefs.filter(b => b.data.responses && b.data.responses > 0);
-const totalFieldResponses = briefsWithResponses.reduce((sum, b) => sum + (b.data.responses || 0), 0);
 
 // Top regions by article count
 const regionCounts = {};

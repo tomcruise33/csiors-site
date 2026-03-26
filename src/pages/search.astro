@@ -3,7 +3,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
 
 const allExpert = await getCollection('expert');
-const allBriefs = await getCollection('briefs');
 const allReports = await getCollection('reports');
 
 // Build search index as JSON
@@ -16,15 +15,6 @@ const searchIndex = [
     d: e.data.date.toISOString().slice(0, 10),
     u: '/expert/' + e.id,
     k: 'expert',
-  })),
-  ...allBriefs.map(b => ({
-    t: b.data.title,
-    s: b.data.summary || '',
-    r: b.data.region || '',
-    a: 'CSIORS',
-    d: b.data.date.toISOString().slice(0, 10),
-    u: '/briefs/' + b.id,
-    k: 'brief',
   })),
   ...allReports.map(r => ({
     t: r.data.title,
@@ -42,7 +32,7 @@ const indexJson = JSON.stringify(searchIndex);
 <BaseLayout
   lang="en"
   title="Search — CSIORS"
-  description="Search across all CSIORS analyses, briefs, and expert commentary."
+  description="Search across all CSIORS analyses, reports, and expert commentary."
 >
 
 <section class="page-hero">
@@ -96,7 +86,7 @@ const indexJson = JSON.stringify(searchIndex);
     }
 
     results.innerHTML = scored.slice(0, 30).map(item => {
-      const typeLabel = item.k === 'brief' ? 'Field Brief' : item.k === 'report' ? 'Situational Report' : 'Analysis';
+      const typeLabel = item.k === 'report' ? 'Situational Report' : 'Analysis';
       return '<a href="' + item.u + '" class="search-result">' +
         '<div class="search-result-meta">' +
         '<span class="search-result-type">' + typeLabel + '</span>' +

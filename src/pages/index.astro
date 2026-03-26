@@ -6,15 +6,12 @@ import { getAuthorByName } from '../data/authors';
 // Fetch all content
 const allExpert = (await getCollection('expert'))
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
-const allBriefs = (await getCollection('briefs'))
-  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 const allReports = (await getCollection('reports'))
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 
 // Merge into one feed
 const allContent = [
   ...allExpert.map(e => ({ type: 'expert' as const, entry: e })),
-  ...allBriefs.map(b => ({ type: 'brief' as const, entry: b })),
   ...allReports.map(r => ({ type: 'report' as const, entry: r })),
 ].sort((a, b) => b.entry.data.date.valueOf() - a.entry.data.date.valueOf());
 
@@ -50,8 +47,7 @@ function formatDateShort(date: Date) {
   return date.toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
 }
 function getHref(item: typeof allContent[0]) {
-  if (item.type === 'report') return `/reports/${item.entry.id}`;
-  return item.type === 'brief' ? `/briefs/${item.entry.id}` : `/expert/${item.entry.id}`;
+  return item.type === 'report' ? `/reports/${item.entry.id}` : `/expert/${item.entry.id}`;
 }
 
 // ── Pre-render dynamic HTML ──
@@ -70,7 +66,7 @@ const featuredHtml = featured ? (() => {
     imgBlock +
     `<div class="hp-featured-body">` +
     `<div class="hp-featured-meta">` +
-    `<span class="hp-featured-type">${featured.type === 'brief' ? 'Field Brief' : featured.type === 'report' ? 'Situational Report' : 'Analysis'}</span>` +
+    `<span class="hp-featured-type">${featured.type === 'report' ? 'Situational Report' : 'Analysis'}</span>` +
     `<span class="hp-featured-region">${e.data.region || ''}</span>` +
     `<time class="hp-featured-date">${formatDate(e.data.date)}</time>` +
     `</div>` +

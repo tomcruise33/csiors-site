@@ -1,0 +1,162 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const reports = await getCollection('reports');
+const sorted = reports.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+
+function formatDate(date: Date) {
+  return date.toLocaleDateString('en-US', { day: 'numeric', month: 'long', year: 'numeric' });
+}
+
+const alertBadge = (alert: string) => {
+  const colors: Record<string, string> = { alert: 'var(--red-alert)', watch: 'var(--amber)', stable: 'var(--green)' };
+  const color = colors[alert] || 'var(--text-muted)';
+  return `<span class="report-alert-badge" style="color: ${color}; border-color: ${color}">${alert.toUpperCase()}</span>`;
+};
+
+const cardsHtml = sorted.map(r => {
+  const d = r.data;
+  const href = `/reports/${r.id}`;
+  return `<a href="${href}" class="report-card">` +
+    `<div class="report-card-header">` +
+    `<span class="report-card-type">Situational Report</span>` +
+    alertBadge(d.alert) +
+    `</div>` +
+    `<h3 class="report-card-title">${d.title}</h3>` +
+    `<p class="report-card-summary">${d.summary}</p>` +
+    `<div class="report-card-meta">` +
+    `<span>${formatDate(d.date)}</span>` +
+    `<span>${d.region}</span>` +
+    `<span>EWS ${d.ews}/100</span>` +
+    `<span>${d.respondent_count} respondents</span>` +
+    `<span>${d.entry_count} entries</span>` +
+    `</div>` +
+    `</a>`;
+}).join('');
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: 'Situational Reports — CSIORS',
+  description: 'Data-driven field reports built from anonymous respondent submissions and cross-referenced against external sources.',
+  url: 'https://csiors.org/reports/',
+  isPartOf: { '@type': 'WebSite', name: 'CSIORS', url: 'https://csiors.org' },
+};
+---
+<BaseLayout
+  lang="en"
+  title="Situational Reports — CSIORS"
+  description="Data-driven field reports built from anonymous respondent submissions and cross-referenced against external sources."
+  jsonLd={jsonLd}
+>
+<div class="container">
+
+  <section class="page-hero">
+    <div class="page-hero-tag">Reports</div>
+    <h1 class="page-hero-title">Situational Reports</h1>
+    <p class="page-hero-lede">Data-driven field reports built from anonymous respondent submissions, validated against external sources like WFP market monitoring. Each report is published only when our signal detection system identifies a meaningful pattern.</p>
+  </section>
+
+  <section class="page-section">
+    {sorted.length > 0 ? (
+      <div class="reports-list" set:html={cardsHtml}></div>
+    ) : (
+      <p class="prose">No reports published yet. Reports are generated when our field data accumulation reaches a signal threshold.</p>
+    )}
+  </section>
+
+  <section class="page-section">
+    <div class="about-rule"></div>
+    <h2 class="section-heading">How reports are produced</h2>
+    <div class="prose">
+      <p>Each Situational Report follows our <a href="/methodology">published data methodology</a>. Field entries accumulate over time. When our signal detection system identifies a pattern — a price spike, an accumulation threshold, or an elevated Early Warning Score — the data is compiled, cross-referenced against external benchmarks, and published for review.</p>
+      <p>We do not publish on a fixed schedule. Reports appear only when the data warrants it.</p>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="about-rule"></div>
+    <h2 class="section-heading">Contribute field data</h2>
+    <div class="prose">
+      <p>Our reports are only as good as our field network. If you are based in a monitored region and can report on local conditions — prices, security, employment, displacement — your contribution directly shapes these reports.</p>
+      <p><a href="https://ee-eu.kobotoolbox.org/x/VYfRrAuW" target="_blank" rel="noopener">Submit a field report</a> (5-10 minutes, fully anonymous).</p>
+    </div>
+  </section>
+
+</div>
+
+<style>
+  .reports-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .report-card {
+    display: block;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 1.5rem;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.2s ease, background 0.2s ease;
+  }
+  .report-card:hover {
+    border-color: var(--accent);
+    background: rgba(255,255,255,0.02);
+  }
+  .report-card-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+  .report-card-type {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-muted);
+  }
+  .report-alert-badge {
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    padding: 0.15em 0.5em;
+    border: 1px solid;
+    border-radius: 3px;
+  }
+  .report-card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.35;
+    margin: 0 0 0.5rem;
+  }
+  .report-card-summary {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+    margin: 0 0 1rem;
+  }
+  .report-card-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.25rem;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+  }
+  .report-card-meta span::before {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: var(--border);
+    vertical-align: middle;
+    margin-right: 0.5rem;
+  }
+  .report-card-meta span:first-child::before {
+    display: none;
+  }
+</style>
+
+</BaseLayout>
