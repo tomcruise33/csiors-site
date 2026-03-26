@@ -32,4 +32,21 @@ const expert = defineCollection({
   }),
 });
 
-export const collections = { briefs, expert };
+const reports = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/reports' }),
+  schema: z.object({
+    title: z.string(),
+    date: z.coerce.date(),
+    type: z.literal('situational-report'),
+    region: z.string(),
+    alert: z.enum(['alert', 'watch', 'stable']),
+    ews: z.number(),
+    respondent_count: z.number(),
+    entry_count: z.number(),
+    summary: z.string(),
+    external_sources: z.array(z.string()).optional(),
+    tags: z.array(z.string()).optional(),
+  }),
+});
+
+export const collections = { briefs, expert, reports };
