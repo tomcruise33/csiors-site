@@ -25,7 +25,7 @@ const foodPriceHtml = entry.data.food_price
   ? `<div class="data-row"><span class="data-label">Food price change</span><span class="data-value up">${entry.data.food_price}</span></div>`
   : '';
 
-const bylineHtml = `<strong>CSIORS Intelligence Brief</strong> &middot; ${dateStr}${sourcesHtml}`;
+const bylineHtml = `<strong>CSIORS Field Brief</strong> &middot; ${dateStr}${sourcesHtml}`;
 
 const dataBoxHtml = `<div class="lead-data-box"><div class="data-box-inner">` +
   `<div class="data-box-title">${entry.data.region} — Key Indicators</div>` +
@@ -35,7 +35,7 @@ const dataBoxHtml = `<div class="lead-data-box"><div class="data-box-inner">` +
   `<div class="data-source">CSIORS field survey &middot; ${dateStr}</div>` +
   `</div></div>`;
 
-// Article JSON-LD structured data for intelligence briefs
+// Article JSON-LD structured data for field briefs
 const briefUrl = 'https://csiors.org/briefs/' + entry.id + '/';
 const briefOgImg = 'https://csiors.org/og/' + entry.id + '.png';
 const jsonLd = {
