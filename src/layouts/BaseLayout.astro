@@ -48,8 +48,8 @@ const jsonLdScriptHtml = jsonLdString
   <link rel="icon" type="image/svg+xml" href="/images/logo-new-full.svg">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-  <meta name="msapplication-TileColor" content="#0a0c14">
-  <meta name="theme-color" content="#0a0c14">
+  <meta name="msapplication-TileColor" content="#1a5276">
+  <meta name="theme-color" content="#ffffff">
   <link rel="canonical" href={pageUrl}>
 
   <!-- Open Graph -->
@@ -69,14 +69,15 @@ const jsonLdScriptHtml = jsonLdString
   <Fragment set:html={jsonLdScriptHtml} />
 </head>
 <body>
+  <a href="#content" class="skip-link">Skip to content</a>
   <Ticker />
-  <Masthead lang={lang} />
-  <Nav lang={lang} />
-  <slot />
+  <header role="banner">
+    <Masthead lang={lang} />
+    <Nav lang={lang} />
+  </header>
+  <main id="content">
+    <slot />
+  </main>
   <Footer lang={lang} />
-  <script>
-    import { inject } from '@vercel/analytics';
-    inject();
-  </script>
 </body>
 </html>

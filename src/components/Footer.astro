@@ -5,14 +5,14 @@ const { lang = 'en' } = Astro.props;
 const prefix = lang === 'sk' ? '/sk' : '';
 const year = new Date().getFullYear();
 ---
-<div class="container">
-  <footer>
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
     <div class="footer-rule"></div>
 
     <div class="footer-newsletter">
       <div class="footer-newsletter-text">
         <strong>Stay informed</strong>
-        <span>Field intelligence and expert analysis delivered to your inbox.</span>
+        <span>Expert analysis delivered to your inbox.</span>
       </div>
       <form
         action="https://buttondown.com/api/emails/embed-subscribe/csiors"
@@ -20,29 +20,50 @@ const year = new Date().getFullYear();
         target="popupwindow"
         class="footer-newsletter-form"
       >
-        <input type="email" name="email" placeholder="Your email address" required class="footer-newsletter-input" />
+        <input type="email" name="email" placeholder="Your email address" required class="footer-newsletter-input" aria-label="Email address for newsletter" />
         <button type="submit" class="footer-newsletter-btn">Subscribe</button>
       </form>
     </div>
 
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <img src="/images/logo-footer.png" alt="" class="footer-logo" width="24" height="24" />
-        <span class="footer-name">CSIORS</span>
+    <div class="footer-columns">
+      <div class="footer-col">
+        <div class="footer-brand">
+          <img src="/images/logo-footer.png" alt="" class="footer-logo" width="24" height="24" />
+          <span class="footer-name">CSIORS</span>
+        </div>
+        <p class="footer-desc">Czech-Slovak Institute of Oriental Studies. Independent field-informed research across the Middle East, North Africa, and the Horn of Africa.</p>
+        <p class="footer-address">Bratislava, Slovakia</p>
       </div>
-      <div class="footer-links">
-        <a href={`${prefix}/about`}>{t(lang, 'nav.about')}</a>
-        <a href={`${prefix}/methodology`}>Methodology</a>
-        <a href={`${prefix}/feed`}>{t(lang, 'nav.feed')}</a>
-        <a href={`${prefix}/newsletter`}>Newsletter</a>
-        <a href={`${prefix}/watchtower`}>{t(lang, 'nav.watchtower')}</a>
-        <a href="https://ee-eu.kobotoolbox.org/x/VYfRrAuW" target="_blank" rel="noopener">{t(lang, 'nav.survey')}</a>
-        <a href={`${prefix}/contact`}>{t(lang, 'nav.contact')}</a>
+      <div class="footer-col">
+        <h3 class="footer-col-title">Research</h3>
+        <div class="footer-links">
+          <a href={`${prefix}/feed`}>Analysis</a>
+          <a href={`${prefix}/reports`}>Reports</a>
+          <a href={`${prefix}/methodology`}>Methodology</a>
+          <a href={`${prefix}/watchtower`}>Watchtower</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h3 class="footer-col-title">Institute</h3>
+        <div class="footer-links">
+          <a href={`${prefix}/about`}>About</a>
+          <a href={`${prefix}/impact`}>Field Network</a>
+          <a href={`${prefix}/newsletter`}>Newsletter</a>
+          <a href={`${prefix}/contact`}>Contact</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h3 class="footer-col-title">Contribute</h3>
+        <div class="footer-links">
+          <a href="https://ee-eu.kobotoolbox.org/x/VYfRrAuW" target="_blank" rel="noopener">Field Survey <span class="sr-only">(opens in new tab)</span></a>
+          <a href={`${prefix}/contact`}>Partner with us</a>
+        </div>
       </div>
     </div>
+
     <div class="footer-meta">
       <span class="footer-copy">&copy; {year} Czech-Slovak Institute of Oriental Studies. All rights reserved.</span>
       <span class="footer-reg">Registered in Slovakia &middot; Partner: BRIDGE Research &amp; Innovation, Addis Ababa</span>
     </div>
-  </footer>
-</div>
+  </div>
+</footer>

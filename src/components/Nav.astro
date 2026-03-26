@@ -6,15 +6,15 @@ function isActive(href: string) {
   if (href === '/') return path === '/';
   return path.startsWith(href);
 }
+function ariaCurrent(href: string) {
+  return isActive(href) ? 'page' : undefined;
+}
 ---
-<nav class="nav-bar">
-  <a href="/" class={isActive('/') ? 'active' : ''}>Home</a>
-  <a href="/feed" class={isActive('/feed') ? 'active' : ''}>Analysis</a>
-  <a href="/about" class={isActive('/about') ? 'active' : ''}>About</a>
-  <a href="/methodology" class={isActive('/methodology') ? 'active' : ''}>Methodology</a>
-  <a href="/contact" class={isActive('/contact') ? 'active' : ''}>Contact</a>
-  <a href="/search" class={isActive('/search') ? 'active' : ''}>Search</a>
-  <a href="/impact" class={isActive('/impact') ? 'active' : ''}>Field Network</a>
-  <a href="https://ee-eu.kobotoolbox.org/x/VYfRrAuW" target="_blank" rel="noopener">Field Survey</a>
-  <a href="/watchtower" class={(isActive('/watchtower') ? 'active ' : '') + 'wt-link'}>Watchtower</a>
+<nav class="nav-bar" aria-label="Main navigation">
+  <a href="/" class={isActive('/') ? 'active' : ''} aria-current={ariaCurrent('/')}>Home</a>
+  <a href="/feed" class={isActive('/feed') ? 'active' : ''} aria-current={ariaCurrent('/feed')}>Analysis</a>
+  <a href="/about" class={isActive('/about') ? 'active' : ''} aria-current={ariaCurrent('/about')}>About</a>
+  <a href="/methodology" class={isActive('/methodology') ? 'active' : ''} aria-current={ariaCurrent('/methodology')}>Methodology</a>
+  <a href="/contact" class={isActive('/contact') ? 'active' : ''} aria-current={ariaCurrent('/contact')}>Contact</a>
+  <a href="/watchtower" class={isActive('/watchtower') ? 'active' : ''} aria-current={ariaCurrent('/watchtower')}>Watchtower</a>
 </nav>
