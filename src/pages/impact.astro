@@ -1,0 +1,191 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+// Aggregate real stats from content
+const allExpert = await getCollection('expert');
+const allBriefs = await getCollection('briefs');
+const totalAnalyses = allExpert.length + allBriefs.length;
+
+// Unique regions
+const regionSet = new Set();
+for (const a of allExpert) { if (a.data.region) regionSet.add(a.data.region); }
+for (const b of allBriefs) { if (b.data.region) regionSet.add(b.data.region); }
+const regionCount = regionSet.size;
+
+// Unique authors
+const authorSet = new Set();
+for (const a of allExpert) {
+  const name = a.data.author?.replace(/[""]/g, '') || '';
+  if (name && name.toLowerCase() !== 'csiors') authorSet.add(name);
+}
+const authorCount = authorSet.size;
+
+// Latest analysis date
+const allDates = [...allExpert, ...allBriefs].map(a => a.data.date).sort((a, b) => b.valueOf() - a.valueOf());
+const latestDate = allDates[0] ? allDates[0].toLocaleDateString('en-US', { month: 'long', year: 'numeric' }) : 'N/A';
+
+// Briefs with field responses
+const briefsWithResponses = allBriefs.filter(b => b.data.responses && b.data.responses > 0);
+const totalFieldResponses = briefsWithResponses.reduce((sum, b) => sum + (b.data.responses || 0), 0);
+
+// Top regions by article count
+const regionCounts = {};
+for (const a of allExpert) {
+  const r = a.data.region;
+  if (r) regionCounts[r] = (regionCounts[r] || 0) + 1;
+}
+const topRegions = Object.entries(regionCounts)
+  .sort((a, b) => (b[1] as number) - (a[1] as number))
+  .slice(0, 6);
+
+// Organization JSON-LD
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: 'Your Impact — CSIORS Field Network',
+  description: 'See how anonymous field reports from 37 countries shape published intelligence analyses at CSIORS.',
+  url: 'https://csiors.org/impact/',
+  isPartOf: { '@type': 'WebSite', name: 'CSIORS', url: 'https://csiors.org' },
+};
+---
+<BaseLayout
+  lang="en"
+  title="Your Impact — CSIORS Field Network"
+  description="See how anonymous field reports from 37 countries shape published intelligence analyses, early warning scores, and policy-relevant research at CSIORS."
+  jsonLd={jsonLd}
+>
+<div class="container">
+
+  <!-- Hero -->
+  <section class="impact-hero">
+    <div class="impact-badge">Field Network</div>
+    <h1 class="impact-title">Your Data Matters</h1>
+    <p class="impact-sub">
+      Every anonymous field report you submit strengthens the intelligence picture.
+      Here is how your contributions shape real published research.
+    </p>
+  </section>
+
+  <!-- Live stats -->
+  <section class="impact-stats">
+    <div class="impact-stat">
+      <div class="impact-stat-num">{totalAnalyses}</div>
+      <div class="impact-stat-label">Published Analyses</div>
+      <div class="impact-stat-note">Expert research + AI-synthesized briefs</div>
+    </div>
+    <div class="impact-stat">
+      <div class="impact-stat-num">37</div>
+      <div class="impact-stat-label">Countries Monitored</div>
+      <div class="impact-stat-note">MENA & Horn of Africa survey network</div>
+    </div>
+    <div class="impact-stat">
+      <div class="impact-stat-num">{authorCount}</div>
+      <div class="impact-stat-label">Expert Authors</div>
+      <div class="impact-stat-note">Regional specialists & analysts</div>
+    </div>
+    <div class="impact-stat">
+      <div class="impact-stat-num">{regionCount}</div>
+      <div class="impact-stat-label">Regions Covered</div>
+      <div class="impact-stat-note">From field data to published analysis</div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="impact-section">
+    <h2 class="impact-section-title">How Your Report Becomes Intelligence</h2>
+    <div class="impact-pipeline">
+      <div class="impact-step">
+        <div class="impact-step-num">01</div>
+        <h3 class="impact-step-title">You Submit</h3>
+        <p class="impact-step-desc">
+          An anonymous field report via the KoboToolbox survey — covering mood, movement,
+          food prices, job availability, and observed departures in your area.
+        </p>
+      </div>
+      <div class="impact-step-arrow">&rarr;</div>
+      <div class="impact-step">
+        <div class="impact-step-num">02</div>
+        <h3 class="impact-step-title">We Aggregate</h3>
+        <p class="impact-step-desc">
+          Your data joins responses from other field reporters across the region.
+          The Watchtower system calculates an Early Warning Score (EWS) for your country.
+        </p>
+      </div>
+      <div class="impact-step-arrow">&rarr;</div>
+      <div class="impact-step">
+        <div class="impact-step-num">03</div>
+        <h3 class="impact-step-title">We Publish</h3>
+        <p class="impact-step-desc">
+          Expert analysts and our AI pipeline turn aggregated data into published
+          intelligence briefs — cited by researchers, NGOs, and policymakers.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Regional coverage -->
+  <section class="impact-section">
+    <h2 class="impact-section-title">Where Your Data Has Impact</h2>
+    <p class="impact-section-desc">Top regions by published analysis count, enriched by field survey data.</p>
+    <div class="impact-regions">
+      {topRegions.map(([region, count]) => (
+        <div class="impact-region">
+          <div class="impact-region-name">{region}</div>
+          <div class="impact-region-bar">
+            <div class="impact-region-fill" style={`width: ${Math.round(((count as number) / (topRegions[0][1] as number)) * 100)}%`}></div>
+          </div>
+          <div class="impact-region-count">{count} analyses</div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Data privacy -->
+  <section class="impact-section">
+    <h2 class="impact-section-title">Your Privacy Is Absolute</h2>
+    <div class="impact-privacy">
+      <div class="impact-privacy-item">
+        <div class="impact-privacy-icon">&#9670;</div>
+        <div>
+          <strong>Fully Anonymous</strong>
+          <p>No names, no emails, no IP addresses. We never know who you are.</p>
+        </div>
+      </div>
+      <div class="impact-privacy-item">
+        <div class="impact-privacy-icon">&#9670;</div>
+        <div>
+          <strong>Aggregated Only</strong>
+          <p>Individual responses are never published. Only country-level aggregates appear in analyses.</p>
+        </div>
+      </div>
+      <div class="impact-privacy-item">
+        <div class="impact-privacy-icon">&#9670;</div>
+        <div>
+          <strong>Secure Infrastructure</strong>
+          <p>Data stored on EU-hosted KoboToolbox servers with encrypted transmission.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="impact-cta">
+    <h2 class="impact-cta-title">Continue Making a Difference</h2>
+    <p class="impact-cta-desc">
+      Your monthly report takes 3-5 minutes. It directly shapes published intelligence
+      used by researchers and decision-makers across the region.
+    </p>
+    <div class="impact-cta-buttons">
+      <a href="https://ee-eu.kobotoolbox.org/x/VYfRrAuW" target="_blank" rel="noopener" class="impact-btn-primary">
+        Submit Field Report &rarr;
+      </a>
+      <a href="/feed" class="impact-btn-secondary">
+        Read Published Analyses
+      </a>
+    </div>
+    <p class="impact-cta-note">Latest publication: {latestDate}</p>
+  </section>
+
+</div>
+</BaseLayout>
