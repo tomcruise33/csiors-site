@@ -1,27 +1,33 @@
 ---
-const items = [
-  { text: 'Syria: Bread prices +14% in Aleppo — CSIORS field data', live: true },
-  { text: 'Ethiopia: EWS rising to 42/100 — Watch status', live: false },
-  { text: 'Morocco: 23 new field responses this week', live: false },
-  { text: 'UNHCR: 2.1M new displacements in Horn of Africa Q1 2026', live: true },
-  { text: 'Turkey: Food price volatility at 3-month high', live: false },
-  { text: 'Sudan: Humanitarian corridor reopened — EWS 67/100', live: false },
-  { text: 'Lebanon: Black market currency spread widening', live: false },
-  { text: 'Yemen: Critical threshold — EWS 71/100', live: true },
-];
+import { getCollection } from 'astro:content';
+
+// Pull latest 8 real articles for the ticker
+const allExpert = (await getCollection('expert'))
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+  .slice(0, 8);
+
+const items = allExpert.map(a => {
+  const region = a.data.region || 'MENA';
+  // Truncate long titles for the ticker
+  const title = a.data.title.length > 70
+    ? a.data.title.slice(0, 67) + '...'
+    : a.data.title;
+  return { region, title };
+});
 ---
+{items.length > 0 && (
 <div class="ticker">
   <div class="ticker-track">
     {items.map(item => (
       <span class="ticker-item">
-        <span class={`ticker-pip${item.live ? ' live' : ''}`}></span> {item.text}
+        <span class="ticker-pip"></span> {item.region}: {item.title}
       </span>
     ))}
-    {/* Duplicate for seamless loop */}
     {items.map(item => (
       <span class="ticker-item">
-        <span class={`ticker-pip${item.live ? ' live' : ''}`}></span> {item.text}
+        <span class="ticker-pip"></span> {item.region}: {item.title}
       </span>
     ))}
   </div>
 </div>
+)}

@@ -55,7 +55,7 @@ export const translations = {
     'aboutPage.method2Title': 'Early Warning Scoring',
     'aboutPage.method2Text': 'Field responses feed our Early Warning System (EWS), a composite score (0–100) per country. Thresholds: 0–25 Stable, 26–50 Watch, 51+ Alert. Updated with every new submission.',
     'aboutPage.method3Title': 'Research Synthesis',
-    'aboutPage.method3Text': 'AI-assisted drafting combines field data with open-source monitoring (OSINT), WFP price data, and UNHCR displacement data. Every brief is reviewed by a human analyst before publication.',
+    'aboutPage.method3Text': 'Field data is cross-referenced with open-source monitoring (OSINT), WFP price data, and UNHCR displacement data. Every publication is reviewed by a human analyst before release.',
     'aboutPage.method4Title': 'Expert Enrichment',
     'aboutPage.method4Text': 'Monthly deep-dive analyses by regional experts — starting with Jan Zahorik on Ethiopia and the Horn of Africa — are auto-enriched with the latest field data, adding empirical weight to academic insight.',
     'aboutPage.fieldNetwork': 'Field Network',
@@ -93,12 +93,12 @@ export const translations = {
     // Feed
     'feed.tag': 'Analysis Feed',
     'feed.title': 'Briefs & Analysis',
-    'feed.lede': 'Field-data-driven analysis on migration, food security, and regional stability. Briefs published 2–3 times per week; expert analysis monthly.',
+    'feed.lede': 'Field-data-driven analysis on migration, food security, and regional stability. Published when evidence thresholds are met.',
 
     // Watchtower
-    'wt.badge': 'Live Monitoring',
+    'wt.badge': 'Field Data',
     'wt.title': 'Watchtower',
-    'wt.sub': 'Real-time Early Warning System dashboard across 37 countries. Data-driven alerts on food security, displacement, and regional stability.',
+    'wt.sub': 'Field data accumulation and early warning signals across 37 countries. Respondent trust scoring, WFP cross-validation, and threshold alerts.',
     'wt.requestAccess': 'Request Access',
     'wt.freeEval': 'Free during evaluation period',
     'wt.fullName': 'Full Name',
