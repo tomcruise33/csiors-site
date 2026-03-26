@@ -2,14 +2,6 @@
 import { t } from '../i18n/translations';
 interface Props { lang?: 'en' | 'sk'; }
 const { lang = 'en' } = Astro.props;
-
-const locale = lang === 'sk' ? 'sk-SK' : 'en-US';
-const today = new Date().toLocaleDateString(locale, {
-  weekday: 'long',
-  year: 'numeric',
-  month: 'long',
-  day: 'numeric',
-});
 ---
 <header class="masthead">
   <div class="masthead-brand">
@@ -22,5 +14,4 @@ const today = new Date().toLocaleDateString(locale, {
     </div>
   </div>
   <div class="masthead-rule"></div>
-  <div class="masthead-date"><span class="live-dot"></span> {today}</div>
 </header>

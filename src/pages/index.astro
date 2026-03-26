@@ -23,11 +23,20 @@ const latest = allContent
   .filter(c => c.entry.id !== featured?.entry.id && c.entry.data.image)
   .slice(0, 8);
 
-// Stats
+// Stats — normalize authors: strip quotes, split co-authors, normalize diacritics
 const authorSet = new Set<string>();
+const diacriticMap: Record<string, string> = {
+  'Jan Zahorik': 'Jan Záhořík',
+  'Filip Benes': 'Filip Beneš',
+};
 for (const a of allExpert) {
-  const name = a.data.author?.replace(/"/g, '') || '';
-  if (name && name !== 'csiors') authorSet.add(name);
+  const raw = a.data.author?.replace(/"/g, '') || '';
+  if (!raw || raw === 'csiors') continue;
+  const names = raw.includes(' and ') ? raw.split(' and ').map((n: string) => n.trim()) : [raw];
+  for (const n of names) {
+    const normalized = diacriticMap[n] || n;
+    if (normalized) authorSet.add(normalized);
+  }
 }
 
 // Region counts for top regions
@@ -201,11 +210,12 @@ const structuredData = {
     if (!raw || el.dataset.done) return;
     el.dataset.done = '1';
     const target = parseInt(raw);
-    const dur = 1400;
+    if (isNaN(target)) return;
+    const dur = 500;
     const start = performance.now();
     function tick(now) {
       const p = Math.min((now - start) / dur, 1);
-      const eased = 1 - Math.pow(1 - p, 3);
+      const eased = 1 - Math.pow(1 - p, 4);
       el.textContent = Math.round(target * eased).toString();
       if (p < 1) requestAnimationFrame(tick);
     }

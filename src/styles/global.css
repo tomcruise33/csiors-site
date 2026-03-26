@@ -2066,7 +2066,7 @@ body {
   padding: 2.2rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .hp-featured-meta {
   display: flex;
@@ -2113,7 +2113,7 @@ body {
   line-height: 1.7;
   margin-bottom: 0.8rem;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
