@@ -4,11 +4,13 @@ import { getCollection } from 'astro:content';
 
 const briefs = await getCollection('briefs');
 const expert = await getCollection('expert');
+const reports = await getCollection('reports');
 
 // Merge all content
 const allContent = [
   ...briefs.map(b => ({ type: 'brief' as const, entry: b })),
   ...expert.map(e => ({ type: 'expert' as const, entry: e })),
+  ...reports.map(r => ({ type: 'report' as const, entry: r })),
 ].sort((a, b) => b.entry.data.date.valueOf() - a.entry.data.date.valueOf());
 
 // Build region list from actual data
@@ -23,6 +25,7 @@ function formatDateShort(date: Date) {
   return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
 }
 function getHref(item: typeof allContent[0]) {
+  if (item.type === 'report') return `/reports/${item.entry.id}`;
   return item.type === 'brief' ? `/briefs/${item.entry.id}` : `/expert/${item.entry.id}`;
 }
 
@@ -39,7 +42,7 @@ const cardsHtml = allContent.map(item => {
   const href = getHref(item);
   const authorName = e.data.author?.replace(/"/g, '') || '';
   const region = e.data.region || '';
-  const typeLabel = item.type === 'brief' ? 'Brief' : 'Analysis';
+  const typeLabel = item.type === 'brief' ? 'Brief' : item.type === 'report' ? 'Report' : 'Analysis';
   const imgHtml = e.data.image
     ? `<img src="${e.data.image}" alt="" loading="lazy" />`
     : `<div class="article-card-img-placeholder"><span class="article-card-region-bg">${region}</span></div>`;

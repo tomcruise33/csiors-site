@@ -34,7 +34,7 @@ export const translations = {
     'home.stable': 'Stable',
 
     // Info strip
-    'info.briefs': 'Field briefs published 2–3 times per week, compiled from anonymous field data across 37 countries.',
+    'info.briefs': 'Situational reports based on field informant data across 37 countries, cross-validated with WFP benchmarks.',
     'info.expert': 'Expert analysis by Jan Zahorik published monthly, auto-enriched with live survey data.',
 
     // About section (homepage)

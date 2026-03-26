@@ -4,6 +4,7 @@ import { getCollection } from 'astro:content';
 
 const allExpert = await getCollection('expert');
 const allBriefs = await getCollection('briefs');
+const allReports = await getCollection('reports');
 
 // Build search index as JSON
 const searchIndex = [
@@ -24,6 +25,15 @@ const searchIndex = [
     d: b.data.date.toISOString().slice(0, 10),
     u: '/briefs/' + b.id,
     k: 'brief',
+  })),
+  ...allReports.map(r => ({
+    t: r.data.title,
+    s: r.data.summary || '',
+    r: r.data.region || '',
+    a: 'CSIORS',
+    d: r.data.date.toISOString().slice(0, 10),
+    u: '/reports/' + r.id,
+    k: 'report',
   })),
 ].sort((a, b) => b.d.localeCompare(a.d));
 
@@ -86,7 +96,7 @@ const indexJson = JSON.stringify(searchIndex);
     }
 
     results.innerHTML = scored.slice(0, 30).map(item => {
-      const typeLabel = item.k === 'brief' ? 'Field Brief' : 'Analysis';
+      const typeLabel = item.k === 'brief' ? 'Field Brief' : item.k === 'report' ? 'Situational Report' : 'Analysis';
       return '<a href="' + item.u + '" class="search-result">' +
         '<div class="search-result-meta">' +
         '<span class="search-result-type">' + typeLabel + '</span>' +

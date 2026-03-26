@@ -17,6 +17,8 @@ const allExpert = (await getCollection('expert'))
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 const allBriefs = (await getCollection('briefs'))
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+const allReports = (await getCollection('reports'))
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 
 // Match articles by this author (handle diacritics, quotes, multi-author)
 const authorPlain = author.name.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
@@ -55,6 +57,8 @@ const allArticles = [
     summary: b.data.summary || '',
   })),
 ].sort((a, b) => b.date.valueOf() - a.date.valueOf());
+
+// Note: Situational Reports are org-authored (CSIORS), not attributed to individuals
 
 // Pre-build specialization tags HTML
 const specHtml = author.specialization.map(s =>

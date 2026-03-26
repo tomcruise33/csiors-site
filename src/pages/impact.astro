@@ -5,12 +5,14 @@ import { getCollection } from 'astro:content';
 // Aggregate real stats from content
 const allExpert = await getCollection('expert');
 const allBriefs = await getCollection('briefs');
-const totalAnalyses = allExpert.length + allBriefs.length;
+const allReports = await getCollection('reports');
+const totalAnalyses = allExpert.length + allBriefs.length + allReports.length;
 
 // Unique regions
 const regionSet = new Set();
 for (const a of allExpert) { if (a.data.region) regionSet.add(a.data.region); }
 for (const b of allBriefs) { if (b.data.region) regionSet.add(b.data.region); }
+for (const r of allReports) { if (r.data.region) regionSet.add(r.data.region); }
 const regionCount = regionSet.size;
 
 // Unique authors
@@ -22,7 +24,7 @@ for (const a of allExpert) {
 const authorCount = authorSet.size;
 
 // Latest analysis date
-const allDates = [...allExpert, ...allBriefs].map(a => a.data.date).sort((a, b) => b.valueOf() - a.valueOf());
+const allDates = [...allExpert, ...allBriefs, ...allReports].map(a => a.data.date).sort((a, b) => b.valueOf() - a.valueOf());
 const latestDate = allDates[0] ? allDates[0].toLocaleDateString('en-US', { month: 'long', year: 'numeric' }) : 'N/A';
 
 // Briefs with field responses
@@ -72,7 +74,7 @@ const jsonLd = {
     <div class="impact-stat">
       <div class="impact-stat-num">{totalAnalyses}</div>
       <div class="impact-stat-label">Published Analyses</div>
-      <div class="impact-stat-note">Expert research + AI-synthesized briefs</div>
+      <div class="impact-stat-note">Expert research + field situational reports</div>
     </div>
     <div class="impact-stat">
       <div class="impact-stat-num">37</div>
