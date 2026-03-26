@@ -68,7 +68,9 @@ export const GET: APIRoute = async () => {
 
     if (!res.ok) throw new Error(`RSS fetch failed: ${res.status}`);
     const xml = await res.text();
+    console.log('RSS fetched, length:', xml.length, 'first 200:', xml.slice(0, 200));
     const items = parseRSSItems(xml);
+    console.log('Parsed items:', items.length);
 
     cache = { items, ts: Date.now() };
 
@@ -79,8 +81,9 @@ export const GET: APIRoute = async () => {
         'Access-Control-Allow-Origin': '*',
       },
     });
-  } catch (e) {
+  } catch (e: any) {
     // On error, return empty array — ticker degrades to CSIORS-only
+    console.error('Ticker RSS error:', e?.message || e);
     return new Response(JSON.stringify([]), {
       status: 200,
       headers: {
