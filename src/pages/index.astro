@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Ticker from '../components/Ticker.astro';
 import { getCollection } from 'astro:content';
-import { getAuthorByName } from '../data/authors';
 
 // Fetch all content
 const allExpert = (await getCollection('expert'))
@@ -18,12 +18,30 @@ const allContent = [
 // Featured: latest with image
 const featured = allContent.find(c => c.entry.data.image) || allContent[0];
 
-// Latest 8 for slider (excluding featured, only with images)
+// Latest 6 for grid (excluding featured, only with images)
 const latest = allContent
   .filter(c => c.entry.id !== featured?.entry.id && c.entry.data.image)
-  .slice(0, 8);
+  .slice(0, 6);
 
-// Stats — normalize authors: strip quotes, split co-authors, normalize diacritics
+// Most read — pick articles with images spread across regions for sidebar
+const regions = ['Ethiopia', 'Nigeria', 'Iraq', 'Syria', 'MENA'];
+const mostRead: typeof allContent = [];
+for (const r of regions) {
+  const match = allContent.find(c => c.entry.data.region === r && c.entry.data.image && !mostRead.includes(c) && c.entry.id !== featured?.entry.id);
+  if (match) mostRead.push(match);
+  if (mostRead.length >= 5) break;
+}
+// Fill remaining slots
+if (mostRead.length < 5) {
+  for (const c of allContent) {
+    if (!mostRead.includes(c) && c.entry.id !== featured?.entry.id) {
+      mostRead.push(c);
+      if (mostRead.length >= 5) break;
+    }
+  }
+}
+
+// Stats
 const authorSet = new Set<string>();
 const diacriticMap: Record<string, string> = {
   'Jan Zahorik': 'Jan Záhořík',
@@ -39,7 +57,7 @@ for (const a of allExpert) {
   }
 }
 
-// Region counts for top regions
+// Region counts
 const regionCounts: Record<string, number> = {};
 for (const a of allExpert) {
   const r = a.data.region;
@@ -47,7 +65,7 @@ for (const a of allExpert) {
 }
 const topRegions = Object.entries(regionCounts)
   .sort((a, b) => b[1] - a[1])
-  .slice(0, 8);
+  .slice(0, 10);
 
 function formatDate(date: Date) {
   return date.toLocaleDateString('en-US', { day: 'numeric', month: 'long', year: 'numeric' });
@@ -58,56 +76,6 @@ function formatDateShort(date: Date) {
 function getHref(item: typeof allContent[0]) {
   return item.type === 'report' ? `/reports/${item.entry.id}` : `/expert/${item.entry.id}`;
 }
-
-// ── Pre-render dynamic HTML ──
-
-const featuredHtml = featured ? (() => {
-  const e = featured.entry;
-  const href = getHref(featured);
-  const authorName = e.data.author?.replace(/"/g, '') || '';
-  const imgBlock = e.data.image
-    ? `<div class="hp-featured-img"><img src="${e.data.image}" alt="${e.data.title}" loading="lazy" /><div class="hp-featured-overlay"></div></div>`
-    : `<div class="hp-featured-img hp-featured-noimg"></div>`;
-  const descBlock = (e.data.subtitle || e.data.summary) ? `<p class="hp-featured-sub">${e.data.subtitle || e.data.summary}</p>` : '';
-  return `<section class="hp-featured"><div class="container">` +
-    `<a href="${href}" class="hp-featured-card">` +
-    imgBlock +
-    `<div class="hp-featured-body">` +
-    `<div class="hp-featured-meta">` +
-    `<span class="hp-featured-type">${featured.type === 'report' ? 'Situational Report' : 'Analysis'}</span>` +
-    `<span class="hp-featured-region">${e.data.region || ''}</span>` +
-    `<time class="hp-featured-date">${formatDate(e.data.date)}</time>` +
-    `</div>` +
-    `<h2 class="hp-featured-title">${e.data.title}</h2>` +
-    descBlock +
-    `<div class="hp-featured-foot">` +
-    `<span class="hp-featured-author">${authorName}</span>` +
-    `<span class="hp-featured-readmore">Read analysis &rarr;</span>` +
-    `</div></div></a></div></section>`;
-})() : '';
-
-const sliderHtml = latest.map((item, i) => {
-  const e = item.entry;
-  const href = getHref(item);
-  const authorName = e.data.author?.replace(/"/g, '') || '';
-  const imgHtml = e.data.image
-    ? `<img src="${e.data.image}" alt="${e.data.title}" loading="lazy" />`
-    : `<div class="hp-slide-noimg"><span>${e.data.region || ''}</span></div>`;
-  return `<a href="${href}" class="hp-slide">` +
-    `<div class="hp-slide-img">${imgHtml}</div>` +
-    `<div class="hp-slide-body">` +
-    `<div class="hp-slide-meta">` +
-    `<span class="hp-slide-region">${e.data.region || ''}</span>` +
-    `<time>${formatDateShort(e.data.date)}</time>` +
-    `</div>` +
-    `<h3 class="hp-slide-title">${e.data.title}</h3>` +
-    `<span class="hp-slide-author">${authorName}</span>` +
-    `</div></a>`;
-}).join('');
-
-const regionsHtml = topRegions.map(([region, count]) =>
-  `<a href="/feed#${region.toLowerCase().replace(/\s+/g, '-')}" class="hp-topic">${region}<span>${count}</span></a>`
-).join('');
 
 // Structured data
 const structuredData = {
@@ -129,31 +97,163 @@ const structuredData = {
   jsonLd={structuredData}
 >
 
-<!-- ===== FEATURED ANALYSIS (first thing visitors see) ===== -->
-<Fragment set:html={featuredHtml} />
+<!-- ===== FEATURED ANALYSIS (full-width) ===== -->
+{featured && (() => {
+  const e = featured.entry;
+  const href = getHref(featured);
+  const authorName = e.data.author?.replace(/"/g, '') || '';
+  return (
+    <section class="hp-featured">
+      <div class="container">
+        <a href={href} class="hp-featured-card">
+          {e.data.image ? (
+            <div class="hp-featured-img">
+              <img src={e.data.image} alt={e.data.title} loading="lazy" />
+              <div class="hp-featured-overlay"></div>
+            </div>
+          ) : (
+            <div class="hp-featured-img hp-featured-noimg"></div>
+          )}
+          <div class="hp-featured-body">
+            <div class="hp-featured-meta">
+              <span class="hp-featured-type">{featured.type === 'report' ? 'Situational Report' : 'Analysis'}</span>
+              <span class="hp-featured-region">{e.data.region || ''}</span>
+              <time class="hp-featured-date">{formatDate(e.data.date)}</time>
+            </div>
+            <h2 class="hp-featured-title">{e.data.title}</h2>
+            {(e.data.subtitle || e.data.summary) && (
+              <p class="hp-featured-sub">{e.data.subtitle || e.data.summary}</p>
+            )}
+            <div class="hp-featured-foot">
+              <span class="hp-featured-author">{authorName}</span>
+              <span class="hp-featured-readmore">Read analysis &rarr;</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+  );
+})()}
 
-<!-- ===== LATEST ANALYSIS SLIDER ===== -->
-{latest.length > 0 ? (
-<section class="hp-slider-section">
+<!-- ===== PORTAL LAYOUT: MAIN + SIDEBAR ===== -->
+<section class="section-alt" style="padding: 2rem 0 2.5rem;">
   <div class="container">
     <div class="hp-section-top">
       <h2 class="hp-section-title">Latest Analysis</h2>
       <a href="/feed" class="hp-section-link">View all {allContent.length} &rarr;</a>
     </div>
-  </div>
-  <div class="hp-slider-wrap">
-    <div class="hp-slider" set:html={sliderHtml}></div>
-  </div>
-</section>
-) : (
-<section class="hp-slider-section">
-  <div class="container">
-    <p class="hp-empty">No analyses with images yet. <a href="/feed">Browse all analysis &rarr;</a></p>
-  </div>
-</section>
-)}
+    <div class="portal-layout">
+      <!-- MAIN: Article Grid -->
+      <div class="portal-main">
+        <div class="hp-article-grid">
+          {latest.map(item => {
+            const e = item.entry;
+            const href = getHref(item);
+            const authorName = e.data.author?.replace(/"/g, '') || '';
+            return (
+              <a href={href} class="hp-grid-card">
+                <div class="hp-grid-card-img">
+                  <img src={e.data.image} alt={e.data.title} loading="lazy" />
+                </div>
+                <div class="hp-grid-card-body">
+                  <div class="hp-grid-card-meta">
+                    <span class="hp-grid-card-region">{e.data.region || ''}</span>
+                    <span class="hp-grid-card-date">{formatDateShort(e.data.date)}</span>
+                  </div>
+                  <h3 class="hp-grid-card-title">{e.data.title}</h3>
+                  <span class="hp-grid-card-author">{authorName}</span>
+                </div>
+              </a>
+            );
+          })}
+        </div>
+      </div>
 
-<!-- ===== ABOUT STRIP (compact, not the hero) ===== -->
+      <!-- SIDEBAR -->
+      <aside class="portal-sidebar">
+        <!-- Most Read -->
+        <div class="sidebar-widget">
+          <div class="sidebar-widget-title">Most Read</div>
+          <ul class="sidebar-list">
+            {mostRead.map(item => {
+              const e = item.entry;
+              const href = getHref(item);
+              return (
+                <li>
+                  <a href={href}>{e.data.title}</a>
+                  <div class="sidebar-meta">{e.data.region} &middot; {formatDateShort(e.data.date)}</div>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+
+        <!-- Regions -->
+        <div class="sidebar-widget">
+          <div class="sidebar-widget-title">Regions</div>
+          <div class="sidebar-regions">
+            {topRegions.map(([region, count]) => (
+              <a href={`/feed#${region.toLowerCase().replace(/\s+/g, '-')}`} class="sidebar-region-pill">
+                {region}<span class="sidebar-region-count">{count}</span>
+              </a>
+            ))}
+          </div>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="sidebar-widget">
+          <div class="sidebar-widget-title">Newsletter</div>
+          <p style="font-size: 0.78rem; color: var(--text-secondary); margin-bottom: 0.6rem; line-height: 1.5;">Expert analysis delivered to your inbox.</p>
+          <form action="https://buttondown.com/api/emails/embed-subscribe/csiors" method="post" target="popupwindow">
+            <input type="email" name="email" placeholder="Your email" required class="sidebar-newsletter-input" aria-label="Email for newsletter" />
+            <button type="submit" class="sidebar-newsletter-btn">Subscribe</button>
+          </form>
+        </div>
+
+        <!-- Field Survey CTA -->
+        <div class="sidebar-widget" style="background: linear-gradient(135deg, #0d2137 0%, var(--accent) 100%); border-color: transparent; color: white;">
+          <div class="sidebar-widget-title" style="color: rgba(255,255,255,0.7); border-color: rgba(255,255,255,0.3);">Contribute Data</div>
+          <p style="font-size: 0.78rem; color: rgba(255,255,255,0.85); margin-bottom: 0.8rem; line-height: 1.5;">Based in one of our 37 monitored countries? Submit an anonymous field report.</p>
+          <a href="https://ee-eu.kobotoolbox.org/x/VYfRrAuW" target="_blank" rel="noopener" style="display: block; text-align: center; padding: 0.5rem; border: 1px solid rgba(255,255,255,0.4); border-radius: 4px; color: white; font-size: 0.75rem; font-weight: 600; text-decoration: none; transition: background 0.15s;" onmouseover="this.style.background='rgba(255,255,255,0.1)'" onmouseout="this.style.background='transparent'">Submit Field Report &rarr;</a>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WATCHTOWER TEASER (full-width dark) ===== -->
+<section class="wt-teaser">
+  <div class="container">
+    <div class="wt-teaser-inner">
+      <div>
+        <div class="wt-teaser-badge">Early Warning System</div>
+        <h2 class="wt-teaser-title">Watchtower</h2>
+        <p class="wt-teaser-text">Field data accumulation and signal detection across MENA and the Horn of Africa. Cross-validated with WFP benchmarks for food security monitoring.</p>
+        <a href="/watchtower" class="wt-teaser-btn">Open Watchtower &rarr;</a>
+      </div>
+      <div class="wt-teaser-stats">
+        <div class="wt-teaser-stat">
+          <span class="wt-teaser-stat-val" data-count="37">37</span>
+          <span class="wt-teaser-stat-lbl">Countries</span>
+        </div>
+        <div class="wt-teaser-stat">
+          <span class="wt-teaser-stat-val" data-count="19">19</span>
+          <span class="wt-teaser-stat-lbl">Field Entries</span>
+        </div>
+        <div class="wt-teaser-stat">
+          <span class="wt-teaser-stat-val" data-count="7">7</span>
+          <span class="wt-teaser-stat-lbl">Active Cities</span>
+        </div>
+        <div class="wt-teaser-stat">
+          <span class="wt-teaser-stat-val">WFP</span>
+          <span class="wt-teaser-stat-lbl">Cross-Validated</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT + STATS ===== -->
 <section class="hp-about">
   <div class="container">
     <div class="hp-about-inner">
@@ -161,7 +261,7 @@ const structuredData = {
         <p class="hp-about-lede">CSIORS is an independent research institute producing field-informed analysis across the Middle East, North Africa, and the Horn of Africa. Our anonymous survey network spans 37 countries — every publication is grounded in real data from the ground.</p>
         <div class="hp-about-actions">
           <a href="/about" class="hp-btn hp-btn--ghost">About the institute</a>
-          <a href="/feed" class="hp-btn hp-btn--ghost">Browse all analysis</a>
+          <a href="/methodology" class="hp-btn hp-btn--ghost">Our methodology</a>
         </div>
       </div>
       <div class="hp-about-stats">
@@ -186,26 +286,16 @@ const structuredData = {
   </div>
 </section>
 
-<!-- ===== CTA ===== -->
-<section class="hp-cta">
+<!-- ===== PARTNERS ===== -->
+<section class="partners-strip">
   <div class="container">
-    <div class="hp-cta-inner">
-      <div>
-        <h2 class="hp-cta-title">Contribute Field Data</h2>
-        <p class="hp-cta-text">Based in one of our 37 monitored countries? Your anonymous field report feeds directly into our research. Takes 5 minutes.</p>
-        <a href="https://ee-eu.kobotoolbox.org/x/VYfRrAuW" target="_blank" rel="noopener" class="hp-btn hp-btn--primary">Submit Field Report</a>
-      </div>
-      <div class="hp-cta-side">
-        <a href="/watchtower" class="hp-cta-card">
-          <span class="hp-cta-card-label">Watchtower</span>
-          <span class="hp-cta-card-desc">Field data accumulation and early warning signals</span>
-          <span class="hp-cta-card-arrow">&rarr;</span>
+    <div class="partners-inner">
+      <span class="partners-label">Partners &amp; Affiliations</span>
+      <div class="partners-logos">
+        <a href="https://www.bridgeresearchinnovation.com" target="_blank" rel="noopener">
+          <span>BRIDGE Research &amp; Innovation</span>
         </a>
-        <a href="/contact" class="hp-cta-card">
-          <span class="hp-cta-card-label">Partner with us</span>
-          <span class="hp-cta-card-desc">Research collaboration, data access, expert contributions</span>
-          <span class="hp-cta-card-arrow">&rarr;</span>
-        </a>
+        <span style="font-family: 'IBM Plex Mono', monospace; font-size: 0.6rem; color: var(--text-muted);">Addis Ababa, Ethiopia</span>
       </div>
     </div>
   </div>
@@ -229,7 +319,6 @@ const structuredData = {
     }
     requestAnimationFrame(tick);
   }
-  // Observe stats
   const obs = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -238,7 +327,7 @@ const structuredData = {
       }
     });
   }, { threshold: 0.3 });
-  document.querySelectorAll('.hp-about-stats, .hp-cta').forEach(el => obs.observe(el));
+  document.querySelectorAll('.hp-about-stats, .wt-teaser-stats').forEach(el => obs.observe(el));
 </script>
 
 </BaseLayout>
